@@ -1,0 +1,90 @@
+{
+    "team": [
+        {
+            "name": "Marwan Hassini",
+            "role": "Researcher",
+            "institution": "Université Gustave Eiffel",
+            "country": "France"
+        },
+        {
+            "name": "Philipp Dechent",
+            "role": "Researcher",
+            "institution": "Toshiba Europe GmbH",
+            "country": "Germany"
+        },
+        {
+            "name": "Sara Luciani",
+            "role": "Researcher",
+            "institution": "Toshiba Europe GmbH",
+            "country": "Germany"
+        },
+        {
+            "name": "Shiyun Liu",
+            "role": "Researcher",
+            "institution": "University of Leeds",
+            "country": "UK"
+        },
+        {
+            "name": "Simon Clark",
+            "role": "Researcher",
+            "institution": "SINTEF AS",
+            "country": "Norway"
+        },
+        {
+            "name": "Paul Gasper",
+            "role": "Researcher",
+            "institution": "National Lab of the Rockies",
+            "country": "USA"
+        },
+        {
+            "name": "Gonçalo dos Reis",
+            "role": "Corresponding Author",
+            "institution": "University of Edinburgh",
+            "country": "UK",
+            "email": "G.dosReis@ed.ac.uk"
+        }
+    ],
+    "institutions": [
+        {
+            "name": "Université Gustave Eiffel",
+            "url": "https://www.univ-gustave-eiffel.fr/",
+            "country": "France"
+        },
+        {
+            "name": "Toshiba Europe",
+            "url": "https://www.toshiba.eu/regenerative-innovation-centre/",
+            "country": "Germany"
+        },
+        {
+            "name": "University of Leeds",
+            "url": "https://eps.leeds.ac.uk/electronic-engineering",
+            "country": "UK"
+        },
+        {
+            "name": "SINTEF AS",
+            "url": "https://www.sintef.no/en/sintef-research-areas/sustainable-energy/",
+            "country": "Norway"
+        },
+        {
+            "name": "National Lab of the Rockies",
+            "url": "https://www.nrel.gov/",
+            "country": "USA"
+        },
+        {
+            "name": "University of Edinburgh",
+            "url": "https://webhomes.maths.ed.ac.uk/~gdosrei/",
+            "country": "UK"
+        },
+        {
+            "name": "Centro de Matemática e Aplicações",
+            "url": "https://novamath.fct.unl.pt/",
+            "country": "Portugal"
+        }
+    ],
+    "acknowledgements": [
+        {
+            "organization": "Centre National de la Recherche Scientifique (CNRS)",
+            "type": "funding"
+        }
+    ]
+}

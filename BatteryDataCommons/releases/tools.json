@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "bdc_sw_057",
+    "name": "Aionics",
+    "language": "Unknown",
+    "license_type": "Commercial",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": true,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": true
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": null,
+    "software_url": null,
+    "article_url": null,
+    "year": ""
+  },
+  {
+    "id": "bdc_sw_001",
+    "name": "alawa",
+    "language": "Matlab",
+    "license_type": "Request for sharing",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": true,
+      "experiment_modelling": true,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": true,
+    "license": "https://www.hnei.hawaii.edu/wp-content/uploads/Alawa-License-Agreement-Terms-and-Conditions.pdf",
+    "software_url": "https://www.hnei.hawaii.edu/alawa/",
+    "article_url": "https://doi.org/10.1016/j.jpowsour.2012.07.016",
+    "year": "2012"
+  },
+  {
+    "id": "bdc_sw_024",
+    "name": "AmpLabs",
+    "language": "Python/Matlab",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": true,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": false,
+    "license": null,
+    "software_url": "https://github.com/battery-data-alliance/amplabs",
+    "article_url": null,
+    "year": "2022"
+  },
+  {
+    "id": "bdc_sw_054",
+    "name": "Amplabs",
+    "language": "Unknown",
+    "license_type": "Commercial",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": true,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": true,
+      "simulation": false
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": null,
+    "software_url": null,
+    "article_url": null,
+    "year": ""
+  },
+  {
+    "id": "bdc_sw_035",
+    "name": "Ampworks",
+    "language": "GUI, Python",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": true,
+      "data_analysis": true,
+      "physics_modelling": true,
+      "experiment_modelling": true,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": true,
+    "license": "https://github.com/NatLabRockies/ampworks?tab=BSD-3-Clause-1-ov-file",
+    "software_url": "https://github.com/NREL/ampworks",
+    "article_url": "https://doi.org/10.11578/dc.20250313.2",
+    "year": "2024"
+  },
+  {
+    "id": "bdc_sw_060",
+    "name": "Auto-SOH/moirae",
+    "language": "Python",
+    "license_type": "Unknown",
+    "capabilities": {
+      "data_processing": true,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": null,
+    "software_url": "https://github.com/ROVI-org/auto-soh",
+    "article_url": null,
+    "year": ""
+  },
+  {
+    "id": "bdc_sw_044",
+    "name": "Back of the Battery",
+    "language": "Python",
+    "license_type": "Unknown",
+    "capabilities": {
+      "data_processing": true,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": null,
+    "software_url": "https://github.com/ndrewwang/BotB",
+    "article_url": null,
+    "year": ""
+  },
+  {
+    "id": "bdc_sw_032",
+    "name": "batP2dFoam",
+    "language": "C++",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": true,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": "https://github.com/redyxg/batP2dFoam?tab=GPL-3.0-1-ov-file",
+    "software_url": "https://github.com/redyxg/batP2dFoam",
+    "article_url": null,
+    "year": "2023"
+  },
+  {
+    "id": "bdc_sw_041",
+    "name": "BatPac",
+    "language": "Excel",
+    "license_type": "Unknown",
+    "capabilities": {
+      "data_processing": true,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": null,
+    "software_url": "https://www.anl.gov/partnerships/batpac-battery-manufacturing-cost-estimation",
+    "article_url": null,
+    "year": ""
+  },
+  {
+    "id": "bdc_sw_040",
+    "name": "Battery Data Format",
+    "language": "Python",
+    "license_type": "Unknown",
+    "capabilities": {
+      "data_processing": true,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": "https://github.com/battery-data-alliance/battery-data-format?tab=Apache-2.0-1-ov-file",
+    "software_url": "https://github.com/battery-data-alliance/battery-data-format",
+    "article_url": null,
+    "year": ""
+  },
+  {
+    "id": "bdc_sw_015",
+    "name": "battery-data-toolkit",
+    "language": "Python",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": true,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": true,
+    "license": "https://github.com/ROVI-org/battery-data-toolkit?tab=Apache-2.0-1-ov-file",
+    "software_url": "https://github.com/ROVI-org/battery-data-toolkit",
+    "article_url": null,
+    "year": "2020"
+  },
+  {
+    "id": "bdc_sw_046",
+    "name": "BatteryML",
+    "language": "Python",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": true,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": "https://github.com/microsoft/BatteryML?tab=MIT-1-ov-file",
+    "software_url": "https://github.com/microsoft/BatteryML",
+    "article_url": "https://openreview.net/forum?id=sxGugrYhP9",
+    "year": "2023"
+  },
+  {
+    "id": "bdc_sw_017",
+    "name": "BattMo",
+    "language": "Matlab/Julia/Python",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": true,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": true,
+    "license": "https://github.com/BattMoTeam/BattMo/tree/v0.3.0?tab=License-1-ov-file",
+    "software_url": "https://batterymodel.com/",
+    "article_url": "https://doi.org/10.48550/arXiv.2512.17933",
+    "year": "2020"
+  },
+  {
+    "id": "bdc_sw_014",
+    "name": "BEEP",
+    "language": "Python",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": true,
+      "data_analysis": true,
+      "physics_modelling": false,
+      "experiment_modelling": true,
+      "prediction": true,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": false,
+    "license": "https://www.apache.org/licenses/LICENSE-2.0",
+    "software_url": "https://github.com/TRI-AMDD/beep",
+    "article_url": "https://doi.org/10.1016/j.softx.2020.100506",
+    "year": "2020"
+  },
+  {
+    "id": "bdc_sw_031",
+    "name": "BLAST-Lite",
+    "language": "Python, Matlab",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": true,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": true,
+    "license": "https://github.com/NatLabRockies/BLAST-Lite?tab=BSD-3-Clause-1-ov-file",
+    "software_url": "https://github.com/NREL/BLAST-Lite",
+    "article_url": null,
+    "year": "2023"
+  },
+  {
+    "id": "bdc_sw_042",
+    "name": "Cell Analysis and Modeling Simulator",
+    "language": "Excel",
+    "license_type": "Unknown",
+    "capabilities": {
+      "data_processing": true,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": null,
+    "software_url": "https://www.faraday.ac.uk/fi-cell-modelling-workbook/",
+    "article_url": null,
+    "year": ""
+  },
+  {
+    "id": "bdc_sw_043",
+    "name": "Cell Simulator",
+    "language": "Excel",
+    "license_type": "Unknown",
+    "capabilities": {
+      "data_processing": true,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": null,
+    "software_url": "https://pubs.rsc.org/en/content/articlelanding/2020/mh/d0mh00067a",
+    "article_url": null,
+    "year": ""
+  },
+  {
+    "id": "bdc_sw_018",
+    "name": "CellModels",
+    "language": "Julia",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": true,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": "https://github.com/mjlacey/cellmodels?tab=GPL-3.0-1-ov-file",
+    "software_url": "https://github.com/mjlacey/cellmodels",
+    "article_url": null,
+    "year": "2020"
+  },
+  {
+    "id": "bdc_sw_003",
+    "name": "Cellpy",
+    "language": "Python",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": true,
+      "data_analysis": true,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": true,
+    "license": "https://github.com/jepegit/cellpy?tab=MIT-1-ov-file",
+    "software_url": "https://github.com/jepegit/cellpy",
+    "article_url": "https://doi.org/10.21105/joss.06236",
+    "year": "2015"
+  },
+  {
+    "id": "bdc_sw_045",
+    "name": "CellVision",
+    "language": "Excel",
+    "license_type": "Unknown",
+    "capabilities": {
+      "data_processing": true,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": null,
+    "software_url": "https://docsend.com/view/4wkmgspcyfp2auaq",
+    "article_url": null,
+    "year": ""
+  },
+  {
+    "id": "bdc_sw_037",
+    "name": "COBRAPRO",
+    "language": "Matlab",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": true,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": true,
+    "license": "https://github.com/COBRAPROsimulator/COBRAPRO?tab=MIT-1-ov-file",
+    "software_url": "https://github.com/COBRAPROsimulator/COBRAPRO",
+    "article_url": null,
+    "year": "2024"
+  },
+  {
+    "id": "bdc_sw_051",
+    "name": "Comsol",
+    "language": "Unknown",
+    "license_type": "Commercial",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": true,
+      "experiment_modelling": true,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": null,
+    "software_url": null,
+    "article_url": null,
+    "year": ""
+  },
+  {
+    "id": "bdc_sw_048",
+    "name": "datalab",
+    "language": "Python",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": true,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": true,
+    "license": "https://github.com/datalab-org/datalab?tab=MIT-1-ov-file",
+    "software_url": "https://docs.datalab-org.io/",
+    "article_url": null,
+    "year": ""
+  },
+  {
+    "id": "bdc_sw_004",
+    "name": "DATTES",
+    "language": "Matlab/Octave",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": true,
+      "data_analysis": true,
+      "physics_modelling": false,
+      "experiment_modelling": true,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": true,
+    "license": "https://www.gnu.org/licenses/gpl-3.0",
+    "software_url": "https://gitlab.com/dattes/dattes/",
+    "article_url": "https://doi.org/10.1016/j.softx.2023.101584",
+    "year": "2015"
+  },
+  {
+    "id": "bdc_sw_012",
+    "name": "DRTTools",
+    "language": "Matlab",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": true,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": true,
+    "license": "https://github.com/ciuccislab/DRTtools?tab=MIT-1-ov-file",
+    "software_url": "https://github.com/ciuccislab/DRTtools",
+    "article_url": "https://doi.org/10.1016/j.electacta.2015.09.097",
+    "year": "2019"
+  },
+  {
+    "id": "bdc_sw_005",
+    "name": "DUALFOIL",
+    "language": "Python/Fortran",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": true,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": null,
+    "software_url": null,
+    "article_url": null,
+    "year": "2016"
+  },
+  {
+    "id": "bdc_sw_059",
+    "name": "ECStoolbox",
+    "language": "Matlab",
+    "license_type": "Unknown",
+    "capabilities": {
+      "data_processing": true,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": null,
+    "software_url": "http://mocha-java.uccs.edu/BMS1/index.html",
+    "article_url": null,
+    "year": ""
+  },
+  {
+    "id": "bdc_sw_058",
+    "name": "EISFitting",
+    "language": "Python",
+    "license_type": "Unknown",
+    "capabilities": {
+      "data_processing": true,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": null,
+    "software_url": "https://github.com/Samuel-Buteau/EISFitting",
+    "article_url": null,
+    "year": ""
+  },
+  {
+    "id": "bdc_sw_055",
+    "name": "Energsoft",
+    "language": "Unknown",
+    "license_type": "Commercial",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": true,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": true,
+      "simulation": false
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": null,
+    "software_url": null,
+    "article_url": null,
+    "year": ""
+  },
+  {
+    "id": "bdc_sw_039",
+    "name": "Excluded tools",
+    "language": "Unknown",
+    "license_type": "Unknown",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": null,
+    "software_url": null,
+    "article_url": null,
+    "year": ""
+  },
+  {
+    "id": "bdc_sw_028",
+    "name": "galv",
+    "language": "Python",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": true,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": false,
+    "license": "https://github.com/galv-team/galv-harvester?tab=License-1-ov-file",
+    "software_url": "https://github.com/galv-team",
+    "article_url": null,
+    "year": "2023"
+  },
+  {
+    "id": "bdc_sw_052",
+    "name": "GT-AutoLion",
+    "language": "Unknown",
+    "license_type": "Commercial",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": null,
+    "software_url": null,
+    "article_url": null,
+    "year": ""
+  },
+  {
+    "id": "bdc_sw_026",
+    "name": "hybrid-drt",
+    "language": "Python",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": true,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": true,
+    "license": "https://github.com/jdhuang-csm/hybrid-drt?tab=BSD-3-Clause-1-ov-file",
+    "software_url": "https://github.com/jdhuang-csm/hybrid-drt",
+    "article_url": "https://doi.org/10.1016/j.electacta.2023.141879",
+    "year": "2022"
+  },
+  {
+    "id": "bdc_sw_033",
+    "name": "ICPD: ISEA Cell and Pack Database",
+    "language": "GUI, Matlab",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": true,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": false,
+    "license": "https://git.rwth-aachen.de/isea/isea-cell-and-pack-database/-/blob/master/License_ICPD.txt?ref_type=heads",
+    "software_url": "https://git.rwth-aachen.de/isea/isea-cell-and-pack-database",
+    "article_url": "https://doi.org/10.1016/j.est.2023.108396",
+    "year": "2023"
+  },
+  {
+    "id": "bdc_sw_009",
+    "name": "impedance.py",
+    "language": "Python",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": true,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": false,
+    "license": "https://github.com/ECSHackWeek/impedance.py?tab=MIT-1-ov-file",
+    "software_url": "https://github.com/ECSHackWeek/impedance.py",
+    "article_url": "https://doi.org/10.21105/joss.02349",
+    "year": "2018"
+  },
+  {
+    "id": "bdc_sw_038",
+    "name": "ISEA EIS Data Analytics",
+    "language": "Python",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": true,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": true,
+    "license": "https://git.rwth-aachen.de/isea/eis_data_analytics/-/blob/main/LICENSE",
+    "software_url": "https://git.rwth-aachen.de/isea/eis_data_analytics",
+    "article_url": "https://doi.org/10.1016/j.jpowsour.2024.235049",
+    "year": "2024"
+  },
+  {
+    "id": "bdc_sw_022",
+    "name": "LIBEIS",
+    "language": "Matlab/Python",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": true,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": false,
+    "license": "https://github.com/electrical-and-electronic-measurement/LiBEIS?tab=GPL-3.0-1-ov-file",
+    "software_url": "https://github.com/electrical-and-electronic-measurement/LiBEIS",
+    "article_url": "https://doi.org/10.1016/j.simpa.2022.100447",
+    "year": "2022"
+  },
+  {
+    "id": "bdc_sw_019",
+    "name": "Liionpack",
+    "language": "Python",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": true,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": true,
+    "license": "https://github.com/pybamm-team/liionpack?tab=MIT-1-ov-file",
+    "software_url": "https://github.com/pybamm-team/liionpack",
+    "article_url": "https://doi.org/10.21105/joss.04051",
+    "year": "2021"
+  },
+  {
+    "id": "bdc_sw_006",
+    "name": "LIONSIMBA",
+    "language": "Matlab",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": true,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": false,
+    "license": "https://github.com/lionsimbatoolbox/LIONSIMBA?tab=MIT-1-ov-file",
+    "software_url": "https://github.com/lionsimbatoolbox/LIONSIMBA",
+    "article_url": null,
+    "year": "2016"
+  },
+  {
+    "id": "bdc_sw_016",
+    "name": "MATBOX",
+    "language": "GUI, Matlab",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": true,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": true,
+    "license": "https://github.com/NatLabRockies/MATBOX_Microstructure_analysis_toolbox?tab=License-1-ov-file",
+    "software_url": "https://github.com/NREL/MATBOX_Microstructure_analysis_toolbox",
+    "article_url": "https://doi.org/10.1016/j.softx.2021.100915",
+    "year": "2020"
+  },
+  {
+    "id": "bdc_sw_049",
+    "name": "Matlab-Simulink",
+    "language": "Matlab",
+    "license_type": "Commercial",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": true,
+      "physics_modelling": false,
+      "experiment_modelling": true,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": null,
+    "software_url": null,
+    "article_url": null,
+    "year": ""
+  },
+  {
+    "id": "bdc_sw_002",
+    "name": "MPET",
+    "language": "Python",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": true,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": false,
+    "license": "https://github.com/TRI-AMDD/mpet?tab=License-1-ov-file",
+    "software_url": "https://github.com/TRI-AMDD/mpet",
+    "article_url": null,
+    "year": "2013"
+  },
+  {
+    "id": "bdc_sw_007",
+    "name": "MPET-Network",
+    "language": "Python",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": true,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": true,
+    "license": "https://github.com/Ombrini/MPET_Network?tab=License-1-ov-file",
+    "software_url": "https://github.com/Ombrini/MPET_Network",
+    "article_url": null,
+    "year": "2017"
+  },
+  {
+    "id": "bdc_sw_047",
+    "name": "nDTomo",
+    "language": "Python",
+    "license_type": "Unknown",
+    "capabilities": {
+      "data_processing": true,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": null,
+    "software_url": "https://github.com/antonyvam/nDTomo",
+    "article_url": null,
+    "year": ""
+  },
+  {
+    "id": "bdc_sw_020",
+    "name": "PETLION",
+    "language": "Julia",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": true,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": true,
+    "license": "https://github.com/MarcBerliner/PETLION.jl?tab=MIT-1-ov-file",
+    "software_url": "https://github.com/MarcBerliner/PETLION.jl",
+    "article_url": null,
+    "year": "2021"
+  },
+  {
+    "id": "bdc_sw_008",
+    "name": "Pybamm",
+    "language": "Python",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": true,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": true
+    },
+    "documentation": true,
+    "maintained": true,
+    "license": "https://github.com/pybamm-team/PyBaMM?tab=BSD-3-Clause-1-ov-file",
+    "software_url": "https://github.com/pybamm-team/PyBaMM",
+    "article_url": "https://doi.org/10.5334/jors.309",
+    "year": "2018"
+  },
+  {
+    "id": "bdc_sw_030",
+    "name": "PyBOP",
+    "language": "Python",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": true,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": true,
+    "license": "https://github.com/pybop-team/PyBOP/blob/develop/LICENSE",
+    "software_url": "https://github.com/pybop-team/PyBOP",
+    "article_url": "https://doi.org/10.21105/joss.07874",
+    "year": "2023"
+  },
+  {
+    "id": "bdc_sw_029",
+    "name": "PyCTIArbin",
+    "language": "Python",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": true,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": "https://github.com/battery-data-alliance/pyctiarbin?tab=Apache-2.0-1-ov-file",
+    "software_url": "https://github.com/battery-data-alliance/pyctiarbin",
+    "article_url": null,
+    "year": "2023"
+  },
+  {
+    "id": "bdc_sw_011",
+    "name": "pyDRTtools",
+    "language": "GUI, Python",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": true,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": false,
+    "license": "https://github.com/ciuccislab/pyDRTtools?tab=MIT-1-ov-file",
+    "software_url": "https://github.com/ciuccislab/pyDRTtools",
+    "article_url": "https://doi.org/10.1016/j.electacta.2015.09.097",
+    "year": "2019"
+  },
+  {
+    "id": "bdc_sw_027",
+    "name": "PyGamry",
+    "language": "Python",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": true,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": "https://github.com/jdhuang-csm/pygamry?tab=BSD-3-Clause-1-ov-file",
+    "software_url": "https://github.com/jdhuang-csm/pygamry",
+    "article_url": null,
+    "year": "2023"
+  },
+  {
+    "id": "bdc_sw_023",
+    "name": "PyMacNet",
+    "language": "Python",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": true,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": "https://github.com/battery-data-alliance/pymacnet?tab=Apache-2.0-1-ov-file",
+    "software_url": "https://github.com/battery-data-alliance/pymacnet",
+    "article_url": null,
+    "year": "2022"
+  },
+  {
+    "id": "bdc_sw_034",
+    "name": "PyProBE",
+    "language": "Python",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": true,
+      "data_analysis": true,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": true,
+    "license": "https://github.com/ImperialCollegeLondon/PyProBE?tab=BSD-3-Clause-1-ov-file",
+    "software_url": "https://github.com/ImperialCollegeLondon/PyProBE",
+    "article_url": "https://doi.org/10.21105/joss.07474",
+    "year": "2024"
+  },
+  {
+    "id": "bdc_sw_053",
+    "name": "Simcenter",
+    "language": "Unknown",
+    "license_type": "Commercial",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": true,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": null,
+    "software_url": null,
+    "article_url": null,
+    "year": ""
+  },
+  {
+    "id": "bdc_sw_021",
+    "name": "Simscape Battery Library",
+    "language": "Matlab",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": true,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": "https://github.com/WDWidanage/Simscape-Battery-Library?tab=MIT-1-ov-file",
+    "software_url": "https://github.com/WDWidanage/Simscape-Battery-Library",
+    "article_url": "https://doi.org/10.1016/j.electacta.2021.138524",
+    "year": "2021"
+  },
+  {
+    "id": "bdc_sw_013",
+    "name": "SLIDE",
+    "language": "C++",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": true,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": false,
+    "license": "https://github.com/Battery-Intelligence-Lab/SLIDE?tab=License-1-ov-file",
+    "software_url": "https://github.com/Battery-Intelligence-Lab/SLIDE",
+    "article_url": null,
+    "year": "2019"
+  },
+  {
+    "id": "bdc_sw_036",
+    "name": "Thevenin",
+    "language": "Python",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": true,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": true,
+    "license": "https://github.com/NatLabRockies/thevenin?tab=BSD-3-Clause-1-ov-file",
+    "software_url": "https://github.com/NREL/thevenin",
+    "article_url": "https://doi.org/10.11578/dc.20241125.2",
+    "year": "2024"
+  },
+  {
+    "id": "bdc_sw_050",
+    "name": "Twaice",
+    "language": "Unknown",
+    "license_type": "Commercial",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": true,
+      "physics_modelling": false,
+      "experiment_modelling": true,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": null,
+    "software_url": null,
+    "article_url": null,
+    "year": ""
+  },
+  {
+    "id": "bdc_sw_010",
+    "name": "Universal Battery Database",
+    "language": "Python",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": true,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": "https://github.com/Samuel-Buteau/universal-battery-database?tab=Apache-2.0-1-ov-file",
+    "software_url": "https://github.com/Samuel-Buteau/universal-battery-database",
+    "article_url": null,
+    "year": "2019"
+  },
+  {
+    "id": "bdc_sw_056",
+    "name": "Voltaiq",
+    "language": "Unknown",
+    "license_type": "Commercial",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": true,
+      "physics_modelling": false,
+      "experiment_modelling": true,
+      "prediction": false,
+      "simulation": true
+    },
+    "documentation": false,
+    "maintained": false,
+    "license": null,
+    "software_url": null,
+    "article_url": null,
+    "year": ""
+  },
+  {
+    "id": "bdc_sw_025",
+    "name": "Voltaiq Data Format",
+    "language": "Python",
+    "license_type": "Public",
+    "capabilities": {
+      "data_processing": true,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": false,
+    "license": null,
+    "software_url": "https://github.com/SubwayLabs/VoltaiqDataFormat",
+    "article_url": "https://doi.org/10.3389/fenrg.2022.1059154",
+    "year": "2022"
+  }
+]

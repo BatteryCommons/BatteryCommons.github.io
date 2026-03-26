@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('bdc-theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Data — Battery Data Commons</title>
+    <meta name="description"
+        content="Search and filter curated battery datasets by category, chemistry, data level, and access type.">
+    <!-- Pages redeploy marker: 2026-03-26 -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+                        <!-- Bottom dataset container -->
+                        <ellipse cx="12" cy="19" rx="7" ry="2" />
+                        <path d="M5 16 L5 19 M19 16 L19 19" />
+                        <ellipse cx="12" cy="16" rx="7" ry="2" />
+                        <!-- Middle dataset container -->
+                        <path d="M5 11 L5 14 M19 11 L19 14" />
+                        <ellipse cx="12" cy="11" rx="7" ry="2" />
+                        <!-- Top dataset container -->
+                        <path d="M5 6 L5 9 M19 6 L19 9" />
+                        <ellipse cx="12" cy="6" rx="7" ry="2" />
+                    </svg>
+                </div>
+                <span>Battery Data Commons</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="find-data.html" class="active">Find Data</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="members.html">Contributors</a></li>
+                <li><a href="contribute.html">Submit</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="https://github.com/shiyunliu-battery/BatteryDataCommons" target="_blank" rel="noopener"
+                    class="icon-link" aria-label="GitHub Repository">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="currentColor" stroke="none">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+                <button class="theme-toggle" onclick="BDCUI.toggleTheme()" aria-label="Toggle theme">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </button>
+                <button class="nav-toggle" onclick="BDCUI.toggleMobileNav()" aria-label="Toggle menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                        <line x1="3" y1="18" x2="21" y2="18" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="mb-6">Find Data</h1>
+
+                <!-- Search Box -->
+                <div class="search-box mb-8">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    <input type="text" class="input" placeholder="Search datasets by title, description, chemistry..."
+                        oninput="BDCUI.handleSearch(event)">
+                </div>
+
+                <div class="find-data-layout">
+                    <!-- Sidebar Filters -->
+                    <aside class="sidebar" id="filters-sidebar">
+                        <div class="flex justify-between items-center mb-6">
+                            <h3>Filters</h3>
+                            <button class="btn btn-sm btn-secondary" onclick="BDCUI.handleClearFilters()">Clear
+                                All</button>
+                        </div>
+                        <div id="filters-content">
+                            <!-- Filters loaded dynamically -->
+                        </div>
+                    </aside>
+
+                    <!-- Results -->
+                    <div class="results-area">
+                        <div class="results-header">
+                            <p class="results-count" id="results-count">Loading...</p>
+                            <span class="version-badge">Catalogue v1.0</span>
+                        </div>
+                        <div class="results-grid" id="results">
+                            <!-- Results loaded dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <div class="nav-logo-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white"
+                                stroke-width="1.5">
+                                <!-- Bottom dataset container -->
+                                <ellipse cx="12" cy="19" rx="7" ry="2" />
+                                <path d="M5 16 L5 19 M19 16 L19 19" />
+                                <ellipse cx="12" cy="16" rx="7" ry="2" />
+                                <!-- Middle dataset container -->
+                                <path d="M5 11 L5 14 M19 11 L19 14" />
+                                <ellipse cx="12" cy="11" rx="7" ry="2" />
+                                <!-- Top dataset container -->
+                                <path d="M5 6 L5 9 M19 6 L19 9" />
+                                <ellipse cx="12" cy="6" rx="7" ry="2" />
+                            </svg>
+                        </div>
+                        <span>Battery Data Commons</span>
+                    </a>
+                    <p>A curated metadata commons making battery datasets discoverable, comparable, and citable.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="find-data.html">Find Data</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="members.html">Contributors</a></li>
+                        <li><a href="contribute.html">Submit</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html#methodology">Methodology</a></li>
+                        <li><a href="about.html#citation">How to Cite</a></li>
+                        <li><a href="imprint.html">Imprint</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/shiyunliu-battery/BatteryDataCommons" target="_blank"
+                                rel="noopener">GitHub</a>
+                        </li>
+                        <li><a href="contribute.html">Submit Registry Entry</a></li>
+                        <li><a href="mailto:contact@battery-data-commons.org">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Battery Data Commons. Licensed under CC-BY-4.0.</p>
+                <span class="version-badge">Catalogue v1.0</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/ui.js"></script>
+    <script>
+        // Initialize find data page
+        document.addEventListener('DOMContentLoaded', async function () {
+            await BDC.loadCatalogue();
+            const stats = BDC.getStats();
+
+            // Check for category filter from URL
+            const categoryParam = BDCUI.getUrlParam('category');
+            if (categoryParam) {
+                BDC.toggleFilter('category', categoryParam);
+            }
+
+            // Render filters
+            document.getElementById('filters-content').innerHTML = BDCUI.renderFilters(stats);
+
+            // If category was set from URL, update checkbox
+            if (categoryParam) {
+                const checkbox = document.querySelector(`input[onchange*="'category', '${categoryParam}'"]`);
+                if (checkbox) checkbox.checked = true;
+            }
+
+            // Render results
+            BDCUI.renderResults();
+        });
+    </script>
+</body>
+
+</html>

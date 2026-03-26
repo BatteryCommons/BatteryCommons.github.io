@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('bdc-theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery Software Tools — Battery Data Commons</title>
+    <meta name="description"
+        content="Discover software tools for battery data processing, analysis, modelling, and simulation.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+                        <!-- Bottom dataset container -->
+                        <ellipse cx="12" cy="19" rx="7" ry="2" />
+                        <path d="M5 16 L5 19 M19 16 L19 19" />
+                        <ellipse cx="12" cy="16" rx="7" ry="2" />
+                        <!-- Middle dataset container -->
+                        <path d="M5 11 L5 14 M19 11 L19 14" />
+                        <ellipse cx="12" cy="11" rx="7" ry="2" />
+                        <!-- Top dataset container -->
+                        <path d="M5 6 L5 9 M19 6 L19 9" />
+                        <ellipse cx="12" cy="6" rx="7" ry="2" />
+                    </svg>
+                </div>
+                <span>Battery Data Commons</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="find-data.html">Find Data</a></li>
+                <li><a href="tools.html" class="active">Tools</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="members.html">Contributors</a></li>
+                <li><a href="contribute.html">Submit</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="https://github.com/shiyunliu-battery/BatteryDataCommons" target="_blank" rel="noopener"
+                    class="icon-link" aria-label="GitHub Repository">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="currentColor" stroke="none">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+                <button class="theme-toggle" onclick="BDCUI.toggleTheme()" aria-label="Toggle theme">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </button>
+                <button class="nav-toggle" onclick="BDCUI.toggleMobileNav()" aria-label="Toggle menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                        <line x1="3" y1="18" x2="21" y2="18" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="mb-6">Battery Software Tools</h1>
+
+                <!-- Search Box -->
+                <div class="search-box mb-8">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    <input type="text" class="input" id="tools-search" placeholder="Search tools by name..."
+                        oninput="filterTools()">
+                </div>
+
+                <div class="find-data-layout">
+                    <!-- Sidebar Filters -->
+                    <aside class="sidebar">
+                        <div class="flex justify-between items-center mb-6">
+                            <h3>Filters</h3>
+                            <button class="btn btn-sm btn-secondary" onclick="clearFilters()">Clear All</button>
+                        </div>
+
+                        <!-- Language Filter -->
+                        <div class="filter-group">
+                            <h4 class="filter-title">Language</h4>
+                            <div class="filter-options" id="language-filters">
+                                <!-- Populated dynamically -->
+                            </div>
+                        </div>
+
+                        <!-- Type Filter -->
+                        <div class="filter-group">
+                            <h4 class="filter-title">Type</h4>
+                            <div class="filter-options" id="type-filters">
+                                <!-- Populated dynamically -->
+                            </div>
+                        </div>
+
+                        <!-- Capability Filter -->
+                        <div class="filter-group">
+                            <h4 class="filter-title">Capabilities</h4>
+                            <div class="filter-options" id="capability-filters">
+                                <!-- Populated dynamically -->
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!-- Results -->
+                    <div class="results-area">
+                        <div class="results-header">
+                            <p class="results-count" id="tools-count">Loading...</p>
+                            <span class="version-badge" id="tools-total-badge">Loading...</span>
+                        </div>
+                        <div class="results-grid" id="tools-grid">
+                            <!-- Tools loaded dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <div class="nav-logo-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white"
+                                stroke-width="1.5">
+                                <!-- Bottom dataset container -->
+                                <ellipse cx="12" cy="19" rx="7" ry="2" />
+                                <path d="M5 16 L5 19 M19 16 L19 19" />
+                                <ellipse cx="12" cy="16" rx="7" ry="2" />
+                                <!-- Middle dataset container -->
+                                <path d="M5 11 L5 14 M19 11 L19 14" />
+                                <ellipse cx="12" cy="11" rx="7" ry="2" />
+                                <!-- Top dataset container -->
+                                <path d="M5 6 L5 9 M19 6 L19 9" />
+                                <ellipse cx="12" cy="6" rx="7" ry="2" />
+                            </svg>
+                        </div>
+                        <span>Battery Data Commons</span>
+                    </a>
+                    <p>A curated metadata commons making battery datasets discoverable, comparable, and citable.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="find-data.html">Find Data</a></li>
+                        <li><a href="tools.html">Tools</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="members.html">Contributors</a></li>
+                        <li><a href="contribute.html">Submit</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html#methodology">Methodology</a></li>
+                        <li><a href="about.html#citation">How to Cite</a></li>
+                        <li><a href="imprint.html">Imprint</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/shiyunliu-battery/BatteryDataCommons" target="_blank"
+                                rel="noopener">GitHub</a>
+                        </li>
+                        <li><a href="contribute.html">Submit Registry Entry</a></li>
+                        <li><a href="mailto:G.dosReis@ed.ac.uk">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Battery Data Commons. Licensed under CC-BY-4.0.</p>
+                <span class="version-badge">Catalogue v1.0</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/ui.js"></script>
+    <script>
+        let allTools = [];
+        let filteredTools = [];
+        let activeFilters = {
+            language: [],
+            type: [],
+            capability: []
+        };
+
+        async function loadTools() {
+            try {
+                const response = await fetch('./releases/tools.json');
+                allTools = await response.json();
+                filteredTools = [...allTools];
+                renderFilters();
+                renderTools();
+                updateCount();
+            } catch (error) {
+                console.error('Error loading tools:', error);
+                document.getElementById('tools-grid').innerHTML = '<div class="empty-state"><h3>Error loading tools</h3><p>Please try refreshing the page.</p></div>';
+            }
+        }
+
+        function renderFilters() {
+            // Language filters
+            const languages = {};
+            allTools.forEach(t => {
+                const lang = t.language || 'Unknown';
+                languages[lang] = (languages[lang] || 0) + 1;
+            });
+            const langContainer = document.getElementById('language-filters');
+            langContainer.innerHTML = Object.entries(languages)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 6)
+                .map(([lang, count]) => `
+                    <label class="filter-option">
+                        <input type="checkbox" value="${lang}" onchange="toggleFilter('language', '${lang}')">
+                        <span>${lang}</span>
+                        <span class="filter-count">${count}</span>
+                    </label>
+                `).join('');
+
+            // Type filters
+            const typeContainer = document.getElementById('type-filters');
+            const types = {};
+            allTools.forEach(t => {
+                const type = t.license_type || 'Unknown';
+                types[type] = (types[type] || 0) + 1;
+            });
+            typeContainer.innerHTML = Object.entries(types)
+                .sort((a, b) => b[1] - a[1])
+                .map(([type, count]) => `
+                <label class="filter-option">
+                    <input type="checkbox" value="${type}" onchange="toggleFilter('type', '${type}')">
+                    <span>${type}</span>
+                    <span class="filter-count">${count}</span>
+                </label>
+            `).join('');
+
+            // Capability filters
+            const capabilities = {
+                'data_processing': { label: 'Data Processing', count: 0 },
+                'data_analysis': { label: 'Data Analysis', count: 0 },
+                'physics_modelling': { label: 'Physics Modelling', count: 0 },
+                'experiment_modelling': { label: 'Experiment Modelling', count: 0 },
+                'prediction': { label: 'Prediction', count: 0 },
+                'simulation': { label: 'Simulation', count: 0 }
+            };
+            allTools.forEach(t => {
+                Object.keys(capabilities).forEach(cap => {
+                    if (t.capabilities && t.capabilities[cap]) capabilities[cap].count++;
+                });
+            });
+            const capContainer = document.getElementById('capability-filters');
+            capContainer.innerHTML = Object.entries(capabilities).map(([key, { label, count }]) => `
+                <label class="filter-option">
+                    <input type="checkbox" value="${key}" onchange="toggleFilter('capability', '${key}')">
+                    <span>${label}</span>
+                    <span class="filter-count">${count}</span>
+                </label>
+            `).join('');
+        }
+
+        function toggleFilter(type, value) {
+            const idx = activeFilters[type].indexOf(value);
+            if (idx === -1) {
+                activeFilters[type].push(value);
+            } else {
+                activeFilters[type].splice(idx, 1);
+            }
+            applyFilters();
+        }
+
+        function clearFilters() {
+            activeFilters = { language: [], type: [], capability: [] };
+            document.querySelectorAll('.filter-option input').forEach(cb => cb.checked = false);
+            document.getElementById('tools-search').value = '';
+            applyFilters();
+        }
+
+        function applyFilters() {
+            const search = document.getElementById('tools-search').value.toLowerCase();
+
+            filteredTools = allTools.filter(tool => {
+                // Search filter
+                if (search && !tool.name.toLowerCase().includes(search)) {
+                    return false;
+                }
+                // Language filter
+                if (activeFilters.language.length > 0 && !activeFilters.language.includes(tool.language)) {
+                    return false;
+                }
+                // Type filter
+                if (activeFilters.type.length > 0 && !activeFilters.type.includes(tool.license_type)) {
+                    return false;
+                }
+                // Capability filter
+                if (activeFilters.capability.length > 0) {
+                    const hasCapability = activeFilters.capability.some(cap => tool.capabilities && tool.capabilities[cap]);
+                    if (!hasCapability) return false;
+                }
+                return true;
+            });
+
+            renderTools();
+            updateCount();
+        }
+
+        function filterTools() {
+            applyFilters();
+        }
+
+        function updateCount() {
+            document.getElementById('tools-count').innerHTML =
+                `Showing <span>${filteredTools.length}</span> of ${allTools.length} tools`;
+            document.getElementById('tools-total-badge').textContent = `${allTools.length} Tools`;
+        }
+
+        function renderTools() {
+            const grid = document.getElementById('tools-grid');
+
+            if (filteredTools.length === 0) {
+                grid.innerHTML = '<div class="empty-state"><h3>No tools found</h3><p>Try adjusting your search or filters.</p></div>';
+                return;
+            }
+
+            grid.innerHTML = filteredTools.map(tool => {
+                const capabilities = tool.capabilities ? Object.entries(tool.capabilities)
+                    .filter(([_, v]) => v)
+                    .map(([k, _]) => formatCapability(k))
+                    .slice(0, 3) : [];
+
+                const badgeClass = tool.license_type === 'Public' ? 'badge-performance' : 'badge-safety';
+
+                return `
+                    <article class="card dataset-card">
+                        <div class="card-header">
+                            <div class="card-header-top">
+                                <h3 class="card-title">${tool.name}</h3>
+                                <span class="badge ${badgeClass}">${tool.license_type || 'Unknown'}</span>
+                            </div>
+                            <div class="card-meta">
+                                <span class="badge">${tool.language || 'Unknown'}</span>
+                                ${tool.maintained ? '<span class="badge badge-field">Maintained</span>' : ''}
+                                ${tool.documentation ? '<span class="badge badge-modelling">Docs</span>' : ''}
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-tags">
+                                ${capabilities.map(c => `<span class="tag">${c}</span>`).join('')}
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            ${tool.software_url ? `<a href="${tool.software_url}" class="btn btn-outline-gradient btn-sm" target="_blank" rel="noopener">View Tool →</a>` : '<span class="text-muted">No link available</span>'}
+                            ${tool.article_url ? `<a href="${tool.article_url}" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Paper</a>` : ''}
+                        </div>
+                    </article>
+                `;
+            }).join('');
+        }
+
+        function formatCapability(key) {
+            const names = {
+                'data_processing': 'Processing',
+                'data_analysis': 'Analysis',
+                'physics_modelling': 'Physics',
+                'experiment_modelling': 'Experiment',
+                'prediction': 'Prediction',
+                'simulation': 'Simulation'
+            };
+            return names[key] || key;
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', loadTools);
+    </script>
+</body>
+
+</html>

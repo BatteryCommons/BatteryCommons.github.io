@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('bdc-theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Battery Data Commons</title>
+    <meta name="description"
+        content="Learn about the Battery Data Commons, the methodology, governance, and how to cite the catalogue.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+                        <!-- Bottom dataset container -->
+                        <ellipse cx="12" cy="19" rx="7" ry="2" />
+                        <path d="M5 16 L5 19 M19 16 L19 19" />
+                        <ellipse cx="12" cy="16" rx="7" ry="2" />
+                        <!-- Middle dataset container -->
+                        <path d="M5 11 L5 14 M19 11 L19 14" />
+                        <ellipse cx="12" cy="11" rx="7" ry="2" />
+                        <!-- Top dataset container -->
+                        <path d="M5 6 L5 9 M19 6 L19 9" />
+                        <ellipse cx="12" cy="6" rx="7" ry="2" />
+                    </svg>
+                </div>
+                <span>Battery Data Commons</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="find-data.html">Find Data</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="members.html">Contributors</a></li>
+                <li><a href="contribute.html">Submit</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="https://github.com/shiyunliu-battery/BatteryDataCommons" target="_blank" rel="noopener"
+                    class="icon-link" aria-label="GitHub Repository">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="currentColor" stroke="none">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+                <button class="theme-toggle" onclick="BDCUI.toggleTheme()" aria-label="Toggle theme">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </button>
+                <button class="nav-toggle" onclick="BDCUI.toggleMobileNav()" aria-label="Toggle menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                        <line x1="3" y1="18" x2="21" y2="18" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="about-content">
+                    <h1>About Battery Data Commons</h1>
+                    <p class="text-xl" style="color: var(--color-text-secondary);">
+                        A curated, continuously updated metadata commons for battery datasets, designed as long-term
+                        research infrastructure.
+                    </p>
+
+                    <h2 id="purpose">Purpose & Scope</h2>
+                    <p>
+                        The Battery Data Commons serves as the public-facing interface of a curated battery dataset
+                        catalogue developed to support transparency, reuse, and comparability in battery research.
+                    </p>
+                    <p>
+                        <strong>The website is not a data repository.</strong> It does not host raw datasets, perform
+                        data processing, or enforce experimental standardisation. Instead, it provides a
+                        <strong>metadata commons</strong> that makes existing public battery datasets discoverable,
+                        comparable, and citable.
+                    </p>
+                    <p>
+                        The website is designed as long-term research infrastructure for the battery community,
+                        rather than as a static project webpage.
+                    </p>
+
+                    <h2 id="methodology">Curation Methodology</h2>
+                    <h3>Curation Over Aggregation</h3>
+                    <p>
+                        All publicly visible records have undergone human curation. No automatically harvested or
+                        user-submitted record appears on the website without manual review.
+                    </p>
+
+                    <h3>Metadata, Not Measurements</h3>
+                    <p>
+                        The Commons indexes structured metadata describing datasets, not the datasets themselves. All
+                        data access occurs via persistent external links (e.g., DOIs, repository landing pages).
+                    </p>
+
+                    <h3>Versioned Public State</h3>
+                    <p>
+                        The public website always reflects a released, versioned snapshot of the catalogue. Intermediate
+                        states (harvesting, staging, review) are never exposed publicly.
+                    </p>
+
+                    <h3>Provenance & Auditability</h3>
+                    <p>
+                        For every dataset record, the origin of the information (source repository, review process,
+                        update history) is explicitly traceable.
+                    </p>
+
+                    <h2 id="governance">Governance</h2>
+                    <h3>Dual Intake Model</h3>
+                    <p>The Commons supports two complementary intake channels:</p>
+                    <ul>
+                        <li><strong>Automated discovery:</strong> Periodic harvesting of candidate records from public
+                            APIs (Zenodo, DataCite, Crossref), used strictly for candidate identification</li>
+                        <li><strong>Community contribution:</strong> Users may propose new datasets, corrections, or
+                            updates via an issue-based submission mechanism</li>
+                    </ul>
+                    <p>Both channels feed into the same curation pipeline, and all records undergo human review before
+                        publication.</p>
+
+                    <h3>Canonicalisation & Release</h3>
+                    <p>
+                        Approved records are mapped to a unified metadata schema and added to the canonical catalogue.
+                        Public updates occur only through versioned releases, each representing an immutable snapshot.
+                    </p>
+
+                    <h2 id="citation">How to Cite</h2>
+                    <p>When citing the Battery Data Commons, please use:</p>
+                    <div class="card" style="background: var(--color-bg-secondary);">
+                        <code
+                            style="display: block; white-space: pre-wrap; font-size: var(--text-sm);">Battery Data Commons. (2026). Battery Data Commons: A curated metadata catalogue for battery datasets (Version 1.0). https://battery-data-commons.org</code>
+                    </div>
+                    <p class="mt-4">
+                        When citing a specific snapshot, include the version number. The initial release is
+                        <strong>v1.0</strong>.
+                    </p>
+
+                    <h2 id="categories">Dataset Categories</h2>
+                    <p>Datasets are organised into the following categories:</p>
+                    <ul>
+                        <li><strong>Performance:</strong> Capacity, rate capability, efficiency characterisation</li>
+                        <li><strong>Ageing:</strong> Cycle and calendar degradation studies</li>
+                        <li><strong>Field:</strong> Real-world operational data from deployed systems</li>
+                        <li><strong>Modelling:</strong> Validation data for simulation frameworks</li>
+                        <li><strong>Safety:</strong> Abuse testing, thermal runaway, failure modes</li>
+                        <li><strong>Diagnostics:</strong> EIS, pulse tests, state estimation data</li>
+                    </ul>
+
+                    <h2 id="contact">Contact</h2>
+                    <p>
+                        For questions, suggestions, or collaboration inquiries, please open a discussion on
+                        <a href="https://github.com/shiyunliu-battery/BatteryDataCommons/discussions">GitHub
+                            Discussions</a>.
+                    </p>
+                    <p>
+                        To submit a new dataset or correction, please visit the <a href="contribute.html">Submit</a>
+                        page.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <div class="nav-logo-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white"
+                                stroke-width="1.5">
+                                <!-- Bottom dataset container -->
+                                <ellipse cx="12" cy="19" rx="7" ry="2" />
+                                <path d="M5 16 L5 19 M19 16 L19 19" />
+                                <ellipse cx="12" cy="16" rx="7" ry="2" />
+                                <!-- Middle dataset container -->
+                                <path d="M5 11 L5 14 M19 11 L19 14" />
+                                <ellipse cx="12" cy="11" rx="7" ry="2" />
+                                <!-- Top dataset container -->
+                                <path d="M5 6 L5 9 M19 6 L19 9" />
+                                <ellipse cx="12" cy="6" rx="7" ry="2" />
+                            </svg>
+                        </div>
+                        <span>Battery Data Commons</span>
+                    </a>
+                    <p>A curated metadata commons making battery datasets discoverable, comparable, and citable.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="find-data.html">Find Data</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="members.html">Contributors</a></li>
+                        <li><a href="contribute.html">Submit</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#methodology">Methodology</a></li>
+                        <li><a href="#citation">How to Cite</a></li>
+                        <li><a href="imprint.html">Imprint</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/shiyunliu-battery/BatteryDataCommons" target="_blank"
+                                rel="noopener">GitHub</a>
+                        </li>
+                        <li><a href="contribute.html">Submit Registry Entry</a></li>
+                        <li><a href="mailto:contact@battery-data-commons.org">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Battery Data Commons. Licensed under CC-BY-4.0.</p>
+                <span class="version-badge">Catalogue v1.0</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+
+</html>
