@@ -242,7 +242,7 @@ function buildCorrectionIssueUrl(payload) {
     params.set('evidence', payload.evidence);
   }
 
-  return `https://github.com/shiyunliu-battery/BatteryDataCommons/issues/new?${params.toString()}`;
+  return `https://github.com/BatteryCommons/BatteryCommons.github.io/issues/new?${params.toString()}`;
 }
 
 function openCorrectionModal(entryId) {

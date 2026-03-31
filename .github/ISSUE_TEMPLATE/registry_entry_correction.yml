@@ -1,0 +1,38 @@
+name: Registry entry correction
+description: Report a correction for an existing Battery Data Commons registry entry.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to report incorrect metadata, broken links, missing publications, or other entry-level fixes.
+  - type: input
+    id: entry_id
+    attributes:
+      label: Registry entry ID
+      description: The entry identifier shown on the record page.
+      placeholder: bdc_000001
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Requested correction
+      description: Describe what should be changed and why.
+      placeholder: The DOI is incorrect, the source link is outdated, or the metadata should be updated.
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence
+      description: Add source links, citations, or other evidence that supports the requested correction.
+      placeholder: https://doi.org/... or a short explanation of the evidence
+      render: markdown
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I believe the information above is accurate to the best of my knowledge.
+          required: true

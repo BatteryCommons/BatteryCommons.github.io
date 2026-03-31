@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Battery Data Commons discussions
+    url: https://github.com/BatteryCommons/BatteryCommons.github.io/discussions
+    about: Ask questions about eligibility, scope, or the submission process before opening an issue.

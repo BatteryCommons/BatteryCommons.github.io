@@ -1,0 +1,97 @@
+name: Dataset submission
+description: Submit a new registry entry for review by the Battery Data Commons curators.
+title: "[Submission] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing to the Battery Data Commons.
+
+        Please complete the fields below so the curators have enough information to review the proposed entry.
+  - type: input
+    id: entry_title
+    attributes:
+      label: Registry entry title
+      description: Name of the dataset, record, or repository you want to add.
+      placeholder: Example Battery Dataset
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: Source URL
+      description: Public landing page, repository URL, archive page, or other stable access link.
+      placeholder: https://example.org/dataset
+    validations:
+      required: true
+  - type: input
+    id: doi
+    attributes:
+      label: DOI
+      description: DOI for the record, if one exists.
+      placeholder: 10.xxxx/xxxxx
+  - type: input
+    id: category
+    attributes:
+      label: Category
+      description: Primary category or categories for the record.
+      placeholder: performance, durability, field, manufacturing, modeling
+    validations:
+      required: true
+  - type: input
+    id: chemistry
+    attributes:
+      label: Chemistry
+      description: Main chemistry or chemistries covered by the record.
+      placeholder: LFP, NMC, graphite
+    validations:
+      required: true
+  - type: input
+    id: data_level
+    attributes:
+      label: Data level
+      description: Cell, module, pack, material, electrode, or other level.
+      placeholder: Cell
+    validations:
+      required: true
+  - type: input
+    id: file_format
+    attributes:
+      label: File format
+      description: Main file format or formats in the record.
+      placeholder: CSV, JSON, MAT
+  - type: input
+    id: temperature_range
+    attributes:
+      label: Temperature range
+      description: Temperature range reported by the source, if available.
+      placeholder: 25 C, -20 to 60 C
+  - type: input
+    id: license
+    attributes:
+      label: License or access terms
+      description: License name, terms of use, or a link to access conditions.
+      placeholder: CC BY 4.0
+    validations:
+      required: true
+  - type: textarea
+    id: publications
+    attributes:
+      label: Associated publications
+      description: List any relevant papers, preprints, reports, or citations.
+      placeholder: https://doi.org/...
+      render: markdown
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional context
+      description: Anything else that would help the reviewers evaluate the submission.
+      placeholder: Include measurement types, repository notes, or anything unusual about access.
+      render: markdown
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Submission checklist
+      options:
+        - label: I confirm this record is publicly accessible and contains battery-related measurements or metadata appropriate for the registry.
+          required: true
