@@ -4,7 +4,7 @@ This repository hosts the public web mirror for the Battery Data Commons registr
 
 Interface: [batterycommons.github.io/BatteryDataCommons](https://batterycommons.github.io/BatteryDataCommons/)
 
-Registry metadata: [datasets.jsonl](https://batterycommons.github.io/BatteryDataCommons/releases/datasets.jsonl)
+Registry metadata: [registrydata_v20260326.json](https://batterycommons.github.io/BatteryDataCommons/releases/datasets.jsonl)
 
 This public repository provides the website and released registry files for access and review.
 Internal curation workflows are maintained separately.
