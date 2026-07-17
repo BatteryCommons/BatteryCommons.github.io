@@ -1,16 +1,16 @@
 {
-  "total": 334,
+  "total": 364,
   "categories": {
-    "performance": 117,
+    "performance": 145,
     "CoinCase": 15,
-    "BatteryCell": 245,
+    "BatteryCell": 270,
     "20,000 EIS spectra": 1,
     "LithiumCobaltOxide": 24,
     "PrismaticCase": 16,
     "cells for portable electronic": 2,
     "PouchCase": 50,
     "144 cells": 1,
-    "R18650": 75,
+    "R18650": 80,
     "LithiumIronPhosphate": 38,
     "R26650": 7,
     "R32113": 2,
@@ -19,7 +19,7 @@
     "Unknown": 44,
     "LithiumPolymer": 1,
     "LithiumNickelCobaltAluminiumOxide": 27,
-    "R21700": 34,
+    "R21700": 36,
     "LithiumNickelManganeseCobaltOxide": 73,
     "BatteryCell + BatteryPack": 1,
     "Pack test": 1,
@@ -47,7 +47,7 @@
     "BatteryCell + BatteryModule + BatteryPack": 1,
     "retired pack": 1,
     "LithiumNickelManganeseCobaltOxide + LithiumCobaltOxide": 1,
-    "BatteryModule": 7,
+    "BatteryModule": 8,
     "retired cells": 2,
     "Optical method": 1,
     "Expansion data": 1,
@@ -77,7 +77,7 @@
     "R32700": 1,
     "LithiumNickelManganeseCobaltOxide, LithiumNickelCobaltAluminiumOxide, Unknown, Unknown, LithiumNickelCobaltAluminiumOxide, LithiumNickelCobaltAluminiumOxide": 1,
     "R18650, R21700, R18650": 1,
-    "durability": 132,
+    "durability": 152,
     "NMC523": 1,
     "20 000 EIS spectra": 1,
     "NMC+LCO": 1,
@@ -123,9 +123,9 @@
     "Retired cells": 1,
     "LMO-LNO": 1,
     "LithiumNickelManganeseCobaltOxide, LithiumIronPhosphate": 3,
-    "field": 31,
+    "field": 35,
     "Grid": 2,
-    "BatteryPack": 21,
+    "BatteryPack": 23,
     "NMC-LMO, NMC, NCA, LMO, LFP": 1,
     "Lead-acid, Lead-acid Gel, LMO, LFP, LTO": 1,
     "LMO, NMC, LFP": 1,
@@ -134,7 +134,7 @@
     "LFP, NMC, LMO, LCO, LP": 1,
     "NiMH": 1,
     "NMC (2 Volkswagen ID.3 Pro Performance, 5 CUPRA Born)": 1,
-    "modelling": 44,
+    "modelling": 51,
     "18650": 7,
     "Pouch": 3,
     "ZAFB": 2,
@@ -152,7 +152,7 @@
     "Vehicle": 1,
     "Current, voltage, Temperature,state of charge": 1,
     "EIS": 1,
-    "safety": 17,
+    "safety": 21,
     "Fire expansion": 1,
     "LithiumNickelManganeseCobaltOxide + LithiumIronPhosphate": 1,
     "R18650, PouchCase": 1,
@@ -182,14 +182,45 @@
     "Conductivity": 1,
     "Multiple formats": 1,
     "990 batteries": 1,
-    "Thermal runaway safety": 1,
+    "Thermal runaway safety": 2,
     "1,114 EVs": 1,
     "LFP 628Ah EIS": 1,
-    "LFP": 1,
+    "LFP": 6,
     "TDK Ceracharge Cycling EIS": 1,
-    "Battery life benchmark": 1,
+    "Battery life benchmark": 3,
     "50 cells": 1,
-    "NCA": 1
+    "NCA": 2,
+    "Stanford EV BMS Field Data": 1,
+    "PouchCell": 5,
+    "ISC Needle Penetration Pouch Cells": 1,
+    "3 cells": 2,
+    "NFM/NCM Battery Degradation": 1,
+    "NFM; NCM": 1,
+    "Zinc-Iodine Hybrid Flow Battery": 1,
+    "Hybrid Supercapacitor EIS Measurements": 1,
+    "78 cells": 1,
+    "Battery OCV Curve Diagnosis Data": 1,
+    "PrismaticCell": 2,
+    "Battery In-situ Sensing Data": 1,
+    "CoinCell": 3,
+    "Zinc-Air Battery Impedance Measurements": 1,
+    "TEMPEST LIC Cell Characterisation": 1,
+    "Bipolar perturbation Li-ion diagnostics": 1,
+    "4 cells": 1,
+    "27 cells": 1,
+    "Li-ion impedance and deformation": 1,
+    "Processed ZN and CALB": 1,
+    "LG Chem E71A ageing": 1,
+    "NMC": 1,
+    "96 cells": 1,
+    "1 cells": 1,
+    "77 cells": 1,
+    "Stack Pressure Li-ion Degradation Data": 1,
+    "Samsung 30T SOP Measurements": 1,
+    "15 cells": 1,
+    "Li-ion pouch EIS ultrasound strain": 1,
+    "9 cells": 1,
+    "18650 NCA Early Cycling XRD-CT": 1
   },
   "chemistries": {
     "LithiumCobaltOxide": 24,
@@ -270,19 +301,21 @@
     "LithiumIronPhosphate, NMC811, Unknown, NNP, LithiumNickelCobaltAluminiumOxide, LithiumNickelCobaltAluminiumOxide, Unknown, Unknown": 1,
     "Disassembly, Differential scanning\ncalorimetry, Laser flash analysis, Potentiostatic\nmethod, GITT,EIS": 1,
     "Conductivity": 1,
-    "LFP": 1,
-    "NCA": 1
+    "LFP": 6,
+    "NCA": 2,
+    "NFM; NCM": 1,
+    "NMC": 1
   },
   "formats": {
     "CoinCase": 15,
     "PrismaticCase": 16,
     "PouchCase": 50,
-    "R18650": 75,
+    "R18650": 80,
     "R26650": 7,
     "R32113": 2,
     "R40138": 1,
     "Unknown": 16,
-    "R21700": 34,
+    "R21700": 36,
     "18650/21700": 1,
     "PrismaticCase + PouchCase + CylindricalCase": 1,
     "R32135": 1,
@@ -319,7 +352,10 @@
     "CR2032": 1,
     "R18650, R18650, R18650, R18650, R18650, R18650, R21700, R21700": 1,
     "Physical modeling of electrothermal behavior": 1,
-    "Multiple formats": 1
+    "Multiple formats": 1,
+    "PouchCell": 5,
+    "PrismaticCell": 2,
+    "CoinCell": 3
   },
   "datasets": [
     {
@@ -1186,8 +1222,8 @@
     },
     {
       "id": "bdc_000054",
-      "title": "Varta CR2032 CoinCase LithiumManganeseOxide",
-      "keywords": "bdc_000054 varta cr2032 coincase lithiummanganeseoxide varta cr2032 coincase lithiummanganeseoxide unknown performance coincase batterycell lithiummanganeseoxide",
+      "title": "Discharging Time Series of a CR2032 Battery at 11 mA",
+      "keywords": "bdc_000054 discharging time series of a cr2032 battery at 11 ma varta cr2032 coincase lithiummanganeseoxide unknown performance coincase batterycell lithiummanganeseoxide",
       "categories": [
         "performance",
         "CoinCase",
@@ -5606,6 +5642,512 @@
       "case": "R21700",
       "manufacturer": "BAK Battery Co., Ltd.",
       "battery_model": "N21700-BAK-CG50"
+    },
+    {
+      "id": "bdc_000338",
+      "title": "Stanford EV BMS Field Data",
+      "keywords": "bdc_000338 stanford ev bms field data field durability performance batterypack stanford ev bms field data",
+      "categories": [
+        "field",
+        "durability",
+        "performance",
+        "BatteryPack",
+        "Stanford EV BMS Field Data"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": null,
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000339",
+      "title": "CAM Coatings SSB Benchmarking",
+      "keywords": "bdc_000339 cam coatings ssb benchmarking performance durability battery life benchmark",
+      "categories": [
+        "performance",
+        "durability",
+        "Battery life benchmark"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": null,
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000340",
+      "title": "ISC Needle Penetration Pouch Cells",
+      "keywords": "bdc_000340 isc needle penetration pouch cells pouchcell safety performance pouchcell batterycell isc needle penetration pouch cells",
+      "categories": [
+        "safety",
+        "performance",
+        "PouchCell",
+        "BatteryCell",
+        "ISC Needle Penetration Pouch Cells"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": "PouchCell",
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000341",
+      "title": "LG INR21700 M50LT Drive Cycles",
+      "keywords": "bdc_000341 lg inr21700 m50lt drive cycles lg inr 21700 m50lt r21700 performance modelling durability field r21700 batterycell 3 cells",
+      "categories": [
+        "performance",
+        "modelling",
+        "durability",
+        "field",
+        "R21700",
+        "BatteryCell",
+        "3 cells"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": "R21700",
+      "manufacturer": "LG",
+      "battery_model": "INR 21700 M50LT"
+    },
+    {
+      "id": "bdc_000342",
+      "title": "NFM/NCM Battery Degradation",
+      "keywords": "bdc_000342 nfm/ncm battery degradation nfm; ncm durability performance batterycell nfm/ncm battery degradation nfm; ncm",
+      "categories": [
+        "durability",
+        "performance",
+        "BatteryCell",
+        "NFM/NCM Battery Degradation",
+        "NFM; NCM"
+      ],
+      "positive_electrode": "NFM; NCM",
+      "negative_electrode": null,
+      "case": null,
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000343",
+      "title": "Zinc-Iodine Hybrid Flow Battery",
+      "keywords": "bdc_000343 zinc-iodine hybrid flow battery zinc durability performance batterycell zinc-iodine hybrid flow battery",
+      "categories": [
+        "durability",
+        "performance",
+        "BatteryCell",
+        "Zinc-Iodine Hybrid Flow Battery"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": "Zinc",
+      "case": null,
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000344",
+      "title": "Hybrid Supercapacitor EIS Measurements",
+      "keywords": "bdc_000344 hybrid supercapacitor eis measurements performance durability batterycell hybrid supercapacitor eis measurements",
+      "categories": [
+        "performance",
+        "durability",
+        "BatteryCell",
+        "Hybrid Supercapacitor EIS Measurements"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": null,
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000345",
+      "title": "Parallel-Cell Li-ion Module Characterization",
+      "keywords": "bdc_000345 parallel-cell li-ion module characterization durability performance batterymodule 78 cells",
+      "categories": [
+        "durability",
+        "performance",
+        "BatteryModule",
+        "78 cells"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": null,
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000346",
+      "title": "Battery OCV Curve Diagnosis Data",
+      "keywords": "bdc_000346 battery ocv curve diagnosis data modelling performance durability batterycell battery ocv curve diagnosis data",
+      "categories": [
+        "modelling",
+        "performance",
+        "durability",
+        "BatteryCell",
+        "Battery OCV Curve Diagnosis Data"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": null,
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000347",
+      "title": "SIT 50 Ah LiFePO4 Prismatic",
+      "keywords": "bdc_000347 sit 50 ah lifepo4 prismatic prismaticcell lfp durability performance prismaticcell batterycell battery life benchmark lfp",
+      "categories": [
+        "durability",
+        "performance",
+        "PrismaticCell",
+        "BatteryCell",
+        "Battery life benchmark",
+        "LFP"
+      ],
+      "positive_electrode": "LFP",
+      "negative_electrode": null,
+      "case": "PrismaticCell",
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000348",
+      "title": "Battery In-situ Sensing Data",
+      "keywords": "bdc_000348 battery in-situ sensing data silicon performance modelling batterycell battery in-situ sensing data",
+      "categories": [
+        "performance",
+        "modelling",
+        "BatteryCell",
+        "Battery In-situ Sensing Data"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": "Silicon",
+      "case": null,
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000349",
+      "title": "Zinc-Air Battery Impedance Measurements",
+      "keywords": "bdc_000349 zinc-air battery impedance measurements pr48 coincell zinc performance coincell batterycell zinc-air battery impedance measurements",
+      "categories": [
+        "performance",
+        "CoinCell",
+        "BatteryCell",
+        "Zinc-Air Battery Impedance Measurements"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": "Zinc",
+      "case": "CoinCell",
+      "manufacturer": null,
+      "battery_model": "PR48"
+    },
+    {
+      "id": "bdc_000350",
+      "title": "TEMPEST LIC Cell Characterisation",
+      "keywords": "bdc_000350 tempest lic cell characterisation prismaticcell lfp performance prismaticcell batterycell tempest lic cell characterisation lfp",
+      "categories": [
+        "performance",
+        "PrismaticCell",
+        "BatteryCell",
+        "TEMPEST LIC Cell Characterisation",
+        "LFP"
+      ],
+      "positive_electrode": "LFP",
+      "negative_electrode": null,
+      "case": "PrismaticCell",
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000351",
+      "title": "LFP 18650 Cycling 1C-2.75C",
+      "keywords": "bdc_000351 lfp 18650 cycling 1c-2.75c r18650 lfp durability performance modelling field r18650 batterycell 3 cells lfp",
+      "categories": [
+        "durability",
+        "performance",
+        "modelling",
+        "field",
+        "R18650",
+        "BatteryCell",
+        "3 cells",
+        "LFP"
+      ],
+      "positive_electrode": "LFP",
+      "negative_electrode": null,
+      "case": "R18650",
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000352",
+      "title": "Bipolar perturbation Li-ion diagnostics",
+      "keywords": "bdc_000352 bipolar perturbation li-ion diagnostics durability modelling performance batterycell bipolar perturbation li-ion diagnostics",
+      "categories": [
+        "durability",
+        "modelling",
+        "performance",
+        "BatteryCell",
+        "Bipolar perturbation Li-ion diagnostics"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": null,
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000353",
+      "title": "Battery swelling constraint experiments",
+      "keywords": "bdc_000353 battery swelling constraint experiments performance batterycell 4 cells",
+      "categories": [
+        "performance",
+        "BatteryCell",
+        "4 cells"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": null,
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000354",
+      "title": "Snow Suppression Thermal Runaway",
+      "keywords": "bdc_000354 snow suppression thermal runaway safety thermal runaway safety",
+      "categories": [
+        "safety",
+        "Thermal runaway safety"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": null,
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000355",
+      "title": "18650/26650 LFP Overheating Tests",
+      "keywords": "bdc_000355 18650/26650 lfp overheating tests r18650 lfp safety performance r18650 batterycell 27 cells lfp",
+      "categories": [
+        "safety",
+        "performance",
+        "R18650",
+        "BatteryCell",
+        "27 cells",
+        "LFP"
+      ],
+      "positive_electrode": "LFP",
+      "negative_electrode": null,
+      "case": "R18650",
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000356",
+      "title": "Li-ion impedance and deformation",
+      "keywords": "bdc_000356 li-ion impedance and deformation pouchcell performance pouchcell batterycell li-ion impedance and deformation",
+      "categories": [
+        "performance",
+        "PouchCell",
+        "BatteryCell",
+        "Li-ion impedance and deformation"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": "PouchCell",
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000357",
+      "title": "Processed ZN and CALB",
+      "keywords": "bdc_000357 processed zn and calb calb coincell durability coincell batterycell processed zn and calb",
+      "categories": [
+        "durability",
+        "CoinCell",
+        "BatteryCell",
+        "Processed ZN and CALB"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": "CoinCell",
+      "manufacturer": "CALB",
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000358",
+      "title": "LG Chem E71A ageing",
+      "keywords": "bdc_000358 lg chem e71a ageing lg chem e71a pouchcell nmc durability performance pouchcell batterycell lg chem e71a ageing nmc",
+      "categories": [
+        "durability",
+        "performance",
+        "PouchCell",
+        "BatteryCell",
+        "LG Chem E71A ageing",
+        "NMC"
+      ],
+      "positive_electrode": "NMC",
+      "negative_electrode": null,
+      "case": "PouchCell",
+      "manufacturer": "LG Chem",
+      "battery_model": "E71A"
+    },
+    {
+      "id": "bdc_000359",
+      "title": "SINTEF Half-Cell OCV Protocols",
+      "keywords": "bdc_000359 sintef half-cell ocv protocols coincell performance modelling durability coincell batterycell 96 cells",
+      "categories": [
+        "performance",
+        "modelling",
+        "durability",
+        "CoinCell",
+        "BatteryCell",
+        "96 cells"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": "CoinCell",
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000360",
+      "title": "LG MJ1 pulsed charging",
+      "keywords": "bdc_000360 lg mj1 pulsed charging lg mj1 durability performance batterycell 1 cells",
+      "categories": [
+        "durability",
+        "performance",
+        "BatteryCell",
+        "1 cells"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": null,
+      "manufacturer": "LG",
+      "battery_model": "MJ1"
+    },
+    {
+      "id": "bdc_000361",
+      "title": "Samsung INR21700-50E SoH Experiments",
+      "keywords": "bdc_000361 samsung inr21700-50e soh experiments samsung inr21700-50e r21700 durability performance r21700 batterycell 77 cells",
+      "categories": [
+        "durability",
+        "performance",
+        "R21700",
+        "BatteryCell",
+        "77 cells"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": "R21700",
+      "manufacturer": "Samsung",
+      "battery_model": "INR21700-50E"
+    },
+    {
+      "id": "bdc_000362",
+      "title": "Stack Pressure Li-ion Degradation Data",
+      "keywords": "bdc_000362 stack pressure li-ion degradation data pouchcell graphite durability performance pouchcell batterycell stack pressure li-ion degradation data",
+      "categories": [
+        "durability",
+        "performance",
+        "PouchCell",
+        "BatteryCell",
+        "Stack Pressure Li-ion Degradation Data"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": "Graphite",
+      "case": "PouchCell",
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000363",
+      "title": "Samsung 30T SOP Measurements",
+      "keywords": "bdc_000363 samsung 30t sop measurements a123 performance durability field batterycell samsung 30t sop measurements",
+      "categories": [
+        "performance",
+        "durability",
+        "field",
+        "BatteryCell",
+        "Samsung 30T SOP Measurements"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": null,
+      "manufacturer": null,
+      "battery_model": "A123"
+    },
+    {
+      "id": "bdc_000364",
+      "title": "LFP 18650 Cyclic Aging DoE",
+      "keywords": "bdc_000364 lfp 18650 cyclic aging doe r18650 lfp durability performance r18650 batterycell 15 cells lfp",
+      "categories": [
+        "durability",
+        "performance",
+        "R18650",
+        "BatteryCell",
+        "15 cells",
+        "LFP"
+      ],
+      "positive_electrode": "LFP",
+      "negative_electrode": null,
+      "case": "R18650",
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000365",
+      "title": "Li-ion pouch EIS ultrasound strain",
+      "keywords": "bdc_000365 li-ion pouch eis ultrasound strain pouchcell performance pouchcell batterycell li-ion pouch eis ultrasound strain",
+      "categories": [
+        "performance",
+        "PouchCell",
+        "BatteryCell",
+        "Li-ion pouch EIS ultrasound strain"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": "PouchCell",
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000366",
+      "title": "Cooling Comparison for 18650 Cells",
+      "keywords": "bdc_000366 cooling comparison for 18650 cells r18650 modelling safety durability performance r18650 batterypack 9 cells",
+      "categories": [
+        "modelling",
+        "safety",
+        "durability",
+        "performance",
+        "R18650",
+        "BatteryPack",
+        "9 cells"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": "R18650",
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000367",
+      "title": "18650 NCA Early Cycling XRD-CT",
+      "keywords": "bdc_000367 18650 nca early cycling xrd-ct r18650 nca performance r18650 batterycell 18650 nca early cycling xrd-ct nca",
+      "categories": [
+        "performance",
+        "R18650",
+        "BatteryCell",
+        "18650 NCA Early Cycling XRD-CT",
+        "NCA"
+      ],
+      "positive_electrode": "NCA",
+      "negative_electrode": null,
+      "case": "R18650",
+      "manufacturer": null,
+      "battery_model": null
     }
   ]
 }

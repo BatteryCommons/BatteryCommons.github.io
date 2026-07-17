@@ -1,13 +1,13 @@
 {
-  "release_date": "2026-03-26",
-  "dataset_count": 334,
-  "tool_count": 60,
-  "active_record_count": 394,
+  "release_date": "2026-07-17",
+  "dataset_count": 364,
+  "tool_count": 61,
+  "active_record_count": 425,
   "category_counts": {
-    "performance": 117,
-    "durability": 132,
-    "field": 31,
-    "modelling": 44,
-    "safety": 17
+    "performance": 145,
+    "durability": 152,
+    "field": 35,
+    "modelling": 51,
+    "safety": 21
   }
 }

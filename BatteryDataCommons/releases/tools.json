@@ -200,6 +200,26 @@
     "year": ""
   },
   {
+    "id": "bdc_sw_061",
+    "name": "Battery Data Standard",
+    "language": "Python",
+    "license_type": "Open source",
+    "capabilities": {
+      "data_processing": true,
+      "data_analysis": false,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": true,
+    "license": "https://opensource.org/license/mit",
+    "software_url": "https://bds.energy/",
+    "article_url": null,
+    "year": "2026"
+  },
+  {
     "id": "bdc_sw_015",
     "name": "battery-data-toolkit",
     "language": "Python",

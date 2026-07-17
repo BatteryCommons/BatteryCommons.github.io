@@ -339,7 +339,37 @@ bdc:catalog a dcat:Catalog ;
         <http://batterydata.commons/dataset/bdc_000334>,
         <http://batterydata.commons/dataset/bdc_000335>,
         <http://batterydata.commons/dataset/bdc_000336>,
-        <http://batterydata.commons/dataset/bdc_000337> .
+        <http://batterydata.commons/dataset/bdc_000337>,
+        <http://batterydata.commons/dataset/bdc_000338>,
+        <http://batterydata.commons/dataset/bdc_000339>,
+        <http://batterydata.commons/dataset/bdc_000340>,
+        <http://batterydata.commons/dataset/bdc_000341>,
+        <http://batterydata.commons/dataset/bdc_000342>,
+        <http://batterydata.commons/dataset/bdc_000343>,
+        <http://batterydata.commons/dataset/bdc_000344>,
+        <http://batterydata.commons/dataset/bdc_000345>,
+        <http://batterydata.commons/dataset/bdc_000346>,
+        <http://batterydata.commons/dataset/bdc_000347>,
+        <http://batterydata.commons/dataset/bdc_000348>,
+        <http://batterydata.commons/dataset/bdc_000349>,
+        <http://batterydata.commons/dataset/bdc_000350>,
+        <http://batterydata.commons/dataset/bdc_000351>,
+        <http://batterydata.commons/dataset/bdc_000352>,
+        <http://batterydata.commons/dataset/bdc_000353>,
+        <http://batterydata.commons/dataset/bdc_000354>,
+        <http://batterydata.commons/dataset/bdc_000355>,
+        <http://batterydata.commons/dataset/bdc_000356>,
+        <http://batterydata.commons/dataset/bdc_000357>,
+        <http://batterydata.commons/dataset/bdc_000358>,
+        <http://batterydata.commons/dataset/bdc_000359>,
+        <http://batterydata.commons/dataset/bdc_000360>,
+        <http://batterydata.commons/dataset/bdc_000361>,
+        <http://batterydata.commons/dataset/bdc_000362>,
+        <http://batterydata.commons/dataset/bdc_000363>,
+        <http://batterydata.commons/dataset/bdc_000364>,
+        <http://batterydata.commons/dataset/bdc_000365>,
+        <http://batterydata.commons/dataset/bdc_000366>,
+        <http://batterydata.commons/dataset/bdc_000367> .
 
 <http://batterydata.commons/dataset/bdc_000001> a dcat:Dataset ;
     bdc:negativeElectrode "Carbon" ;
@@ -1296,7 +1326,7 @@ bdc:catalog a dcat:Catalog ;
     dcterms:identifier "bdc_000054" ;
     dcterms:issued "2025" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:title "Varta CR2032 CoinCase LithiumManganeseOxide"@en ;
+    dcterms:title "Discharging Time Series of a CR2032 Battery at 11 mA"@en ;
     schema1:manufacturer "Varta" ;
     schema1:model "CR2032" ;
     schema1:productID "CoinCase" ;
@@ -6023,4 +6053,421 @@ method, GITT,EIS""",
         "performance" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.18772167>,
         <https://zenodo.org/records/18772167> .
+
+<http://batterydata.commons/dataset/bdc_000338> a dcat:Dataset ;
+    dcterms:identifier "bdc_000338" ;
+    dcterms:issued "2026" ;
+    dcterms:title "Stanford EV BMS Field Data"@en ;
+    dcat:keyword "BatteryPack",
+        "Stanford EV BMS Field Data",
+        "durability",
+        "field",
+        "performance" ;
+    dcat:landingPage <https://doi.org/10.25740/yx490wc6642> .
+
+<http://batterydata.commons/dataset/bdc_000339> a dcat:Dataset ;
+    dcterms:identifier "bdc_000339" ;
+    dcterms:issued "2026" ;
+    dcterms:title "CAM Coatings SSB Benchmarking"@en ;
+    dcat:distribution [ a dcat:Distribution ;
+            dcat:downloadURL <https://zenodo.org/api/records/18775496/files-archive> ] ;
+    dcat:keyword "Battery life benchmark",
+        "durability",
+        "performance" ;
+    dcat:landingPage <https://zenodo.org/doi/10.5281/zenodo.18775495> .
+
+<http://batterydata.commons/dataset/bdc_000340> a dcat:Dataset ;
+    dcterms:identifier "bdc_000340" ;
+    dcterms:issued "2025" ;
+    dcterms:title "ISC Needle Penetration Pouch Cells"@en ;
+    schema1:productID "PouchCell" ;
+    dcat:distribution [ a dcat:Distribution ;
+            dcat:downloadURL <https://zenodo.org/records/15852707/files/data.zip?download=1> ] ;
+    dcat:keyword "BatteryCell",
+        "ISC Needle Penetration Pouch Cells",
+        "PouchCell",
+        "performance",
+        "safety" ;
+    dcat:landingPage <https://zenodo.org/doi/10.5281/zenodo.15852707> .
+
+<http://batterydata.commons/dataset/bdc_000341> a dcat:Dataset ;
+    dcterms:description "3 cells"@en ;
+    dcterms:identifier "bdc_000341" ;
+    dcterms:issued "2024" ;
+    dcterms:title "LG INR21700 M50LT Drive Cycles"@en ;
+    schema1:manufacturer "LG" ;
+    schema1:model "INR 21700 M50LT" ;
+    schema1:productID "R21700" ;
+    dcat:keyword "3 cells",
+        "BatteryCell",
+        "R21700",
+        "durability",
+        "field",
+        "modelling",
+        "performance" ;
+    dcat:landingPage <https://doi.org/10.14279/depositonce-21133> .
+
+<http://batterydata.commons/dataset/bdc_000342> a dcat:Dataset ;
+    bdc:positiveElectrode "NFM; NCM" ;
+    dcterms:identifier "bdc_000342" ;
+    dcterms:issued "2026" ;
+    dcterms:title "NFM/NCM Battery Degradation"@en ;
+    dcat:distribution [ a dcat:Distribution ;
+            dcat:downloadURL <https://data.mendeley.com/public-api/zip/4mztcdc4gt/download/1> ] ;
+    dcat:keyword "BatteryCell",
+        "NFM/NCM Battery Degradation",
+        "NFM; NCM",
+        "durability",
+        "performance" ;
+    dcat:landingPage <https://data.mendeley.com/datasets/4mztcdc4gt> .
+
+<http://batterydata.commons/dataset/bdc_000343> a dcat:Dataset ;
+    bdc:negativeElectrode "Zinc" ;
+    dcterms:identifier "bdc_000343" ;
+    dcterms:issued "2025" ;
+    dcterms:title "Zinc-Iodine Hybrid Flow Battery"@en ;
+    dcat:keyword "BatteryCell",
+        "Zinc-Iodine Hybrid Flow Battery",
+        "durability",
+        "performance" ;
+    dcat:landingPage <https://zenodo.org/doi/10.5281/zenodo.17175636> .
+
+<http://batterydata.commons/dataset/bdc_000344> a dcat:Dataset ;
+    dcterms:identifier "bdc_000344" ;
+    dcterms:issued "2026" ;
+    dcterms:title "Hybrid Supercapacitor EIS Measurements"@en ;
+    dcat:keyword "BatteryCell",
+        "Hybrid Supercapacitor EIS Measurements",
+        "durability",
+        "performance" ;
+    dcat:landingPage <https://doi.org/10.21227/1bzx-1c48> .
+
+<http://batterydata.commons/dataset/bdc_000345> a dcat:Dataset ;
+    dcterms:description "78 cells"@en ;
+    dcterms:identifier "bdc_000345" ;
+    dcterms:issued "2026" ;
+    dcterms:title "Parallel-Cell Li-ion Module Characterization"@en ;
+    dcat:distribution [ a dcat:Distribution ;
+            dcat:downloadURL <https://data.mendeley.com/public-api/zip/ssrgfmb8vw/download/1> ] ;
+    dcat:keyword "78 cells",
+        "BatteryModule",
+        "durability",
+        "performance" ;
+    dcat:landingPage <https://doi.org/10.17632/ssrgfmb8vw.1> .
+
+<http://batterydata.commons/dataset/bdc_000346> a dcat:Dataset ;
+    dcterms:identifier "bdc_000346" ;
+    dcterms:issued "2026" ;
+    dcterms:title "Battery OCV Curve Diagnosis Data"@en ;
+    dcat:distribution [ a dcat:Distribution ;
+            dcat:downloadURL <https://zenodo.org/api/records/17227538/files-archive> ] ;
+    dcat:keyword "Battery OCV Curve Diagnosis Data",
+        "BatteryCell",
+        "durability",
+        "modelling",
+        "performance" ;
+    dcat:landingPage <https://doi.org/10.5281/zenodo.17227538>,
+        <https://zenodo.org/records/17227538> .
+
+<http://batterydata.commons/dataset/bdc_000347> a dcat:Dataset ;
+    bdc:positiveElectrode "LFP" ;
+    dcterms:identifier "bdc_000347" ;
+    dcterms:issued "2026" ;
+    dcterms:title "SIT 50 Ah LiFePO4 Prismatic"@en ;
+    schema1:productID "PrismaticCell" ;
+    dcat:keyword "Battery life benchmark",
+        "BatteryCell",
+        "LFP",
+        "PrismaticCell",
+        "durability",
+        "performance" ;
+    dcat:landingPage <https://doi.org/10.57760/sciencedb.34754> .
+
+<http://batterydata.commons/dataset/bdc_000348> a dcat:Dataset ;
+    bdc:negativeElectrode "Silicon" ;
+    dcterms:identifier "bdc_000348" ;
+    dcterms:issued "2026" ;
+    dcterms:title "Battery In-situ Sensing Data"@en ;
+    dcat:distribution [ a dcat:Distribution ;
+            dcat:downloadURL <https://data.mendeley.com/public-api/zip/ft6rtwt8vm/download/1> ] ;
+    dcat:keyword "Battery In-situ Sensing Data",
+        "BatteryCell",
+        "modelling",
+        "performance" ;
+    dcat:landingPage <https://data.mendeley.com/datasets/ft6rtwt8vm> .
+
+<http://batterydata.commons/dataset/bdc_000349> a dcat:Dataset ;
+    bdc:negativeElectrode "Zinc" ;
+    dcterms:identifier "bdc_000349" ;
+    dcterms:issued "2025" ;
+    dcterms:title "Zinc-Air Battery Impedance Measurements"@en ;
+    schema1:model "PR48" ;
+    schema1:productID "CoinCell" ;
+    dcat:keyword "BatteryCell",
+        "CoinCell",
+        "Zinc-Air Battery Impedance Measurements",
+        "performance" ;
+    dcat:landingPage <https://doi.org/10.14279/depositonce-24344> .
+
+<http://batterydata.commons/dataset/bdc_000350> a dcat:Dataset ;
+    bdc:positiveElectrode "LFP" ;
+    dcterms:identifier "bdc_000350" ;
+    dcterms:issued "2026" ;
+    dcterms:title "TEMPEST LIC Cell Characterisation"@en ;
+    schema1:productID "PrismaticCell" ;
+    dcat:distribution [ a dcat:Distribution ;
+            dcat:downloadURL <https://zenodo.org/api/records/19632939/files-archive> ] ;
+    dcat:keyword "BatteryCell",
+        "LFP",
+        "PrismaticCell",
+        "TEMPEST LIC Cell Characterisation",
+        "performance" ;
+    dcat:landingPage <https://zenodo.org/records/19632939> .
+
+<http://batterydata.commons/dataset/bdc_000351> a dcat:Dataset ;
+    bdc:positiveElectrode "LFP" ;
+    dcterms:description "3 cells"@en ;
+    dcterms:identifier "bdc_000351" ;
+    dcterms:issued "2026" ;
+    dcterms:title "LFP 18650 Cycling 1C-2.75C"@en ;
+    schema1:productID "R18650" ;
+    dcat:distribution [ a dcat:Distribution ;
+            dcat:downloadURL <https://zenodo.org/api/records/19380245/files-archive> ] ;
+    dcat:keyword "3 cells",
+        "BatteryCell",
+        "LFP",
+        "R18650",
+        "durability",
+        "field",
+        "modelling",
+        "performance" ;
+    dcat:landingPage <https://zenodo.org/records/19380245> .
+
+<http://batterydata.commons/dataset/bdc_000352> a dcat:Dataset ;
+    dcterms:identifier "bdc_000352" ;
+    dcterms:issued "2026" ;
+    dcterms:title "Bipolar perturbation Li-ion diagnostics"@en ;
+    dcat:distribution [ a dcat:Distribution ;
+            dcat:downloadURL <https://zenodo.org/records/19163863/files/Data_Process_Output.zip?download=1> ] ;
+    dcat:keyword "BatteryCell",
+        "Bipolar perturbation Li-ion diagnostics",
+        "durability",
+        "modelling",
+        "performance" ;
+    dcat:landingPage <https://zenodo.org/records/19163863> .
+
+<http://batterydata.commons/dataset/bdc_000353> a dcat:Dataset ;
+    dcterms:description "4 cells"@en ;
+    dcterms:identifier "bdc_000353" ;
+    dcterms:issued "2026" ;
+    dcterms:title "Battery swelling constraint experiments"@en ;
+    dcat:distribution [ a dcat:Distribution ;
+            dcat:downloadURL <https://zenodo.org/api/records/18315429/files-archive> ] ;
+    dcat:keyword "4 cells",
+        "BatteryCell",
+        "performance" ;
+    dcat:landingPage <https://zenodo.org/doi/10.5281/zenodo.18315428> .
+
+<http://batterydata.commons/dataset/bdc_000354> a dcat:Dataset ;
+    dcterms:identifier "bdc_000354" ;
+    dcterms:issued "2026" ;
+    dcterms:title "Snow Suppression Thermal Runaway"@en ;
+    dcat:keyword "Thermal runaway safety",
+        "safety" ;
+    dcat:landingPage <https://dataverse.harvard.edu/citation?persistentId=doi:10.7910/DVN/RNXD5T> .
+
+<http://batterydata.commons/dataset/bdc_000355> a dcat:Dataset ;
+    bdc:positiveElectrode "LFP" ;
+    dcterms:description "27 cells"@en ;
+    dcterms:identifier "bdc_000355" ;
+    dcterms:issued "2025" ;
+    dcterms:title "18650/26650 LFP Overheating Tests"@en ;
+    schema1:productID "R18650" ;
+    dcat:keyword "27 cells",
+        "BatteryCell",
+        "LFP",
+        "R18650",
+        "performance",
+        "safety" ;
+    dcat:landingPage <https://doi.org/10.15131/shef.data.29836850> .
+
+<http://batterydata.commons/dataset/bdc_000356> a dcat:Dataset ;
+    dcterms:identifier "bdc_000356" ;
+    dcterms:issued "2025" ;
+    dcterms:title "Li-ion impedance and deformation"@en ;
+    schema1:productID "PouchCell" ;
+    dcat:distribution [ a dcat:Distribution ;
+            dcat:downloadURL <https://zenodo.org/api/records/17349086/files-archive> ] ;
+    dcat:keyword "BatteryCell",
+        "Li-ion impedance and deformation",
+        "PouchCell",
+        "performance" ;
+    dcat:landingPage <https://zenodo.org/doi/10.5281/zenodo.17349086> .
+
+<http://batterydata.commons/dataset/bdc_000357> a dcat:Dataset ;
+    dcterms:identifier "bdc_000357" ;
+    dcterms:issued "2026" ;
+    dcterms:title "Processed ZN and CALB"@en ;
+    schema1:manufacturer "CALB" ;
+    schema1:productID "CoinCell" ;
+    dcat:distribution [ a dcat:Distribution ;
+            dcat:downloadURL <https://figshare.com/ndownloader/articles/31148413/versions/5> ] ;
+    dcat:keyword "BatteryCell",
+        "CoinCell",
+        "Processed ZN and CALB",
+        "durability" ;
+    dcat:landingPage <https://figshare.com/articles/dataset/Processed_ZN_CALB_datasets/31148413> .
+
+<http://batterydata.commons/dataset/bdc_000358> a dcat:Dataset ;
+    bdc:positiveElectrode "NMC" ;
+    dcterms:identifier "bdc_000358" ;
+    dcterms:issued "2026" ;
+    dcterms:title "LG Chem E71A ageing"@en ;
+    schema1:manufacturer "LG Chem" ;
+    schema1:model "E71A" ;
+    schema1:productID "PouchCell" ;
+    dcat:distribution [ a dcat:Distribution ;
+            dcat:downloadURL <https://zenodo.org/api/records/19387650/files-archive> ] ;
+    dcat:keyword "BatteryCell",
+        "LG Chem E71A ageing",
+        "NMC",
+        "PouchCell",
+        "durability",
+        "performance" ;
+    dcat:landingPage <https://zenodo.org/records/19387650> .
+
+<http://batterydata.commons/dataset/bdc_000359> a dcat:Dataset ;
+    dcterms:description "96 cells"@en ;
+    dcterms:identifier "bdc_000359" ;
+    dcterms:issued "2026" ;
+    dcterms:title "SINTEF Half-Cell OCV Protocols"@en ;
+    schema1:productID "CoinCell" ;
+    dcat:distribution [ a dcat:Distribution ;
+            dcat:downloadURL <https://zenodo.org/api/records/19107295/files-archive> ] ;
+    dcat:keyword "96 cells",
+        "BatteryCell",
+        "CoinCell",
+        "durability",
+        "modelling",
+        "performance" ;
+    dcat:landingPage <https://zenodo.org/records/19107295> .
+
+<http://batterydata.commons/dataset/bdc_000360> a dcat:Dataset ;
+    dcterms:description "1 cells"@en ;
+    dcterms:identifier "bdc_000360" ;
+    dcterms:issued "2026" ;
+    dcterms:title "LG MJ1 pulsed charging"@en ;
+    schema1:manufacturer "LG" ;
+    schema1:model "MJ1" ;
+    dcat:distribution [ a dcat:Distribution ;
+            dcat:downloadURL <https://zenodo.org/api/records/19468464/files/low_frequency_testing.zip/content> ] ;
+    dcat:keyword "1 cells",
+        "BatteryCell",
+        "durability",
+        "performance" ;
+    dcat:landingPage <https://zenodo.org/records/19468464> .
+
+<http://batterydata.commons/dataset/bdc_000361> a dcat:Dataset ;
+    dcterms:description "77 cells"@en ;
+    dcterms:identifier "bdc_000361" ;
+    dcterms:issued "2025" ;
+    dcterms:title "Samsung INR21700-50E SoH Experiments"@en ;
+    schema1:manufacturer "Samsung" ;
+    schema1:model "INR21700-50E" ;
+    schema1:productID "R21700" ;
+    dcat:distribution [ a dcat:Distribution ;
+            dcat:downloadURL <https://edatos.consorciomadrono.es/dataset.xhtml?persistentId=doi:10.21950/MDCJIZ#> ] ;
+    dcat:keyword "77 cells",
+        "BatteryCell",
+        "R21700",
+        "durability",
+        "performance" ;
+    dcat:landingPage <https://doi.org/10.21950/MDCJIZ> .
+
+<http://batterydata.commons/dataset/bdc_000362> a dcat:Dataset ;
+    bdc:negativeElectrode "Graphite" ;
+    dcterms:identifier "bdc_000362" ;
+    dcterms:issued "2026" ;
+    dcterms:title "Stack Pressure Li-ion Degradation Data"@en ;
+    schema1:productID "PouchCell" ;
+    dcat:distribution [ a dcat:Distribution ;
+            dcat:downloadURL <https://www.repository.cam.ac.uk/bitstreams/9ae4f0d7-2d5d-4e6d-adfe-38068abe9aa8/download> ] ;
+    dcat:keyword "BatteryCell",
+        "PouchCell",
+        "Stack Pressure Li-ion Degradation Data",
+        "durability",
+        "performance" ;
+    dcat:landingPage <https://doi.org/10.17863/CAM.129108> .
+
+<http://batterydata.commons/dataset/bdc_000363> a dcat:Dataset ;
+    dcterms:identifier "bdc_000363" ;
+    dcterms:issued "2026" ;
+    dcterms:title "Samsung 30T SOP Measurements"@en ;
+    schema1:model "A123" ;
+    dcat:distribution [ a dcat:Distribution ;
+            dcat:downloadURL <https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/RPCWBY#> ] ;
+    dcat:keyword "BatteryCell",
+        "Samsung 30T SOP Measurements",
+        "durability",
+        "field",
+        "performance" ;
+    dcat:landingPage <https://doi.org/10.5683/SP3/RPCWBY> .
+
+<http://batterydata.commons/dataset/bdc_000364> a dcat:Dataset ;
+    bdc:positiveElectrode "LFP" ;
+    dcterms:description "15 cells"@en ;
+    dcterms:identifier "bdc_000364" ;
+    dcterms:issued "2025" ;
+    dcterms:title "LFP 18650 Cyclic Aging DoE"@en ;
+    schema1:productID "R18650" ;
+    dcat:keyword "15 cells",
+        "BatteryCell",
+        "LFP",
+        "R18650",
+        "durability",
+        "performance" ;
+    dcat:landingPage <https://doi.org/10.14279/depositonce-24800> .
+
+<http://batterydata.commons/dataset/bdc_000365> a dcat:Dataset ;
+    dcterms:identifier "bdc_000365" ;
+    dcterms:issued "2026" ;
+    dcterms:title "Li-ion pouch EIS ultrasound strain"@en ;
+    schema1:productID "PouchCell" ;
+    dcat:distribution [ a dcat:Distribution ;
+            dcat:downloadURL <https://zenodo.org/api/records/19608839/files-archive> ] ;
+    dcat:keyword "BatteryCell",
+        "Li-ion pouch EIS ultrasound strain",
+        "PouchCell",
+        "performance" ;
+    dcat:landingPage <https://zenodo.org/records/19608839> .
+
+<http://batterydata.commons/dataset/bdc_000366> a dcat:Dataset ;
+    dcterms:description "9 cells"@en ;
+    dcterms:identifier "bdc_000366" ;
+    dcterms:issued "2025" ;
+    dcterms:title "Cooling Comparison for 18650 Cells"@en ;
+    schema1:productID "R18650" ;
+    dcat:keyword "9 cells",
+        "BatteryPack",
+        "R18650",
+        "durability",
+        "modelling",
+        "performance",
+        "safety" ;
+    dcat:landingPage <https://zenodo.org/doi/10.5281/zenodo.17868718> .
+
+<http://batterydata.commons/dataset/bdc_000367> a dcat:Dataset ;
+    bdc:positiveElectrode "NCA" ;
+    dcterms:identifier "bdc_000367" ;
+    dcterms:issued "2022" ;
+    dcterms:title "18650 NCA Early Cycling XRD-CT"@en ;
+    schema1:productID "R18650" ;
+    dcat:distribution [ a dcat:Distribution ;
+            dcat:downloadURL <https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/4RXYSJ#> ] ;
+    dcat:keyword "18650 NCA Early Cycling XRD-CT",
+        "BatteryCell",
+        "NCA",
+        "R18650",
+        "performance" ;
+    dcat:landingPage <https://dataverse.harvard.edu/citation?persistentId=doi:10.7910/DVN/4RXYSJ> .
 
