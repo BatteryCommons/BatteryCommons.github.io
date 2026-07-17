@@ -240,6 +240,26 @@
     "year": "2020"
   },
   {
+    "id": "bdc_sw_062",
+    "name": "Battery-EIS-Fit",
+    "language": "Python",
+    "license_type": "Open source",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": true,
+      "physics_modelling": false,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": false
+    },
+    "documentation": true,
+    "maintained": true,
+    "license": "https://opensource.org/license/mit",
+    "software_url": "https://github.com/shiyunliu-battery/Battery-EIS-Fit",
+    "article_url": null,
+    "year": "2026"
+  },
+  {
     "id": "bdc_sw_046",
     "name": "BatteryML",
     "language": "Python",

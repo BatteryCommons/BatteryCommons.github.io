@@ -1,8 +1,8 @@
 {
   "release_date": "2026-07-17",
   "dataset_count": 364,
-  "tool_count": 61,
-  "active_record_count": 425,
+  "tool_count": 62,
+  "active_record_count": 426,
   "category_counts": {
     "performance": 145,
     "durability": 152,
