@@ -17,6 +17,7 @@ let releaseMeta = {
 let activeFilters = {
   category: [],
   data_group: [],
+  positive_electrode: [],
   cell_module_pack: [],
   year: []
 };
@@ -106,6 +107,8 @@ function getStats() {
     dataGroups: countBy(datasets, 'data_group'),
     cellModulePack: countByNested(datasets, 'overview', 'cell_module_pack'),
     years: countBy(datasets, 'publication_date'),
+    chemistryFamilies: countChemistryFamilies(datasets),
+    positiveElectrodes: countPositiveElectrodeTypes(datasets),
     electrodesPositive: countByNested(datasets, 'electrodes', 'positive'),
     electrodesNegative: countByNested(datasets, 'electrodes', 'negative')
   };
@@ -144,6 +147,114 @@ function countByNested(arr, parent, child) {
   }, {});
 }
 
+// Positive-electrode families are a derived discovery view, not duplicated
+// canonical metadata. This keeps legacy long names and structured variants
+// searchable through the same concise labels used by the UI.
+const POSITIVE_ELECTRODE_FAMILIES = [
+  { label: 'LFP', aliases: ['lfp', 'lifepo4', 'lithiumironphosphate'] },
+  { label: 'NMC', aliases: ['nmc', 'lithiumnickelmanganesecobaltoxide', 'nickelmanganesecobalt'] },
+  { label: 'NCA', aliases: ['nca', 'lithiumnickelcobaltaluminiumoxide', 'lithiumnickelcobaltaluminumoxide', 'nickelcobaltaluminium', 'nickelcobaltaluminum'] },
+  { label: 'LCO', aliases: ['lco', 'licoo2', 'lithiumcobaltoxide'] },
+  { label: 'LMO', aliases: ['lmo', 'limn2o4', 'lithiummanganeseoxide'] },
+  { label: 'LNO', aliases: ['lno', 'linio2', 'lithiumnickeloxide'] },
+  { label: 'PBA', aliases: ['pba', 'prussianblueanalogue', 'prussianblueanalog', 'prussianblue'] },
+  { label: 'NFM', aliases: ['nfm', 'sodiumnickelironmanganeseoxide', 'nickelironmanganese'] }
+];
+
+
+// Homepage chemistry coverage is broader than the positive-electrode filter.
+// It includes recognized battery chemistry families whether they are expressed
+// through cathode, anode, or structured variant metadata. For example, LTO is
+// a battery chemistry family even though lithium titanate is typically an anode.
+const BATTERY_CHEMISTRY_FAMILIES = [
+  ...POSITIVE_ELECTRODE_FAMILIES,
+  { label: 'LTO', aliases: ['lto', 'li4ti5o12', 'lithiumtitanate'] }
+];
+
+function normalizePositiveElectrodeText(value) {
+  if (value === null || value === undefined) return '';
+  return String(value).toLowerCase().replace(/[^a-z0-9]/g, '');
+}
+
+function getPositiveElectrodeTypes(dataset) {
+  const candidates = [];
+  if (dataset?.electrodes?.positive) {
+    candidates.push(dataset.electrodes.positive);
+  }
+
+  if (Array.isArray(dataset?.cell_variants)) {
+    dataset.cell_variants.forEach(variant => {
+      if (!variant || typeof variant !== 'object') return;
+      if (variant.positive_electrode) candidates.push(variant.positive_electrode);
+      // Some structured legacy variants record the cathode family under
+      // chemistry rather than positive_electrode (e.g. NMC / NCA / LFP).
+      if (variant.chemistry) candidates.push(variant.chemistry);
+    });
+  }
+
+  const types = new Set();
+  candidates.forEach(candidate => {
+    const normalized = normalizePositiveElectrodeText(candidate);
+    if (!normalized || ['multiple', 'unknown', 'varied', 'mixed'].includes(normalized)) return;
+
+    POSITIVE_ELECTRODE_FAMILIES.forEach(({ label, aliases }) => {
+      if (aliases.some(alias => normalized === alias || normalized.includes(alias))) {
+        types.add(label);
+      }
+    });
+  });
+
+  return [...types];
+}
+
+function countPositiveElectrodeTypes(arr) {
+  return arr.reduce((acc, dataset) => {
+    getPositiveElectrodeTypes(dataset).forEach(type => {
+      acc[type] = (acc[type] || 0) + 1;
+    });
+    return acc;
+  }, {});
+}
+
+function getChemistryFamilies(dataset) {
+  const candidates = [];
+
+  if (dataset?.electrodes?.positive) candidates.push(dataset.electrodes.positive);
+  if (dataset?.electrodes?.negative) candidates.push(dataset.electrodes.negative);
+
+  if (Array.isArray(dataset?.cell_variants)) {
+    dataset.cell_variants.forEach(variant => {
+      if (!variant || typeof variant !== 'object') return;
+      if (variant.chemistry) candidates.push(variant.chemistry);
+      if (variant.positive_electrode) candidates.push(variant.positive_electrode);
+      if (variant.negative_electrode) candidates.push(variant.negative_electrode);
+    });
+  }
+
+  const families = new Set();
+  candidates.forEach(candidate => {
+    const normalized = normalizePositiveElectrodeText(candidate);
+    if (!normalized || ['multiple', 'unknown', 'varied', 'mixed'].includes(normalized)) return;
+
+    BATTERY_CHEMISTRY_FAMILIES.forEach(({ label, aliases }) => {
+      if (aliases.some(alias => normalized === alias || normalized.includes(alias))) {
+        families.add(label);
+      }
+    });
+  });
+
+  return [...families];
+}
+
+function countChemistryFamilies(arr) {
+  return arr.reduce((acc, dataset) => {
+    getChemistryFamilies(dataset).forEach(family => {
+      acc[family] = (acc[family] || 0) + 1;
+    });
+    return acc;
+  }, {});
+}
+
 // Apply filters and search
 function applyFilters() {
   if (!datasets.length) return [];
@@ -160,6 +271,7 @@ function applyFilters() {
         dataset.data_group,
         dataset.electrodes?.positive,
         dataset.electrodes?.negative,
+        ...getPositiveElectrodeTypes(dataset),
         dataset.source_metadata?.owner,
         dataset.bib_citation_data,
         ...(dataset.categories || [])
@@ -181,6 +293,15 @@ function applyFilters() {
     // Data group filter
     if (activeFilters.data_group.length > 0) {
       if (!activeFilters.data_group.includes(dataset.data_group)) {
+        return false;
+      }
+    }
+
+    // Positive electrode family filter. Multiple selected families are OR'ed,
+    // matching the behaviour of the existing category filter.
+    if (activeFilters.positive_electrode.length > 0) {
+      const electrodeTypes = getPositiveElectrodeTypes(dataset);
+      if (!activeFilters.positive_electrode.some(type => electrodeTypes.includes(type))) {
         return false;
       }
     }
@@ -234,6 +355,7 @@ function clearFilters() {
   activeFilters = {
     category: [],
     data_group: [],
+    positive_electrode: [],
     cell_module_pack: [],
     year: []
   };
@@ -328,6 +450,7 @@ window.BDC = {
   formatCategory,
   formatDataGroup,
   formatMeasurements,
+  getPositiveElectrodeTypes,
   getMainSourceUrl,
   getArticleUrl,
   get filteredDatasets() { return filteredDatasets; },

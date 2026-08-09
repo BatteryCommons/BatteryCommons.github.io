@@ -852,6 +852,14 @@ bdc:catalog a dcat:Catalog ;
     dcat:landingPage <https://doi.org/10.25740/td676xr4322> .
 
 <http://batterydata.commons/dataset/bdc_000028> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000028#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000028#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000028#cell-variant-3>,
+        <http://batterydata.commons/dataset/bdc_000028#cell-variant-4>,
+        <http://batterydata.commons/dataset/bdc_000028#cell-variant-5>,
+        <http://batterydata.commons/dataset/bdc_000028#cell-variant-6>,
+        <http://batterydata.commons/dataset/bdc_000028#cell-variant-7>,
+        <http://batterydata.commons/dataset/bdc_000028#cell-variant-8> ;
     bdc:positiveElectrode "Multiple" ;
     dcterms:description "232 cells"@en ;
     dcterms:identifier "bdc_000028" ;
@@ -868,6 +876,43 @@ bdc:catalog a dcat:Catalog ;
         "PrismaticCase + PouchCase + CylindricalCase",
         "performance" ;
     dcat:landingPage <https://doi.org/10.17605/OSF.IO/JU325> .
+
+<http://batterydata.commons/dataset/bdc_000028#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "K2 Energy" ;
+    schema1:model "K2 Energy LFP18650E" .
+
+<http://batterydata.commons/dataset/bdc_000028#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "K2 Energy" ;
+    schema1:model "K2 Energy LFP18650P" .
+
+<http://batterydata.commons/dataset/bdc_000028#cell-variant-3> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "Panasonic" ;
+    schema1:model "Panasonic NCR18650B" .
+
+<http://batterydata.commons/dataset/bdc_000028#cell-variant-4> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "Panasonic" ;
+    schema1:model "Panasonic NCR18650GA" .
+
+<http://batterydata.commons/dataset/bdc_000028#cell-variant-5> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "Sony-Murata" ;
+    schema1:model "Sony-Murata US18650VTC6" .
+
+<http://batterydata.commons/dataset/bdc_000028#cell-variant-6> a bdc:CellVariant ;
+    schema1:manufacturer "Tenergy" ;
+    schema1:model "Tenergy 302030" .
+
+<http://batterydata.commons/dataset/bdc_000028#cell-variant-7> a bdc:CellVariant ;
+    schema1:manufacturer "Ultralife" ;
+    schema1:model "Ultralife 502030" .
+
+<http://batterydata.commons/dataset/bdc_000028#cell-variant-8> a bdc:CellVariant ;
+    schema1:manufacturer "Ultralife" ;
+    schema1:model "Ultralife UBP001" .
 
 <http://batterydata.commons/dataset/bdc_000029> a dcat:Dataset ;
     bdc:negativeElectrode "Graphite" ;
@@ -1000,6 +1045,14 @@ bdc:catalog a dcat:Catalog ;
     dcat:landingPage <https://doi.org/10.21227/cj43-mc45> .
 
 <http://batterydata.commons/dataset/bdc_000036> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000036#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000036#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000036#cell-variant-3>,
+        <http://batterydata.commons/dataset/bdc_000036#cell-variant-4>,
+        <http://batterydata.commons/dataset/bdc_000036#cell-variant-5>,
+        <http://batterydata.commons/dataset/bdc_000036#cell-variant-6>,
+        <http://batterydata.commons/dataset/bdc_000036#cell-variant-7>,
+        <http://batterydata.commons/dataset/bdc_000036#cell-variant-8> ;
     bdc:negativeElectrode "Unknown" ;
     bdc:positiveElectrode "Multiple" ;
     dcterms:identifier "bdc_000036" ;
@@ -1014,7 +1067,41 @@ bdc:catalog a dcat:Catalog ;
         "performance" ;
     dcat:landingPage <https://doi.org/10.21227/gg24-sj16> .
 
+<http://batterydata.commons/dataset/bdc_000036#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:model "ICR18650-22P" .
+
+<http://batterydata.commons/dataset/bdc_000036#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:model "INR18650-26F" .
+
+<http://batterydata.commons/dataset/bdc_000036#cell-variant-3> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:model "ICR18650-HB6" .
+
+<http://batterydata.commons/dataset/bdc_000036#cell-variant-4> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:model "NCR18650PF" .
+
+<http://batterydata.commons/dataset/bdc_000036#cell-variant-5> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:model "INR18650-20S" .
+
+<http://batterydata.commons/dataset/bdc_000036#cell-variant-6> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:model "INR18650-13L" .
+
+<http://batterydata.commons/dataset/bdc_000036#cell-variant-7> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:model "INR18650-HG2" .
+
+<http://batterydata.commons/dataset/bdc_000036#cell-variant-8> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:model "US18650VTC4A" .
+
 <http://batterydata.commons/dataset/bdc_000037> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000037#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000037#cell-variant-2> ;
     bdc:negativeElectrode "Carbon + Silicon" ;
     bdc:positiveElectrode "LithiumNickelCobaltAluminiumOxide + LithiumNickelManganeseCobaltOxide" ;
     dcterms:description "Module test"@en ;
@@ -1033,6 +1120,16 @@ bdc:catalog a dcat:Catalog ;
         "R21700",
         "performance" ;
     dcat:landingPage <https://doi.org/10.17632/zh58byr53c.1> .
+
+<http://batterydata.commons/dataset/bdc_000037#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R21700" ;
+    schema1:manufacturer "Samsung" ;
+    schema1:model "Samsung INR21700-50E" .
+
+<http://batterydata.commons/dataset/bdc_000037#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R21700" ;
+    schema1:manufacturer "LG Chem" ;
+    schema1:model "LG-Chem INR21700-M50T" .
 
 <http://batterydata.commons/dataset/bdc_000038> a dcat:Dataset ;
     bdc:negativeElectrode "Unknown" ;
@@ -1071,6 +1168,15 @@ bdc:catalog a dcat:Catalog ;
     dcat:landingPage <https://github.com/terencetaothucb/TBSI-Sunwoda-Battery-Dataset> .
 
 <http://batterydata.commons/dataset/bdc_000040> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000040#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000040#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000040#cell-variant-3>,
+        <http://batterydata.commons/dataset/bdc_000040#cell-variant-4>,
+        <http://batterydata.commons/dataset/bdc_000040#cell-variant-5>,
+        <http://batterydata.commons/dataset/bdc_000040#cell-variant-6>,
+        <http://batterydata.commons/dataset/bdc_000040#cell-variant-7>,
+        <http://batterydata.commons/dataset/bdc_000040#cell-variant-8>,
+        <http://batterydata.commons/dataset/bdc_000040#cell-variant-9> ;
     bdc:negativeElectrode "Unknown" ;
     bdc:positiveElectrode "Multiple" ;
     dcterms:identifier "bdc_000040" ;
@@ -1084,6 +1190,42 @@ bdc:catalog a dcat:Catalog ;
         "Multiple",
         "performance" ;
     dcat:landingPage <https://doi.org/10.17632/sb993dhjnz.1> .
+
+<http://batterydata.commons/dataset/bdc_000040#cell-variant-1> a bdc:CellVariant ;
+    schema1:manufacturer "Samsung" ;
+    schema1:model "EB575152VA" .
+
+<http://batterydata.commons/dataset/bdc_000040#cell-variant-2> a bdc:CellVariant ;
+    schema1:manufacturer "LG" ;
+    schema1:model "LGIP-530B" .
+
+<http://batterydata.commons/dataset/bdc_000040#cell-variant-3> a bdc:CellVariant ;
+    schema1:manufacturer "Nokia" ;
+    schema1:model "BP-4L" .
+
+<http://batterydata.commons/dataset/bdc_000040#cell-variant-4> a bdc:CellVariant ;
+    schema1:manufacturer "Blackberry" ;
+    schema1:model "RIM FS 1" .
+
+<http://batterydata.commons/dataset/bdc_000040#cell-variant-5> a bdc:CellVariant ;
+    schema1:manufacturer "Blackberry" ;
+    schema1:model "RIM M S1" .
+
+<http://batterydata.commons/dataset/bdc_000040#cell-variant-6> a bdc:CellVariant ;
+    schema1:manufacturer "Samsung" ;
+    schema1:model "AB463651" .
+
+<http://batterydata.commons/dataset/bdc_000040#cell-variant-7> a bdc:CellVariant ;
+    schema1:manufacturer "Samsung" ;
+    schema1:model "EB555157VA" .
+
+<http://batterydata.commons/dataset/bdc_000040#cell-variant-8> a bdc:CellVariant ;
+    schema1:manufacturer "Samsung" ;
+    schema1:model "EBL1A2GBA" .
+
+<http://batterydata.commons/dataset/bdc_000040#cell-variant-9> a bdc:CellVariant ;
+    schema1:manufacturer "Samsung" ;
+    schema1:model "EB504465" .
 
 <http://batterydata.commons/dataset/bdc_000041> a dcat:Dataset ;
     bdc:negativeElectrode "Hard Carbon" ;
@@ -1106,6 +1248,9 @@ bdc:catalog a dcat:Catalog ;
     dcat:landingPage <https://doi.org/10.18154/RWTH-2024-04088> .
 
 <http://batterydata.commons/dataset/bdc_000042> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000042#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000042#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000042#cell-variant-3> ;
     bdc:negativeElectrode "Unknown" ;
     bdc:positiveElectrode "Multiple" ;
     dcterms:identifier "bdc_000042" ;
@@ -1122,7 +1267,18 @@ bdc:catalog a dcat:Catalog ;
         "performance" ;
     dcat:landingPage <https://doi.org/10.23729/b07462e8-9e31-428c-bdd5-deb1890c608b> .
 
+<http://batterydata.commons/dataset/bdc_000042#cell-variant-1> a bdc:CellVariant ;
+    bdc:chemistry "NMC" .
+
+<http://batterydata.commons/dataset/bdc_000042#cell-variant-2> a bdc:CellVariant ;
+    bdc:chemistry "NCA" .
+
+<http://batterydata.commons/dataset/bdc_000042#cell-variant-3> a bdc:CellVariant ;
+    bdc:chemistry "LFP" .
+
 <http://batterydata.commons/dataset/bdc_000043> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000043#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000043#cell-variant-2> ;
     bdc:negativeElectrode "Unknown" ;
     bdc:positiveElectrode "Multiple" ;
     dcterms:description "4630 retired cells"@en ;
@@ -1140,6 +1296,15 @@ bdc:catalog a dcat:Catalog ;
         "Multiple",
         "performance" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.14958140> .
+
+<http://batterydata.commons/dataset/bdc_000043#cell-variant-1> a bdc:CellVariant ;
+    schema1:manufacturer "Gotion Hi-Tech" ;
+    schema1:model "IFP2265146-23Ah" .
+
+<http://batterydata.commons/dataset/bdc_000043#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R32135" ;
+    schema1:manufacturer "Gotion Hi-Tech" ;
+    schema1:model "IFR32135-15.5Ah" .
 
 <http://batterydata.commons/dataset/bdc_000044> a dcat:Dataset ;
     bdc:negativeElectrode "Unknown" ;
@@ -1195,6 +1360,9 @@ bdc:catalog a dcat:Catalog ;
     dcat:landingPage <https://doi.org/10.17632/hr2ftv6gcn.1> .
 
 <http://batterydata.commons/dataset/bdc_000047> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000047#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000047#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000047#cell-variant-3> ;
     bdc:negativeElectrode "Unknown" ;
     bdc:positiveElectrode "Multiple" ;
     dcterms:identifier "bdc_000047" ;
@@ -1211,6 +1379,20 @@ bdc:catalog a dcat:Catalog ;
         "R18650",
         "performance" ;
     dcat:landingPage <https://doi.org/10.17632/29kw38kzwj.1> .
+
+<http://batterydata.commons/dataset/bdc_000047#cell-variant-1> a bdc:CellVariant ;
+    bdc:chemistry "LFP" ;
+    bdc:formFactor "R18650" .
+
+<http://batterydata.commons/dataset/bdc_000047#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "Panasonic" ;
+    schema1:model "Panasonic NCR18650B" .
+
+<http://batterydata.commons/dataset/bdc_000047#cell-variant-3> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "Sony Murata" ;
+    schema1:model "Sony Murata VTC6" .
 
 <http://batterydata.commons/dataset/bdc_000048> a dcat:Dataset ;
     bdc:negativeElectrode "Carbon" ;
@@ -1339,6 +1521,8 @@ bdc:catalog a dcat:Catalog ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.15069341> .
 
 <http://batterydata.commons/dataset/bdc_000055> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000055#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000055#cell-variant-2> ;
     bdc:negativeElectrode "Carbon" ;
     bdc:positiveElectrode "LithiumIronPhosphate" ;
     dcterms:description "retired pack"@en ;
@@ -1357,6 +1541,20 @@ bdc:catalog a dcat:Catalog ;
         "performance",
         "retired pack" ;
     dcat:landingPage <https://doi.org/10.17632/c7jhyd9c5t.1> .
+
+<http://batterydata.commons/dataset/bdc_000055#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R26650" ;
+    bdc:negativeElectrode "Carbon" ;
+    bdc:positiveElectrode "LithiumIronPhosphate" ;
+    schema1:manufacturer "A123" ;
+    schema1:model "ANR26650M1-A" .
+
+<http://batterydata.commons/dataset/bdc_000055#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R26650" ;
+    bdc:negativeElectrode "Carbon" ;
+    bdc:positiveElectrode "LithiumIronPhosphate" ;
+    schema1:manufacturer "A123" ;
+    schema1:model "ANR26650M1-B" .
 
 <http://batterydata.commons/dataset/bdc_000056> a dcat:Dataset ;
     bdc:negativeElectrode "Unknown" ;
@@ -1599,6 +1797,13 @@ bdc:catalog a dcat:Catalog ;
     dcat:landingPage <https://doi.org/10.18154/RWTH-2021-04558> .
 
 <http://batterydata.commons/dataset/bdc_000069> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000069#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000069#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000069#cell-variant-3>,
+        <http://batterydata.commons/dataset/bdc_000069#cell-variant-4>,
+        <http://batterydata.commons/dataset/bdc_000069#cell-variant-5>,
+        <http://batterydata.commons/dataset/bdc_000069#cell-variant-6>,
+        <http://batterydata.commons/dataset/bdc_000069#cell-variant-7> ;
     bdc:negativeElectrode "Unknown" ;
     bdc:positiveElectrode "SodiumIonBattery and LithiumIonBattery" ;
     dcterms:description "Tomography, Sodium-ion, 1015 cells"@en ;
@@ -1617,6 +1822,35 @@ bdc:catalog a dcat:Catalog ;
         "Tomography, Sodium-ion, 1015 cells",
         "performance" ;
     dcat:landingPage <https://doi.org/10.25452/figshare.plus.25330501.v1> .
+
+<http://batterydata.commons/dataset/bdc_000069#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "EVE" ;
+    schema1:model "EVE INR18650" .
+
+<http://batterydata.commons/dataset/bdc_000069#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:model "HAKADI SIB18650" .
+
+<http://batterydata.commons/dataset/bdc_000069#cell-variant-3> a bdc:CellVariant ;
+    schema1:manufacturer "Samsung" ;
+    schema1:model "Samsung 50E" .
+
+<http://batterydata.commons/dataset/bdc_000069#cell-variant-4> a bdc:CellVariant ;
+    schema1:manufacturer "Vapcell" ;
+    schema1:model "Vapcell F56" .
+
+<http://batterydata.commons/dataset/bdc_000069#cell-variant-5> a bdc:CellVariant ;
+    schema1:manufacturer "BYD" ;
+    schema1:model "BYD FC4680" .
+
+<http://batterydata.commons/dataset/bdc_000069#cell-variant-6> a bdc:CellVariant ;
+    schema1:manufacturer "Tenergy" ;
+    schema1:model "Tenergy 6050100" .
+
+<http://batterydata.commons/dataset/bdc_000069#cell-variant-7> a bdc:CellVariant ;
+    schema1:manufacturer "PowerSonic" ;
+    schema1:model "PowerSonic PSL-FP-IFP2770180EC" .
 
 <http://batterydata.commons/dataset/bdc_000070> a dcat:Dataset ;
     bdc:negativeElectrode "Carbon" ;
@@ -1689,6 +1923,10 @@ bdc:catalog a dcat:Catalog ;
     dcat:landingPage <https://doi.org/10.17632/dbxg33r2fs.1> .
 
 <http://batterydata.commons/dataset/bdc_000074> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000074#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000074#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000074#cell-variant-3>,
+        <http://batterydata.commons/dataset/bdc_000074#cell-variant-4> ;
     bdc:negativeElectrode "Carbon, Titanate, Hard carbon" ;
     bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide, LithiumIronPhosphate, LithiumCobaltOxide, NFM" ;
     dcterms:identifier "bdc_000074" ;
@@ -1706,6 +1944,30 @@ Mingyang Battery Co., Ltd.""" ;
         "R18650",
         "performance" ;
     dcat:landingPage <https://doi.org/10.14279/depositonce-25036> .
+
+<http://batterydata.commons/dataset/bdc_000074#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide" ;
+    schema1:manufacturer """Shenzhen Zhonghuajia Technology Co. Ltd.;  Wuxi City
+Mingyang Battery Co. Ltd.""" .
+
+<http://batterydata.commons/dataset/bdc_000074#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    bdc:positiveElectrode "LithiumIronPhosphate" ;
+    schema1:manufacturer """Shenzhen Zhonghuajia Technology Co. Ltd.;  Wuxi City
+Mingyang Battery Co. Ltd.""" .
+
+<http://batterydata.commons/dataset/bdc_000074#cell-variant-3> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    bdc:positiveElectrode "LithiumCobaltOxide" ;
+    schema1:manufacturer """Shenzhen Zhonghuajia Technology Co. Ltd.;  Wuxi City
+Mingyang Battery Co. Ltd.""" .
+
+<http://batterydata.commons/dataset/bdc_000074#cell-variant-4> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    bdc:positiveElectrode "NFM" ;
+    schema1:manufacturer """Shenzhen Zhonghuajia Technology Co. Ltd.;  Wuxi City
+Mingyang Battery Co. Ltd.""" .
 
 <http://batterydata.commons/dataset/bdc_000075> a dcat:Dataset ;
     bdc:negativeElectrode "Carbon" ;
@@ -1850,6 +2112,8 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.6645536> .
 
 <http://batterydata.commons/dataset/bdc_000083> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000083#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000083#cell-variant-2> ;
     bdc:negativeElectrode "Unknown" ;
     bdc:positiveElectrode "LithiumIronPhosphate, SodiumIonBattery" ;
     dcterms:identifier "bdc_000083" ;
@@ -1867,7 +2131,16 @@ Mingyang Battery Co., Ltd.""" ;
         "performance" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.13836818> .
 
+<http://batterydata.commons/dataset/bdc_000083#cell-variant-1> a bdc:CellVariant ;
+    bdc:positiveElectrode "LithiumIronPhosphate" .
+
+<http://batterydata.commons/dataset/bdc_000083#cell-variant-2> a bdc:CellVariant ;
+    bdc:positiveElectrode "SodiumIonBattery" .
+
 <http://batterydata.commons/dataset/bdc_000084> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000084#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000084#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000084#cell-variant-3> ;
     bdc:negativeElectrode "Zinc Metal, Unknown, Carbon" ;
     bdc:positiveElectrode "MnO2, SodiumIonBattery, LithiumNickelManganeseCobaltOxide" ;
     dcterms:identifier "bdc_000084" ;
@@ -1884,6 +2157,15 @@ Mingyang Battery Co., Ltd.""" ;
         "MnO2, SodiumIonBattery, LithiumNickelManganeseCobaltOxide",
         "performance" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.15013635> .
+
+<http://batterydata.commons/dataset/bdc_000084#cell-variant-1> a bdc:CellVariant ;
+    bdc:positiveElectrode "MnO2" .
+
+<http://batterydata.commons/dataset/bdc_000084#cell-variant-2> a bdc:CellVariant ;
+    bdc:positiveElectrode "SodiumIonBattery" .
+
+<http://batterydata.commons/dataset/bdc_000084#cell-variant-3> a bdc:CellVariant ;
+    bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide" .
 
 <http://batterydata.commons/dataset/bdc_000085> a dcat:Dataset ;
     bdc:negativeElectrode "Carbon" ;
@@ -2035,6 +2317,8 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.60232> .
 
 <http://batterydata.commons/dataset/bdc_000096> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000096#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000096#cell-variant-2> ;
     bdc:negativeElectrode "Unknown" ;
     bdc:positiveElectrode "LithiumIronPhosphate, NCR" ;
     dcterms:identifier "bdc_000096" ;
@@ -2049,6 +2333,14 @@ Mingyang Battery Co., Ltd.""" ;
         "Unknown",
         "performance" ;
     dcat:landingPage <https://doi.org/10.17632/vfd3f3srfk.2> .
+
+<http://batterydata.commons/dataset/bdc_000096#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R32135" ;
+    schema1:model "IFR32135" .
+
+<http://batterydata.commons/dataset/bdc_000096#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:model "NCR18650" .
 
 <http://batterydata.commons/dataset/bdc_000097> a dcat:Dataset ;
     bdc:negativeElectrode "Unknown" ;
@@ -2099,6 +2391,8 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.17334614> .
 
 <http://batterydata.commons/dataset/bdc_000100> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000100#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000100#cell-variant-2> ;
     bdc:negativeElectrode "Carbon, Carbon" ;
     bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide, LithiumNickelCobaltAluminiumOxide" ;
     dcterms:identifier "bdc_000100" ;
@@ -2113,6 +2407,14 @@ Mingyang Battery Co., Ltd.""" ;
         "R21700, R18650",
         "performance" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.6421060> .
+
+<http://batterydata.commons/dataset/bdc_000100#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R21700" ;
+    schema1:model "INR21700 M50T" .
+
+<http://batterydata.commons/dataset/bdc_000100#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:model "INR18650 30Q" .
 
 <http://batterydata.commons/dataset/bdc_000101> a dcat:Dataset ;
     bdc:negativeElectrode "Carbon" ;
@@ -2131,6 +2433,9 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.14459/2023mp1725661> .
 
 <http://batterydata.commons/dataset/bdc_000102> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000102#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000102#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000102#cell-variant-3> ;
     bdc:negativeElectrode "Unknown" ;
     bdc:positiveElectrode "Unknown" ;
     dcterms:identifier "bdc_000102" ;
@@ -2146,7 +2451,20 @@ Mingyang Battery Co., Ltd.""" ;
         "performance" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.14597394> .
 
+<http://batterydata.commons/dataset/bdc_000102#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "PouchCase" .
+
+<http://batterydata.commons/dataset/bdc_000102#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "PrismaticCase" .
+
+<http://batterydata.commons/dataset/bdc_000102#cell-variant-3> a bdc:CellVariant ;
+    bdc:formFactor "CylindricalCase" .
+
 <http://batterydata.commons/dataset/bdc_000103> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000103#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000103#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000103#cell-variant-3>,
+        <http://batterydata.commons/dataset/bdc_000103#cell-variant-4> ;
     bdc:negativeElectrode "Unknown" ;
     bdc:positiveElectrode "Ni-MH, LiPo, Li-ion, Alkaline" ;
     dcterms:identifier "bdc_000103" ;
@@ -2161,6 +2479,18 @@ Mingyang Battery Co., Ltd.""" ;
         "Unknown",
         "performance" ;
     dcat:landingPage <https://doi.org/10.5061/dryad.g1jwstqr4> .
+
+<http://batterydata.commons/dataset/bdc_000103#cell-variant-1> a bdc:CellVariant ;
+    schema1:model "MH-AAA1000APZ" .
+
+<http://batterydata.commons/dataset/bdc_000103#cell-variant-2> a bdc:CellVariant ;
+    schema1:model "DTP603450" .
+
+<http://batterydata.commons/dataset/bdc_000103#cell-variant-3> a bdc:CellVariant ;
+    schema1:model "UF553443ZU" .
+
+<http://batterydata.commons/dataset/bdc_000103#cell-variant-4> a bdc:CellVariant ;
+    schema1:model "LR-6" .
 
 <http://batterydata.commons/dataset/bdc_000104> a dcat:Dataset ;
     bdc:negativeElectrode "Carbon" ;
@@ -2179,6 +2509,12 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.12795/11441/165294> .
 
 <http://batterydata.commons/dataset/bdc_000105> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000105#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000105#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000105#cell-variant-3>,
+        <http://batterydata.commons/dataset/bdc_000105#cell-variant-4>,
+        <http://batterydata.commons/dataset/bdc_000105#cell-variant-5>,
+        <http://batterydata.commons/dataset/bdc_000105#cell-variant-6> ;
     bdc:negativeElectrode "Carbon, Carbon, Carbon, Carbon, Carbon, Carbon" ;
     bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide, LithiumNickelCobaltAluminiumOxide, Unknown, Unknown, LithiumNickelCobaltAluminiumOxide, LithiumNickelCobaltAluminiumOxide" ;
     dcterms:identifier "bdc_000105" ;
@@ -2193,6 +2529,30 @@ Mingyang Battery Co., Ltd.""" ;
         "R21700",
         "performance" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.7385979> .
+
+<http://batterydata.commons/dataset/bdc_000105#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R21700" ;
+    schema1:model "M50T" .
+
+<http://batterydata.commons/dataset/bdc_000105#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R21700" ;
+    schema1:model "48X" .
+
+<http://batterydata.commons/dataset/bdc_000105#cell-variant-3> a bdc:CellVariant ;
+    bdc:formFactor "R21700" ;
+    schema1:model "T48P" .
+
+<http://batterydata.commons/dataset/bdc_000105#cell-variant-4> a bdc:CellVariant ;
+    bdc:formFactor "R21700" ;
+    schema1:model "VTC6A-AM" .
+
+<http://batterydata.commons/dataset/bdc_000105#cell-variant-5> a bdc:CellVariant ;
+    bdc:formFactor "R21700" ;
+    schema1:model "VTC6A" .
+
+<http://batterydata.commons/dataset/bdc_000105#cell-variant-6> a bdc:CellVariant ;
+    bdc:formFactor "R21700" ;
+    schema1:model "P42A" .
 
 <http://batterydata.commons/dataset/bdc_000106> a dcat:Dataset ;
     bdc:negativeElectrode "Carbon" ;
@@ -2211,6 +2571,9 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://github.com/yizhaogao2025/LFP_battery_SOC_Dataset> .
 
 <http://batterydata.commons/dataset/bdc_000107> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000107#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000107#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000107#cell-variant-3> ;
     bdc:negativeElectrode "Unknown" ;
     bdc:positiveElectrode "Unknown" ;
     dcterms:identifier "bdc_000107" ;
@@ -2225,6 +2588,15 @@ Mingyang Battery Co., Ltd.""" ;
         "Unknown",
         "performance" ;
     dcat:landingPage <https://github.com/Cogswell-Scientific-LLC/cylindrical_battery_CT_vs_SOC> .
+
+<http://batterydata.commons/dataset/bdc_000107#cell-variant-1> a bdc:CellVariant ;
+    schema1:model "33V" .
+
+<http://batterydata.commons/dataset/bdc_000107#cell-variant-2> a bdc:CellVariant ;
+    schema1:model "50E" .
+
+<http://batterydata.commons/dataset/bdc_000107#cell-variant-3> a bdc:CellVariant ;
+    schema1:model "Sodium-ion" .
 
 <http://batterydata.commons/dataset/bdc_000108> a dcat:Dataset ;
     dcterms:identifier "bdc_000108" ;
@@ -2417,6 +2789,8 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://www.batteryarchive.org/study_summaries.html> .
 
 <http://batterydata.commons/dataset/bdc_000120> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000120#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000120#cell-variant-2> ;
     bdc:negativeElectrode "C+Si" ;
     bdc:positiveElectrode "NMC811" ;
     dcterms:identifier "bdc_000120" ;
@@ -2433,6 +2807,18 @@ Mingyang Battery Co., Ltd.""" ;
         "R21700",
         "durability" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.7235858> .
+
+<http://batterydata.commons/dataset/bdc_000120#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R21700" ;
+    bdc:positiveElectrode "NMC811" ;
+    schema1:manufacturer "LG Chem" ;
+    schema1:model "M50T" .
+
+<http://batterydata.commons/dataset/bdc_000120#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R21700" ;
+    bdc:positiveElectrode "NMC811" ;
+    schema1:manufacturer "LG Chem" ;
+    schema1:model "GBM50T2170" .
 
 <http://batterydata.commons/dataset/bdc_000121> a dcat:Dataset ;
     bdc:negativeElectrode "Carbon" ;
@@ -2672,6 +3058,9 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://osf.io/qsabn/?view_only=2a03b6c78ef14922a3e244f3d549de78> .
 
 <http://batterydata.commons/dataset/bdc_000135> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000135#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000135#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000135#cell-variant-3> ;
     bdc:negativeElectrode "Carbon+Silicon, Carbon+Silicon, Carbon" ;
     bdc:positiveElectrode "NCA+NMC+NMC811+ NCA" ;
     dcterms:identifier "bdc_000135" ;
@@ -2688,6 +3077,21 @@ Mingyang Battery Co., Ltd.""" ;
         "R18650",
         "durability" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.6405084> .
+
+<http://batterydata.commons/dataset/bdc_000135#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "LG" ;
+    schema1:model "LG INR18650-35E" .
+
+<http://batterydata.commons/dataset/bdc_000135#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "Samsung" ;
+    schema1:model "Samsung INR18650-MJ1" .
+
+<http://batterydata.commons/dataset/bdc_000135#cell-variant-3> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "Samsung" ;
+    schema1:model "Samsung INR18650-25R" .
 
 <http://batterydata.commons/dataset/bdc_000136> a dcat:Dataset ;
     bdc:negativeElectrode "C" ;
@@ -2849,6 +3253,8 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.17632/pn5ct66rn5.1> .
 
 <http://batterydata.commons/dataset/bdc_000145> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000145#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000145#cell-variant-2> ;
     bdc:negativeElectrode "Unknown" ;
     bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide811" ;
     dcterms:identifier "bdc_000145" ;
@@ -2865,6 +3271,17 @@ Mingyang Battery Co., Ltd.""" ;
         "R18650, PrismaticCase",
         "durability" ;
     dcat:landingPage <https://doi.org/10.17632/v8k6bsr6tf.1> .
+
+<http://batterydata.commons/dataset/bdc_000145#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide811" ;
+    schema1:manufacturer "Panasonic" ;
+    schema1:model "PANASONIC NCR18650BD" .
+
+<http://batterydata.commons/dataset/bdc_000145#cell-variant-2> a bdc:CellVariant ;
+    bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide811" ;
+    schema1:manufacturer "Gotion" ;
+    schema1:model "Gotion IFP201001404" .
 
 <http://batterydata.commons/dataset/bdc_000146> a dcat:Dataset ;
     bdc:negativeElectrode "C+Si" ;
@@ -2957,6 +3374,8 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.17632/m8w8sjk3vm> .
 
 <http://batterydata.commons/dataset/bdc_000151> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000151#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000151#cell-variant-2> ;
     bdc:negativeElectrode "Unknown" ;
     bdc:positiveElectrode "LithiumIronPhosphate, LithiumNickelCobaltAluminiumOxide" ;
     dcterms:identifier "bdc_000151" ;
@@ -2974,7 +3393,15 @@ Mingyang Battery Co., Ltd.""" ;
         "durability" ;
     dcat:landingPage <https://doi.org/10.17632/rnvb47fp4t> .
 
+<http://batterydata.commons/dataset/bdc_000151#cell-variant-1> a bdc:CellVariant ;
+    bdc:positiveElectrode "LithiumIronPhosphate" .
+
+<http://batterydata.commons/dataset/bdc_000151#cell-variant-2> a bdc:CellVariant ;
+    bdc:positiveElectrode "LithiumNickelCobaltAluminiumOxide" .
+
 <http://batterydata.commons/dataset/bdc_000152> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000152#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000152#cell-variant-2> ;
     bdc:negativeElectrode "Unknown" ;
     bdc:positiveElectrode "Unknown" ;
     dcterms:identifier "bdc_000152" ;
@@ -2989,6 +3416,16 @@ Mingyang Battery Co., Ltd.""" ;
         "Unknown",
         "durability" ;
     dcat:landingPage <https://doi.org/10.1016/j.dib.2021.107727> .
+
+<http://batterydata.commons/dataset/bdc_000152#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R16650" ;
+    schema1:manufacturer "Tenergy" ;
+    schema1:model "ICR 16" .
+
+<http://batterydata.commons/dataset/bdc_000152#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R16650" ;
+    schema1:manufacturer "Tenergy" ;
+    schema1:model "650–2600" .
 
 <http://batterydata.commons/dataset/bdc_000153> a dcat:Dataset ;
     bdc:negativeElectrode "C+Si" ;
@@ -3007,6 +3444,8 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.14577286> .
 
 <http://batterydata.commons/dataset/bdc_000154> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000154#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000154#cell-variant-2> ;
     bdc:negativeElectrode "Carbon, Carbon + Silicon" ;
     bdc:positiveElectrode "Multiple" ;
     dcterms:identifier "bdc_000154" ;
@@ -3023,6 +3462,15 @@ Mingyang Battery Co., Ltd.""" ;
         "R18650",
         "durability" ;
     dcat:landingPage <https://doi.org/10.17632/9w745cjx6v.1> .
+
+<http://batterydata.commons/dataset/bdc_000154#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:model "LithiumWerks APR18650M1B" .
+
+<http://batterydata.commons/dataset/bdc_000154#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "LG Chem" ;
+    schema1:model "LG Chem INR18650MJ1" .
 
 <http://batterydata.commons/dataset/bdc_000155> a dcat:Dataset ;
     bdc:negativeElectrode "Unknown" ;
@@ -3058,6 +3506,8 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.14279/depositonce-17598> .
 
 <http://batterydata.commons/dataset/bdc_000158> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000158#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000158#cell-variant-2> ;
     bdc:negativeElectrode "C+Si" ;
     bdc:positiveElectrode "NMC811" ;
     dcterms:identifier "bdc_000158" ;
@@ -3074,6 +3524,18 @@ Mingyang Battery Co., Ltd.""" ;
         "R21700",
         "durability" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.10637534> .
+
+<http://batterydata.commons/dataset/bdc_000158#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R21700" ;
+    bdc:positiveElectrode "NMC811" ;
+    schema1:manufacturer "LG Chem" ;
+    schema1:model "M50T" .
+
+<http://batterydata.commons/dataset/bdc_000158#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R21700" ;
+    bdc:positiveElectrode "NMC811" ;
+    schema1:manufacturer "LG Chem" ;
+    schema1:model "GBM50T2170" .
 
 <http://batterydata.commons/dataset/bdc_000159> a dcat:Dataset ;
     bdc:negativeElectrode "Unknown" ;
@@ -3356,6 +3818,8 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.17632/ycx459r5c3.1> .
 
 <http://batterydata.commons/dataset/bdc_000175> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000175#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000175#cell-variant-2> ;
     bdc:negativeElectrode "C+Si" ;
     bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide, LithiumNickelCobaltAluminiumOxide" ;
     dcterms:description "Module testing"@en ;
@@ -3375,7 +3839,20 @@ Mingyang Battery Co., Ltd.""" ;
         "durability" ;
     dcat:landingPage <https://doi.org/10.17632/zh58byr53c.2> .
 
+<http://batterydata.commons/dataset/bdc_000175#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R21700" ;
+    schema1:manufacturer "Samsung" ;
+    schema1:model "Samsung INR21700-50E" .
+
+<http://batterydata.commons/dataset/bdc_000175#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R21700" ;
+    schema1:manufacturer "LG Chem" ;
+    schema1:model "LG-Chem INR21700-M50T" .
+
 <http://batterydata.commons/dataset/bdc_000176> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000176#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000176#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000176#cell-variant-3> ;
     bdc:negativeElectrode "Carbon" ;
     bdc:positiveElectrode "LithiumIronPhosphate, LithiumNickelManganeseCobaltOxide, LithiumNickelCobaltAluminiumOxide" ;
     dcterms:identifier "bdc_000176" ;
@@ -3393,7 +3870,27 @@ Mingyang Battery Co., Ltd.""" ;
         "durability" ;
     dcat:landingPage <https://doi.org/10.17632/kxsbr4x3j2.2> .
 
+<http://batterydata.commons/dataset/bdc_000176#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    bdc:negativeElectrode "Carbon" ;
+    schema1:manufacturer "Panasonic" ;
+    schema1:model "Panasonic NCR-18650B" .
+
+<http://batterydata.commons/dataset/bdc_000176#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R21700" ;
+    bdc:negativeElectrode "Carbon" ;
+    schema1:manufacturer "LG Chem" ;
+    schema1:model "LG Chem INR21700-M50" .
+
+<http://batterydata.commons/dataset/bdc_000176#cell-variant-3> a bdc:CellVariant ;
+    bdc:formFactor "R26650" ;
+    bdc:negativeElectrode "Carbon" ;
+    schema1:manufacturer "A123" ;
+    schema1:model "A123 Systems ANR26650m1-B" .
+
 <http://batterydata.commons/dataset/bdc_000177> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000177#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000177#cell-variant-2> ;
     bdc:negativeElectrode "Varied" ;
     bdc:positiveElectrode "Varied" ;
     dcterms:identifier "bdc_000177" ;
@@ -3410,6 +3907,12 @@ Mingyang Battery Co., Ltd.""" ;
         "Varied",
         "durability" ;
     dcat:landingPage <https://doi.org/10.17632/n3b54nsw8m.9> .
+
+<http://batterydata.commons/dataset/bdc_000177#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "PouchCase" .
+
+<http://batterydata.commons/dataset/bdc_000177#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "PrismaticCase" .
 
 <http://batterydata.commons/dataset/bdc_000178> a dcat:Dataset ;
     bdc:negativeElectrode "C+Si" ;
@@ -3558,6 +4061,9 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.14459/2024mp1748915> .
 
 <http://batterydata.commons/dataset/bdc_000186> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000186#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000186#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000186#cell-variant-3> ;
     bdc:negativeElectrode "C" ;
     bdc:positiveElectrode "LithiumNickelCobaltAluminiumOxide, LithiumNickelManganeseCobaltOxide" ;
     dcterms:identifier "bdc_000186" ;
@@ -3574,6 +4080,23 @@ Mingyang Battery Co., Ltd.""" ;
         "R18650",
         "durability" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.6379165> .
+
+<http://batterydata.commons/dataset/bdc_000186#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    bdc:negativeElectrode "C" ;
+    schema1:model "LG INR18650-35E" .
+
+<http://batterydata.commons/dataset/bdc_000186#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    bdc:negativeElectrode "C" ;
+    schema1:manufacturer "Samsung" ;
+    schema1:model "Samsung INR18650-MJ1" .
+
+<http://batterydata.commons/dataset/bdc_000186#cell-variant-3> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    bdc:negativeElectrode "C" ;
+    schema1:manufacturer "Samsung" ;
+    schema1:model "Samsung INR18650-25R" .
 
 <http://batterydata.commons/dataset/bdc_000187> a dcat:Dataset ;
     bdc:negativeElectrode "C" ;
@@ -3594,6 +4117,9 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.16538328> .
 
 <http://batterydata.commons/dataset/bdc_000188> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000188#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000188#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000188#cell-variant-3> ;
     bdc:negativeElectrode "C" ;
     bdc:positiveElectrode "LithiumIronPhosphate" ;
     dcterms:identifier "bdc_000188" ;
@@ -3611,7 +4137,30 @@ Mingyang Battery Co., Ltd.""" ;
         "durability" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.14576042> .
 
+<http://batterydata.commons/dataset/bdc_000188#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "PrismaticCase" ;
+    bdc:negativeElectrode "C" ;
+    bdc:positiveElectrode "LithiumIronPhosphate" ;
+    schema1:manufacturer "Lishen" ;
+    schema1:model "Lishen LP27148134" .
+
+<http://batterydata.commons/dataset/bdc_000188#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "PrismaticCase" ;
+    bdc:negativeElectrode "C" ;
+    bdc:positiveElectrode "LithiumIronPhosphate" ;
+    schema1:manufacturer "CATL" ;
+    schema1:model "CATL CB2W0" .
+
+<http://batterydata.commons/dataset/bdc_000188#cell-variant-3> a bdc:CellVariant ;
+    bdc:formFactor "PrismaticCase" ;
+    bdc:negativeElectrode "C" ;
+    bdc:positiveElectrode "LithiumIronPhosphate" ;
+    schema1:manufacturer "EVE" ;
+    schema1:model "EVE LF280K" .
+
 <http://batterydata.commons/dataset/bdc_000189> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000189#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000189#cell-variant-2> ;
     bdc:negativeElectrode "C" ;
     bdc:positiveElectrode "LithiumIronPhosphate, LithiumNickelManganeseCobaltOxide" ;
     dcterms:identifier "bdc_000189" ;
@@ -3628,6 +4177,18 @@ Mingyang Battery Co., Ltd.""" ;
         "LithiumIronPhosphate, LithiumNickelManganeseCobaltOxide",
         "durability" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.15481956> .
+
+<http://batterydata.commons/dataset/bdc_000189#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "CoinCase" ;
+    bdc:negativeElectrode "C" ;
+    bdc:positiveElectrode "LithiumIronPhosphate" ;
+    schema1:manufacturer "Labmade" .
+
+<http://batterydata.commons/dataset/bdc_000189#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "CoinCase" ;
+    bdc:negativeElectrode "C" ;
+    bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide" ;
+    schema1:manufacturer "Labmade" .
 
 <http://batterydata.commons/dataset/bdc_000190> a dcat:Dataset ;
     bdc:negativeElectrode "C" ;
@@ -3806,6 +4367,8 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.21227/mnmw-8c42> .
 
 <http://batterydata.commons/dataset/bdc_000200> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000200#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000200#cell-variant-2> ;
     bdc:negativeElectrode "C" ;
     bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide" ;
     dcterms:identifier "bdc_000200" ;
@@ -3820,7 +4383,18 @@ Mingyang Battery Co., Ltd.""" ;
         "durability" ;
     dcat:landingPage <https://doi.org/10.21227/gnst-kz81> .
 
+<http://batterydata.commons/dataset/bdc_000200#cell-variant-1> a bdc:CellVariant ;
+    bdc:chemistry "NCM" .
+
+<http://batterydata.commons/dataset/bdc_000200#cell-variant-2> a bdc:CellVariant ;
+    bdc:chemistry "LFP" .
+
 <http://batterydata.commons/dataset/bdc_000201> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000201#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000201#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000201#cell-variant-3>,
+        <http://batterydata.commons/dataset/bdc_000201#cell-variant-4>,
+        <http://batterydata.commons/dataset/bdc_000201#cell-variant-5> ;
     bdc:negativeElectrode "C" ;
     bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide" ;
     dcterms:identifier "bdc_000201" ;
@@ -3836,6 +4410,36 @@ Mingyang Battery Co., Ltd.""" ;
         "R18650",
         "durability" ;
     dcat:landingPage <https://github.com/simonapepe/HKUST-dataset> .
+
+<http://batterydata.commons/dataset/bdc_000201#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    bdc:negativeElectrode "C" ;
+    bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide" ;
+    schema1:manufacturer "EVE" .
+
+<http://batterydata.commons/dataset/bdc_000201#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    bdc:negativeElectrode "C" ;
+    bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide" ;
+    schema1:manufacturer "CHAM" .
+
+<http://batterydata.commons/dataset/bdc_000201#cell-variant-3> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    bdc:negativeElectrode "C" ;
+    bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide" ;
+    schema1:manufacturer "LISHEN" .
+
+<http://batterydata.commons/dataset/bdc_000201#cell-variant-4> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    bdc:negativeElectrode "C" ;
+    bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide" ;
+    schema1:manufacturer "MOLICEL" .
+
+<http://batterydata.commons/dataset/bdc_000201#cell-variant-5> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    bdc:negativeElectrode "C" ;
+    bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide" ;
+    schema1:manufacturer "SAMSUNG" .
 
 <http://batterydata.commons/dataset/bdc_000202> a dcat:Dataset ;
     bdc:negativeElectrode "Unknown" ;
@@ -3853,6 +4457,14 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.21227/4bqx-gt92> .
 
 <http://batterydata.commons/dataset/bdc_000203> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000203#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000203#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000203#cell-variant-3>,
+        <http://batterydata.commons/dataset/bdc_000203#cell-variant-4>,
+        <http://batterydata.commons/dataset/bdc_000203#cell-variant-5>,
+        <http://batterydata.commons/dataset/bdc_000203#cell-variant-6>,
+        <http://batterydata.commons/dataset/bdc_000203#cell-variant-7>,
+        <http://batterydata.commons/dataset/bdc_000203#cell-variant-8> ;
     bdc:negativeElectrode "Carbon, Carbon, Carbon, Carbon, Carbon, Carbon, Carbon, Carbon" ;
     bdc:positiveElectrode "Varied" ;
     dcterms:identifier "bdc_000203" ;
@@ -3868,6 +4480,43 @@ Mingyang Battery Co., Ltd.""" ;
         "Varied",
         "durability" ;
     dcat:landingPage <https://doi.org/10.17605/OSF.IO/JU325> .
+
+<http://batterydata.commons/dataset/bdc_000203#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "K2" ;
+    schema1:model "K2 Energy LFP18650E" .
+
+<http://batterydata.commons/dataset/bdc_000203#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "K2" ;
+    schema1:model "K2 Energy LFP18650P" .
+
+<http://batterydata.commons/dataset/bdc_000203#cell-variant-3> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "Panasonic" ;
+    schema1:model "Panasonic NCR18650B" .
+
+<http://batterydata.commons/dataset/bdc_000203#cell-variant-4> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "Panasonic" ;
+    schema1:model "Panasonic NCR18650GA" .
+
+<http://batterydata.commons/dataset/bdc_000203#cell-variant-5> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "Sony-Murata" ;
+    schema1:model "Sony-Murata US18650VTC6" .
+
+<http://batterydata.commons/dataset/bdc_000203#cell-variant-6> a bdc:CellVariant ;
+    schema1:manufacturer "Tenergy" ;
+    schema1:model "Tenergy 302030" .
+
+<http://batterydata.commons/dataset/bdc_000203#cell-variant-7> a bdc:CellVariant ;
+    schema1:manufacturer "Ultralife" ;
+    schema1:model "Ultralife 502030" .
+
+<http://batterydata.commons/dataset/bdc_000203#cell-variant-8> a bdc:CellVariant ;
+    schema1:manufacturer "Ultralife" ;
+    schema1:model "Ultralife UBP001" .
 
 <http://batterydata.commons/dataset/bdc_000204> a dcat:Dataset ;
     bdc:negativeElectrode "LithiumTitanateOxyde" ;
@@ -3887,6 +4536,11 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://osf.io/5dqwg/?view_only=608e4c22acdd483591d1d55b74a81401> .
 
 <http://batterydata.commons/dataset/bdc_000205> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000205#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000205#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000205#cell-variant-3>,
+        <http://batterydata.commons/dataset/bdc_000205#cell-variant-4>,
+        <http://batterydata.commons/dataset/bdc_000205#cell-variant-5> ;
     bdc:negativeElectrode "Unknown" ;
     bdc:positiveElectrode "Varied" ;
     dcterms:identifier "bdc_000205" ;
@@ -3902,6 +4556,27 @@ Mingyang Battery Co., Ltd.""" ;
         "Varied",
         "durability" ;
     dcat:landingPage <https://doi.org/10.1016/j.dib.2020.105137> .
+
+<http://batterydata.commons/dataset/bdc_000205#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "Samsung" ;
+    schema1:model "Samsung ICR18650-30B" .
+
+<http://batterydata.commons/dataset/bdc_000205#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "Joy" ;
+    schema1:model "Joy NCR18650A300A" .
+
+<http://batterydata.commons/dataset/bdc_000205#cell-variant-3> a bdc:CellVariant ;
+    schema1:manufacturer "GP" ;
+    schema1:model "GP GP 03624RC 3" .
+
+<http://batterydata.commons/dataset/bdc_000205#cell-variant-4> a bdc:CellVariant ;
+    schema1:model "6 V" .
+
+<http://batterydata.commons/dataset/bdc_000205#cell-variant-5> a bdc:CellVariant ;
+    schema1:manufacturer "EVC" ;
+    schema1:model "EVC 200L06C" .
 
 <http://batterydata.commons/dataset/bdc_000206> a dcat:Dataset ;
     bdc:negativeElectrode "C" ;
@@ -4018,6 +4693,8 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.34810/data2395> .
 
 <http://batterydata.commons/dataset/bdc_000213> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000213#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000213#cell-variant-2> ;
     bdc:negativeElectrode "C" ;
     bdc:positiveElectrode "NCA (pouch); NMC (prismatic)" ;
     dcterms:description "SOC & SOH monitoring throughout life"@en ;
@@ -4036,6 +4713,16 @@ Mingyang Battery Co., Ltd.""" ;
         "SOC & SOH monitoring throughout life",
         "durability" ;
     dcat:landingPage <https://zenodo.org/records/17591942> .
+
+<http://batterydata.commons/dataset/bdc_000213#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "PouchCase" ;
+    bdc:negativeElectrode "C" ;
+    bdc:positiveElectrode "NCA (pouch); NMC (prismatic)" .
+
+<http://batterydata.commons/dataset/bdc_000213#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "PrismaticCase" ;
+    bdc:negativeElectrode "C" ;
+    bdc:positiveElectrode "NCA (pouch); NMC (prismatic)" .
 
 <http://batterydata.commons/dataset/bdc_000214> a dcat:Dataset ;
     bdc:negativeElectrode "Carbon + Silicon" ;
@@ -4164,6 +4851,8 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.17632/n6xg5fzsbv.1> .
 
 <http://batterydata.commons/dataset/bdc_000221> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000221#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000221#cell-variant-2> ;
     bdc:negativeElectrode "C" ;
     bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide, LithiumIronPhosphate" ;
     dcterms:identifier "bdc_000221" ;
@@ -4179,6 +4868,18 @@ Mingyang Battery Co., Ltd.""" ;
         "LithiumNickelManganeseCobaltOxide, LithiumIronPhosphate",
         "durability" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.15481955> .
+
+<http://batterydata.commons/dataset/bdc_000221#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "CoinCase" ;
+    bdc:negativeElectrode "C" ;
+    bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide" ;
+    schema1:manufacturer "Labmade" .
+
+<http://batterydata.commons/dataset/bdc_000221#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "CoinCase" ;
+    bdc:negativeElectrode "C" ;
+    bdc:positiveElectrode "LithiumIronPhosphate" ;
+    schema1:manufacturer "Labmade" .
 
 <http://batterydata.commons/dataset/bdc_000222> a dcat:Dataset ;
     bdc:negativeElectrode "Unknown" ;
@@ -4239,6 +4940,11 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.14459/2022mp1656313> .
 
 <http://batterydata.commons/dataset/bdc_000226> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000226#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000226#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000226#cell-variant-3>,
+        <http://batterydata.commons/dataset/bdc_000226#cell-variant-4>,
+        <http://batterydata.commons/dataset/bdc_000226#cell-variant-5> ;
     bdc:negativeElectrode "C" ;
     bdc:positiveElectrode "NMC-LMO, NMC, NCA, LMO, LFP" ;
     dcterms:identifier "bdc_000226" ;
@@ -4253,6 +4959,26 @@ Mingyang Battery Co., Ltd.""" ;
         "NMC-LMO, NMC, NCA, LMO, LFP",
         "field" ;
     dcat:landingPage <https://doi.org/10.17632/sbh8pnpnmn.1> .
+
+<http://batterydata.commons/dataset/bdc_000226#cell-variant-1> a bdc:CellVariant ;
+    bdc:negativeElectrode "C" ;
+    bdc:positiveElectrode "NMC-LMO" .
+
+<http://batterydata.commons/dataset/bdc_000226#cell-variant-2> a bdc:CellVariant ;
+    bdc:negativeElectrode "C" ;
+    bdc:positiveElectrode "NMC" .
+
+<http://batterydata.commons/dataset/bdc_000226#cell-variant-3> a bdc:CellVariant ;
+    bdc:negativeElectrode "C" ;
+    bdc:positiveElectrode "NCA" .
+
+<http://batterydata.commons/dataset/bdc_000226#cell-variant-4> a bdc:CellVariant ;
+    bdc:negativeElectrode "C" ;
+    bdc:positiveElectrode "LMO" .
+
+<http://batterydata.commons/dataset/bdc_000226#cell-variant-5> a bdc:CellVariant ;
+    bdc:negativeElectrode "C" ;
+    bdc:positiveElectrode "LFP" .
 
 <http://batterydata.commons/dataset/bdc_000227> a dcat:Dataset ;
     bdc:negativeElectrode "C" ;
@@ -4337,6 +5063,11 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.6084/m9.figshare.23301881.v1> .
 
 <http://batterydata.commons/dataset/bdc_000232> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000232#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000232#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000232#cell-variant-3>,
+        <http://batterydata.commons/dataset/bdc_000232#cell-variant-4>,
+        <http://batterydata.commons/dataset/bdc_000232#cell-variant-5> ;
     bdc:negativeElectrode "Variety" ;
     bdc:positiveElectrode "Lead-acid, Lead-acid Gel, LMO, LFP, LTO" ;
     dcterms:identifier "bdc_000232" ;
@@ -4352,7 +5083,35 @@ Mingyang Battery Co., Ltd.""" ;
         "field" ;
     dcat:landingPage <https://doi.org/10.18154/RWTH-2024-04895> .
 
+<http://batterydata.commons/dataset/bdc_000232#cell-variant-1> a bdc:CellVariant ;
+    bdc:negativeElectrode "Variety" ;
+    bdc:positiveElectrode "Lead-acid" ;
+    schema1:manufacturer "Variety" .
+
+<http://batterydata.commons/dataset/bdc_000232#cell-variant-2> a bdc:CellVariant ;
+    bdc:negativeElectrode "Variety" ;
+    bdc:positiveElectrode "Lead-acid Gel" ;
+    schema1:manufacturer "Variety" .
+
+<http://batterydata.commons/dataset/bdc_000232#cell-variant-3> a bdc:CellVariant ;
+    bdc:negativeElectrode "Variety" ;
+    bdc:positiveElectrode "LMO" ;
+    schema1:manufacturer "Variety" .
+
+<http://batterydata.commons/dataset/bdc_000232#cell-variant-4> a bdc:CellVariant ;
+    bdc:negativeElectrode "Variety" ;
+    bdc:positiveElectrode "LFP" ;
+    schema1:manufacturer "Variety" .
+
+<http://batterydata.commons/dataset/bdc_000232#cell-variant-5> a bdc:CellVariant ;
+    bdc:negativeElectrode "Variety" ;
+    bdc:positiveElectrode "LTO" ;
+    schema1:manufacturer "Variety" .
+
 <http://batterydata.commons/dataset/bdc_000233> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000233#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000233#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000233#cell-variant-3> ;
     bdc:negativeElectrode "Unknown" ;
     bdc:positiveElectrode "LMO, NMC, LFP" ;
     dcterms:identifier "bdc_000233" ;
@@ -4367,6 +5126,15 @@ Mingyang Battery Co., Ltd.""" ;
         "LMO, NMC, LFP",
         "field" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.12091223> .
+
+<http://batterydata.commons/dataset/bdc_000233#cell-variant-1> a bdc:CellVariant ;
+    bdc:positiveElectrode "LMO" .
+
+<http://batterydata.commons/dataset/bdc_000233#cell-variant-2> a bdc:CellVariant ;
+    bdc:positiveElectrode "NMC" .
+
+<http://batterydata.commons/dataset/bdc_000233#cell-variant-3> a bdc:CellVariant ;
+    bdc:positiveElectrode "LFP" .
 
 <http://batterydata.commons/dataset/bdc_000234> a dcat:Dataset ;
     bdc:negativeElectrode "C" ;
@@ -4462,6 +5230,11 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.17632/mmrz3njn6b.2> .
 
 <http://batterydata.commons/dataset/bdc_000240> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000240#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000240#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000240#cell-variant-3>,
+        <http://batterydata.commons/dataset/bdc_000240#cell-variant-4>,
+        <http://batterydata.commons/dataset/bdc_000240#cell-variant-5> ;
     bdc:negativeElectrode "Unknown" ;
     bdc:positiveElectrode "LFP, NMC, LMO, LCO, LP" ;
     dcterms:identifier "bdc_000240" ;
@@ -4476,6 +5249,21 @@ Mingyang Battery Co., Ltd.""" ;
         "LFP, NMC, LMO, LCO, LP",
         "field" ;
     dcat:landingPage <https://doi.org/10.17632/c7gg94tmvz.3> .
+
+<http://batterydata.commons/dataset/bdc_000240#cell-variant-1> a bdc:CellVariant ;
+    bdc:positiveElectrode "LFP" .
+
+<http://batterydata.commons/dataset/bdc_000240#cell-variant-2> a bdc:CellVariant ;
+    bdc:positiveElectrode "NMC" .
+
+<http://batterydata.commons/dataset/bdc_000240#cell-variant-3> a bdc:CellVariant ;
+    bdc:positiveElectrode "LMO" .
+
+<http://batterydata.commons/dataset/bdc_000240#cell-variant-4> a bdc:CellVariant ;
+    bdc:positiveElectrode "LCO" .
+
+<http://batterydata.commons/dataset/bdc_000240#cell-variant-5> a bdc:CellVariant ;
+    bdc:positiveElectrode "LP" .
 
 <http://batterydata.commons/dataset/bdc_000241> a dcat:Dataset ;
     bdc:negativeElectrode "Unknown" ;
@@ -4510,6 +5298,8 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.17632/8kp25ycf63.1> .
 
 <http://batterydata.commons/dataset/bdc_000243> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000243#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000243#cell-variant-2> ;
     bdc:negativeElectrode "Unknown" ;
     bdc:positiveElectrode "NMC (2 Volkswagen ID.3 Pro Performance, 5 CUPRA Born)" ;
     dcterms:identifier "bdc_000243" ;
@@ -4524,6 +5314,12 @@ Mingyang Battery Co., Ltd.""" ;
         "NMC (2 Volkswagen ID.3 Pro Performance, 5 CUPRA Born)",
         "field" ;
     dcat:landingPage <https://github.com/TUMFTM/electric-vehicle-uds-dataset/tree/main> .
+
+<http://batterydata.commons/dataset/bdc_000243#cell-variant-1> a bdc:CellVariant ;
+    bdc:positiveElectrode "NMC (2 Volkswagen ID.3 Pro Performance" .
+
+<http://batterydata.commons/dataset/bdc_000243#cell-variant-2> a bdc:CellVariant ;
+    bdc:positiveElectrode "5 CUPRA Born)" .
 
 <http://batterydata.commons/dataset/bdc_000244> a dcat:Dataset ;
     bdc:negativeElectrode "Unknown" ;
@@ -4771,6 +5567,8 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.17632/26rhbkv6gr.3> .
 
 <http://batterydata.commons/dataset/bdc_000260> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000260#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000260#cell-variant-2> ;
     bdc:negativeElectrode "Unknown" ;
     bdc:positiveElectrode "Multiple" ;
     dcterms:identifier "bdc_000260" ;
@@ -4786,6 +5584,14 @@ Mingyang Battery Co., Ltd.""" ;
         "Multiple",
         "modelling" ;
     dcat:landingPage <https://doi.org/10.17632/98g66p2v9k> .
+
+<http://batterydata.commons/dataset/bdc_000260#cell-variant-1> a bdc:CellVariant ;
+    bdc:chemistry "Li-ion" ;
+    bdc:formFactor "CoinCell" .
+
+<http://batterydata.commons/dataset/bdc_000260#cell-variant-2> a bdc:CellVariant ;
+    bdc:chemistry "Na-ion" ;
+    bdc:formFactor "CoinCell" .
 
 <http://batterydata.commons/dataset/bdc_000261> a dcat:Dataset ;
     bdc:negativeElectrode "Unknown" ;
@@ -4820,6 +5626,9 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.17632/v36y3kd8zg.1> .
 
 <http://batterydata.commons/dataset/bdc_000263> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000263#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000263#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000263#cell-variant-3> ;
     bdc:negativeElectrode "Unknown" ;
     bdc:positiveElectrode "Multiple" ;
     dcterms:identifier "bdc_000263" ;
@@ -4834,6 +5643,15 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:keyword "Multiple",
         "modelling" ;
     dcat:landingPage <https://doi.org/10.17632/g6r3vmvbnj.1> .
+
+<http://batterydata.commons/dataset/bdc_000263#cell-variant-1> a bdc:CellVariant ;
+    schema1:model "5300" .
+
+<http://batterydata.commons/dataset/bdc_000263#cell-variant-2> a bdc:CellVariant ;
+    schema1:model "TKLD-2.4 V/16Ah" .
+
+<http://batterydata.commons/dataset/bdc_000263#cell-variant-3> a bdc:CellVariant ;
+    schema1:model "2.7 V/3000 F" .
 
 <http://batterydata.commons/dataset/bdc_000264> a dcat:Dataset ;
     bdc:negativeElectrode "Unknown" ;
@@ -4904,6 +5722,13 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.10963339> .
 
 <http://batterydata.commons/dataset/bdc_000268> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000268#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000268#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000268#cell-variant-3>,
+        <http://batterydata.commons/dataset/bdc_000268#cell-variant-4>,
+        <http://batterydata.commons/dataset/bdc_000268#cell-variant-5>,
+        <http://batterydata.commons/dataset/bdc_000268#cell-variant-6>,
+        <http://batterydata.commons/dataset/bdc_000268#cell-variant-7> ;
     bdc:negativeElectrode "Unknown" ;
     bdc:positiveElectrode "Multiple" ;
     dcterms:identifier "bdc_000268" ;
@@ -4915,6 +5740,27 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:keyword "Multiple",
         "modelling" ;
     dcat:landingPage <https://doi.org/10.18126/ckt2-g8j2> .
+
+<http://batterydata.commons/dataset/bdc_000268#cell-variant-1> a bdc:CellVariant ;
+    bdc:chemistry "LFP" .
+
+<http://batterydata.commons/dataset/bdc_000268#cell-variant-2> a bdc:CellVariant ;
+    bdc:chemistry "HE5050" .
+
+<http://batterydata.commons/dataset/bdc_000268#cell-variant-3> a bdc:CellVariant ;
+    bdc:chemistry "5VSpinel" .
+
+<http://batterydata.commons/dataset/bdc_000268#cell-variant-4> a bdc:CellVariant ;
+    bdc:chemistry "NMC111" .
+
+<http://batterydata.commons/dataset/bdc_000268#cell-variant-5> a bdc:CellVariant ;
+    bdc:chemistry "NMC532" .
+
+<http://batterydata.commons/dataset/bdc_000268#cell-variant-6> a bdc:CellVariant ;
+    bdc:chemistry "NMC622" .
+
+<http://batterydata.commons/dataset/bdc_000268#cell-variant-7> a bdc:CellVariant ;
+    bdc:chemistry "NMC811" .
 
 <http://batterydata.commons/dataset/bdc_000269> a dcat:Dataset ;
     bdc:negativeElectrode "Carbon" ;
@@ -4935,6 +5781,13 @@ Mingyang Battery Co., Ltd.""" ;
         <https://datashare.ed.ac.uk/handle/10283/3798> .
 
 <http://batterydata.commons/dataset/bdc_000270> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000270#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000270#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000270#cell-variant-3>,
+        <http://batterydata.commons/dataset/bdc_000270#cell-variant-4>,
+        <http://batterydata.commons/dataset/bdc_000270#cell-variant-5>,
+        <http://batterydata.commons/dataset/bdc_000270#cell-variant-6>,
+        <http://batterydata.commons/dataset/bdc_000270#cell-variant-7> ;
     bdc:positiveElectrode "Multiple (NMC111/532/622/811, FCG, HE5050, 5V spinel, etc.)" ;
     dcterms:identifier "bdc_000270" ;
     dcterms:issued "2025" ;
@@ -4947,6 +5800,27 @@ Mingyang Battery Co., Ltd.""" ;
         "Multiple (NMC111/532/622/811, FCG, HE5050, 5V spinel, etc.)",
         "modelling" ;
     dcat:landingPage <https://www.materialsdatafacility.org/detail/camp_2023-1.1> .
+
+<http://batterydata.commons/dataset/bdc_000270#cell-variant-1> a bdc:CellVariant ;
+    bdc:positiveElectrode "NMC111" .
+
+<http://batterydata.commons/dataset/bdc_000270#cell-variant-2> a bdc:CellVariant ;
+    bdc:positiveElectrode "NMC532" .
+
+<http://batterydata.commons/dataset/bdc_000270#cell-variant-3> a bdc:CellVariant ;
+    bdc:positiveElectrode "NMC622" .
+
+<http://batterydata.commons/dataset/bdc_000270#cell-variant-4> a bdc:CellVariant ;
+    bdc:positiveElectrode "NMC811" .
+
+<http://batterydata.commons/dataset/bdc_000270#cell-variant-5> a bdc:CellVariant ;
+    bdc:positiveElectrode "FCG" .
+
+<http://batterydata.commons/dataset/bdc_000270#cell-variant-6> a bdc:CellVariant ;
+    bdc:positiveElectrode "HE5050" .
+
+<http://batterydata.commons/dataset/bdc_000270#cell-variant-7> a bdc:CellVariant ;
+    bdc:positiveElectrode "5V spinel" .
 
 <http://batterydata.commons/dataset/bdc_000271> a dcat:Dataset ;
     bdc:negativeElectrode "Carbon" ;
@@ -4967,6 +5841,8 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.1016/j.dib.2016.10.012> .
 
 <http://batterydata.commons/dataset/bdc_000272> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000272#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000272#cell-variant-2> ;
     bdc:negativeElectrode "Carbon, Carbon + Silicon" ;
     bdc:positiveElectrode "LithiumIronPhosphate, LithiumNickelManganeseCobaltOxide" ;
     dcterms:identifier "bdc_000272" ;
@@ -4985,7 +5861,18 @@ Mingyang Battery Co., Ltd.""" ;
         "modelling" ;
     dcat:landingPage <https://doi.org/10.17632/y8nstxmdrg.1> .
 
+<http://batterydata.commons/dataset/bdc_000272#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:model "APR18650M1B" .
+
+<http://batterydata.commons/dataset/bdc_000272#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:model "INR18650MJ1" .
+
 <http://batterydata.commons/dataset/bdc_000274> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000274#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000274#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000274#cell-variant-3> ;
     bdc:positiveElectrode "Voltage, capacity, degradation modes" ;
     dcterms:identifier "bdc_000274" ;
     dcterms:issued "2021" ;
@@ -5001,7 +5888,21 @@ Mingyang Battery Co., Ltd.""" ;
         "modelling" ;
     dcat:landingPage <https://doi.org/10.17632/7bwjnvvprd.1> .
 
+<http://batterydata.commons/dataset/bdc_000274#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:model "NCR 18650B b" .
+
+<http://batterydata.commons/dataset/bdc_000274#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:model "INR18650-35E" .
+
+<http://batterydata.commons/dataset/bdc_000274#cell-variant-3> a bdc:CellVariant ;
+    bdc:formFactor "R26650" ;
+    schema1:model "ANR26650M" .
+
 <http://batterydata.commons/dataset/bdc_000275> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000275#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000275#cell-variant-2> ;
     bdc:positiveElectrode "Voltage, degradation modes" ;
     dcterms:identifier "bdc_000275" ;
     dcterms:issued "2022" ;
@@ -5017,7 +5918,18 @@ Mingyang Battery Co., Ltd.""" ;
         "modelling" ;
     dcat:landingPage <https://doi.org/10.17632/fyhw8rfh4z.1> .
 
+<http://batterydata.commons/dataset/bdc_000275#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "Synthetic cycles" ;
+    bdc:positiveElectrode "Voltage" .
+
+<http://batterydata.commons/dataset/bdc_000275#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "Synthetic cycles" ;
+    bdc:positiveElectrode "degradation modes" .
+
 <http://batterydata.commons/dataset/bdc_000276> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000276#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000276#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000276#cell-variant-3> ;
     bdc:positiveElectrode "Voltage, capacity, degradation modes" ;
     dcterms:identifier "bdc_000276" ;
     dcterms:issued "2024" ;
@@ -5033,7 +5945,19 @@ Mingyang Battery Co., Ltd.""" ;
         "modelling" ;
     dcat:landingPage <https://doi.org/10.17632/w48j7rn4x3.1> .
 
+<http://batterydata.commons/dataset/bdc_000276#cell-variant-1> a bdc:CellVariant ;
+    bdc:chemistry "LFP/LMO" .
+
+<http://batterydata.commons/dataset/bdc_000276#cell-variant-2> a bdc:CellVariant ;
+    bdc:chemistry "NMC/LMO" .
+
+<http://batterydata.commons/dataset/bdc_000276#cell-variant-3> a bdc:CellVariant ;
+    bdc:chemistry "NCM/NCA" .
+
 <http://batterydata.commons/dataset/bdc_000277> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000277#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000277#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000277#cell-variant-3> ;
     bdc:positiveElectrode "Voltage, capacity, degradation modes" ;
     dcterms:identifier "bdc_000277" ;
     dcterms:issued "2024" ;
@@ -5049,7 +5973,24 @@ Mingyang Battery Co., Ltd.""" ;
         "modelling" ;
     dcat:landingPage <https://doi.org/10.17632/ry6g9cc5bw.2> .
 
+<http://batterydata.commons/dataset/bdc_000277#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "Synthetic cycles" ;
+    bdc:positiveElectrode "Voltage" ;
+    schema1:manufacturer "LG Chem" .
+
+<http://batterydata.commons/dataset/bdc_000277#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "Synthetic cycles" ;
+    bdc:positiveElectrode "capacity" ;
+    schema1:manufacturer "LG Chem" .
+
+<http://batterydata.commons/dataset/bdc_000277#cell-variant-3> a bdc:CellVariant ;
+    bdc:formFactor "Synthetic cycles" ;
+    bdc:positiveElectrode "degradation modes" ;
+    schema1:manufacturer "LG Chem" .
+
 <http://batterydata.commons/dataset/bdc_000278> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000278#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000278#cell-variant-2> ;
     bdc:positiveElectrode "degradation modes, incremental capacity" ;
     dcterms:identifier "bdc_000278" ;
     dcterms:issued "2024" ;
@@ -5065,7 +6006,17 @@ Mingyang Battery Co., Ltd.""" ;
         "modelling" ;
     dcat:landingPage <https://doi.org/10.17632/mjy453j33n.1> .
 
+<http://batterydata.commons/dataset/bdc_000278#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "Synthetic cycles" ;
+    bdc:positiveElectrode "degradation modes" .
+
+<http://batterydata.commons/dataset/bdc_000278#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "Synthetic cycles" ;
+    bdc:positiveElectrode "incremental capacity" .
+
 <http://batterydata.commons/dataset/bdc_000279> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000279#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000279#cell-variant-2> ;
     bdc:positiveElectrode "Current, voltage, Temperature,state of charge" ;
     dcterms:identifier "bdc_000279" ;
     dcterms:issued "2021" ;
@@ -5081,7 +6032,18 @@ Mingyang Battery Co., Ltd.""" ;
         "modelling" ;
     dcat:landingPage <https://doi.org/10.17632/xf68bwh54v.1> .
 
+<http://batterydata.commons/dataset/bdc_000279#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:model "18650PF" .
+
+<http://batterydata.commons/dataset/bdc_000279#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "Vehicle" ;
+    schema1:model "Graphene 65C" .
+
 <http://batterydata.commons/dataset/bdc_000280> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000280#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000280#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000280#cell-variant-3> ;
     bdc:positiveElectrode "Voltage, capacity, degradation modes" ;
     dcterms:identifier "bdc_000280" ;
     dcterms:issued "2022" ;
@@ -5097,7 +6059,25 @@ Mingyang Battery Co., Ltd.""" ;
         "modelling" ;
     dcat:landingPage <https://doi.org/10.17632/rg8b2k2k28.1> .
 
+<http://batterydata.commons/dataset/bdc_000280#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "Solar panel" ;
+    bdc:positiveElectrode "Voltage" ;
+    schema1:manufacturer "Labmade" .
+
+<http://batterydata.commons/dataset/bdc_000280#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "Solar panel" ;
+    bdc:positiveElectrode "capacity" ;
+    schema1:manufacturer "Labmade" .
+
+<http://batterydata.commons/dataset/bdc_000280#cell-variant-3> a bdc:CellVariant ;
+    bdc:formFactor "Solar panel" ;
+    bdc:positiveElectrode "degradation modes" ;
+    schema1:manufacturer "Labmade" .
+
 <http://batterydata.commons/dataset/bdc_000281> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000281#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000281#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000281#cell-variant-3> ;
     bdc:positiveElectrode "Voltage, capacity, degradation modes" ;
     dcterms:identifier "bdc_000281" ;
     dcterms:issued "2021" ;
@@ -5113,7 +6093,22 @@ Mingyang Battery Co., Ltd.""" ;
         "modelling" ;
     dcat:landingPage <https://doi.org/10.17632/6s6ph9n8zg.3> .
 
+<http://batterydata.commons/dataset/bdc_000281#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "Synthetic cycles" ;
+    bdc:positiveElectrode "Voltage" .
+
+<http://batterydata.commons/dataset/bdc_000281#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "Synthetic cycles" ;
+    bdc:positiveElectrode "capacity" .
+
+<http://batterydata.commons/dataset/bdc_000281#cell-variant-3> a bdc:CellVariant ;
+    bdc:formFactor "Synthetic cycles" ;
+    bdc:positiveElectrode "degradation modes" .
+
 <http://batterydata.commons/dataset/bdc_000282> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000282#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000282#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000282#cell-variant-3> ;
     bdc:positiveElectrode "Voltage, capacity, degradation modes" ;
     dcterms:identifier "bdc_000282" ;
     dcterms:issued "2021" ;
@@ -5129,7 +6124,22 @@ Mingyang Battery Co., Ltd.""" ;
         "modelling" ;
     dcat:landingPage <https://doi.org/10.17632/bs2j56pn7y.3> .
 
+<http://batterydata.commons/dataset/bdc_000282#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "Synthetic cycles" ;
+    bdc:positiveElectrode "Voltage" .
+
+<http://batterydata.commons/dataset/bdc_000282#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "Synthetic cycles" ;
+    bdc:positiveElectrode "capacity" .
+
+<http://batterydata.commons/dataset/bdc_000282#cell-variant-3> a bdc:CellVariant ;
+    bdc:formFactor "Synthetic cycles" ;
+    bdc:positiveElectrode "degradation modes" .
+
 <http://batterydata.commons/dataset/bdc_000283> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000283#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000283#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000283#cell-variant-3> ;
     bdc:positiveElectrode "Voltage, capacity, degradation modes" ;
     dcterms:identifier "bdc_000283" ;
     dcterms:issued "2021" ;
@@ -5145,7 +6155,22 @@ Mingyang Battery Co., Ltd.""" ;
         "modelling" ;
     dcat:landingPage <https://doi.org/10.17632/pb5xpv8z5r.1> .
 
+<http://batterydata.commons/dataset/bdc_000283#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "Synthetic cycles" ;
+    bdc:positiveElectrode "Voltage" .
+
+<http://batterydata.commons/dataset/bdc_000283#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "Synthetic cycles" ;
+    bdc:positiveElectrode "capacity" .
+
+<http://batterydata.commons/dataset/bdc_000283#cell-variant-3> a bdc:CellVariant ;
+    bdc:formFactor "Synthetic cycles" ;
+    bdc:positiveElectrode "degradation modes" .
+
 <http://batterydata.commons/dataset/bdc_000284> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000284#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000284#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000284#cell-variant-3> ;
     bdc:positiveElectrode "Voltage, capacity, degradation modes" ;
     dcterms:identifier "bdc_000284" ;
     dcterms:issued "2021" ;
@@ -5160,6 +6185,18 @@ Mingyang Battery Co., Ltd.""" ;
         "Voltage, capacity, degradation modes",
         "modelling" ;
     dcat:landingPage <https://doi.org/10.17632/2h8cpszy26.1> .
+
+<http://batterydata.commons/dataset/bdc_000284#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "Synthetic cycles" ;
+    bdc:positiveElectrode "Voltage" .
+
+<http://batterydata.commons/dataset/bdc_000284#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "Synthetic cycles" ;
+    bdc:positiveElectrode "capacity" .
+
+<http://batterydata.commons/dataset/bdc_000284#cell-variant-3> a bdc:CellVariant ;
+    bdc:formFactor "Synthetic cycles" ;
+    bdc:positiveElectrode "degradation modes" .
 
 <http://batterydata.commons/dataset/bdc_000285> a dcat:Dataset ;
     bdc:positiveElectrode "EIS" ;
@@ -5265,6 +6302,8 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.17632/sn2kv34r4h.2> .
 
 <http://batterydata.commons/dataset/bdc_000291> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000291#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000291#cell-variant-2> ;
     bdc:negativeElectrode "Carbon, Carbon, Carbon" ;
     bdc:positiveElectrode "Multiple" ;
     dcterms:identifier "bdc_000291" ;
@@ -5281,6 +6320,12 @@ Mingyang Battery Co., Ltd.""" ;
         "R18650, PouchCase",
         "safety" ;
     dcat:landingPage <https://doi.org/10.17632/95gtghgwkr> .
+
+<http://batterydata.commons/dataset/bdc_000291#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R18650" .
+
+<http://batterydata.commons/dataset/bdc_000291#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "PouchCase" .
 
 <http://batterydata.commons/dataset/bdc_000292> a dcat:Dataset ;
     bdc:negativeElectrode "Unknown" ;
@@ -5334,6 +6379,35 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.17632/rgfhdhcd9k.1> .
 
 <http://batterydata.commons/dataset/bdc_000295> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000295#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-10>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-11>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-12>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-13>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-14>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-15>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-16>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-17>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-18>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-19>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-20>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-21>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-22>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-23>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-24>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-25>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-26>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-27>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-28>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-29>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-3>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-4>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-5>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-6>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-7>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-8>,
+        <http://batterydata.commons/dataset/bdc_000295#cell-variant-9> ;
     bdc:negativeElectrode "Unknown" ;
     bdc:positiveElectrode "Multiple" ;
     dcterms:identifier "bdc_000295" ;
@@ -5349,6 +6423,151 @@ Mingyang Battery Co., Ltd.""" ;
         "Multiple",
         "safety" ;
     dcat:landingPage <https://www.nrel.gov/transportation/battery-failure> .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "Coulometrics" ;
+    schema1:model "Soteria 18650 (Control)" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-10> a bdc:CellVariant ;
+    bdc:formFactor "R21700" ;
+    schema1:manufacturer "LG" ;
+    schema1:model "LG 21700-M50 (BV)" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-11> a bdc:CellVariant ;
+    bdc:formFactor "D-Cell" ;
+    schema1:manufacturer "Saft" ;
+    schema1:model "Saft D-Cell-VES16" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-12> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "Samsung" ;
+    schema1:model "Samsung 18650-26J" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-13> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "Samsung" ;
+    schema1:model "Samsung 18650-30Q" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-14> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "Sony" ;
+    schema1:model "Sony 18650-VC7" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-15> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "Sony" ;
+    schema1:model "Sony 18650-VTC6" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-16> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "Sanyo" ;
+    schema1:model "Sanyo 18650-A" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-17> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "LG" ;
+    schema1:model "LG 18650-M36" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-18> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "LG" ;
+    schema1:model "LG 18650-Test Cell (NBV-250)" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-19> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "LG" ;
+    schema1:model "LG 18650-Test Cell (NBV-220)" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "Coulometrics" ;
+    schema1:model "Soteria 18650 (AL)" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-20> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "LG" ;
+    schema1:model "LG 18650-Test Cell (BV-250)" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-21> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "LG" ;
+    schema1:model "LG 18650-Test Cell (BV-220)" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-22> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "LG" ;
+    schema1:model "LG 18650-HG2" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-23> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "LG" ;
+    schema1:model "LG 18650-MJ1" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-24> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "MOLiCEL" ;
+    schema1:model "MOLiCEL 18650-J" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-25> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "MOLiCEL" ;
+    schema1:model "MOLiCEL 18650-M35A" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-26> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "MOLiCEL" ;
+    schema1:model "MOLiCEL 18650-P28A" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-27> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "MOLiCEL" ;
+    schema1:model "MOLiCEL 18650-Test Cell" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-28> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "MOLiCEL" ;
+    schema1:model "MOLiCEL 18650-Test Cell (DW-Gold)" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-29> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "MOLiCEL" ;
+    schema1:model "MOLiCEL 18650-Test Cell (DW-Silver)" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-3> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "Coulometrics" ;
+    schema1:model "Soteria 18650 (CU)" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-4> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "Coulometrics" ;
+    schema1:model "Soteria 18650 (ALCU)" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-5> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "Coulometrics" ;
+    schema1:model "Soteria 18650 (DW)" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-6> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "Coulometrics" ;
+    schema1:model "Soteria 18650 (ALDW)" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-7> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "Coulometrics" ;
+    schema1:model "Soteria 18650 (ALCUDW)" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-8> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "KULR" ;
+    schema1:model "KULR 18650-K330" .
+
+<http://batterydata.commons/dataset/bdc_000295#cell-variant-9> a bdc:CellVariant ;
+    bdc:formFactor "R21700" ;
+    schema1:manufacturer "KULR" ;
+    schema1:model "KULR 21700-K500" .
 
 <http://batterydata.commons/dataset/bdc_000296> a dcat:Dataset ;
     bdc:negativeElectrode "Carbon" ;
@@ -5407,6 +6626,9 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://zenodo.org/records/17651045> .
 
 <http://batterydata.commons/dataset/bdc_000299> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000299#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000299#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000299#cell-variant-3> ;
     bdc:negativeElectrode "Carbon, Carbon" ;
     bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide, LithiumIronPhosphate, SodiumIonBattery" ;
     dcterms:identifier "bdc_000299" ;
@@ -5424,7 +6646,22 @@ Mingyang Battery Co., Ltd.""" ;
         "safety" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.14956640> .
 
+<http://batterydata.commons/dataset/bdc_000299#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide" .
+
+<http://batterydata.commons/dataset/bdc_000299#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    bdc:positiveElectrode "LithiumIronPhosphate" .
+
+<http://batterydata.commons/dataset/bdc_000299#cell-variant-3> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    bdc:positiveElectrode "SodiumIonBattery" .
+
 <http://batterydata.commons/dataset/bdc_000300> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000300#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000300#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000300#cell-variant-3> ;
     bdc:negativeElectrode "Unknown" ;
     bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide, LithiumNickelCobaltAluminiumOxide, LithiumIronPhosphate" ;
     dcterms:identifier "bdc_000300" ;
@@ -5442,7 +6679,21 @@ Mingyang Battery Co., Ltd.""" ;
         "safety" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.7707928> .
 
+<http://batterydata.commons/dataset/bdc_000300#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R21700" ;
+    bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide" .
+
+<http://batterydata.commons/dataset/bdc_000300#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R21700" ;
+    bdc:positiveElectrode "LithiumNickelCobaltAluminiumOxide" .
+
+<http://batterydata.commons/dataset/bdc_000300#cell-variant-3> a bdc:CellVariant ;
+    bdc:formFactor "R21700" ;
+    bdc:positiveElectrode "LithiumIronPhosphate" .
+
 <http://batterydata.commons/dataset/bdc_000301> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000301#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000301#cell-variant-2> ;
     bdc:negativeElectrode "Carbon, Carbon, Hard Carbon" ;
     bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide, LithiumIronPhosphate" ;
     dcterms:identifier "bdc_000301" ;
@@ -5460,7 +6711,18 @@ Mingyang Battery Co., Ltd.""" ;
         "safety" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.14956634> .
 
+<http://batterydata.commons/dataset/bdc_000301#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R4680" ;
+    bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide" .
+
+<http://batterydata.commons/dataset/bdc_000301#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R4680" ;
+    bdc:positiveElectrode "LithiumIronPhosphate" .
+
 <http://batterydata.commons/dataset/bdc_000303> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000303#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000303#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000303#cell-variant-3> ;
     bdc:negativeElectrode "Carbon" ;
     bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide + LithiumManganeseOxide, LithiumCobaltOxide, LithiumIronPhosphate" ;
     dcterms:identifier "bdc_000303" ;
@@ -5477,6 +6739,19 @@ Mingyang Battery Co., Ltd.""" ;
         "PrismaticCase, PouchCase, R26650",
         "performance" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.14214784> .
+
+<http://batterydata.commons/dataset/bdc_000303#cell-variant-1> a bdc:CellVariant ;
+    bdc:negativeElectrode "Carbon" ;
+    schema1:model "SCiB™ 23 Ah" .
+
+<http://batterydata.commons/dataset/bdc_000303#cell-variant-2> a bdc:CellVariant ;
+    bdc:negativeElectrode "Carbon" ;
+    schema1:model "SLPB8644143" .
+
+<http://batterydata.commons/dataset/bdc_000303#cell-variant-3> a bdc:CellVariant ;
+    bdc:formFactor "R26650" ;
+    bdc:negativeElectrode "Carbon" ;
+    schema1:model "ANR26650m1B" .
 
 <http://batterydata.commons/dataset/bdc_000304> a dcat:Dataset ;
     bdc:negativeElectrode "Unknown" ;
@@ -5531,6 +6806,8 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.25500/edata.bham.00001493> .
 
 <http://batterydata.commons/dataset/bdc_000307> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000307#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000307#cell-variant-2> ;
     bdc:negativeElectrode "Carbon" ;
     bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide, LMO" ;
     dcterms:identifier "bdc_000307" ;
@@ -5546,6 +6823,18 @@ Mingyang Battery Co., Ltd.""" ;
         "PouchCase",
         "durability" ;
     dcat:landingPage <https://doi.org/10.18126/s90e-dq90> .
+
+<http://batterydata.commons/dataset/bdc_000307#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "PouchCase" ;
+    bdc:negativeElectrode "Carbon" ;
+    bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide" ;
+    schema1:manufacturer "Labmade" .
+
+<http://batterydata.commons/dataset/bdc_000307#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "PouchCase" ;
+    bdc:negativeElectrode "Carbon" ;
+    bdc:positiveElectrode "LMO" ;
+    schema1:manufacturer "Labmade" .
 
 <http://batterydata.commons/dataset/bdc_000308> a dcat:Dataset ;
     bdc:negativeElectrode "Carbon" ;
@@ -5566,6 +6855,8 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.6084/m9.figshare.25328578> .
 
 <http://batterydata.commons/dataset/bdc_000309> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000309#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000309#cell-variant-2> ;
     bdc:negativeElectrode "Carbon, Carbon + SIlicon" ;
     bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide811, LithiumNickelManganeseCobaltOxide911" ;
     dcterms:identifier "bdc_000309" ;
@@ -5581,6 +6872,14 @@ Mingyang Battery Co., Ltd.""" ;
         "PouchCase",
         "durability" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.17654406> .
+
+<http://batterydata.commons/dataset/bdc_000309#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "PouchCase" ;
+    bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide811" .
+
+<http://batterydata.commons/dataset/bdc_000309#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "PouchCase" ;
+    bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide911" .
 
 <http://batterydata.commons/dataset/bdc_000310> a dcat:Dataset ;
     bdc:negativeElectrode "Carbon" ;
@@ -5679,6 +6978,9 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.5683/SP3/UYPYDJ> .
 
 <http://batterydata.commons/dataset/bdc_000316> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000316#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000316#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000316#cell-variant-3> ;
     bdc:negativeElectrode "Hard carbon" ;
     bdc:positiveElectrode "SodiumIon" ;
     dcterms:identifier "bdc_000316" ;
@@ -5696,6 +6998,24 @@ Mingyang Battery Co., Ltd.""" ;
         "SodiumIon",
         "durability" ;
     dcat:landingPage <https://doi.org/10.14459/2025mp1837893> .
+
+<http://batterydata.commons/dataset/bdc_000316#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    bdc:negativeElectrode "Hard carbon" ;
+    bdc:positiveElectrode "SodiumIon" ;
+    schema1:model "CY18650-1250mAh" .
+
+<http://batterydata.commons/dataset/bdc_000316#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    bdc:negativeElectrode "Hard carbon" ;
+    bdc:positiveElectrode "SodiumIon" ;
+    schema1:model "NaRE" .
+
+<http://batterydata.commons/dataset/bdc_000316#cell-variant-3> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    bdc:negativeElectrode "Hard carbon" ;
+    bdc:positiveElectrode "SodiumIon" ;
+    schema1:model "TWRE" .
 
 <http://batterydata.commons/dataset/bdc_000317> a dcat:Dataset ;
     bdc:negativeElectrode "Carbon + Silicon" ;
@@ -5736,6 +7056,14 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.4121/uuid:c10a6b3f-efe9-41ce-99f6-4093df68c653> .
 
 <http://batterydata.commons/dataset/bdc_000319> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000319#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000319#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000319#cell-variant-3>,
+        <http://batterydata.commons/dataset/bdc_000319#cell-variant-4>,
+        <http://batterydata.commons/dataset/bdc_000319#cell-variant-5>,
+        <http://batterydata.commons/dataset/bdc_000319#cell-variant-6>,
+        <http://batterydata.commons/dataset/bdc_000319#cell-variant-7>,
+        <http://batterydata.commons/dataset/bdc_000319#cell-variant-8> ;
     bdc:negativeElectrode "Carbon, Carbon+Silicon, Unknown, Unknown, Carbon, Carbon, Unknown, Unknown" ;
     bdc:positiveElectrode "LithiumIronPhosphate, NMC811, Unknown, NNP, LithiumNickelCobaltAluminiumOxide, LithiumNickelCobaltAluminiumOxide, Unknown, Unknown" ;
     dcterms:identifier "bdc_000319" ;
@@ -5753,6 +7081,43 @@ Mingyang Battery Co., Ltd.""" ;
         "R18650, R18650, R18650, R18650, R18650, R18650, R21700, R21700",
         "durability" ;
     dcat:landingPage <https://doi.org/10.6084/m9.figshare.21546162.v1> .
+
+<http://batterydata.commons/dataset/bdc_000319#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "A123" ;
+    schema1:model "A123 APR18650M1B" .
+
+<http://batterydata.commons/dataset/bdc_000319#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "LG" ;
+    schema1:model "LG INR18650MJ1" .
+
+<http://batterydata.commons/dataset/bdc_000319#cell-variant-3> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "Sony" ;
+    schema1:model "Murata/Sony US18650VTC4" .
+
+<http://batterydata.commons/dataset/bdc_000319#cell-variant-4> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:model "PAN NCR18650B" .
+
+<http://batterydata.commons/dataset/bdc_000319#cell-variant-5> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:model "PAN NCR18650PF" .
+
+<http://batterydata.commons/dataset/bdc_000319#cell-variant-6> a bdc:CellVariant ;
+    bdc:formFactor "R18650" ;
+    schema1:manufacturer "Samsung" ;
+    schema1:model "Samsung INR18650-25RM" .
+
+<http://batterydata.commons/dataset/bdc_000319#cell-variant-7> a bdc:CellVariant ;
+    bdc:formFactor "R21700" ;
+    schema1:model "Molicell INR21700-P42A" .
+
+<http://batterydata.commons/dataset/bdc_000319#cell-variant-8> a bdc:CellVariant ;
+    bdc:formFactor "R21700" ;
+    schema1:manufacturer "Samsung" ;
+    schema1:model "Samsung INR21700-40T" .
 
 <http://batterydata.commons/dataset/bdc_000320> a dcat:Dataset ;
     bdc:negativeElectrode "Carbon" ;
@@ -5845,6 +7210,8 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.17287095> .
 
 <http://batterydata.commons/dataset/bdc_000325> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000325#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000325#cell-variant-2> ;
     bdc:negativeElectrode "Unknown" ;
     bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide, LithiumIronPhosphate" ;
     dcterms:identifier "bdc_000325" ;
@@ -5860,7 +7227,15 @@ Mingyang Battery Co., Ltd.""" ;
         "field" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.16868545> .
 
+<http://batterydata.commons/dataset/bdc_000325#cell-variant-1> a bdc:CellVariant ;
+    bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide" .
+
+<http://batterydata.commons/dataset/bdc_000325#cell-variant-2> a bdc:CellVariant ;
+    bdc:positiveElectrode "LithiumIronPhosphate" .
+
 <http://batterydata.commons/dataset/bdc_000326> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000326#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000326#cell-variant-2> ;
     bdc:negativeElectrode "Unknown, Unknown" ;
     bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide, LithiumNickelCobaltAluminiumOxide" ;
     dcterms:identifier "bdc_000326" ;
@@ -5874,6 +7249,14 @@ Mingyang Battery Co., Ltd.""" ;
         "PrismaticCase",
         "modelling" ;
     dcat:landingPage <https://doi.org/10.5683/SP3/LFPKAS> .
+
+<http://batterydata.commons/dataset/bdc_000326#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "PrismaticCase" ;
+    bdc:positiveElectrode "LithiumNickelManganeseCobaltOxide" .
+
+<http://batterydata.commons/dataset/bdc_000326#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "PrismaticCase" ;
+    bdc:positiveElectrode "LithiumNickelCobaltAluminiumOxide" .
 
 <http://batterydata.commons/dataset/bdc_000327> a dcat:Dataset ;
     bdc:negativeElectrode "Unknown" ;
@@ -5906,6 +7289,12 @@ Mingyang Battery Co., Ltd.""" ;
     dcat:landingPage <https://doi.org/10.5683/SP3/7JP3NM> .
 
 <http://batterydata.commons/dataset/bdc_000329> a dcat:Dataset ;
+    bdc:hasCellVariant <http://batterydata.commons/dataset/bdc_000329#cell-variant-1>,
+        <http://batterydata.commons/dataset/bdc_000329#cell-variant-2>,
+        <http://batterydata.commons/dataset/bdc_000329#cell-variant-3>,
+        <http://batterydata.commons/dataset/bdc_000329#cell-variant-4>,
+        <http://batterydata.commons/dataset/bdc_000329#cell-variant-5>,
+        <http://batterydata.commons/dataset/bdc_000329#cell-variant-6> ;
     bdc:positiveElectrode """Disassembly, Differential scanning
 calorimetry, Laser flash analysis, Potentiostatic
 method, GITT,EIS""" ;
@@ -5926,6 +7315,38 @@ method, GITT,EIS""",
         "Physical modeling of electrothermal behavior",
         "modelling" ;
     dcat:landingPage <https://doi.org/10.5281/zenodo.5171874> .
+
+<http://batterydata.commons/dataset/bdc_000329#cell-variant-1> a bdc:CellVariant ;
+    bdc:formFactor "Physical modeling of electrothermal behavior" ;
+    bdc:positiveElectrode "Disassembly" ;
+    schema1:manufacturer "LG Chem" .
+
+<http://batterydata.commons/dataset/bdc_000329#cell-variant-2> a bdc:CellVariant ;
+    bdc:formFactor "Physical modeling of electrothermal behavior" ;
+    bdc:positiveElectrode """Differential scanning
+calorimetry""" ;
+    schema1:manufacturer "LG Chem" .
+
+<http://batterydata.commons/dataset/bdc_000329#cell-variant-3> a bdc:CellVariant ;
+    bdc:formFactor "Physical modeling of electrothermal behavior" ;
+    bdc:positiveElectrode "Laser flash analysis" ;
+    schema1:manufacturer "LG Chem" .
+
+<http://batterydata.commons/dataset/bdc_000329#cell-variant-4> a bdc:CellVariant ;
+    bdc:formFactor "Physical modeling of electrothermal behavior" ;
+    bdc:positiveElectrode """Potentiostatic
+method""" ;
+    schema1:manufacturer "LG Chem" .
+
+<http://batterydata.commons/dataset/bdc_000329#cell-variant-5> a bdc:CellVariant ;
+    bdc:formFactor "Physical modeling of electrothermal behavior" ;
+    bdc:positiveElectrode "GITT" ;
+    schema1:manufacturer "LG Chem" .
+
+<http://batterydata.commons/dataset/bdc_000329#cell-variant-6> a bdc:CellVariant ;
+    bdc:formFactor "Physical modeling of electrothermal behavior" ;
+    bdc:positiveElectrode "EIS" ;
+    schema1:manufacturer "LG Chem" .
 
 <http://batterydata.commons/dataset/bdc_000330> a dcat:Dataset ;
     bdc:positiveElectrode "Conductivity" ;

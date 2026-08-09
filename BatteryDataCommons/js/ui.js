@@ -38,12 +38,29 @@ function toggleMobileNav() {
   }
 }
 
-// Get first category from dataset
+// Use data_group as the primary display category; categories[] remains multi-label for filtering.
 function getCategory(dataset) {
+  const dataGroupCategory = {
+    PerformanceData: 'performance',
+    DurabilityData: 'durability',
+    FieldData: 'field',
+    ModelingData: 'modelling',
+    SyntheticData: 'modelling',
+    SafetyData: 'safety',
+    SoftwareData: 'software'
+  }[dataset?.data_group || dataset?.source_metadata?.kind_of_data];
+
+  if (dataGroupCategory) {
+    return dataGroupCategory;
+  }
   if (dataset.categories && dataset.categories.length > 0) {
     return dataset.categories[0];
   }
   return 'other';
+}
+
+function getPrimaryDataGroup(dataset) {
+  return dataset?.data_group || dataset?.source_metadata?.kind_of_data || null;
 }
 
 function hasMeaningfulValue(value) {
@@ -52,7 +69,7 @@ function hasMeaningfulValue(value) {
     const trimmed = value.trim();
     if (!trimmed) return false;
     const lowered = trimmed.toLowerCase();
-    return !['n/a', 'na', 'unknown', 'none', 'null'].includes(lowered);
+    return !['n/a', 'na', 'unknown', 'none', 'null', 'not applicable', 'to be checked'].includes(lowered);
   }
   return true;
 }
@@ -80,6 +97,137 @@ function renderDetailItem(label, value) {
         </div>`;
 }
 
+// Fixed category templates keep their original field structure. When the
+// source does not report a field, show N/A rather than removing the field.
+function renderTemplateDetailItem(label, value) {
+  const displayValue = hasMeaningfulValue(value) ? value : 'N/A';
+  return `
+        <div class="detail-item">
+          <div class="detail-item-label">${label}</div>
+          <div class="detail-item-value">${displayValue}</div>
+        </div>`;
+}
+
+function renderTemplateBooleanDetailItem(label, value) {
+  if (value === null || value === undefined || !hasMeaningfulValue(value)) {
+    return renderTemplateDetailItem(label, null);
+  }
+  return renderTemplateDetailItem(label, value ? 'Yes' : 'No');
+}
+
+
+// Dense technical-spec primitives used by the dataset detail view. Category
+// templates keep all of their defined fields; missing values are rendered as
+// N/A with lower visual emphasis rather than removed from the page.
+function renderSpecRow(label, value, required = false) {
+  const available = hasMeaningfulValue(value);
+  if (!available && !required) return '';
+  const displayValue = available ? value : 'N/A';
+  return `
+        <div class="detail-spec-row${available ? '' : ' is-missing'}">
+          <dt>${label}</dt>
+          <dd>${displayValue}</dd>
+        </div>`;
+}
+
+function renderBooleanSpecRow(label, value, required = true) {
+  if (value === null || value === undefined || !hasMeaningfulValue(value)) {
+    return renderSpecRow(label, null, required);
+  }
+  return renderSpecRow(label, value ? 'Yes' : 'No', required);
+}
+
+function renderSpecGroup(title, rows, className = '') {
+  const content = rows.filter(Boolean).join('');
+  if (!content) return '';
+  return `
+      <div class="detail-spec-group ${className}">
+        <h3>${title}</h3>
+        <dl>${content}
+        </dl>
+      </div>`;
+}
+
+function renderSpecSection(title, groups, className = '') {
+  const content = groups.filter(Boolean).join('');
+  if (!content) return '';
+  return `
+    <section class="dataset-detail-section detail-modern-section ${className}">
+      <div class="detail-section-heading">
+        <h2>${title}</h2>
+      </div>
+      <div class="detail-spec-groups">${content}
+      </div>
+    </section>`;
+}
+
+function renderInlineChips(values) {
+  if (!Array.isArray(values) || values.length === 0) return null;
+  return `<span class="detail-inline-chips">${values
+    .map(value => `<span class="detail-inline-chip">${escapeHtml(value)}</span>`)
+    .join('')}</span>`;
+}
+
+function getCodeUrls(dataset) {
+  if (!dataset?.code?.available) return [];
+  if (Array.isArray(dataset.code.urls)) {
+    return dataset.code.urls.filter(url => typeof url === 'string' && url.startsWith('http'));
+  }
+  if (dataset.code.url) {
+    return dataset.code.url.split(';').map(url => url.trim()).filter(url => url.startsWith('http'));
+  }
+  return [];
+}
+
+function renderDatasetProfileSection(dataset, measurements) {
+  const variants = getCellVariants(dataset);
+  const hasVariants = variants.length >= 2;
+  const hasIdentityVariants = hasVariants && hasVariantIdentityDetails(dataset);
+  const hasVariantChemistry = hasVariants && hasVariantElectrochemistryDetails(dataset);
+  const chemistries = getDistinctVariantValues(dataset, 'chemistry');
+  const positiveElectrodes = getDistinctVariantValues(dataset, 'positive_electrode');
+  const negativeElectrodes = getDistinctVariantValues(dataset, 'negative_electrode');
+
+  const batteryRows = hasVariants
+    ? [
+        renderSpecRow('Cell / module / pack', dataset.overview?.cell_module_pack),
+        renderSpecRow(hasIdentityVariants ? 'Cell variants' : 'Structured variants', variants.length),
+        renderSpecRow('Rated capacity', hasMeaningfulValue(dataset.reported_values?.rated_capacity_Ah) ? `${dataset.reported_values.rated_capacity_Ah} Ah` : null)
+      ]
+    : [
+        renderSpecRow('Manufacturer', dataset.overview?.manufacturer),
+        renderSpecRow('Battery model', dataset.overview?.battery_model),
+        renderSpecRow('IEC battery code', dataset.overview?.iec_battery_code),
+        renderSpecRow('Cell / module / pack', dataset.overview?.cell_module_pack),
+        renderSpecRow('Cell format', dataset.overview?.case),
+        renderSpecRow('Rated capacity', hasMeaningfulValue(dataset.reported_values?.rated_capacity_Ah) ? `${dataset.reported_values.rated_capacity_Ah} Ah` : null)
+      ];
+
+  const chemistryRows = hasVariants
+    ? (hasIdentityVariants && hasVariantChemistry
+      ? []
+      : [
+          renderSpecRow('Chemistries', renderInlineChips(chemistries)),
+          renderSpecRow('Positive electrode', renderInlineChips(positiveElectrodes)),
+          renderSpecRow('Negative electrode', renderInlineChips(negativeElectrodes))
+        ])
+    : [
+        renderSpecRow('Positive electrode', dataset.electrodes?.positive),
+        renderSpecRow('Negative electrode', dataset.electrodes?.negative)
+      ];
+
+  const datasetRows = [
+    renderSpecRow('Specimens', dataset.reported_values?.number_of_specimens),
+    renderSpecRow('Measurements', measurements.length > 0 ? measurements.join(', ') : null)
+  ];
+
+  return renderSpecSection('Dataset profile', [
+    renderSpecGroup('Battery', batteryRows),
+    renderSpecGroup('Chemistry', chemistryRows),
+    renderSpecGroup('Dataset', datasetRows)
+  ], 'detail-profile-section');
+}
+
 function renderDetailGrid(items, emptyMessage = 'Not available') {
   const content = items.filter(Boolean).join('');
   if (content) {
@@ -87,6 +235,297 @@ function renderDetailGrid(items, emptyMessage = 'Not available') {
       </div>`;
   }
   return `<p class="text-muted">${emptyMessage}</p>`;
+}
+
+function getCellVariants(dataset) {
+  if (!Array.isArray(dataset?.cell_variants)) return [];
+  return dataset.cell_variants.filter(variant => variant && typeof variant === 'object');
+}
+
+function hasStructuredCellVariants(dataset) {
+  return getCellVariants(dataset).length >= 2;
+}
+
+function hasVariantIdentityDetails(dataset) {
+  const identityKeys = ['manufacturer', 'battery_model', 'form_factor'];
+  return getCellVariants(dataset).some(variant =>
+    identityKeys.some(key => hasMeaningfulValue(variant?.[key]) && !isAggregatePlaceholder(variant?.[key]))
+  );
+}
+
+function hasVariantElectrochemistryDetails(dataset) {
+  const electrochemistryKeys = ['chemistry', 'positive_electrode', 'negative_electrode'];
+  return getCellVariants(dataset).some(variant =>
+    electrochemistryKeys.some(key => hasMeaningfulValue(variant?.[key]) && !isAggregatePlaceholder(variant?.[key]))
+  );
+}
+
+function isAggregatePlaceholder(value) {
+  if (!hasMeaningfulValue(value)) return true;
+  if (typeof value !== 'string') return false;
+  const lowered = value.trim().toLowerCase();
+  return [
+    'multiple',
+    'varied',
+    'mixed',
+    'multiple formats',
+    'multiple manufacturers',
+    'multiple chemistry',
+    'multiple chemistries'
+  ].includes(lowered);
+}
+
+function getDistinctVariantValues(dataset, key) {
+  return [...new Set(
+    getCellVariants(dataset)
+      .map(variant => variant?.[key])
+      .filter(value => hasMeaningfulValue(value) && !isAggregatePlaceholder(value))
+      .map(value => String(value).trim())
+  )];
+}
+
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
+// Normalize long chemistry names only for concise display titles. Canonical
+// metadata remains untouched so search, provenance, and source fidelity are preserved.
+function abbreviateChemistryForTitle(value) {
+  if (!hasMeaningfulValue(value) || isAggregatePlaceholder(value)) return null;
+
+  const raw = String(value).trim();
+  const key = raw.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const aliases = [
+    [['lithiumironphosphate', 'lifepo4'], 'LFP'],
+    [['lithiumcobaltoxide', 'licoo2'], 'LCO'],
+    [['lithiummanganeseoxide', 'limn2o4'], 'LMO'],
+    [['lithiumnickelmanganesecobaltoxide'], 'NMC'],
+    [['lithiumnickelcobaltaluminiumoxide', 'lithiumnickelcobaltaluminumoxide'], 'NCA'],
+    [['lithiumtitanate', 'li4ti5o12'], 'LTO'],
+    [['sodiumion'], 'Na-ion'],
+    [['lithiumion'], 'Li-ion']
+  ];
+
+  for (const [needles, alias] of aliases) {
+    if (needles.some(needle => key === needle || (needle.length > 8 && key.includes(needle)))) {
+      return alias;
+    }
+  }
+
+  if (/^nmc\d*$/.test(key)) return raw.toUpperCase();
+  if (['lfp', 'lco', 'lmo', 'nca', 'lto'].includes(key)) return key.toUpperCase();
+  if (raw.length <= 16) return raw;
+  return null;
+}
+
+function formatFormFactorForTitle(value) {
+  if (!hasMeaningfulValue(value) || isAggregatePlaceholder(value)) return null;
+  const raw = String(value).trim();
+  const cylindrical = raw.match(/^R(\d{5})$/i);
+  return cylindrical ? cylindrical[1] : raw;
+}
+
+function formatBatteryEntityForTitle(value) {
+  const entities = {
+    BatteryCell: 'Cell',
+    BatteryModule: 'Module',
+    BatteryPack: 'Pack'
+  };
+  return entities[value] || 'Battery';
+}
+
+function formatManufacturerModelForTitle(manufacturer, model) {
+  if (!hasMeaningfulValue(model) || isAggregatePlaceholder(model)) return null;
+  const cleanModel = String(model).trim();
+  if (!hasMeaningfulValue(manufacturer) || isAggregatePlaceholder(manufacturer)) return cleanModel;
+  const cleanManufacturer = String(manufacturer).trim();
+  if (cleanModel.toLowerCase().startsWith(cleanManufacturer.toLowerCase())) return cleanModel;
+  return `${cleanManufacturer} ${cleanModel}`;
+}
+
+function getNormalizedDatasetTitle(dataset) {
+  if (hasMeaningfulValue(dataset.software?.name)) return dataset.software.name;
+
+  const overview = dataset.overview || {};
+  const variants = getCellVariants(dataset);
+  const hasStructuredVariants = variants.length >= 2;
+  const variantModels = getDistinctVariantValues(dataset, 'battery_model');
+
+  // A legacy dataset-level model may be only a summary/example for a true
+  // multi-variant dataset. Never let that scalar represent the whole record.
+  if (!hasStructuredVariants) {
+    const directModel = formatManufacturerModelForTitle(overview.manufacturer, overview.battery_model);
+    if (directModel) return directModel;
+  }
+
+  if (variantModels.length === 1) {
+    const matchingVariant = variants.find(variant => String(variant?.battery_model || '').trim() === variantModels[0]);
+    return formatManufacturerModelForTitle(matchingVariant?.manufacturer, variantModels[0]) || variantModels[0];
+  }
+
+  const chemistryCandidates = [
+    ...getDistinctVariantValues(dataset, 'chemistry'),
+    ...getDistinctVariantValues(dataset, 'positive_electrode')
+  ];
+  if (chemistryCandidates.length === 0 && hasMeaningfulValue(dataset.electrodes?.positive)) {
+    chemistryCandidates.push(dataset.electrodes.positive);
+  }
+
+  const chemistries = [...new Set(
+    chemistryCandidates
+      .map(abbreviateChemistryForTitle)
+      .filter(Boolean)
+  )];
+  const formFactor = formatFormFactorForTitle(overview.case);
+  const entity = formatBatteryEntityForTitle(overview.cell_module_pack);
+
+  if (chemistries.length > 0 && chemistries.length <= 3) {
+    const chemistryLabel = chemistries.join(' / ');
+    const formLabel = formFactor ? ` ${formFactor}` : '';
+    const entityLabel = chemistries.length > 1 && entity === 'Cell' ? 'Cells' : entity;
+    return `${chemistryLabel}${formLabel} ${entityLabel}`.trim();
+  }
+
+  if (chemistries.length > 3) {
+    return `Multi-chemistry ${entity}`;
+  }
+
+  if (variantModels.length > 1) {
+    return `${variantModels.length} Battery Models`;
+  }
+
+  if (formFactor) {
+    return `${formFactor} ${entity}`;
+  }
+
+  const category = getCategory(dataset);
+  return `${BDC.formatCategory(category)} Battery Dataset`;
+}
+
+function getDetailTitle(dataset) {
+  return getNormalizedDatasetTitle(dataset);
+}
+
+function renderCellVariantsSection(dataset) {
+  const variants = getCellVariants(dataset);
+  if (variants.length < 2 || !hasVariantIdentityDetails(dataset)) return '';
+
+  const fields = [
+    ['manufacturer', 'Manufacturer'],
+    ['battery_model', 'Battery Model'],
+    ['form_factor', 'Cell Format'],
+    ['chemistry', 'Chemistry'],
+    ['positive_electrode', 'Positive Electrode'],
+    ['negative_electrode', 'Negative Electrode']
+  ];
+
+  const visibleFields = fields.filter(([key]) =>
+    variants.some(variant => hasMeaningfulValue(variant?.[key]) && !isAggregatePlaceholder(variant?.[key]))
+  );
+
+  if (visibleFields.length === 0) return '';
+
+  const header = visibleFields
+    .map(([, label]) => `<th scope="col">${label}</th>`)
+    .join('');
+
+  const rows = variants.map(variant => {
+    const cells = visibleFields.map(([key]) => {
+      const value = variant?.[key];
+      const displayValue = hasMeaningfulValue(value) && !isAggregatePlaceholder(value)
+        ? escapeHtml(value)
+        : '<span class="text-muted">—</span>';
+      return `<td>${displayValue}</td>`;
+    }).join('');
+    return `<tr>${cells}</tr>`;
+  }).join('');
+
+  return `
+    <div class="dataset-detail-section">
+      <h2>Cell Variants</h2>
+      <p class="cell-variants-summary">Structured metadata for ${variants.length} cell variants represented in this dataset.</p>
+      <div class="cell-variants-table-wrap">
+        <table class="cell-variants-table">
+          <thead><tr>${header}</tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+    </div>
+  `;
+}
+
+function renderMultiVariantBatteryInformation(dataset, measurements) {
+  const variants = getCellVariants(dataset);
+  const chemistries = getDistinctVariantValues(dataset, 'chemistry');
+  const hasIdentityDetails = hasVariantIdentityDetails(dataset);
+  const variantSummary = hasIdentityDetails
+    ? renderDetailItem('Cell Variants', `${variants.length}`)
+    : (chemistries.length >= 2
+      ? renderDetailItem('Chemistries', `${chemistries.length}`)
+      : renderDetailItem('Cell Variants', `${variants.length}`));
+
+  return `
+    <div class="dataset-detail-section">
+      <h2>Battery Information</h2>
+      ${renderDetailGrid([
+        renderDetailItem('Cell/Module/Pack', dataset.overview?.cell_module_pack),
+        variantSummary,
+        renderDetailItem('Number of Specimens', dataset.reported_values?.number_of_specimens),
+        renderDetailItem('Rated Capacity', hasMeaningfulValue(dataset.reported_values?.rated_capacity_Ah) ? `${dataset.reported_values.rated_capacity_Ah} Ah` : null),
+        renderDetailItem('Measurements Available', measurements.length > 0 ? measurements.join(', ') : null)
+      ])}
+    </div>
+  `;
+}
+
+function renderVariantValueGroup(label, values) {
+  if (!Array.isArray(values) || values.length === 0) return '';
+  const chips = values
+    .map(value => `<span class="variant-value-chip">${escapeHtml(value)}</span>`)
+    .join('');
+  return `
+    <div class="variant-value-group">
+      <div class="detail-item-label">${label}</div>
+      <div class="variant-value-chips">${chips}</div>
+    </div>
+  `;
+}
+
+function renderMultiVariantElectrochemistry(dataset) {
+  const chemistries = getDistinctVariantValues(dataset, 'chemistry');
+  const positiveElectrodes = getDistinctVariantValues(dataset, 'positive_electrode');
+  const negativeElectrodes = getDistinctVariantValues(dataset, 'negative_electrode');
+
+  if (chemistries.length === 0 && positiveElectrodes.length === 0 && negativeElectrodes.length === 0) {
+    const datasetPositive = dataset.electrodes?.positive;
+    const datasetNegative = dataset.electrodes?.negative;
+    if (hasMeaningfulValue(datasetPositive) && !isAggregatePlaceholder(datasetPositive)) {
+      positiveElectrodes.push(String(datasetPositive));
+    }
+    if (hasMeaningfulValue(datasetNegative) && !isAggregatePlaceholder(datasetNegative)) {
+      negativeElectrodes.push(String(datasetNegative));
+    }
+  }
+
+  const groups = [
+    renderVariantValueGroup('Chemistries', chemistries),
+    renderVariantValueGroup('Positive Electrode', positiveElectrodes),
+    renderVariantValueGroup('Negative Electrode', negativeElectrodes)
+  ].filter(Boolean).join('');
+
+  if (!groups) return '';
+
+  return `
+    <div class="dataset-detail-section">
+      <h2>Electrochemistry</h2>
+      <div class="variant-values-card">${groups}</div>
+    </div>
+  `;
 }
 
 function getSoftwareDescription(dataset) {
@@ -138,55 +577,7 @@ function getSoftwareDescription(dataset) {
 
 // Get display title from dataset
 function getTitle(dataset) {
-  if (hasMeaningfulValue(dataset.title)) {
-    return dataset.title;
-  }
-
-  if (hasMeaningfulValue(dataset.software?.name)) {
-    return dataset.software.name;
-  }
-
-  // Prefer a concise manufacturer + model combination when available.
-  if (hasMeaningfulValue(dataset.overview?.battery_model)) {
-    const model = dataset.overview.battery_model;
-    const mfr = dataset.overview?.manufacturer;
-    if (hasMeaningfulValue(mfr)) {
-      return `${mfr} ${model}`;
-    }
-    return model;
-  }
-
-  if (hasMeaningfulValue(dataset.comment) && dataset.comment !== '#REF!') {
-    return dataset.comment;
-  }
-
-  if (hasMeaningfulValue(dataset.overview?.feature) && dataset.overview.feature.split(/\s+/).length <= 6) {
-    return dataset.overview.feature;
-  }
-
-  const cellType = dataset.overview?.cell_module_pack;
-  const electrode = dataset.electrodes?.positive;
-  if (hasMeaningfulValue(cellType)) {
-    if (hasMeaningfulValue(electrode)) {
-      return `${electrode} ${cellType}`;
-    }
-    return cellType;
-  }
-
-  if (hasMeaningfulValue(electrode)) {
-    const caseType = dataset.overview?.case;
-    if (hasMeaningfulValue(caseType)) {
-      return `${electrode} / ${caseType}`;
-    }
-    return electrode;
-  }
-
-  if (hasMeaningfulValue(dataset.source_metadata?.owner)) {
-    return dataset.source_metadata.owner;
-  }
-
-  const category = dataset.categories?.[0] || 'Battery';
-  return `${BDC.formatCategory(category)} Registry Entry`;
+  return getNormalizedDatasetTitle(dataset);
 }
 
 // Get description from dataset
@@ -242,7 +633,7 @@ function buildCorrectionIssueUrl(payload) {
     params.set('evidence', payload.evidence);
   }
 
-  return `https://github.com/BatteryCommons/BatteryCommons.github.io/issues/new?${params.toString()}`;
+  return `https://github.com/BatteryCommons/BatteryDataCommons/issues/new?${params.toString()}`;
 }
 
 function openCorrectionModal(entryId) {
@@ -326,8 +717,13 @@ function renderDatasetCard(dataset) {
   const description = getDescription(dataset);
   const sourceUrl = getSourceUrl(dataset);
 
-  // Get electrode info
-  const positiveElectrode = dataset.electrodes?.positive || 'N/A';
+  // Keep card chemistry compact and consistent with the discovery filter.
+  const positiveElectrodeTypes = BDC.getPositiveElectrodeTypes
+    ? BDC.getPositiveElectrodeTypes(dataset)
+    : [];
+  const positiveElectrode = positiveElectrodeTypes.length > 0
+    ? positiveElectrodeTypes.join(' / ')
+    : (dataset.electrodes?.positive || 'N/A');
   const cellFormat = dataset.overview?.case || 'Unknown';
   const year = dataset.publication_date || '';
   const metaBadges = [
@@ -366,19 +762,19 @@ function renderStatsCards(stats) {
   return `
     <div class="card stat-card">
       <div class="stat-value">${stats.total}</div>
-      <div class="stat-label">Curated Datasets</div>
+      <div class="stat-label">Datasets</div>
     </div>
     <div class="card stat-card">
       <div class="stat-value">${stats.toolCount || 0}</div>
-      <div class="stat-label">Software Tools</div>
+      <div class="stat-label">Tools</div>
     </div>
     <div class="card stat-card">
       <div class="stat-value">${Object.keys(stats.categories || {}).length}</div>
       <div class="stat-label">Categories</div>
     </div>
     <div class="card stat-card">
-      <div class="stat-value">${Object.keys(stats.years || {}).length}</div>
-      <div class="stat-label">Publication Years</div>
+      <div class="stat-value">${Object.keys(stats.chemistryFamilies || {}).length}</div>
+      <div class="stat-label">Chemistry families</div>
     </div>
   `;
 }
@@ -395,6 +791,17 @@ function renderFilters(stats) {
         <div class="filter-group">
           <h4 class="filter-title">Category</h4>
           ${renderFilterOptions('category', stats.categories)}
+        </div>`;
+  }
+
+  // Positive electrode family filter — compact chips keep the sidebar low-chrome.
+  if (stats.positiveElectrodes && Object.keys(stats.positiveElectrodes).length > 0) {
+    html += `
+        <div class="filter-group filter-group-compact">
+          <h4 class="filter-title">Positive electrode</h4>
+          <div class="filter-chip-list">
+            ${renderCompactFilterChips('positive_electrode', stats.positiveElectrodes)}
+          </div>
         </div>`;
   }
 
@@ -417,6 +824,36 @@ function renderFilters(stats) {
   }
 
   return html || '<p>No filters available</p>';
+}
+
+function renderCompactFilterChips(filterType, counts) {
+  if (!counts) return '';
+
+  const preferredOrder = ['LFP', 'NMC', 'NCA', 'LCO', 'LMO', 'LNO', 'PBA', 'NFM'];
+  const activeFilters = BDC.activeFilters || {};
+  const activeValues = activeFilters[filterType] || [];
+
+  return Object.entries(counts)
+    .sort((a, b) => {
+      const ai = preferredOrder.indexOf(a[0]);
+      const bi = preferredOrder.indexOf(b[0]);
+      if (ai !== -1 || bi !== -1) {
+        if (ai === -1) return 1;
+        if (bi === -1) return -1;
+        return ai - bi;
+      }
+      return b[1] - a[1] || a[0].localeCompare(b[0]);
+    })
+    .map(([value, count]) => {
+      const active = activeValues.includes(value);
+      return `
+        <button type="button"
+                class="filter-chip${active ? ' is-active' : ''}"
+                aria-pressed="${active ? 'true' : 'false'}"
+                onclick="BDCUI.handleFilterChange('${filterType}', '${value}')">
+          <span>${value}</span><span class="filter-chip-count">${count}</span>
+        </button>`;
+    }).join('');
 }
 
 // Render filter options
@@ -446,9 +883,16 @@ function renderFilterOptions(filterType, counts) {
     `).join('');
 }
 
+function refreshFiltersUI() {
+  const filtersContent = document.getElementById('filters-content');
+  if (!filtersContent || !BDC.getStats) return;
+  filtersContent.innerHTML = renderFilters(BDC.getStats());
+}
+
 // Handle filter change
 function handleFilterChange(filterType, value) {
   BDC.toggleFilter(filterType, value);
+  refreshFiltersUI();
   renderResults();
 }
 
@@ -494,17 +938,14 @@ function renderResults() {
 function handleClearFilters() {
   BDC.clearFilters();
 
-  // Reset checkboxes
-  document.querySelectorAll('.filter-option input[type="checkbox"]').forEach(cb => {
-    cb.checked = false;
-  });
-
-  // Reset search
+  // Reset search and rebuild filters so compact chips and checkboxes both
+  // reflect the cleared state from the same source of truth.
   const searchInput = document.querySelector('.search-box input');
   if (searchInput) {
     searchInput.value = '';
   }
 
+  refreshFiltersUI();
   renderResults();
 }
 
@@ -515,154 +956,232 @@ function truncate(text, length) {
   return text.substring(0, length).trim() + '...';
 }
 
+function renderBooleanDetailItem(label, value) {
+  if (value === null || value === undefined) return '';
+  return renderDetailItem(label, value ? 'Yes' : 'No');
+}
+
+function renderPrimaryCategorySection(dataset) {
+  const group = getPrimaryDataGroup(dataset);
+  const meta = dataset.source_metadata || {};
+
+  if (group === 'PerformanceData') {
+    const d = dataset.performance_details || {};
+    return renderSpecSection('Performance', [
+      renderSpecGroup('Capacity characterisation', [
+        renderSpecRow('Test temperature', d.capacity_test_temperature, true),
+        renderSpecRow('Charge conditions', d.capacity_test_charge_conditions, true),
+        renderSpecRow('Discharge conditions', d.capacity_test_discharge_conditions, true)
+      ]),
+      renderSpecGroup('DC resistance', [
+        renderSpecRow('Pulse C-rate / current', d.resistance_test_c_rate, true),
+        renderSpecRow('Pulse duration', d.resistance_test_duration, true),
+        renderSpecRow('Rest between pulses', d.resistance_test_rest, true),
+        renderSpecRow('Measurement SoC', d.resistance_test_soc, true),
+        renderSpecRow('Test temperature', d.resistance_test_temperature, true)
+      ]),
+      renderSpecGroup('EIS', [
+        renderSpecRow('Temperature', d.eis_temperature, true),
+        renderSpecRow('Frequency range', d.eis_frequency_range, true),
+        renderSpecRow('Excitation', d.eis_excitation, true),
+        renderSpecRow('SoC', d.eis_soc, true)
+      ]),
+      renderSpecGroup('Low-current characterisation', [
+        renderSpecRow('Charge C-rate', d.low_current_charge_c_rate, true),
+        renderSpecRow('Discharge C-rate', d.low_current_discharge_c_rate, true),
+        renderSpecRow('Test temperature', d.low_current_temperature, true)
+      ]),
+      renderSpecGroup('Data', [
+        renderSpecRow('Test duration', meta.test_duration, true),
+        renderSpecRow('Sampling', meta.sampling, true),
+        renderSpecRow('File format', meta.file_format, true),
+        renderSpecRow('Data size', meta.size, true)
+      ])
+    ], 'detail-category-section');
+  }
+
+  if (group === 'DurabilityData') {
+    const d = dataset.durability || {};
+    return renderSpecSection('Durability', [
+      renderSpecGroup('Lifetime', [
+        renderSpecRow('Timeframe (cycles)', d.timeframe_cycles, true),
+        renderSpecRow('Timeframe (months)', d.timeframe_months, true),
+        renderSpecRow('Initial / final SoH range', d.soh_range, true)
+      ]),
+      renderSpecGroup('Ageing conditions', [
+        renderSpecRow('Ageing temperature', d.aging_temperature, true),
+        renderSpecRow('SoC window', d.soc_window, true)
+      ]),
+      renderSpecGroup('Cycling protocol', [
+        renderSpecRow('Charge C-rate / current', d.charge_c_rate, true),
+        renderSpecRow('Discharge C-rate / current', d.discharge_c_rate, true),
+        renderSpecRow('Charge profile', d.charge_profile, true),
+        renderSpecRow('Discharge profile', d.discharge_profile, true),
+        renderSpecRow('Usage cycles / application', d.usage_cycles, true),
+        renderSpecRow('Measured variables', d.measures, true)
+      ]),
+      renderSpecGroup('Data', [
+        renderSpecRow('Sampling', meta.sampling, true),
+        renderSpecRow('File format', meta.file_format, true),
+        renderSpecRow('Data size', meta.size, true)
+      ])
+    ], 'detail-category-section');
+  }
+
+  if (group === 'FieldData') {
+    const d = dataset.field_data || {};
+    return renderSpecSection('Field data', [
+      renderSpecGroup('Operation', [
+        renderSpecRow('Usage / application', d.usage_application, true),
+        renderSpecRow('Timeframe', d.timeframe, true)
+      ]),
+      renderSpecGroup('Data acquisition', [
+        renderSpecRow('Sampling', d.sampling || meta.sampling, true),
+        renderSpecRow('File format', d.file_format || meta.file_format, true),
+        renderSpecRow('Data size', d.size || meta.size, true)
+      ])
+    ], 'detail-category-section');
+  }
+
+  if (group === 'ModelingData' || group === 'SyntheticData') {
+    const d = dataset.modeling || {};
+    return renderSpecSection('Modeling', [
+      renderSpecGroup('Model definition', [
+        renderSpecRow('Model type', d.model_type, true),
+        renderBooleanSpecRow('Different temperatures', d.different_temperature, true),
+        renderBooleanSpecRow('Different currents', d.different_current, true),
+        renderBooleanSpecRow('Different ageing states', d.different_aging_state, true)
+      ]),
+      renderSpecGroup('Validation', [
+        renderSpecRow('Validation profile / usage', d.validation_profile, true)
+      ]),
+      renderSpecGroup('Data', [
+        renderSpecRow('Test duration', meta.test_duration, true),
+        renderSpecRow('Sampling', meta.sampling, true),
+        renderSpecRow('File format', meta.file_format, true),
+        renderSpecRow('Data size', meta.size, true)
+      ])
+    ], 'detail-category-section');
+  }
+
+  if (group === 'SafetyData') {
+    return renderSpecSection('Safety', [
+      renderSpecGroup('Test summary', [
+        renderSpecRow('Feature of interest', dataset.overview?.feature, true),
+        renderSpecRow('Purpose', meta.purpose, true),
+        renderSpecRow('Content', meta.content, true)
+      ]),
+      renderSpecGroup('Data', [
+        renderSpecRow('Test duration', meta.test_duration, true),
+        renderSpecRow('Sampling', meta.sampling, true),
+        renderSpecRow('File format', meta.file_format, true),
+        renderSpecRow('Data size', meta.size, true)
+      ])
+    ], 'detail-category-section');
+  }
+
+  return '';
+}
+
 // Render dataset detail page
 function renderDatasetDetail(dataset) {
   if (!dataset) {
     return '<div class="empty-state"><h3>Registry entry not found</h3></div>';
   }
 
-  const title = getTitle(dataset);
+  const title = getDetailTitle(dataset);
   const category = getCategory(dataset);
   const sourceUrl = getSourceUrl(dataset);
+  const description = getDescription(dataset);
   const measurements = BDC.formatMeasurements ? BDC.formatMeasurements(dataset.available_measurements) : [];
-  const headerBadges = [
-    `<span class="badge badge-${category}">${BDC.formatCategory(category)}</span>`,
-    hasMeaningfulValue(dataset.electrodes?.positive) ? `<span class="badge">${dataset.electrodes.positive}</span>` : '',
-    hasMeaningfulValue(dataset.overview?.case) ? `<span class="badge">${dataset.overview.case}</span>` : '',
-    dataset.publication_date ? `<span class="version-badge">${dataset.publication_date}</span>` : ''
-  ].filter(Boolean).join('');
+  const cellVariants = getCellVariants(dataset);
+  const hasCellVariants = cellVariants.length >= 2;
+  const hasIdentityVariants = hasCellVariants && hasVariantIdentityDetails(dataset);
+  const variantChemistries = getDistinctVariantValues(dataset, 'chemistry');
+  const specimenCount = dataset.reported_values?.number_of_specimens;
+  const codeUrls = getCodeUrls(dataset);
 
-  // Publications
+  const metaItems = [
+    hasCellVariants
+      ? (hasIdentityVariants
+        ? `${cellVariants.length} cell variants`
+        : (variantChemistries.length >= 2 ? `${variantChemistries.length} chemistries` : `${cellVariants.length} variants`))
+      : (hasMeaningfulValue(dataset.electrodes?.positive) ? dataset.electrodes.positive : null),
+    !hasCellVariants && hasMeaningfulValue(dataset.overview?.case) ? dataset.overview.case : null,
+    hasMeaningfulValue(specimenCount)
+      ? `${Number.isInteger(Number(specimenCount)) ? Number(specimenCount) : specimenCount} specimens`
+      : null,
+    dataset.publication_date || null
+  ].filter(Boolean).map(value => `<span class="detail-meta-item">${value}</span>`).join('');
+
+  const actions = [];
+  if (sourceUrl && sourceUrl !== '#') {
+    actions.push(`<a href="${sourceUrl}" class="detail-action detail-action-primary" target="_blank" rel="noopener">Open source <span aria-hidden="true">↗</span></a>`);
+  }
+  if (Array.isArray(dataset.download_urls) && dataset.download_urls.length > 0) {
+    actions.push(`<a href="${dataset.download_urls[0]}" class="detail-action" target="_blank" rel="noopener">Download</a>`);
+  }
+  codeUrls.forEach((url, index) => {
+    const label = codeUrls.length > 1 ? `Code ${index + 1}` : 'Code';
+    actions.push(`<a href="${url}" class="detail-action" target="_blank" rel="noopener">${label}</a>`);
+  });
+  if (dataset.code?.available && codeUrls.length === 0) {
+    actions.push('<span class="detail-action is-disabled">Code available</span>');
+  }
+  const actionRow = actions.length > 0 ? `<div class="detail-actions">${actions.join('')}</div>` : '';
+
+  const profileSection = renderDatasetProfileSection(dataset, measurements);
+  const cellVariantsSection = hasIdentityVariants ? renderCellVariantsSection(dataset) : '';
+  const primaryCategorySection = renderPrimaryCategorySection(dataset);
+
+  const licenseValue = dataset.license
+    ? (dataset.license.url
+      ? `<a href="${dataset.license.url}" target="_blank" rel="noopener">${dataset.license.name}</a>`
+      : dataset.license.name)
+    : (dataset.license_url && dataset.license_url !== 'No license'
+      ? `<a href="${dataset.license_url}" target="_blank" rel="noopener">Custom license</a>`
+      : null);
+  const cycler = [dataset.source_metadata?.battery_cycler_manufacturer, dataset.source_metadata?.battery_cycler_model]
+    .filter(hasMeaningfulValue).join(' ') || null;
+
+  const provenanceSection = renderSpecSection('Source & provenance', [
+    renderSpecGroup('Registry', [
+      renderSpecRow('Category', BDC.formatCategory(category)),
+      renderSpecRow('Data group', dataset.data_group),
+      renderSpecRow('Owner', dataset.source_metadata?.owner),
+      renderSpecRow('Data modality', dataset.source_metadata?.data_modality)
+    ]),
+    renderSpecGroup('Provenance', [
+      renderSpecRow('License', licenseValue),
+      renderSpecRow('Publication year', dataset.publication_date),
+      renderSpecRow('Battery cycler', cycler),
+      renderSpecRow('Anomaly mentioned', dataset.source_metadata?.anomaly_mentioned ? 'Yes' : null),
+      renderSpecRow('Data citation', dataset.bib_citation_data)
+    ])
+  ], 'detail-provenance-section');
+
   const publications = dataset.publications && dataset.publications.length > 0
     ? dataset.publications.map(pub => `
-        <li>
-          <a href="${pub.url || '#'}" target="_blank" rel="noopener">${formatPublicationLabel(pub)}</a>
-        </li>
-      `).join('')
-    : '<li class="text-muted">No associated publications</li>';
+        <a class="detail-publication" href="${pub.url || '#'}" target="_blank" rel="noopener">
+          <span>${formatPublicationLabel(pub)}</span>
+          <span aria-hidden="true">↗</span>
+        </a>`).join('')
+    : '<p class="detail-empty-note">No associated publications.</p>';
 
-  // Code section — handle multiple URLs
-  let codeSection = '';
-  if (dataset.code && dataset.code.available) {
-    // Collect code URLs: prefer urls array, fall back to url string (split on ; for legacy)
-    let codeUrls = [];
-    if (dataset.code.urls && Array.isArray(dataset.code.urls)) {
-      codeUrls = dataset.code.urls;
-    } else if (dataset.code.url) {
-      codeUrls = dataset.code.url.split(';').map(u => u.trim()).filter(u => u.startsWith('http'));
-    }
-
-    const githubIcon = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-               <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>`;
-
-    if (codeUrls.length > 0) {
-      const buttons = codeUrls.map((url, i) => {
-        const label = codeUrls.length > 1 ? `View Code ${i + 1} →` : 'View Code →';
-        return `<a href="${url}" class="btn btn-outline btn-lg" target="_blank" rel="noopener">
-               ${githubIcon}
-               ${label}
-             </a>`;
-      }).join('\n        ');
-
-      codeSection = `
-      <div class="dataset-detail-section">
-        <h2>Processing Code</h2>
-        <div style="display:flex;gap:.75rem;flex-wrap:wrap;">
-          ${buttons}
-        </div>
-      </div>`;
-    } else {
-      codeSection = `
-      <div class="dataset-detail-section">
-        <h2>Processing Code</h2>
-        <span class="badge badge-field">Code Available</span>
-      </div>`;
-    }
-  }
-
-  // Modeling section (for modeling category)
-  const modelingSection = dataset.modeling ? `
-    <div class="dataset-detail-section">
-      <h2>Modeling Information</h2>
-      ${renderDetailGrid([
-        renderDetailItem('Model Type', dataset.modeling.model_type),
-        dataset.modeling.different_temperature !== null && dataset.modeling.different_temperature !== undefined
-          ? renderDetailItem('Different Temperatures', dataset.modeling.different_temperature ? 'Yes' : 'No')
-          : '',
-        dataset.modeling.different_current !== null && dataset.modeling.different_current !== undefined
-          ? renderDetailItem('Different Currents', dataset.modeling.different_current ? 'Yes' : 'No')
-          : '',
-        dataset.modeling.different_aging_state !== null && dataset.modeling.different_aging_state !== undefined
-          ? renderDetailItem('Different Aging States', dataset.modeling.different_aging_state ? 'Yes' : 'No')
-          : '',
-        renderDetailItem('Validation Profile', dataset.modeling.validation_profile)
-      ])}
-    </div>
-  ` : '';
-
-  // Field data section (for field category)
-  const fieldSection = dataset.field_data ? `
-    <div class="dataset-detail-section">
-      <h2>Field Data Information</h2>
-      ${renderDetailGrid([
-        renderDetailItem('Usage/Application', dataset.field_data.usage_application),
-        renderDetailItem('Timeframe', dataset.field_data.timeframe),
-        renderDetailItem('Sampling Rate', dataset.field_data.sampling),
-        renderDetailItem('Data Size', dataset.field_data.size),
-        renderDetailItem('File Format', dataset.field_data.file_format)
-      ])}
-    </div>
-  ` : '';
-
-  // Durability section (for ageing category)
-  const durabilitySection = dataset.durability ? `
-    <div class="dataset-detail-section">
-      <h2>Durability Information</h2>
-      ${renderDetailGrid([
-        renderDetailItem('Timeframe (Cycles)', dataset.durability.timeframe_cycles),
-        renderDetailItem('Timeframe (Months)', dataset.durability.timeframe_months),
-        renderDetailItem('Usage Cycles', dataset.durability.usage_cycles),
-        renderDetailItem('Measures', dataset.durability.measures),
-        renderDetailItem('Sampling', dataset.durability.sampling)
-      ])}
-    </div>
-  ` : '';
-
-  // Safety section
-  const safetySection = (dataset.source_metadata?.purpose || dataset.source_metadata?.content) ? `
-    <div class="dataset-detail-section">
-      <h2>Safety Information</h2>
-      ${renderDetailGrid([
-        renderDetailItem('Purpose', dataset.source_metadata.purpose),
-        renderDetailItem('Content', dataset.source_metadata.content)
-      ])}
-    </div>
-  ` : '';
-
-  // Download URLs section
-  const downloadSection = dataset.download_urls && dataset.download_urls.length > 0
-    ? `
-      <div class="dataset-detail-section">
-        <h2>Download Data</h2>
-        <a href="${dataset.download_urls[0]}" class="btn btn-outline-gradient btn-lg" target="_blank" rel="noopener">
-          Download Data →
-        </a>
-      </div>`
-    : '';
+  const publicationsSection = `
+    <section class="dataset-detail-section detail-modern-section detail-publications-section">
+      <div class="detail-section-heading"><h2>Publications</h2></div>
+      <div class="detail-publication-list">${publications}</div>
+    </section>`;
 
   const correctionSection = `
-    <div class="dataset-detail-section card correction-callout">
-      <div class="correction-callout-inner">
-        <div>
-          <h2>Suggest a correction</h2>
-          <p>Notice a metadata issue, missing link, or better source for this registry entry? Open a quick GitHub issue with the entry context prefilled.</p>
-        </div>
-        <button type="button" class="btn btn-outline btn-sm" onclick="BDCUI.openCorrectionModal('${dataset.id}')">
-          Suggest a correction
-        </button>
+    <div class="detail-correction">
+      <div>
+        <strong>Something missing or incorrect?</strong>
+        <span>Suggest a metadata correction for this registry entry.</span>
       </div>
-    </div>
-  `;
+      <button type="button" class="detail-action" onclick="BDCUI.openCorrectionModal('${dataset.id}')">Suggest a correction</button>
+    </div>`;
 
   const correctionModal = `
     <div class="correction-modal" id="correction-modal" hidden aria-hidden="true" onclick="BDCUI.handleCorrectionOverlayClick(event)">
@@ -672,133 +1191,56 @@ function renderDatasetDetail(dataset) {
             <h3 id="correction-modal-title">Suggest a correction</h3>
             <p class="correction-summary" id="correction-entry-summary"></p>
           </div>
-          <button type="button" class="correction-close" aria-label="Close correction dialog" onclick="BDCUI.closeCorrectionModal()">
-            ×
-          </button>
+          <button type="button" class="correction-close" aria-label="Close correction dialog" onclick="BDCUI.closeCorrectionModal()">×</button>
         </div>
-
         <form id="correction-form" class="correction-form" onsubmit="BDCUI.submitCorrection(event)">
           <input type="hidden" id="correction-entry-id">
-
           <label class="correction-field">
             <span class="correction-label">What should be corrected or improved?</span>
             <textarea id="correction-message" class="input correction-textarea" required placeholder="Describe the correction or suggestion for this registry entry."></textarea>
           </label>
-
           <label class="correction-field">
             <span class="correction-label">Evidence or source link (optional)</span>
             <input id="correction-evidence" class="input" type="url" placeholder="https://doi.org/...">
           </label>
-
           <p class="correction-note">Submitting will open a GitHub issue in a new tab with this registry entry already filled in.</p>
-
           <div class="correction-actions">
-            <button type="button" class="btn btn-secondary btn-sm" onclick="BDCUI.closeCorrectionModal()">
-              Cancel
-            </button>
-            <button type="submit" class="btn btn-outline-gradient btn-sm">
-              Open GitHub Issue →
-            </button>
+            <button type="button" class="btn btn-secondary btn-sm" onclick="BDCUI.closeCorrectionModal()">Cancel</button>
+            <button type="submit" class="btn btn-outline-gradient btn-sm">Open GitHub Issue →</button>
           </div>
         </form>
       </div>
-    </div>
-  `;
+    </div>`;
 
   return `
-    <div class="breadcrumb">
-      <a href="index.html">Home</a>
-      <span class="breadcrumb-separator">›</span>
-      <a href="find-data.html">Find Data</a>
-      <span class="breadcrumb-separator">›</span>
-      <span>${dataset.id}</span>
-    </div>
-    
-    <div class="dataset-detail-header">
-      <h1>${title}</h1>
-      <div class="dataset-detail-meta">
-        ${headerBadges}
+    <div class="dataset-detail-modern">
+      <div class="breadcrumb detail-breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="find-data.html">Find data</a>
+        <span class="breadcrumb-separator">/</span>
+        <span>${dataset.id}</span>
       </div>
-      <p class="font-mono text-muted">ID: ${dataset.id}</p>
-    </div>
-    
-    <div class="dataset-detail-section">
-      <h2>Overview</h2>
-      <p>${getDescription(dataset)}</p>
-    </div>
-    
-    <div class="dataset-detail-section">
-      <h2>Access Source</h2>
-      <a href="${sourceUrl}" class="btn btn-outline-gradient btn-lg" target="_blank" rel="noopener">
-        Open Source Record →
-      </a>
-    </div>
 
-    ${downloadSection}
-    ${codeSection}
-    
-    <div class="dataset-detail-section">
-      <h2>Battery Information</h2>
-      ${renderDetailGrid([
-        renderDetailItem('Manufacturer', dataset.overview?.manufacturer),
-        renderDetailItem('Battery Model', dataset.overview?.battery_model),
-        renderDetailItem('IEC Battery Code', dataset.overview?.iec_battery_code),
-        renderDetailItem('Cell/Module/Pack', dataset.overview?.cell_module_pack),
-        renderDetailItem('Cell Format', dataset.overview?.case),
-        renderDetailItem('Rated Capacity', hasMeaningfulValue(dataset.reported_values?.rated_capacity_Ah) ? `${dataset.reported_values.rated_capacity_Ah} Ah` : null)
-      ])}
-    </div>
-    
-    <div class="dataset-detail-section">
-      <h2>Electrochemistry</h2>
-      ${renderDetailGrid([
-        renderDetailItem('Positive Electrode', dataset.electrodes?.positive),
-        renderDetailItem('Negative Electrode', dataset.electrodes?.negative),
-        renderDetailItem('Number of Specimens', dataset.reported_values?.number_of_specimens),
-        renderDetailItem('Measurements Available', measurements.length > 0 ? measurements.join(', ') : null)
-      ])}
-    </div>
+      <header class="detail-hero">
+        <div class="detail-kicker">
+          <span class="badge badge-${category}">${BDC.formatCategory(category)}</span>
+          <span class="font-mono">${dataset.id}</span>
+        </div>
+        <h1>${title}</h1>
+        <p class="detail-summary">${description}</p>
+        ${metaItems ? `<div class="detail-meta-line">${metaItems}</div>` : ''}
+        ${actionRow}
+      </header>
 
-    ${modelingSection}
-    ${fieldSection}
-    ${durabilitySection}
-    ${safetySection}
-    
-    <div class="dataset-detail-section">
-      <h2>Source Information</h2>
-      ${renderDetailGrid([
-        renderDetailItem('Category', BDC.formatCategory(category)),
-        renderDetailItem('Data Group', dataset.data_group),
-        renderDetailItem('Owner', dataset.source_metadata?.owner),
-        renderDetailItem('Data Modality', dataset.source_metadata?.data_modality),
-        renderDetailItem(
-          'License',
-          dataset.license
-            ? (dataset.license.url
-              ? `<a href="${dataset.license.url}" target="_blank" rel="noopener">${dataset.license.name}</a>`
-              : dataset.license.name)
-            : (dataset.license_url && dataset.license_url !== 'No license'
-              ? `<a href="${dataset.license_url}" target="_blank" rel="noopener">Custom License</a>`
-              : null)
-        ),
-        renderDetailItem('Publication Year', dataset.publication_date),
-        renderDetailItem(
-          'Battery Cycler',
-          [dataset.source_metadata?.battery_cycler_manufacturer, dataset.source_metadata?.battery_cycler_model].filter(hasMeaningfulValue).join(' ') || null
-        ),
-        renderDetailItem('Anomaly Mentioned', dataset.source_metadata?.anomaly_mentioned ? 'Yes' : null),
-        renderDetailItem('Data Citation', dataset.bib_citation_data)
-      ])}
-    </div>
-    
-    <div class="dataset-detail-section">
-      <h2>Associated Publications</h2>
-      <ul>${publications}</ul>
-    </div>
-
-    ${correctionSection}
-    ${correctionModal}
-  `;
+      ${profileSection}
+      ${cellVariantsSection}
+      ${primaryCategorySection}
+      ${provenanceSection}
+      ${publicationsSection}
+      ${correctionSection}
+      ${correctionModal}
+    </div>`;
 }
 
 // Get URL parameter
