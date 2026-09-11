@@ -383,9 +383,9 @@ function getVersionInfo() {
 function formatCategory(category) {
   const labels = {
     'performance': 'Performance',
-    'durability': 'Durability',
-    'field': 'Field Data',
-    'modelling': 'Modelling',
+    'durability': 'Aging',
+    'field': 'Field',
+    'modelling': 'Modeling',
     'safety': 'Safety',
     'diagnostics': 'Diagnostics',
     'other': 'Other'
@@ -397,7 +397,7 @@ function formatCategory(category) {
 function formatDataGroup(group) {
   const labels = {
     'PerformanceData': 'Performance',
-    'DurabilityData': 'Durability',
+    'DurabilityData': 'Aging',
     'FieldData': 'Field',
     'ModelingData': 'Modeling',
     'SafetyData': 'Safety'
@@ -410,7 +410,7 @@ function formatMeasurements(measurements) {
   if (!measurements) return [];
 
   const labels = {
-    'discharge_capacity': 'Discharge Capacity',
+    'discharge_capacity': 'Capacity',
     'internal_resistance': 'Internal Resistance',
     'eis': 'EIS',
     'pseudo_ocv': 'Pseudo OCV'
