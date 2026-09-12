@@ -2,7 +2,7 @@
 
 This repository hosts the public web mirror for the Battery Data Commons registry.
 
-Interface: [batterycommons.github.io/BatteryDataCommons](https://batterycommons.github.io/BatteryDataCommons/)
+Interface: [https://batterydatacommons.org/BatteryDataCommons/](https://batterydatacommons.org/BatteryDataCommons/)
 
 Registry metadata: [registrydata_v20260326.json](https://batterycommons.github.io/BatteryDataCommons/releases/datasets.jsonl)
 
@@ -11,9 +11,8 @@ Internal curation workflows are maintained separately.
 
 ## License
 
-The released registry metadata and website content are distributed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+The released registry metadata and website content are distributed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 ## Contact
-
-- Goncalo dos Reis — G.dosReis@ed.ac.uk
 - Marwan Hassini — marwan.hassini@univ-eiffel.fr
+- Gonçalo dos Reis — G.dosReis@ed.ac.uk
