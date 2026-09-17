@@ -20,23 +20,17 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet">
+
   <!-- Styles -->
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/pages.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <link rel="stylesheet" href="css/catalogue.css?v=20260917a">
 </head>
 
-<body>
-<i class="fa fa-cloud"></i>
-<i class="fa fa-heart"></i>
-<i class="fa fa-car"></i>
-<i class="fa fa-file"></i>
-<i class="fa fa-bars"></i>
-
-  
+<body class="home-page">
   <!-- Navigation -->
   <nav class="nav">
     <div class="nav-inner">
@@ -61,10 +55,10 @@
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="find-data.html">Find Data</a></li>
-        <li><a href="tools.html">Find Tools</a></li>
+        <li><a href="tools.html">Tools</a></li>
         <li><a href="about.html">About</a></li>
                 <li><a href="members.html">Contributors</a></li>
-                <li><a href="contribute.html">Contribute</a></li>
+                <li><a href="contribute.html">Submit</a></li>
       </ul>
 
       <div class="nav-actions">
@@ -97,33 +91,24 @@
   <main>
     <!-- Hero Section -->
     <section class="hero">
-      <div class="hero-bg">
-        <div class="hero-bg-gradient"></div>
-        <div class="hero-bg-gradient"></div>
-      </div>
       <div class="container hero-content">
-        <div class="hero-badge">
-          <span class="version-badge">v26.08</span>
+        <div class="release-line" data-release-details hidden>
+          <span class="version-badge">v13.09.2026</span>
         </div>
         <h1>Battery Data Commons</h1>
-        <p>A curated, continuously updated metadata registry for battery datasets. Discover, compare, and cite public
-          battery data from trusted repositories.</p>
+        <p class="hero-description"><span>A curated, continuously updated metadata registry for battery datasets.</span>
+          <span>Discover, compare, and cite public battery data from trusted repositories.</span></p>
         <div class="hero-actions">
-          <a href="find-data.html" class="btn btn-primary-animated btn-lg">
-            Find Data <i style="font-size:24px" class="fa">&#128270;</i>
-          </a>
-            <a href="releases/datasets.jsonl" class="btn btn-primary-animated btn-lg">
-            Download the registry <i style="font-size:24px" class="fa">&#xf019;</i>
-           </a>
-          <a href="https://doi.org/10.1016/j.egyai.2021.100081" class="btn btn-primary-animated btn-lg">
-            Read the article <i style="font-size:24px" class="fa">&#xf1c1;</i>
-          </a>     
+          <a href="find-data.html" class="catalogue-primary">Find Data</a>
+          <a data-excel-download class="catalogue-secondary" hidden>Download Registry</a>
+          <a href="https://www.sciencedirect.com/science/article/pii/S2666546821000355?via%3Dihub"
+            class="catalogue-paper" target="_blank" rel="noopener noreferrer">Read the Paper <span class="icon-mask icon-arrow action-arrow" aria-hidden="true"></span></a>
         </div>
       </div>
     </section>
 
     <!-- Stats Section -->
-    <section class="section">
+    <section class="section stats-section">
       <div class="container">
         <div class="grid grid-4" id="stats-grid">
           <!-- Stats loaded dynamically -->
@@ -131,8 +116,20 @@
       </div>
     </section>
 
+    <!-- Categories Preview -->
+    <section class="section category-section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Browse by Category</h2>
+          <a href="find-data.html" class="section-link">View All <span class="icon-mask icon-arrow action-arrow" aria-hidden="true"></span></a>
+        </div>
+        <div class="grid grid-3" id="categories-grid">
+          <!-- Categories loaded dynamically -->
+        </div>
+      </div>
+    </section>
     <!-- Core Principles Section -->
-    <section class="section" style="background: var(--color-bg-secondary);">
+    <section class="section principles-section">
       <div class="container">
         <h2 class="text-center mb-8">Core principles</h2>
         <div class="grid grid-3">
@@ -164,18 +161,6 @@
       </div>
     </section>
 
-    <!-- Categories Preview -->
-    <section class="section">
-      <div class="container">
-        <div class="flex justify-between items-center mb-8">
-          <h2>Browse by Category</h2>
-          <a href="find-data.html" class="btn btn-secondary">View All →</a>
-        </div>
-        <div class="grid grid-3" id="categories-grid">
-          <!-- Categories loaded dynamically -->
-        </div>
-      </div>
-    </section>
   </main>
 
   <!-- Footer -->
@@ -209,7 +194,7 @@
             <li><a href="find-data.html">Find Data</a></li>
             <li><a href="about.html">About</a></li>
                         <li><a href="members.html">Contributors</a></li>
-                        <li><a href="contribute.html">Contribute</a></li>
+                        <li><a href="contribute.html">Submit</a></li>
           </ul>
         </div>
         <div>
@@ -223,43 +208,56 @@
         <div>
           <h4 class="footer-title">Connect</h4>
           <ul class="footer-links">
-            <li><a href="https://batterydatacommons.org/BatteryDataCommons" target="_blank"
+            <li><a href="https://github.com/BatteryCommons/BatteryCommons.github.io" target="_blank"
                 rel="noopener">GitHub</a></li>
-                        <li><a href="contribute.html">How to contribute</a></li>
-            <li><a href="marwan.hassini@univ-eiffel.fr">Contact</a></li>
+                        <li><a href="contribute.html">Submit Registry Entry</a></li>
+            <li><a href="mailto:contact@battery-data-commons.org">Contact</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
         <p>© 2026 Battery Data Commons. Licensed under CC-BY-4.0.</p>
-        <span class="version-badge">v26.08</span>
+        <span class="version-badge">v13.09.2026</span>
       </div>
     </div>
   </footer>
 
   <!-- Scripts -->
-  <script src="js/data.js"></script>
-  <script src="js/ui.js"></script>
+  <script src="js/data.js?v=20260913"></script>
+  <script src="js/ui.js?v=20260913b"></script>
   <script>
     // Initialize homepage
     document.addEventListener('DOMContentLoaded', async function () {
       await BDC.loadCatalogue();
       const stats = BDC.getStats();
+      if (!stats) return;
 
       // Render stats
       document.getElementById('stats-grid').innerHTML = BDCUI.renderStatsCards(stats);
 
       // Render categories
-      const categoryCards = Object.entries(stats.categories)
-        .sort((a, b) => b[1] - a[1])
+      const categoryDescriptions = {
+        performance: 'Characterisation, cycling and electrochemical measurements.',
+        durability: 'Cycle ageing, calendar ageing and battery lifetime.',
+        modelling: 'Models, simulations and prediction benchmarks.',
+        field: 'Battery operation in vehicles and real-world systems.',
+        safety: 'Abuse testing, thermal behaviour and safety measurements.',
+        tools: 'Software for processing, analysing and modelling battery data.'
+      };
+      const categoryCards = ['performance', 'durability', 'modelling', 'field', 'safety', 'tools']
+        .map(cat => [cat, cat === 'tools' ? stats.toolCount || 0 : stats.categories[cat] || 0])
         .map(([cat, count]) => `
-          <a href="find-data.html?category=${cat}" class="card" style="text-decoration: none;">
-            <div class="card-header">
-              <h3 class="card-title">${BDC.formatCategory(cat)}</h3>
-              <span class="badge badge-${cat}">${count}</span>
+          <a href="${cat === 'tools' ? 'tools.html' : 'find-data.html?category=' + cat}" class="card category-link">
+            <div class="category-visual" aria-hidden="true">
+              <span class="icon-mask category-icon icon-${cat}"></span>
             </div>
-            <div class="card-body">
-              <p>Browse ${count} curated ${BDC.formatCategory(cat).toLowerCase()} datasets</p>
+            <div class="category-copy">
+              <h3 class="card-title">${cat === 'tools' ? 'Software Tools' : BDC.formatCategory(cat)}</h3>
+              <p>${categoryDescriptions[cat]}</p>
+              <div class="category-meta">
+                <span class="category-count">${count} ${cat === 'tools' ? 'tools' : 'datasets'}</span>
+                <span class="icon-mask icon-arrow" aria-hidden="true"></span>
+              </div>
             </div>
           </a>
         `).join('');
@@ -267,6 +265,7 @@
       document.getElementById('categories-grid').innerHTML = categoryCards;
     });
   </script>
+  <script src="js/release.js?v=20260917a"></script>
 </body>
 
 </html>

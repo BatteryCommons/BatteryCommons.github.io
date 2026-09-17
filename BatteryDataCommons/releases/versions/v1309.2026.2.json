@@ -1,0 +1,58 @@
+{
+  "version": "v1309.2026.2",
+  "released_at_utc": "2026-09-13T18:25:32+00:00",
+  "released_at_london": "2026-09-13T19:25:32+01:00",
+  "timezone": "Europe/London",
+  "release_date": "2026-09-13",
+  "source_commit": "0f17f1ce7025bb5429fd36fbf55f7fad8a3781c5",
+  "content_sha256": "38439fef5b0aaa7fcd698bfe4b094cfe0661189ddec611b6e0252d22bd612a98",
+  "dataset_count": 349,
+  "tool_count": 62,
+  "excel_filename": "BatteryDataCommons_v1309.2026.2.xlsx",
+  "excel_url": "releases/BatteryDataCommons_v1309.2026.2.xlsx",
+  "sheets": [
+    "README",
+    "All_Datasets",
+    "Performance",
+    "Durability",
+    "Modelling",
+    "Field",
+    "Safety",
+    "Tools"
+  ],
+  "json_archive_url": "releases/BatteryDataCommons_v1309.2026.2_json.zip",
+  "assets": {
+    "BatteryDataCommons_v1309.2026.2.xlsx": {
+      "sha256": "1faa2d531919ba5db8ed34ac6697fdd1a2cdb22f29a82c1107eea6ad0e7992b9",
+      "bytes": 994427
+    },
+    "BatteryDataCommons_v1309.2026.2_json.zip": {
+      "sha256": "727730792ae66a3368468c538d9c4c9d072dbdbb6d98d7ad3a19918fc6328126",
+      "bytes": 601208
+    },
+    "CHANGELOG.md": {
+      "sha256": "d92cf29201f64cc8f26046ca6e9bb63bb43207e8dc7fe278a1e286127b1bf494",
+      "bytes": 354
+    },
+    "catalog.ttl": {
+      "sha256": "7627db99e77449b212147aef326bb9c297d77a46194fb29b85dde80857995531",
+      "bytes": 938219
+    },
+    "datasets.jsonl": {
+      "sha256": "356c6fd586054128e4304e13d2786b0f140a446bb5572a8ab6573f3a04b22764",
+      "bytes": 1123422
+    },
+    "search_index.json": {
+      "sha256": "0145fb0344abe1ff739fe073c82a825dab2a376ad956bac868d4d3b777468b69",
+      "bytes": 251962
+    },
+    "site_stats.json": {
+      "sha256": "da34f7f36229a1e3580f53b51f4a05711b4db092d88ad5a6dc5bd96df258739e",
+      "bytes": 352
+    },
+    "tools.json": {
+      "sha256": "6747c052b06d0b8dbae8c0e5f7adee2247f8bacb1831ad8a9149e72c11d74b05",
+      "bytes": 34831
+    }
+  }
+}

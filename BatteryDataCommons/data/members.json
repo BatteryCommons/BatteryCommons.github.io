@@ -2,43 +2,50 @@
     "team": [
         {
             "name": "Marwan Hassini",
+            "email": "marwan.hassini@univ-eiffel.fr",
+            "linkedin": "https://www.linkedin.com/in/marwanhassini/",
             "role": "Researcher",
             "institution": "Université Gustave Eiffel",
-            "country": "France",
-            "email": "marwan.hassini@univ-eiffel.fr"
+            "country": "France"
         },
         {
             "name": "Philipp Dechent",
+            "linkedin": "https://de.linkedin.com/in/philipp-dechent-4ba7788a",
             "role": "Researcher",
             "institution": "Toshiba Europe GmbH",
             "country": "Germany"
         },
         {
             "name": "Sara Luciani",
+            "linkedin": "https://de.linkedin.com/in/sara-luciani-b0822b184",
             "role": "Researcher",
             "institution": "Toshiba Europe GmbH",
             "country": "Germany"
         },
         {
             "name": "Shiyun Liu",
+            "linkedin": "https://uk.linkedin.com/in/shiyunliu",
             "role": "Researcher",
             "institution": "University of Leeds",
             "country": "UK"
         },
         {
             "name": "Simon Clark",
+            "linkedin": "https://www.linkedin.com/in/simon-clark-370937187/",
             "role": "Researcher",
             "institution": "SINTEF AS",
             "country": "Norway"
         },
         {
             "name": "Paul Gasper",
+            "linkedin": "https://www.linkedin.com/in/paul-joseph-gasper",
             "role": "Researcher",
             "institution": "National Lab of the Rockies",
             "country": "USA"
         },
         {
             "name": "Gonçalo dos Reis",
+            "linkedin": "https://uk.linkedin.com/in/g-dosreis",
             "role": "Corresponding Author",
             "institution": "University of Edinburgh",
             "country": "UK",
