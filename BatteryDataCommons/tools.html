@@ -10,7 +10,7 @@
         })();
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find Tools — Battery Data Commons</title>
+    <title>Battery Software Tools — Battery Data Commons</title>
     <meta name="description"
         content="Discover software tools for battery data processing, analysis, modelling, and simulation.">
 
@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/pages.css">
 
+  <link rel="stylesheet" href="css/catalogue.css?v=20260917a">
 </head>
 
 <body>
@@ -54,10 +55,10 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="find-data.html">Find Data</a></li>
-                <li><a href="tools.html" class="active">Find Tools</a></li>
+                <li><a href="tools.html" class="active">Tools</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="members.html">Contributors</a></li>
-                <li><a href="contribute.html">Contribute</a></li>
+                <li><a href="contribute.html">Submit</a></li>
             </ul>
 
             <div class="nav-actions">
@@ -89,7 +90,7 @@
     <main>
         <section class="section">
             <div class="container">
-                <h1 class="mb-6">Find Tools</h1>
+                <h1 class="mb-6">Battery Software Tools</h1>
 
                 <!-- Search Box -->
                 <div class="search-box mb-8">
@@ -180,10 +181,10 @@
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="find-data.html">Find Data</a></li>
-                        <li><a href="tools.html">Find Tools</a></li>
+                        <li><a href="tools.html">Tools</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="members.html">Contributors</a></li>
-                        <li><a href="contribute.html">Contribute</a></li>
+                        <li><a href="contribute.html">Submit</a></li>
                     </ul>
                 </div>
                 <div>
@@ -197,23 +198,23 @@
                 <div>
                     <h4 class="footer-title">Connect</h4>
                     <ul class="footer-links">
-                        <li><a href="https://github.com/BatteryCommons/BatteryDataCommons" target="_blank"
+                        <li><a href="https://github.com/BatteryCommons/BatteryCommons.github.io" target="_blank"
                                 rel="noopener">GitHub</a>
                         </li>
                         <li><a href="contribute.html">Submit Registry Entry</a></li>
-                        <li><a href="mailto:marwan.hassini@univ-eiffel.fr">Contact</a></li>
+                        <li><a href="mailto:G.dosReis@ed.ac.uk">Contact</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>© 2026 Battery Data Commons. Licensed under CC-BY-4.0.</p>
-                <span class="version-badge">v26.08</span>
+                <span class="version-badge">v13.09.2026</span>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="js/ui.js"></script>
+    <script src="js/ui.js?v=20260913b"></script>
     <script>
         let allTools = [];
         let filteredTools = [];
@@ -387,7 +388,7 @@
                             </div>
                         </div>
                         <div class="card-footer">
-                            ${tool.software_url ? `<a href="${tool.software_url}" class="btn btn-outline-gradient btn-sm" target="_blank" rel="noopener">View Tool →</a>` : '<span class="text-muted">No link available</span>'}
+                            ${tool.software_url ? `<a href="${tool.software_url}" class="btn btn-sm tool-link" target="_blank" rel="noopener">View Tool <span class="icon-mask icon-arrow action-arrow" aria-hidden="true"></span></a>` : '<span class="text-muted">No link available</span>'}
                             ${tool.article_url ? `<a href="${tool.article_url}" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Paper</a>` : ''}
                         </div>
                     </article>
@@ -410,6 +411,7 @@
         // Initialize
         document.addEventListener('DOMContentLoaded', loadTools);
     </script>
+  <script src="js/release.js?v=20260917a"></script>
 </body>
 
 </html>

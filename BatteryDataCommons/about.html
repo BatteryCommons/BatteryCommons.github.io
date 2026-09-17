@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/pages.css">
 
+  <link rel="stylesheet" href="css/catalogue.css?v=20260917a">
 </head>
 
 <body>
@@ -54,10 +55,10 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="find-data.html">Find Data</a></li>
-                <li><a href="tools.html">Find Tools</a></li>
+                <li><a href="tools.html">Tools</a></li>
                 <li><a href="about.html" class="active">About</a></li>
                 <li><a href="members.html">Contributors</a></li>
-                <li><a href="contribute.html">Contribute</a></li>
+                <li><a href="contribute.html">Submit</a></li>
             </ul>
 
             <div class="nav-actions">
@@ -112,6 +113,58 @@
                         rather than as a static project webpage.
                     </p>
 
+                    <h2 id="methodology">Curation Methodology</h2>
+                    <h3>Curation Over Aggregation</h3>
+                    <p>
+                        All publicly visible records have undergone human curation. No automatically harvested or
+                        user-submitted record appears on the website without manual review.
+                    </p>
+
+                    <h3>Metadata, Not Measurements</h3>
+                    <p>
+                        The Commons indexes structured metadata describing datasets, not the datasets themselves. All
+                        data access occurs via persistent external links (e.g., DOIs, repository landing pages).
+                    </p>
+
+                    <h3>Versioned Public State</h3>
+                    <p>
+                        The public website always reflects a released, versioned snapshot of the catalogue. Intermediate
+                        states (harvesting, staging, review) are never exposed publicly.
+                    </p>
+
+                    <h3>Provenance & Auditability</h3>
+                    <p>
+                        For every dataset record, the origin of the information (source repository, review process,
+                        update history) is explicitly traceable.
+                    </p>
+
+                    <h2 id="governance">Governance</h2>
+                    <h3>Dual Intake Model</h3>
+                    <p>The Commons supports two complementary intake channels:</p>
+                    <ul>
+                        <li><strong>Automated discovery:</strong> Periodic harvesting of candidate records from public
+                            APIs (Zenodo, DataCite, Crossref), used strictly for candidate identification</li>
+                        <li><strong>Community contribution:</strong> Users may propose new datasets, corrections, or
+                            updates via an issue-based submission mechanism</li>
+                    </ul>
+                    <p>Both channels feed into the same curation pipeline, and all records undergo human review before
+                        publication.</p>
+
+                    <h3>Canonicalisation & Release</h3>
+                    <p>
+                        Approved records are mapped to a unified metadata schema and added to the canonical catalogue.
+                        Public updates occur only through versioned releases, each representing an immutable snapshot.
+                    </p>
+
+                    <h2 id="citation">How to Cite</h2>
+                    <p>When citing the Battery Data Commons, please use:</p>
+                    <div class="card" style="background: var(--color-bg-secondary);">
+                        <code
+                            style="display: block; white-space: pre-wrap; font-size: var(--text-sm);">Hassini, M., Dechent, P., Luciani, S., Liu, S., Clark, S., Gasper, P., &amp; dos Reis, G. (2026). Battery Data Commons registry - version 13.09.2026 [Dataset]. Zenodo. <a
+                                href="https://doi.org/10.5281/zenodo.22800962" target="_blank"
+                                rel="noopener">https://doi.org/10.5281/zenodo.22800962</a></code>
+                    </div>
+
                     <h2 id="categories">Dataset Categories</h2>
                     <p>Datasets are organised into the following categories:</p>
                     <ul>
@@ -123,73 +176,10 @@
                         <li><strong>Diagnostics:</strong> EIS, pulse tests, state estimation data</li>
                     </ul>
 
-
-                    <h2 id="categories">Metadata Entries</h2>
-                    <p> All datasets are described with the same metadata entries. The metadata are organised according to the following categories:</p>
-                    <ul>
-                        <li><strong>Battery description :</strong> </li>
-                         Level of the data (cell, module or pack), Battery manufacturer, IEC battery code, Battery  model name, Nominal capacity (Ah), Positive electrode chemistry, Negative electrode chemistry, Geometry (coin, cylindrical, prismatic or pouch), Number of cells 
-                        <li><strong> Measurement description:</strong>  </li>
-                        <li><i>For Capacity :</i></li>
-                        Test temperature, Current rate and current profile in charge and discharge
-                        <li><i> For Resistance (DC pulses) :</i> </li>
-                        Pulses c-rate, Duration, SoCs, Temperature, Rest duration between pulses
-                       <li><i>For EIS :</i></li>
-                        Temperature, Frequency range, Excitation current/voltage, SoCs    
-                      <li> <i>For Low current test (below C/5)	:</i></li>
-                        Charge and discharge c-rate, Test  temperature   
-                       <li> <i>For Ageing campaign :</i></li>
-                       Charge and discharge cycle c-rate and profiles, Usage Cycles, Measures
-                        <li><strong> Anomalies</strong>  </li>
-                        <li><strong>Data production modality :</strong> </li>
-                            Battery cycler Manufacturer, Battery cycler model, Publication year, Sampling, File format  
-                        <li><strong>Data use modality :</strong>   </li>
-                            Dataset size, Owner, License, Link for downloading full dataset, Link for dataset, Link for article, Data processing code (by way of URL link) if available
-                  </ul>
-
-
-                    
-                    
-
-                    <h2 id="methodology">Inclusion Criteria</h2>
-                    <h3>At least one metadata entry  </h3>
-                    <p>
-                        The Commons indexes structured metadata describing datasets, not the datasets themselves. To be included, the registry that contains the public dataset should provide at least one of the above metadata entries.
-                    </p>
-                    
-                    <h3>Accessibility</h3>
-                    <p>
-                       The Commons indexes datasets publicly visible and accessible through a link. For every dataset record, the origin of the information (source repository, review process,
-                        update history) is explicitly traceable.
-                    </p>
-
-                    <h3>Autorisation</h3>
-                    <p>
-                       The Commons indexes dataset that do not explicitely state that the dataset should not be included on a registry such as Battery Data Commons
-                    </p>
-
-                    <h2 id="governance">Governance</h2>
-       Battery Data Commons review community is central for developing the quality and completeness of the project. The community structure is based according to the roles defined on <a href="https://opensource.creativecommons.org/community/community-team/">Creative Commons’ Community Team</a>.
-       This ensures a coherent structure for contributor roles. In 2026, the project maintainers of the Commons are the authors of this article. Any person willing to contribute is invited to contact authors.
-                    
-
-                    <h2 id="citation">How to Cite</h2>
-                    <p>When citing the Battery Data Commons, please use:</p>
-                    <div class="card" style="background: var(--color-bg-secondary);">
-                        <code
-                            style="display: block; white-space: pre-wrap; font-size: var(--text-sm);">Hassini, Marwan, Dechent, Philipp, Luciani, Sara, Liu, Shiyun, Clark, Simon, Gasper, Paul, dos Reis, Gonçalo. "Battery data and where to find it: the Battery Data Commons registry" (2026)</code>
-                    </div>
-                    <p class="mt-4">
-                        When citing a specific snapshot, include the version number. The initial release is
-                        <strong>v20260326</strong>.
-                    </p>
-
-
-
                     <h2 id="contact">Contact</h2>
                     <p>
                         For questions, suggestions, or collaboration inquiries, please open a discussion on
-                        <a href="https://github.com/BatteryCommons/BatteryDataCommons/discussions">GitHub
+                        <a href="https://github.com/BatteryCommons/BatteryCommons.github.io/discussions">GitHub
                             Discussions</a>.
                     </p>
                     <p>
@@ -233,7 +223,7 @@
                         <li><a href="find-data.html">Find Data</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="members.html">Contributors</a></li>
-                        <li><a href="contribute.html">Contribute</a></li>
+                        <li><a href="contribute.html">Submit</a></li>
                     </ul>
                 </div>
                 <div>
@@ -247,24 +237,25 @@
                 <div>
                     <h4 class="footer-title">Connect</h4>
                     <ul class="footer-links">
-                        <li><a href="https://github.com/BatteryCommons/BatteryDataCommons" target="_blank"
+                        <li><a href="https://github.com/BatteryCommons/BatteryCommons.github.io" target="_blank"
                                 rel="noopener">GitHub</a>
                         </li>
                         <li><a href="contribute.html">Submit Registry Entry</a></li>
-                        <li><a href="mailto:marwan.hassini@univ-eiffel.fr">Contact</a></li>
+                        <li><a href="mailto:contact@battery-data-commons.org">Contact</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>© 2026 Battery Data Commons. Licensed under CC-BY-4.0.</p>
-                <span class="version-badge">v26.08</span>
+                <span class="version-badge">v13.09.2026</span>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="js/data.js"></script>
-    <script src="js/ui.js"></script>
+    <script src="js/data.js?v=20260913"></script>
+    <script src="js/ui.js?v=20260913b"></script>
+  <script src="js/release.js?v=20260917a"></script>
 </body>
 
 </html>

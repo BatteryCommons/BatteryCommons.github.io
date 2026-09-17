@@ -1,13 +1,16 @@
 {
-  "release_date": "2026-07-17",
-  "dataset_count": 364,
+  "release_date": "2026-09-13",
+  "version": "v1309.2026",
+  "released_at_london": "2026-09-13T21:32:48+01:00",
+  "timezone": "Europe/London",
+  "dataset_count": 349,
   "tool_count": 62,
-  "active_record_count": 426,
+  "active_record_count": 411,
   "category_counts": {
-    "performance": 145,
-    "durability": 152,
-    "field": 35,
-    "modelling": 51,
-    "safety": 21
+    "durability": 155,
+    "performance": 155,
+    "modelling": 63,
+    "field": 36,
+    "safety": 25
   }
 }

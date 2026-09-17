@@ -28,85 +28,36 @@
     <link rel="stylesheet" href="css/pages.css">
 
     <style>
-        .member-card {
-            text-align: center;
-            padding: var(--space-8);
-        }
-
-        .member-avatar {
-            width: 100px;
-            height: 100px;
-            background: var(--color-accent-gradient);
-            border-radius: var(--radius-full);
-            margin: 0 auto var(--space-4);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: var(--text-3xl);
-            font-weight: var(--font-bold);
-            color: white;
-        }
-
-        .member-name {
-            font-size: var(--text-lg);
-            font-weight: var(--font-semibold);
-            margin-bottom: var(--space-1);
-        }
-
-        .member-institution {
-            font-size: var(--text-sm);
-            color: var(--color-text-tertiary);
-        }
-
-        .institution-card {
-            display: flex;
-            align-items: center;
-            gap: var(--space-4);
-            padding: var(--space-4) var(--space-6);
-        }
-
-        .institution-logo {
-            width: 60px;
-            height: 60px;
-            background: var(--color-bg-tertiary);
-            border-radius: var(--radius-lg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-
-        .institution-logo svg {
-            width: 32px;
-            height: 32px;
-            color: var(--color-text-tertiary);
-        }
-
-        .institution-info h3 {
-            font-size: var(--text-base);
-            margin-bottom: var(--space-1);
-        }
-
-        .institution-info a {
-            font-size: var(--text-sm);
-        }
-
-        .member-contact {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-1);
-            padding: var(--space-1) var(--space-2);
-            background: rgba(14, 165, 233, 0.15);
-            color: var(--color-accent-primary);
-            border-radius: var(--radius-sm);
-            font-size: var(--text-xs);
-            margin-top: var(--space-2);
+        .contributors-content { max-width: 960px; }
+        .contributors-intro { text-align: center; margin-bottom: 48px; }
+        .contributors-intro h1 { margin-bottom: 16px; }
+        .contributors-intro p { max-width: 680px; margin: 0 auto; font-size: 16px; line-height: 1.65; }
+        .contributors-section + .contributors-section { margin-top: 48px; }
+        .contributors-section h2 { margin-bottom: 20px; font-size: 22px; font-weight: 500; }
+        .people-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 48px; list-style: none; padding: 0; margin: 0; }
+        .member-entry { padding: 20px 0; margin: 0; border-bottom: 1px solid var(--color-border); }
+        .member-heading { display: flex; align-items: center; gap: 10px; }
+        .member-name { margin: 0; font-size: 16px; font-weight: 600; line-height: 1.5; }
+        .member-institution { margin: 4px 0 0; font-size: 14px; line-height: 1.5; color: var(--color-text-secondary); }
+        .member-links { display: flex; align-items: center; gap: 4px; flex-shrink: 0; }
+        .member-contact { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; color: var(--color-text-primary); background: none; }
+        .member-contact:hover { color: var(--color-text-secondary); }
+        .member-contact svg { width: 17px; height: 17px; }
+        .contributors-acknowledgements { padding-top: 24px; border-top: 1px solid var(--color-border); }
+        .contributors-acknowledgements p { margin: 0; font-size: 14px; line-height: 1.7; }
+        @media (max-width: 640px) {
+            .contributors-intro { margin-bottom: 36px; }
+            .contributors-intro h1 { font-size: 30px; }
+            .people-list { grid-template-columns: 1fr; }
+            .member-entry { padding-block: 18px; }
+            .contributors-section + .contributors-section { margin-top: 36px; }
         }
     </style>
 
+  <link rel="stylesheet" href="css/catalogue.css?v=20260917a">
 </head>
 
-<body>
+<body class="contributors-page">
     <!-- Navigation -->
     <nav class="nav">
         <div class="nav-inner">
@@ -131,10 +82,10 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="find-data.html">Find Data</a></li>
-                <li><a href="tools.html">Find Tools</a></li>
+                <li><a href="tools.html">Tools</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="members.html" class="active">Contributors</a></li>
-                <li><a href="contribute.html">Contribute</a></li>
+                <li><a href="contribute.html">Submit</a></li>
             </ul>
 
             <div class="nav-actions">
@@ -165,31 +116,25 @@
 
     <main>
         <section class="section">
-            <div class="container">
-                <h1 class="text-center mb-4">Contributors</h1>
-                <p class="text-center text-xl"
-                    style="color: var(--color-text-secondary); max-width: 600px; margin: 0 auto var(--space-12);">
-                    People and institutions helping maintain, curate, and expand the Battery Data Commons registry.
-                </p>
+            <div class="container contributors-content">
+                <header class="contributors-intro">
+                    <h1>Contributors</h1>
+                    <p>People and institutions helping maintain, curate, and expand the Battery Data Commons registry.</p>
+                </header>
 
-                <h2 class="mb-6">People</h2>
-                <div class="grid grid-4" id="people-grid">
-                    <!-- Loaded dynamically -->
-                </div>
+                <section class="contributors-section" aria-labelledby="people-heading">
+                    <h2 id="people-heading">People</h2>
+                    <ul class="people-list" id="people-grid">
+                        <!-- Loaded dynamically -->
+                    </ul>
+                </section>
 
-                <!-- Institutions Section -->
-                <h2 class="mt-8 mb-6">Institutions</h2>
-                <div class="grid grid-2" id="institutions-grid">
-                    <!-- Loaded dynamically -->
-                </div>
-
-                <!-- Acknowledgements -->
-                <div class="card mt-8" style="background: var(--color-bg-secondary);">
-                    <h3 class="mb-4">Acknowledgements</h3>
+                <section class="contributors-section contributors-acknowledgements" aria-labelledby="acknowledgements-heading">
+                    <h2 id="acknowledgements-heading">Acknowledgements</h2>
                     <p id="acknowledgements">
                         <!-- Loaded dynamically -->
                     </p>
-                </div>
+                </section>
             </div>
         </section>
     </main>
@@ -240,67 +185,46 @@
                 <div>
                     <h4 class="footer-title">Connect</h4>
                     <ul class="footer-links">
-                        <li><a href="https://batterydatacommons.org/BatteryDataCommons" target="_blank"
+                        <li><a href="https://github.com/BatteryCommons/BatteryCommons.github.io" target="_blank"
                                 rel="noopener">GitHub</a>
                         </li>
-                        <li><a href="contribute.html">How to contribute</a></li>
-                        <li><a href="mailto:marwan.hassini@univ-eiffel.fr">Contact</a></li>
+                        <li><a href="contribute.html">Submit Registry Entry</a></li>
+                        <li><a href="mailto:G.dosReis@ed.ac.uk">Contact</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>© 2026 Battery Data Commons. Licensed under CC-BY-4.0.</p>
-                <span class="version-badge">v26.08</span>
+                <span class="version-badge">v13.09.2026</span>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="js/data.js"></script>
-    <script src="js/ui.js"></script>
+    <script src="js/data.js?v=20260913"></script>
+    <script src="js/ui.js?v=20260913b"></script>
     <script>
-        // Get initials from name
-        function getInitials(name) {
-            return name.split(' ').map(n => n[0]).join('').toUpperCase();
-        }
-
         // Load contributors data
         document.addEventListener('DOMContentLoaded', async function () {
             try {
-                const response = await fetch('./data/members.json');
+                const response = await fetch('./data/members.json', { cache: 'no-cache' });
                 const data = await response.json();
                 const people = data.people || data.team || [];
 
-                // Render people
+                // Render people in the source order.
                 const peopleGrid = document.getElementById('people-grid');
                 peopleGrid.innerHTML = people.map(person => `
-          <div class="card member-card">
-            <div class="member-avatar">${getInitials(person.name)}</div>
-            <div class="member-name">${person.name}</div>
-            <div class="member-institution">${person.institution}</div>
-            ${person.email ? `
-              <a href="mailto:${person.email}" class="member-contact">
-                ✉ Contact
-              </a>
-            ` : ''}
-          </div>
-        `).join('');
-
-                // Render institutions
-                const instGrid = document.getElementById('institutions-grid');
-                instGrid.innerHTML = data.institutions.map(inst => `
-          <a href="${inst.url}" class="card institution-card" target="_blank" rel="noopener" style="text-decoration: none;">
-            <div class="institution-logo">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-              </svg>
-            </div>
-            <div class="institution-info">
-              <h3>${inst.name}</h3>
-              <span class="text-sm text-muted">${inst.country}</span>
-            </div>
-          </a>
-        `).join('');
+                    <li class="member-entry">
+                        <div class="member-heading">
+                            <h3 class="member-name">${person.name}</h3>
+                            <div class="member-links">
+                                ${person.email ? `<a href="mailto:${person.email}" class="member-contact" aria-label="Email ${person.name}" title="Email ${person.name}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg></a>` : ''}
+                                ${person.linkedin ? `<a href="${person.linkedin}" class="member-contact" target="_blank" rel="noopener noreferrer" aria-label="${person.name} on LinkedIn" title="${person.name} on LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10v7m4 0v-7m0 3a2.5 2.5 0 0 1 5 0v4"/><circle cx="8" cy="7" r="1" fill="currentColor" stroke="none"/></svg></a>` : ''}
+                            </div>
+                        </div>
+                        <p class="member-institution">${person.institution}</p>
+                    </li>
+                `).join('');
 
                 // Render acknowledgements
                 const ack = document.getElementById('acknowledgements');
@@ -313,6 +237,7 @@
             }
         });
     </script>
+  <script src="js/release.js?v=20260917a"></script>
 </body>
 
 </html>

@@ -26,9 +26,10 @@ let searchQuery = '';
 // Load data from releases
 async function loadCatalogue() {
   try {
+    const freshRequest = { cache: 'no-store' };
     // Load release metadata if available
     try {
-      const metaResponse = await fetch('./releases/site_stats.json');
+      const metaResponse = await fetch('./releases/site_stats.json', freshRequest);
       if (metaResponse.ok) {
         releaseMeta = await metaResponse.json();
       }
@@ -37,7 +38,7 @@ async function loadCatalogue() {
     }
 
     // Load search index (lighter, for filtering)
-    const indexResponse = await fetch('./releases/search_index.json');
+    const indexResponse = await fetch('./releases/search_index.json', freshRequest);
     searchIndex = await indexResponse.json();
 
     // Create a map of ID -> Keywords for fast lookup
@@ -51,7 +52,7 @@ async function loadCatalogue() {
     }
 
     // Load full dataset records
-    const jsonlResponse = await fetch('./releases/datasets.jsonl');
+    const jsonlResponse = await fetch('./releases/datasets.jsonl', freshRequest);
     const jsonlText = await jsonlResponse.text();
 
     // Parse JSONL (one JSON object per line)
@@ -86,7 +87,7 @@ async function loadCatalogue() {
     // Create backward-compatible catalogue object
     return {
       datasets: datasets,
-      version: "2.0",
+      version: releaseMeta.version || null,
       release_date: releaseMeta.release_date
     };
   } catch (error) {
@@ -246,6 +247,25 @@ function getChemistryFamilies(dataset) {
   return [...families];
 }
 
+function getCellVariantSearchValues(dataset) {
+  if (!Array.isArray(dataset?.cell_variants)) return [];
+
+  const searchableFields = [
+    'manufacturer',
+    'battery_model',
+    'form_factor',
+    'test_type',
+    'chemistry',
+    'positive_electrode',
+    'negative_electrode'
+  ];
+
+  return dataset.cell_variants.flatMap(variant => {
+    if (!variant || typeof variant !== 'object') return [];
+    return searchableFields.map(field => variant[field]).filter(Boolean);
+  });
+}
+
 function countChemistryFamilies(arr) {
   return arr.reduce((acc, dataset) => {
     getChemistryFamilies(dataset).forEach(family => {
@@ -272,6 +292,9 @@ function applyFilters() {
         dataset.electrodes?.positive,
         dataset.electrodes?.negative,
         ...getPositiveElectrodeTypes(dataset),
+        ...getCellVariantSearchValues(dataset),
+        dataset.ultracapacitor?.manufacturer,
+        dataset.ultracapacitor?.model,
         dataset.source_metadata?.owner,
         dataset.bib_citation_data,
         ...(dataset.categories || [])
@@ -363,6 +386,38 @@ function clearFilters() {
   return applyFilters();
 }
 
+/* Browsing context travels in the URL, so a result list, an entry page and a
+   shared link all resolve to the same set of records. */
+const CONTEXT_FILTER_KEYS = ['category', 'data_group', 'positive_electrode', 'cell_module_pack', 'year'];
+
+function serializeContext() {
+  const params = new URLSearchParams();
+  CONTEXT_FILTER_KEYS.forEach(key => {
+    const values = activeFilters[key] || [];
+    if (values.length) params.set(key, values.join(','));
+  });
+  if (searchQuery) params.set('q', searchQuery);
+  return params.toString();
+}
+
+function restoreContext(search) {
+  const params = new URLSearchParams(search);
+  CONTEXT_FILTER_KEYS.forEach(key => {
+    const value = params.get(key);
+    activeFilters[key] = value ? value.split(',').filter(Boolean) : [];
+  });
+  searchQuery = params.get('q') || '';
+  return applyFilters();
+}
+
+function hasContext() {
+  return Boolean(searchQuery) || CONTEXT_FILTER_KEYS.some(key => (activeFilters[key] || []).length);
+}
+
+function getContextFilterKeys() {
+  return CONTEXT_FILTER_KEYS.filter(key => (activeFilters[key] || []).length);
+}
+
 // Get dataset by ID
 function getDatasetById(id) {
   return datasets.find(d => d.id === id);
@@ -371,7 +426,7 @@ function getDatasetById(id) {
 // Get version info
 function getVersionInfo() {
   return {
-    version: "2.0",
+    version: releaseMeta.version || null,
     releaseDate: releaseMeta.release_date,
     totalDatasets: releaseMeta.dataset_count || datasets.length,
     totalTools: releaseMeta.tool_count || 0,
@@ -383,9 +438,9 @@ function getVersionInfo() {
 function formatCategory(category) {
   const labels = {
     'performance': 'Performance',
-    'durability': 'Aging',
-    'field': 'Field',
-    'modelling': 'Modeling',
+    'durability': 'Durability',
+    'field': 'Field Data',
+    'modelling': 'Modelling',
     'safety': 'Safety',
     'diagnostics': 'Diagnostics',
     'other': 'Other'
@@ -397,7 +452,7 @@ function formatCategory(category) {
 function formatDataGroup(group) {
   const labels = {
     'PerformanceData': 'Performance',
-    'DurabilityData': 'Aging',
+    'DurabilityData': 'Durability',
     'FieldData': 'Field',
     'ModelingData': 'Modeling',
     'SafetyData': 'Safety'
@@ -410,7 +465,7 @@ function formatMeasurements(measurements) {
   if (!measurements) return [];
 
   const labels = {
-    'discharge_capacity': 'Capacity',
+    'discharge_capacity': 'Discharge Capacity',
     'internal_resistance': 'Internal Resistance',
     'eis': 'EIS',
     'pseudo_ocv': 'Pseudo OCV'
@@ -445,6 +500,10 @@ window.BDC = {
   setSearch,
   toggleFilter,
   clearFilters,
+  serializeContext,
+  restoreContext,
+  hasContext,
+  getContextFilterKeys,
   getDatasetById,
   getVersionInfo,
   formatCategory,
@@ -455,5 +514,6 @@ window.BDC = {
   getArticleUrl,
   get filteredDatasets() { return filteredDatasets; },
   get activeFilters() { return activeFilters; },
+  get searchQuery() { return searchQuery; },
   get datasets() { return datasets; }
 };

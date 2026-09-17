@@ -34,7 +34,8 @@ function updateThemeIcon(theme) {
 function toggleMobileNav() {
   const navLinks = document.querySelector('.nav-links');
   if (navLinks) {
-    navLinks.classList.toggle('open');
+    const open = navLinks.classList.toggle('open');
+    document.querySelector('.nav-toggle')?.setAttribute('aria-expanded', String(open));
   }
 }
 
@@ -59,6 +60,17 @@ function getCategory(dataset) {
   return 'other';
 }
 
+function getDisplayCategories(dataset) {
+  const categories = Array.isArray(dataset?.categories)
+    ? dataset.categories.filter(hasMeaningfulValue)
+    : [];
+
+  if (categories.length > 0) {
+    return [...new Set(categories)];
+  }
+  return [getCategory(dataset)];
+}
+
 function getPrimaryDataGroup(dataset) {
   return dataset?.data_group || dataset?.source_metadata?.kind_of_data || null;
 }
@@ -69,7 +81,7 @@ function hasMeaningfulValue(value) {
     const trimmed = value.trim();
     if (!trimmed) return false;
     const lowered = trimmed.toLowerCase();
-    return !['n/a', 'na', 'unknown', 'none', 'null', 'not applicable', 'to be checked'].includes(lowered);
+    return !['n/a', 'na', 'unknown', 'none', 'null', 'not applicable', 'not relevant', 'to be checked'].includes(lowered);
   }
   return true;
 }
@@ -86,6 +98,33 @@ function formatPublicationLabel(pub) {
     // Ignore malformed URLs and fall through to a generic label.
   }
   return 'Associated Publication';
+}
+
+function getDownloadLabel(dataset, url, index, total) {
+  const explicitLabel = Array.isArray(dataset.download_labels)
+    ? dataset.download_labels[index]
+    : null;
+  if (total <= 1) {
+    return hasMeaningfulValue(explicitLabel) ? explicitLabel : 'Download';
+  }
+
+  if (hasMeaningfulValue(explicitLabel)) {
+    return `Download — ${explicitLabel}`;
+  }
+
+  try {
+    const filename = decodeURIComponent(new URL(url).pathname.split('/').pop() || '');
+    const readableName = filename
+      .replace(/\.(?:tar\.gz|zip|csv|json|parquet|xlsx?|md)$/i, '')
+      .replace(/[_-]+/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+    if (readableName) return `Download — ${readableName}`;
+  } catch (error) {
+    // Fall through to a numbered file label for malformed URLs.
+  }
+
+  return `Download — File ${index + 1}`;
 }
 
 function renderDetailItem(label, value) {
@@ -187,11 +226,13 @@ function renderDatasetProfileSection(dataset, measurements) {
   const chemistries = getDistinctVariantValues(dataset, 'chemistry');
   const positiveElectrodes = getDistinctVariantValues(dataset, 'positive_electrode');
   const negativeElectrodes = getDistinctVariantValues(dataset, 'negative_electrode');
+  const variantTerminology = getVariantTerminology(dataset);
+  const ultracapacitor = dataset.ultracapacitor || {};
 
   const batteryRows = hasVariants
     ? [
         renderSpecRow('Cell / module / pack', dataset.overview?.cell_module_pack),
-        renderSpecRow(hasIdentityVariants ? 'Cell variants' : 'Structured variants', variants.length),
+        renderSpecRow(hasIdentityVariants ? variantTerminology.fieldLabel : 'Structured variants', variants.length),
         renderSpecRow('Rated capacity', hasMeaningfulValue(dataset.reported_values?.rated_capacity_Ah) ? `${dataset.reported_values.rated_capacity_Ah} Ah` : null)
       ]
     : [
@@ -221,9 +262,18 @@ function renderDatasetProfileSection(dataset, measurements) {
     renderSpecRow('Measurements', measurements.length > 0 ? measurements.join(', ') : null)
   ];
 
+  const ultracapacitorGroup = renderSpecGroup('Ultracapacitor', [
+    renderSpecRow('Manufacturer', ultracapacitor.manufacturer),
+    renderSpecRow('Model', ultracapacitor.model),
+    renderSpecRow('Capacitance', hasMeaningfulValue(ultracapacitor.capacitance_F) ? `${ultracapacitor.capacitance_F} F` : null),
+    renderSpecRow('Rated voltage', hasMeaningfulValue(ultracapacitor.rated_voltage_V) ? `${ultracapacitor.rated_voltage_V} V` : null),
+    renderSpecRow('Rated energy', hasMeaningfulValue(ultracapacitor.rated_energy_Wh) ? `${ultracapacitor.rated_energy_Wh} Wh` : null)
+  ]);
+
   return renderSpecSection('Dataset profile', [
     renderSpecGroup('Battery', batteryRows),
     renderSpecGroup('Chemistry', chemistryRows),
+    ultracapacitorGroup,
     renderSpecGroup('Dataset', datasetRows)
   ], 'detail-profile-section');
 }
@@ -240,6 +290,17 @@ function renderDetailGrid(items, emptyMessage = 'Not available') {
 function getCellVariants(dataset) {
   if (!Array.isArray(dataset?.cell_variants)) return [];
   return dataset.cell_variants.filter(variant => variant && typeof variant === 'object');
+}
+
+function getVariantTerminology(dataset) {
+  const entityType = dataset?.overview?.cell_module_pack;
+  if (entityType === 'BatteryPack') {
+    return { fieldLabel: 'Battery pack variants', title: 'Battery Pack Variants', singular: 'battery pack' };
+  }
+  if (entityType === 'BatteryModule') {
+    return { fieldLabel: 'Battery module variants', title: 'Battery Module Variants', singular: 'battery module' };
+  }
+  return { fieldLabel: 'Cell variants', title: 'Cell Variants', singular: 'cell' };
 }
 
 function hasStructuredCellVariants(dataset) {
@@ -271,7 +332,10 @@ function isAggregatePlaceholder(value) {
     'multiple formats',
     'multiple manufacturers',
     'multiple chemistry',
-    'multiple chemistries'
+    'multiple chemistries',
+    'labmade',
+    'lab made',
+    'lab-made'
   ].includes(lowered);
 }
 
@@ -348,9 +412,7 @@ function formatManufacturerModelForTitle(manufacturer, model) {
   return `${cleanManufacturer} ${cleanModel}`;
 }
 
-function getNormalizedDatasetTitle(dataset) {
-  if (hasMeaningfulValue(dataset.software?.name)) return dataset.software.name;
-
+function resolveDatasetIdentity(dataset) {
   const overview = dataset.overview || {};
   const variants = getCellVariants(dataset);
   const hasStructuredVariants = variants.length >= 2;
@@ -407,18 +469,96 @@ function getNormalizedDatasetTitle(dataset) {
   return `${BDC.formatCategory(category)} Battery Dataset`;
 }
 
+// Controlled vocabulary for a short, deterministic "scenario/technique" title
+// suffix (e.g. "ML2020 - DEIS"). Ordered most-specific to most-generic; the
+// first match wins, so e.g. DEIS is checked before the generic EIS fallback.
+// Extend this list as new distinguishing test techniques/scenarios come up —
+// keep entries short (<=3 words) and never a duplicate of a category badge
+// label (see SCENARIO_EXCLUDED_LABELS).
+const SCENARIO_KEYWORDS = [
+  ['dynamic electrochemical impedance', 'DEIS'],
+  ['deis', 'DEIS'],
+  ['thermal runaway', 'Thermal Runaway'],
+  ['nail penetration', 'Nail Penetration'],
+  ['overcharge', 'Overcharge'],
+  ['post-mortem', 'Post-Mortem'],
+  ['post mortem', 'Post-Mortem'],
+  ['cold charging', 'Cold Charging'],
+  ['fast charging', 'Fast Charging'],
+  ['differential voltage', 'Differential Voltage'],
+  ['calendar ageing', 'Calendar Aging'],
+  ['calendar aging', 'Calendar Aging'],
+  ['second-life', 'Second-Life'],
+  ['second life', 'Second-Life'],
+  ['formation cycl', 'Formation'],
+  ['gitt', 'GITT'],
+  ['pitt', 'PITT'],
+  ['hppc', 'HPPC'],
+  ['reference performance test', 'RPT'],
+  ['state-of-power', 'SOP'],
+  ['state of power', 'SOP'],
+  ['impedance spectroscopy', 'EIS'],
+  ['eis', 'EIS']
+];
+
+// Scenario suffixes must never restate a category badge (already shown next
+// to the title) or a generic, non-distinguishing word.
+const SCENARIO_EXCLUDED_LABELS = new Set([
+  'performance', 'durability', 'field data', 'modelling', 'safety',
+  'diagnostics', 'other', 'data', 'dataset', 'test', 'measurement', 'measurements'
+]);
+
+function resolveScenarioLabel(dataset, identity) {
+  const sourceMeta = dataset.source_metadata || {};
+  const blob = [dataset.title, sourceMeta.purpose, sourceMeta.content]
+    .filter(hasMeaningfulValue)
+    .join(' ')
+    .toLowerCase();
+
+  let label = null;
+  if (blob) {
+    const hit = SCENARIO_KEYWORDS.find(([needle]) => blob.includes(needle));
+    if (hit) label = hit[1];
+  }
+
+  if (!label) {
+    const measurements = dataset.available_measurements || {};
+    if (measurements.eis) label = 'EIS';
+    else if (measurements.internal_resistance) label = 'Internal Resistance';
+    else if (measurements.pseudo_ocv) label = 'OCV';
+  }
+
+  if (!label) return null;
+  if (SCENARIO_EXCLUDED_LABELS.has(label.toLowerCase())) return null;
+  if (identity.toLowerCase().includes(label.toLowerCase())) return null;
+  return label;
+}
+
+function getNormalizedDatasetTitle(dataset) {
+  if (hasMeaningfulValue(dataset.software?.name)) return dataset.software.name;
+
+  const identity = resolveDatasetIdentity(dataset);
+  const scenario = resolveScenarioLabel(dataset, identity);
+  return scenario ? `${identity} - ${scenario}` : identity;
+}
+
 function getDetailTitle(dataset) {
-  return getNormalizedDatasetTitle(dataset);
+  return hasMeaningfulValue(dataset?.title) ? dataset.title : getNormalizedDatasetTitle(dataset);
 }
 
 function renderCellVariantsSection(dataset) {
   const variants = getCellVariants(dataset);
-  if (variants.length < 2 || !hasVariantIdentityDetails(dataset)) return '';
+  if (variants.length < 2) return '';
+  const terminology = getVariantTerminology(dataset);
 
   const fields = [
     ['manufacturer', 'Manufacturer'],
     ['battery_model', 'Battery Model'],
-    ['form_factor', 'Cell Format'],
+    ['form_factor', 'Format'],
+    ['test_type', 'Test Type'],
+    ['rated_capacity_Ah', 'Rated Capacity (Ah)'],
+    ['number_of_specimens', 'Specimens'],
+    ['discharge_current_A', 'Discharge Current (A)'],
     ['chemistry', 'Chemistry'],
     ['positive_electrode', 'Positive Electrode'],
     ['negative_electrode', 'Negative Electrode']
@@ -447,8 +587,8 @@ function renderCellVariantsSection(dataset) {
 
   return `
     <div class="dataset-detail-section">
-      <h2>Cell Variants</h2>
-      <p class="cell-variants-summary">Structured metadata for ${variants.length} cell variants represented in this dataset.</p>
+      <h2>${terminology.title}</h2>
+      <p class="cell-variants-summary">Structured metadata for ${variants.length} ${terminology.singular} variants represented in this dataset.</p>
       <div class="cell-variants-table-wrap">
         <table class="cell-variants-table">
           <thead><tr>${header}</tr></thead>
@@ -577,11 +717,15 @@ function getSoftwareDescription(dataset) {
 
 // Get display title from dataset
 function getTitle(dataset) {
-  return getNormalizedDatasetTitle(dataset);
+  return getDetailTitle(dataset);
 }
 
 // Get description from dataset
 function getDescription(dataset) {
+  if (hasMeaningfulValue(dataset.description)) {
+    return dataset.description;
+  }
+
   if (hasMeaningfulValue(dataset.source_metadata?.purpose)) {
     return dataset.source_metadata.purpose;
   }
@@ -633,7 +777,7 @@ function buildCorrectionIssueUrl(payload) {
     params.set('evidence', payload.evidence);
   }
 
-  return `https://github.com/BatteryCommons/BatteryDataCommons/issues/new?${params.toString()}`;
+  return `https://github.com/BatteryCommons/BatteryCommons.github.io/issues/new?${params.toString()}`;
 }
 
 function openCorrectionModal(entryId) {
@@ -733,7 +877,7 @@ function renderDatasetCard(dataset) {
   ].filter(Boolean).join('');
 
   return `
-    <article class="card dataset-card" onclick="window.location.href='dataset.html?id=${dataset.id}'">
+    <article class="card dataset-card" onclick="window.location.href='dataset.html?id=${dataset.id}${contextQuery('&amp;')}'">
       <div class="card-header">
         <div>
           <h3 class="card-title">${truncate(title, 80)}</h3>
@@ -902,12 +1046,23 @@ function handleSearch(event) {
   renderResults();
 }
 
+function contextQuery(prefix) {
+  const context = BDC.serializeContext();
+  return context ? `${prefix}${context}` : '';
+}
+
+function syncResultsUrl() {
+  window.history.replaceState(null, '', `${window.location.pathname}${contextQuery('?')}`);
+}
+
 // Render results
 function renderResults() {
   const resultsContainer = document.getElementById('results');
   const resultsCount = document.getElementById('results-count');
 
   if (!resultsContainer) return;
+
+  syncResultsUrl();
 
   const datasets = BDC.filteredDatasets || [];
 
@@ -961,8 +1116,8 @@ function renderBooleanDetailItem(label, value) {
   return renderDetailItem(label, value ? 'Yes' : 'No');
 }
 
-function renderPrimaryCategorySection(dataset) {
-  const group = getPrimaryDataGroup(dataset);
+function renderPrimaryCategorySection(dataset, groupOverride = null) {
+  const group = groupOverride || getPrimaryDataGroup(dataset);
   const meta = dataset.source_metadata || {};
 
   if (group === 'PerformanceData') {
@@ -1083,6 +1238,30 @@ function renderPrimaryCategorySection(dataset) {
   return '';
 }
 
+function renderCategorySections(dataset) {
+  const categoryToGroup = {
+    performance: 'PerformanceData',
+    durability: 'DurabilityData',
+    field: 'FieldData',
+    modelling: 'ModelingData',
+    modeling: 'ModelingData',
+    synthetic: 'ModelingData',
+    safety: 'SafetyData'
+  };
+  const groups = getDisplayCategories(dataset)
+    .map(category => categoryToGroup[String(category).toLowerCase()])
+    .filter(Boolean);
+  const primaryGroup = getPrimaryDataGroup(dataset) === 'SyntheticData'
+    ? 'ModelingData'
+    : getPrimaryDataGroup(dataset);
+  if (primaryGroup) groups.push(primaryGroup);
+
+  return [...new Set(groups)]
+    .map(group => renderPrimaryCategorySection(dataset, group))
+    .filter(Boolean)
+    .join('');
+}
+
 // Render dataset detail page
 function renderDatasetDetail(dataset) {
   if (!dataset) {
@@ -1090,7 +1269,7 @@ function renderDatasetDetail(dataset) {
   }
 
   const title = getDetailTitle(dataset);
-  const category = getCategory(dataset);
+  const displayCategories = getDisplayCategories(dataset);
   const sourceUrl = getSourceUrl(dataset);
   const description = getDescription(dataset);
   const measurements = BDC.formatMeasurements ? BDC.formatMeasurements(dataset.available_measurements) : [];
@@ -1098,13 +1277,14 @@ function renderDatasetDetail(dataset) {
   const hasCellVariants = cellVariants.length >= 2;
   const hasIdentityVariants = hasCellVariants && hasVariantIdentityDetails(dataset);
   const variantChemistries = getDistinctVariantValues(dataset, 'chemistry');
+  const variantTerminology = getVariantTerminology(dataset);
   const specimenCount = dataset.reported_values?.number_of_specimens;
   const codeUrls = getCodeUrls(dataset);
 
   const metaItems = [
     hasCellVariants
       ? (hasIdentityVariants
-        ? `${cellVariants.length} cell variants`
+        ? `${cellVariants.length} ${variantTerminology.singular} variants`
         : (variantChemistries.length >= 2 ? `${variantChemistries.length} chemistries` : `${cellVariants.length} variants`))
       : (hasMeaningfulValue(dataset.electrodes?.positive) ? dataset.electrodes.positive : null),
     !hasCellVariants && hasMeaningfulValue(dataset.overview?.case) ? dataset.overview.case : null,
@@ -1114,25 +1294,40 @@ function renderDatasetDetail(dataset) {
     dataset.publication_date || null
   ].filter(Boolean).map(value => `<span class="detail-meta-item">${value}</span>`).join('');
 
-  const actions = [];
+  const primaryActions = [];
   if (sourceUrl && sourceUrl !== '#') {
-    actions.push(`<a href="${sourceUrl}" class="detail-action detail-action-primary" target="_blank" rel="noopener">Open source <span aria-hidden="true">↗</span></a>`);
+    primaryActions.push(`<a href="${sourceUrl}" class="detail-action detail-action-primary" target="_blank" rel="noopener">Open source <span aria-hidden="true">↗</span></a>`);
   }
+  const downloadActions = [];
   if (Array.isArray(dataset.download_urls) && dataset.download_urls.length > 0) {
-    actions.push(`<a href="${dataset.download_urls[0]}" class="detail-action" target="_blank" rel="noopener">Download</a>`);
+    const downloadUrls = dataset.download_urls.filter(url => typeof url === 'string' && url.startsWith('http'));
+    downloadUrls.forEach((url, index) => {
+      const label = getDownloadLabel(dataset, url, index, downloadUrls.length);
+      const action = `<a href="${escapeHtml(url)}" class="detail-action detail-download-action" target="_blank" rel="noopener">${escapeHtml(label)}</a>`;
+      if (downloadUrls.length === 1) {
+        primaryActions.push(action);
+      } else {
+        downloadActions.push(action);
+      }
+    });
   }
   codeUrls.forEach((url, index) => {
     const label = codeUrls.length > 1 ? `Code ${index + 1}` : 'Code';
-    actions.push(`<a href="${url}" class="detail-action" target="_blank" rel="noopener">${label}</a>`);
+    primaryActions.push(`<a href="${url}" class="detail-action" target="_blank" rel="noopener">${label}</a>`);
   });
   if (dataset.code?.available && codeUrls.length === 0) {
-    actions.push('<span class="detail-action is-disabled">Code available</span>');
+    primaryActions.push('<span class="detail-action is-disabled">Code available</span>');
   }
-  const actionRow = actions.length > 0 ? `<div class="detail-actions">${actions.join('')}</div>` : '';
+  const actionRow = primaryActions.length > 0 || downloadActions.length > 0
+    ? `<div class="detail-actions">
+        ${primaryActions.length > 0 ? `<div class="detail-primary-actions">${primaryActions.join('')}</div>` : ''}
+        ${downloadActions.length > 0 ? `<div class="detail-download-list">${downloadActions.join('')}</div>` : ''}
+      </div>`
+    : '';
 
   const profileSection = renderDatasetProfileSection(dataset, measurements);
   const cellVariantsSection = hasIdentityVariants ? renderCellVariantsSection(dataset) : '';
-  const primaryCategorySection = renderPrimaryCategorySection(dataset);
+  const categorySections = renderCategorySections(dataset);
 
   const licenseValue = dataset.license
     ? (dataset.license.url
@@ -1141,18 +1336,23 @@ function renderDatasetDetail(dataset) {
     : (dataset.license_url && dataset.license_url !== 'No license'
       ? `<a href="${dataset.license_url}" target="_blank" rel="noopener">Custom license</a>`
       : null);
+  const additionalLicenseTerms = dataset.license?.additional_terms_url
+    ? `<a href="${escapeHtml(dataset.license.additional_terms_url)}" target="_blank" rel="noopener">${escapeHtml(dataset.license.additional_terms_name || 'Additional terms')}</a>`
+    : null;
   const cycler = [dataset.source_metadata?.battery_cycler_manufacturer, dataset.source_metadata?.battery_cycler_model]
     .filter(hasMeaningfulValue).join(' ') || null;
 
   const provenanceSection = renderSpecSection('Source & provenance', [
     renderSpecGroup('Registry', [
-      renderSpecRow('Category', BDC.formatCategory(category)),
+      renderSpecRow('Categories', displayCategories.map(item => BDC.formatCategory(item)).join(', ')),
       renderSpecRow('Data group', dataset.data_group),
       renderSpecRow('Owner', dataset.source_metadata?.owner),
       renderSpecRow('Data modality', dataset.source_metadata?.data_modality)
     ]),
     renderSpecGroup('Provenance', [
       renderSpecRow('License', licenseValue),
+      renderSpecRow('Additional license terms', additionalLicenseTerms),
+      renderSpecRow('Reuse restrictions', dataset.source_metadata?.reuse_restrictions),
       renderSpecRow('Publication year', dataset.publication_date),
       renderSpecRow('Battery cycler', cycler),
       renderSpecRow('Anomaly mentioned', dataset.source_metadata?.anomaly_mentioned ? 'Yes' : null),
@@ -1217,14 +1417,14 @@ function renderDatasetDetail(dataset) {
       <div class="breadcrumb detail-breadcrumb">
         <a href="index.html">Home</a>
         <span class="breadcrumb-separator">/</span>
-        <a href="find-data.html">Find data</a>
+        <a href="find-data.html${contextQuery('?')}">Find data</a>
         <span class="breadcrumb-separator">/</span>
         <span>${dataset.id}</span>
       </div>
 
       <header class="detail-hero">
         <div class="detail-kicker">
-          <span class="badge badge-${category}">${BDC.formatCategory(category)}</span>
+          ${displayCategories.map(item => `<span class="badge badge-${item}">${BDC.formatCategory(item)}</span>`).join('')}
           <span class="font-mono">${dataset.id}</span>
         </div>
         <h1>${title}</h1>
@@ -1235,12 +1435,64 @@ function renderDatasetDetail(dataset) {
 
       ${profileSection}
       ${cellVariantsSection}
-      ${primaryCategorySection}
+      ${categorySections}
       ${provenanceSection}
       ${publicationsSection}
       ${correctionSection}
+      ${renderRecordNav(dataset)}
       ${correctionModal}
     </div>`;
+}
+
+/* Step through whichever set the reader arrived from: their filtered results
+   when there is a context, the whole registry in id order when there is not. */
+function getNavigationSet(dataset) {
+  if (BDC.hasContext()) {
+    const results = BDC.applyFilters();
+    const index = results.findIndex(entry => entry.id === dataset.id);
+    if (index !== -1) return { entries: results, index, label: getContextLabel() };
+  }
+
+  const registry = [...BDC.datasets].sort((a, b) => a.id.localeCompare(b.id));
+  return { entries: registry, index: registry.findIndex(entry => entry.id === dataset.id), label: 'Registry' };
+}
+
+function getContextLabel() {
+  const keys = BDC.getContextFilterKeys();
+  const categories = BDC.activeFilters.category || [];
+
+  if (keys.length === 1 && keys[0] === 'category' && categories.length === 1 && !BDC.searchQuery) {
+    return BDC.formatCategory(categories[0]);
+  }
+  return 'Filtered';
+}
+
+function renderRecordNav(dataset) {
+  const { entries, index, label } = getNavigationSet(dataset);
+  if (index === -1 || entries.length < 2) return '';
+
+  const step = (entry, direction) => {
+    if (!entry) return '<span class="record-nav-slot"></span>';
+
+    const title = truncate(getTitle(entry), 64);
+    const arrow = `<span class="icon-mask icon-arrow record-nav-arrow record-nav-arrow-${direction}" aria-hidden="true"></span>`;
+    const text = `<span class="record-nav-title">${escapeHtml(title)}</span>`;
+    const reading = direction === 'previous' ? 'Previous entry' : 'Next entry';
+
+    return `
+      <a class="record-nav-slot record-nav-link record-nav-${direction}"
+         href="dataset.html?id=${entry.id}${contextQuery('&amp;')}"
+         aria-label="${escapeHtml(`${reading}: ${title}`)}">
+        ${direction === 'previous' ? arrow + text : text + arrow}
+      </a>`;
+  };
+
+  return `
+    <nav class="record-nav" aria-label="Registry entry navigation">
+      ${step(entries[index - 1], 'previous')}
+      <span class="record-nav-position">${escapeHtml(label)} <span class="record-nav-count">${index + 1} / ${entries.length}</span></span>
+      ${step(entries[index + 1], 'next')}
+    </nav>`;
 }
 
 // Get URL parameter
