@@ -11,7 +11,9 @@ Internal curation workflows are maintained separately.
 
 ## License
 
-The released registry metadata and website content are distributed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+- Released registry metadata (`BatteryDataCommons/releases/`) and website content: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), full text in [LICENSE](LICENSE).
+- Code (`scripts/`, `tests/`, `BatteryDataCommons/js/`, `BatteryDataCommons/css/` and `.github/workflows/`): MIT, full text in [LICENSE-CODE](LICENSE-CODE).
+- Icons in `BatteryDataCommons/css/icons/`: MIT, from Phosphor Icons, see [their licence](BatteryDataCommons/css/icons/LICENSE).
 
 ## Contact
 - Marwan Hassini — marwan.hassini@univ-eiffel.fr
