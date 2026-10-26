@@ -40,8 +40,8 @@
 [data-theme="dark"] .nav { background: var(--color-bg-primary); }
 .nav-inner { gap: 28px; }
 .nav-logo { font-size: 17px; font-weight: 600; letter-spacing: -.025em; }
-.nav-logo-icon { flex-shrink: 0; width: 34px; height: 34px; color: #fff; background: var(--color-accent-gradient); border-radius: var(--radius-md); box-shadow: var(--shadow-accent); }
-.nav-logo-icon svg { width: 21px; height: 21px; stroke: currentColor; }
+.nav-logo-icon { flex-shrink: 0; width: 34px; height: 34px; background: url('bdc-logo.png') center / contain no-repeat; }
+.nav-logo-icon svg { display: none; }
 .nav-links { gap: 26px; }
 .nav-links li { margin: 0; }
 .nav-links a { font-size: 13px; }
