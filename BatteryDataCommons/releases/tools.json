@@ -920,6 +920,26 @@
     "year": ""
   },
   {
+    "id": "bdc_sw_063",
+    "name": "PathSim-Batt",
+    "language": "Python",
+    "license_type": "Open source",
+    "capabilities": {
+      "data_processing": false,
+      "data_analysis": false,
+      "physics_modelling": true,
+      "experiment_modelling": false,
+      "prediction": false,
+      "simulation": true
+    },
+    "documentation": true,
+    "maintained": true,
+    "license": "https://opensource.org/license/mit",
+    "software_url": "https://github.com/pathsim/pathsim-batt",
+    "article_url": null,
+    "year": "2026"
+  },
+  {
     "id": "bdc_sw_020",
     "name": "PETLION",
     "language": "Julia",

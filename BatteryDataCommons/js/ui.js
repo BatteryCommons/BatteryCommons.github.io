@@ -132,7 +132,7 @@ function renderDetailItem(label, value) {
   return `
         <div class="detail-item">
           <div class="detail-item-label">${label}</div>
-          <div class="detail-item-value">${value}</div>
+          <div class="detail-item-value">${renderValue(value)}</div>
         </div>`;
 }
 
@@ -143,7 +143,7 @@ function renderTemplateDetailItem(label, value) {
   return `
         <div class="detail-item">
           <div class="detail-item-label">${label}</div>
-          <div class="detail-item-value">${displayValue}</div>
+          <div class="detail-item-value">${renderValue(displayValue)}</div>
         </div>`;
 }
 
@@ -165,7 +165,7 @@ function renderSpecRow(label, value, required = false) {
   return `
         <div class="detail-spec-row${available ? '' : ' is-missing'}">
           <dt>${label}</dt>
-          <dd>${displayValue}</dd>
+          <dd>${renderValue(displayValue)}</dd>
         </div>`;
 }
 
@@ -202,9 +202,9 @@ function renderSpecSection(title, groups, className = '') {
 
 function renderInlineChips(values) {
   if (!Array.isArray(values) || values.length === 0) return null;
-  return `<span class="detail-inline-chips">${values
+  return trustedHtml(`<span class="detail-inline-chips">${values
     .map(value => `<span class="detail-inline-chip">${escapeHtml(value)}</span>`)
-    .join('')}</span>`;
+    .join('')}</span>`);
 }
 
 function getCodeUrls(dataset) {
@@ -355,6 +355,37 @@ function escapeHtml(value) {
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#039;');
+}
+
+// Record values are text and are escaped where they are rendered. Markup built
+// here from already-escaped parts is wrapped so it is not escaped a second time.
+// Only this class marks markup as trusted: JSON cannot create an instance of it,
+// so a record value can never pass itself off as markup.
+class TrustedHtml {
+  constructor(markup) {
+    this.markup = markup;
+  }
+}
+
+function trustedHtml(markup) {
+  return new TrustedHtml(markup);
+}
+
+function renderValue(value) {
+  return value instanceof TrustedHtml ? value.markup : escapeHtml(value);
+}
+
+// Only absolute http(s) links from records reach an href; javascript: and other
+// schemes become '#'.
+function safeUrl(value) {
+  const url = typeof value === 'string' ? value.trim() : '';
+  return /^https?:\/\//i.test(url) ? escapeHtml(url) : '#';
+}
+
+// A string argument for an inline event handler: JSON quoting for the script,
+// then HTML escaping for the attribute that holds it.
+function jsArg(value) {
+  return escapeHtml(JSON.stringify(String(value)));
 }
 
 // Normalize long chemistry names only for concise display titles. Canonical
@@ -871,29 +902,29 @@ function renderDatasetCard(dataset) {
   const cellFormat = dataset.overview?.case || 'Unknown';
   const year = dataset.publication_date || '';
   const metaBadges = [
-    hasMeaningfulValue(positiveElectrode) ? `<span class="badge">${positiveElectrode}</span>` : '',
-    hasMeaningfulValue(cellFormat) ? `<span class="badge">${cellFormat}</span>` : '',
-    year ? `<span class="badge">${year}</span>` : ''
+    hasMeaningfulValue(positiveElectrode) ? `<span class="badge">${escapeHtml(positiveElectrode)}</span>` : '',
+    hasMeaningfulValue(cellFormat) ? `<span class="badge">${escapeHtml(cellFormat)}</span>` : '',
+    year ? `<span class="badge">${escapeHtml(year)}</span>` : ''
   ].filter(Boolean).join('');
 
   return `
-    <article class="card dataset-card" onclick="window.location.href='dataset.html?id=${dataset.id}${contextQuery('&amp;')}'">
+    <article class="card dataset-card" onclick="window.location.href='dataset.html?id=${encodeURIComponent(dataset.id)}${contextQuery('&amp;')}'">
       <div class="card-header">
         <div>
-          <h3 class="card-title">${truncate(title, 80)}</h3>
-          <span class="dataset-doi text-sm text-muted">${dataset.id}</span>
+          <h3 class="card-title">${escapeHtml(truncate(title, 80))}</h3>
+          <span class="dataset-doi text-sm text-muted">${escapeHtml(dataset.id)}</span>
         </div>
-        <span class="badge ${categoryBadgeClass}">${BDC.formatCategory(category)}</span>
+        <span class="badge ${escapeHtml(categoryBadgeClass)}">${escapeHtml(BDC.formatCategory(category))}</span>
       </div>
       <div class="card-body">
-        <p>${truncate(description, 150)}</p>
+        <p>${escapeHtml(truncate(description, 150))}</p>
         <div class="dataset-meta">
           ${metaBadges}
         </div>
       </div>
       <div class="card-footer flex justify-between items-center">
-        <span class="text-sm text-muted">${dataset.source_metadata?.owner || 'Unknown'}</span>
-        <a href="${sourceUrl}" class="btn btn-sm btn-outline" onclick="event.stopPropagation()" target="_blank" rel="noopener">
+        <span class="text-sm text-muted">${escapeHtml(dataset.source_metadata?.owner || 'Unknown')}</span>
+        <a href="${safeUrl(sourceUrl)}" class="btn btn-sm btn-outline" onclick="event.stopPropagation()" target="_blank" rel="noopener">
           View Data →
         </a>
       </div>
@@ -994,8 +1025,8 @@ function renderCompactFilterChips(filterType, counts) {
         <button type="button"
                 class="filter-chip${active ? ' is-active' : ''}"
                 aria-pressed="${active ? 'true' : 'false'}"
-                onclick="BDCUI.handleFilterChange('${filterType}', '${value}')">
-          <span>${value}</span><span class="filter-chip-count">${count}</span>
+                onclick="BDCUI.handleFilterChange(${jsArg(filterType)}, ${jsArg(value)})">
+          <span>${escapeHtml(value)}</span><span class="filter-chip-count">${count}</span>
         </button>`;
     }).join('');
 }
@@ -1019,9 +1050,9 @@ function renderFilterOptions(filterType, counts) {
     .map(([value, count]) => `
       <label class="filter-option">
         <input type="checkbox" 
-               onchange="handleFilterChange('${filterType}', '${value}')"
+               onchange="handleFilterChange(${jsArg(filterType)}, ${jsArg(value)})"
                ${(activeFilters[filterType] || []).includes(value) ? 'checked' : ''}>
-        <span>${formatter(value)}</span>
+        <span>${escapeHtml(formatter(value))}</span>
         <span class="count">${count}</span>
       </label>
     `).join('');
@@ -1292,18 +1323,18 @@ function renderDatasetDetail(dataset) {
       ? `${Number.isInteger(Number(specimenCount)) ? Number(specimenCount) : specimenCount} specimens`
       : null,
     dataset.publication_date || null
-  ].filter(Boolean).map(value => `<span class="detail-meta-item">${value}</span>`).join('');
+  ].filter(Boolean).map(value => `<span class="detail-meta-item">${escapeHtml(value)}</span>`).join('');
 
   const primaryActions = [];
   if (sourceUrl && sourceUrl !== '#') {
-    primaryActions.push(`<a href="${sourceUrl}" class="detail-action detail-action-primary" target="_blank" rel="noopener">Open source <span aria-hidden="true">↗</span></a>`);
+    primaryActions.push(`<a href="${safeUrl(sourceUrl)}" class="detail-action detail-action-primary" target="_blank" rel="noopener">Open source <span aria-hidden="true">↗</span></a>`);
   }
   const downloadActions = [];
   if (Array.isArray(dataset.download_urls) && dataset.download_urls.length > 0) {
     const downloadUrls = dataset.download_urls.filter(url => typeof url === 'string' && url.startsWith('http'));
     downloadUrls.forEach((url, index) => {
       const label = getDownloadLabel(dataset, url, index, downloadUrls.length);
-      const action = `<a href="${escapeHtml(url)}" class="detail-action detail-download-action" target="_blank" rel="noopener">${escapeHtml(label)}</a>`;
+      const action = `<a href="${safeUrl(url)}" class="detail-action detail-download-action" target="_blank" rel="noopener">${escapeHtml(label)}</a>`;
       if (downloadUrls.length === 1) {
         primaryActions.push(action);
       } else {
@@ -1313,7 +1344,7 @@ function renderDatasetDetail(dataset) {
   }
   codeUrls.forEach((url, index) => {
     const label = codeUrls.length > 1 ? `Code ${index + 1}` : 'Code';
-    primaryActions.push(`<a href="${url}" class="detail-action" target="_blank" rel="noopener">${label}</a>`);
+    primaryActions.push(`<a href="${safeUrl(url)}" class="detail-action" target="_blank" rel="noopener">${label}</a>`);
   });
   if (dataset.code?.available && codeUrls.length === 0) {
     primaryActions.push('<span class="detail-action is-disabled">Code available</span>');
@@ -1331,13 +1362,13 @@ function renderDatasetDetail(dataset) {
 
   const licenseValue = dataset.license
     ? (dataset.license.url
-      ? `<a href="${dataset.license.url}" target="_blank" rel="noopener">${dataset.license.name}</a>`
+      ? trustedHtml(`<a href="${safeUrl(dataset.license.url)}" target="_blank" rel="noopener">${escapeHtml(dataset.license.name || 'License')}</a>`)
       : dataset.license.name)
     : (dataset.license_url && dataset.license_url !== 'No license'
-      ? `<a href="${dataset.license_url}" target="_blank" rel="noopener">Custom license</a>`
+      ? trustedHtml(`<a href="${safeUrl(dataset.license_url)}" target="_blank" rel="noopener">Custom license</a>`)
       : null);
   const additionalLicenseTerms = dataset.license?.additional_terms_url
-    ? `<a href="${escapeHtml(dataset.license.additional_terms_url)}" target="_blank" rel="noopener">${escapeHtml(dataset.license.additional_terms_name || 'Additional terms')}</a>`
+    ? trustedHtml(`<a href="${safeUrl(dataset.license.additional_terms_url)}" target="_blank" rel="noopener">${escapeHtml(dataset.license.additional_terms_name || 'Additional terms')}</a>`)
     : null;
   const cycler = [dataset.source_metadata?.battery_cycler_manufacturer, dataset.source_metadata?.battery_cycler_model]
     .filter(hasMeaningfulValue).join(' ') || null;
@@ -1362,8 +1393,8 @@ function renderDatasetDetail(dataset) {
 
   const publications = dataset.publications && dataset.publications.length > 0
     ? dataset.publications.map(pub => `
-        <a class="detail-publication" href="${pub.url || '#'}" target="_blank" rel="noopener">
-          <span>${formatPublicationLabel(pub)}</span>
+        <a class="detail-publication" href="${safeUrl(pub.url)}" target="_blank" rel="noopener">
+          <span>${escapeHtml(formatPublicationLabel(pub))}</span>
           <span aria-hidden="true">↗</span>
         </a>`).join('')
     : '<p class="detail-empty-note">No associated publications.</p>';
@@ -1380,7 +1411,7 @@ function renderDatasetDetail(dataset) {
         <strong>Something missing or incorrect?</strong>
         <span>Suggest a metadata correction for this registry entry.</span>
       </div>
-      <button type="button" class="detail-action" onclick="BDCUI.openCorrectionModal('${dataset.id}')">Suggest a correction</button>
+      <button type="button" class="detail-action" onclick="BDCUI.openCorrectionModal(${jsArg(dataset.id)})">Suggest a correction</button>
     </div>`;
 
   const correctionModal = `
@@ -1419,16 +1450,16 @@ function renderDatasetDetail(dataset) {
         <span class="breadcrumb-separator">/</span>
         <a href="find-data.html${contextQuery('?')}">Find data</a>
         <span class="breadcrumb-separator">/</span>
-        <span>${dataset.id}</span>
+        <span>${escapeHtml(dataset.id)}</span>
       </div>
 
       <header class="detail-hero">
         <div class="detail-kicker">
-          ${displayCategories.map(item => `<span class="badge badge-${item}">${BDC.formatCategory(item)}</span>`).join('')}
-          <span class="font-mono">${dataset.id}</span>
+          ${displayCategories.map(item => `<span class="badge badge-${escapeHtml(item)}">${escapeHtml(BDC.formatCategory(item))}</span>`).join('')}
+          <span class="font-mono">${escapeHtml(dataset.id)}</span>
         </div>
-        <h1>${title}</h1>
-        <p class="detail-summary">${description}</p>
+        <h1>${escapeHtml(title)}</h1>
+        <p class="detail-summary">${escapeHtml(description)}</p>
         ${metaItems ? `<div class="detail-meta-line">${metaItems}</div>` : ''}
         ${actionRow}
       </header>
@@ -1481,7 +1512,7 @@ function renderRecordNav(dataset) {
 
     return `
       <a class="record-nav-slot record-nav-link record-nav-${direction}"
-         href="dataset.html?id=${entry.id}${contextQuery('&amp;')}"
+         href="dataset.html?id=${encodeURIComponent(entry.id)}${contextQuery('&amp;')}"
          aria-label="${escapeHtml(`${reading}: ${title}`)}">
         ${direction === 'previous' ? arrow + text : text + arrow}
       </a>`;
@@ -1534,5 +1565,8 @@ window.BDCUI = {
   handleFilterChange,
   handleSearch,
   handleClearFilters,
-  getUrlParam
+  getUrlParam,
+  escapeHtml,
+  safeUrl,
+  jsArg
 };

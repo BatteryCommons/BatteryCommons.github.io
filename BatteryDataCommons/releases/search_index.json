@@ -1,34 +1,34 @@
 {
-  "total": 373,
+  "total": 379,
   "categories": {
     "20,000 EIS spectra": 1,
-    "BatteryCell": 269,
+    "BatteryCell": 275,
     "CoinCase": 13,
-    "LithiumCobaltOxide": 22,
-    "durability": 168,
-    "performance": 171,
-    "PrismaticCase": 16,
-    "cells for portable electronic": 2,
+    "LithiumCobaltOxide": 21,
+    "durability": 174,
+    "performance": 177,
+    "PrismaticCase": 15,
+    "cells for portable electronic": 1,
     "CALCE CX2 cell lot": 1,
     "16 PL cells across 8 partial-SOC test groups": 1,
-    "PouchCase": 48,
-    "R18650": 85,
-    "LithiumNickelManganeseCobaltOxide": 69,
+    "PouchCase": 49,
+    "R18650": 88,
+    "LithiumNickelManganeseCobaltOxide": 70,
     "LithiumIronPhosphate": 37,
     "R26650": 7,
     "R32113": 2,
     "R40138": 1,
     "retired cell": 3,
     "Unknown": 36,
-    "LithiumNickelCobaltAluminiumOxide": 22,
-    "modelling": 69,
-    "R21700": 37,
+    "LithiumNickelCobaltAluminiumOxide": 24,
+    "modelling": 71,
+    "R21700": 40,
     "BatteryCell + BatteryPack": 3,
     "Pack test": 1,
     "LithiumNickelManganeseCobaltOxide 111": 1,
-    "BatteryCell + BatteryModule": 3,
-    "LithiumNickelManganeseCobaltOxide 622": 1,
-    "Module test": 3,
+    "BatteryCell + BatteryModule": 2,
+    "LithiumNickelManganeseCobaltOxide 622": 2,
+    "Module test": 2,
     "250 cells": 1,
     "LithiumNickelManganeseCobaltOxide 811": 3,
     "186 cells": 1,
@@ -42,10 +42,9 @@
     "Capacity prediction from impedance measured across varying temperature and state of charge": 1,
     "4000 retired cells": 1,
     "R32135": 1,
-    "LithiumNickelCobaltAluminiumOxide + LithiumNickelManganeseCobaltOxide": 1,
     "Sodium-ion": 1,
     "4630 retired cells": 1,
-    "LithiumManganeseOxide": 1,
+    "LithiumManganeseOxide": 2,
     "BatteryCell + BatteryModule + BatteryPack": 1,
     "retired pack": 1,
     "LithiumNickelManganeseCobaltOxide + LithiumCobaltOxide": 2,
@@ -100,10 +99,10 @@
     "LithiumIronPhosphate, LithiumNickelCobaltAluminiumOxide": 1,
     "R18650, R26650": 2,
     "Two cells deeply aged for 630 cycles, with characterization every 30 cycles down to 15.52% and 12.40% SOH": 1,
-    "BatteryModule": 11,
+    "BatteryModule": 12,
     "End-of-life prediction from 400–760 days of off-grid solar field operation": 1,
     "Lead Acid": 1,
-    "field": 40,
+    "field": 41,
     "Variety of cyclers": 1,
     "Use different dataset, share code": 1,
     "NFM": 1,
@@ -114,12 +113,12 @@
     "PouchCase, PrismaticCase": 2,
     "Varied": 1,
     "Thermal cycling": 1,
-    "LithiumIronPhosphate, LithiumNickelManganeseCobaltOxide": 2,
+    "LithiumIronPhosphate, LithiumNickelManganeseCobaltOxide": 3,
     "PrismaticCase, PouchCase": 1,
     "Four independently tested 1S4P assemblies using four 18650 cell models, each cycled for 1,223–1,943 cycles": 1,
     "NCA (Joy NCR18650A300A); Unknown for other variants": 1,
     "High- and low-temperature calendar and cycle accelerated aging": 1,
-    "BatteryPack": 29,
+    "BatteryPack": 31,
     "Comparison of DC fast charging and AC fast charging under drive-cycle discharge": 1,
     "LMO": 1,
     "NMC532": 1,
@@ -138,7 +137,7 @@
     "Lead-acid, Lead-acid Gel, LMO, LFP, LTO": 1,
     "LMO, NMC, LFP": 1,
     "LithiumManganeseOxide, LithiumNickelOxide": 1,
-    "PouchCell": 8,
+    "PouchCell": 7,
     "Second-life Nissan Leaf battery microgrid": 1,
     "LFP, NMC, LMO, LCO, LP": 1,
     "NiMH": 1,
@@ -218,7 +217,6 @@
     "Bipolar perturbation Li-ion diagnostics": 1,
     "4 cells": 1,
     "27 cells": 1,
-    "Li-ion impedance and deformation": 1,
     "Processed ZN and CALB": 1,
     "LG Chem E71A ageing": 1,
     "96 cells": 1,
@@ -274,20 +272,34 @@
     "Usable battery energy decline of a plug-in hybrid vehicle": 1,
     "Calendar ageing under coupled storage temperature and SOC": 1,
     "BatterySystem": 1,
-    "Field behaviour of grid-scale BESS under grid-service duty cycles": 1
+    "Field behaviour of grid-scale BESS under grid-service duty cycles": 1,
+    "106,693 retired cells": 1,
+    "160 aged cells and 6 unaged control cells": 1,
+    "3 characterisation cells, 41 ageing cells (5 calendar, 36 cyclic) and 2 teardown cells": 1,
+    "LithiumNickelManganeseCobaltOxide 532": 2,
+    "60 pouch cells under 24 operating conditions": 1,
+    "116 electric passenger cars (NMC) and 17 electric buses (LFP)": 1,
+    "84 cells aged to 80% SoH under 16 protocols, then to 50% SoH in a second-life phase": 1,
+    "BatteryModule, BatteryPack": 1,
+    "Second-life battery system of 27 modules and 324 cells": 1,
+    "Single cell": 1,
+    "High-power 21700 cell": 1,
+    "Cross-section of a commercial 21700 cell": 1,
+    "Commercial 21700 cell": 1,
+    "Traction battery packs of 21 vehicle models": 1,
+    "Six-cell 18650 module with immersion cooling": 1
   },
   "chemistries": {
-    "LithiumCobaltOxide": 22,
-    "LithiumNickelManganeseCobaltOxide": 69,
+    "LithiumCobaltOxide": 21,
+    "LithiumNickelManganeseCobaltOxide": 70,
     "LithiumIronPhosphate": 37,
-    "LithiumNickelCobaltAluminiumOxide": 22,
+    "LithiumNickelCobaltAluminiumOxide": 24,
     "LithiumNickelManganeseCobaltOxide 111": 1,
-    "LithiumNickelManganeseCobaltOxide 622": 1,
+    "LithiumNickelManganeseCobaltOxide 622": 2,
     "LithiumNickelManganeseCobaltOxide 811": 3,
     "Multiple": 11,
     "Unknown": 25,
-    "LithiumNickelCobaltAluminiumOxide + LithiumNickelManganeseCobaltOxide": 1,
-    "LithiumManganeseOxide": 1,
+    "LithiumManganeseOxide": 2,
     "LithiumNickelManganeseCobaltOxide + LithiumCobaltOxide": 2,
     "Not relevant": 1,
     "LithiumNickelManganeseCobaltOxide, LithiumIronPhosphate, LithiumCobaltOxide, NFM": 1,
@@ -310,7 +322,7 @@
     "LithiumNickelCobaltAluminiumOxide; LithiumNickelManganeseCobaltOxide": 1,
     "LithiumIronPhosphate, LithiumNickelManganeseCobaltOxide, LithiumNickelCobaltAluminiumOxide": 1,
     "Varied": 1,
-    "LithiumIronPhosphate, LithiumNickelManganeseCobaltOxide": 2,
+    "LithiumIronPhosphate, LithiumNickelManganeseCobaltOxide": 3,
     "NCA (Joy NCR18650A300A); Unknown for other variants": 1,
     "LMO": 1,
     "NMC532": 1,
@@ -343,18 +355,19 @@
     "LithiumIronPhosphate, NMC811, Unknown, NNP, LithiumNickelCobaltAluminiumOxide, LithiumNickelCobaltAluminiumOxide, Unknown, Unknown": 1,
     "NFM; NCM": 1,
     "NMC811; NMC622; LFP; LCO; LMFP": 1,
-    "K4Fe(CN)6 posolyte (aqueous)": 1
+    "K4Fe(CN)6 posolyte (aqueous)": 1,
+    "LithiumNickelManganeseCobaltOxide 532": 2
   },
   "formats": {
     "CoinCase": 13,
-    "PrismaticCase": 16,
-    "PouchCase": 48,
-    "R18650": 85,
+    "PrismaticCase": 15,
+    "PouchCase": 49,
+    "R18650": 88,
     "R26650": 7,
     "R32113": 2,
     "R40138": 1,
     "Unknown": 16,
-    "R21700": 37,
+    "R21700": 40,
     "18650/21700": 1,
     "PrismaticCase + PouchCase + CylindricalCase": 1,
     "R32135": 1,
@@ -372,7 +385,7 @@
     "R26650, R18650, R21700": 1,
     "PouchCase, PrismaticCase": 2,
     "PrismaticCase, PouchCase": 1,
-    "PouchCell": 8,
+    "PouchCell": 7,
     "Pouch": 2,
     "18650": 3,
     "Coin": 1,
@@ -410,12 +423,13 @@
     {
       "id": "bdc_000002",
       "title": "CS2 prismatic cell test data",
-      "keywords": "bdc_000002 cs2 prismatic cell test data prismaticcase lithiumcobaltoxide carbon batterycell lithiumcobaltoxide prismaticcase cells for portable electronic performance",
+      "keywords": "bdc_000002 cs2 prismatic cell test data prismaticcase lithiumcobaltoxide carbon batterycell lithiumcobaltoxide prismaticcase cells for portable electronic durability performance",
       "categories": [
         "BatteryCell",
         "LithiumCobaltOxide",
         "PrismaticCase",
         "cells for portable electronic",
+        "durability",
         "performance"
       ],
       "positive_electrode": "LithiumCobaltOxide",
@@ -943,23 +957,6 @@
       "battery_model": "ICR18650-22P, INR18650-26F, ICR18650-HB6, NCR18650PF, INR18650-20S, INR18650-13L, INR18650-HG2, US18650VTC4A"
     },
     {
-      "id": "bdc_000037",
-      "title": "Parallel-Connected Lithium-Ion Cell Imbalance Dataset",
-      "keywords": "bdc_000037 parallel-connected lithium-ion cell imbalance dataset samsung, lg chem samsung inr21700-50e, lg-chem inr21700-m50t r21700 lithiumnickelcobaltaluminiumoxide + lithiumnickelmanganesecobaltoxide carbon + silicon batterycell + batterymodule lithiumnickelcobaltaluminiumoxide + lithiumnickelmanganesecobaltoxide module test r21700 performance lg chem lg-chem inr21700-m50t r21700 r21700 samsung samsung inr21700-50e",
-      "categories": [
-        "BatteryCell + BatteryModule",
-        "LithiumNickelCobaltAluminiumOxide + LithiumNickelManganeseCobaltOxide",
-        "Module test",
-        "R21700",
-        "performance"
-      ],
-      "positive_electrode": "LithiumNickelCobaltAluminiumOxide + LithiumNickelManganeseCobaltOxide",
-      "negative_electrode": "Carbon + Silicon",
-      "case": "R21700",
-      "manufacturer": "Samsung, LG Chem",
-      "battery_model": "Samsung INR21700-50E, LG-Chem INR21700-M50T"
-    },
-    {
       "id": "bdc_000038",
       "title": "LFP Battery SOC Estimation Dataset",
       "keywords": "bdc_000038 lfp battery soc estimation dataset a123 anr26650m1b r26650 lithiumironphosphate unknown batterycell lithiumironphosphate r26650 performance",
@@ -1121,11 +1118,12 @@
     {
       "id": "bdc_000048",
       "title": "CALB L148N58A Prismatic Cell Characterization Dataset",
-      "keywords": "bdc_000048 calb l148n58a prismatic cell characterization dataset calb l148n58a prismaticcase lithiumnickelmanganesecobaltoxide carbon batterycell lithiumnickelmanganesecobaltoxide prismaticcase performance",
+      "keywords": "bdc_000048 calb l148n58a prismatic cell characterization dataset calb l148n58a prismaticcase lithiumnickelmanganesecobaltoxide carbon batterycell lithiumnickelmanganesecobaltoxide prismaticcase durability performance",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide",
         "PrismaticCase",
+        "durability",
         "performance"
       ],
       "positive_electrode": "LithiumNickelManganeseCobaltOxide",
@@ -1751,19 +1749,6 @@
       "battery_model": "Unknown"
     },
     {
-      "id": "bdc_000088",
-      "title": "Extended Ragone Characterization Dataset for Three Lithium-Ion Cell Types",
-      "keywords": "bdc_000088 extended ragone characterization dataset for three lithium-ion cell types performance",
-      "categories": [
-        "performance"
-      ],
-      "positive_electrode": null,
-      "negative_electrode": null,
-      "case": null,
-      "manufacturer": null,
-      "battery_model": null
-    },
-    {
       "id": "bdc_000089",
       "title": "3.4 Ah Lithium-Sulfur Pouch Cell Aging Dataset",
       "keywords": "bdc_000089 3.4 ah lithium-sulfur pouch cell aging dataset oxis energy unknown pouchcase lithiumsulfur unknown batterycell lithiumsulfur pouchcase performance",
@@ -1783,19 +1768,6 @@
       "id": "bdc_000090",
       "title": "18650 Cell Cycling and Degradation Imaging Dataset",
       "keywords": "bdc_000090 18650 cell cycling and degradation imaging dataset performance",
-      "categories": [
-        "performance"
-      ],
-      "positive_electrode": null,
-      "negative_electrode": null,
-      "case": null,
-      "manufacturer": null,
-      "battery_model": null
-    },
-    {
-      "id": "bdc_000091",
-      "title": "LG M50 Multi-Rate Charge-Discharge and Temperature Dataset",
-      "keywords": "bdc_000091 lg m50 multi-rate charge-discharge and temperature dataset performance",
       "categories": [
         "performance"
       ],
@@ -1835,19 +1807,6 @@
       "case": null,
       "manufacturer": "Cellevia Batteries",
       "battery_model": "L402025"
-    },
-    {
-      "id": "bdc_000094",
-      "title": "LG INR18650-MJ1 Maritime-Transport Cycling Dataset",
-      "keywords": "bdc_000094 lg inr18650-mj1 maritime-transport cycling dataset performance",
-      "categories": [
-        "performance"
-      ],
-      "positive_electrode": null,
-      "negative_electrode": null,
-      "case": null,
-      "manufacturer": null,
-      "battery_model": null
     },
     {
       "id": "bdc_000095",
@@ -2117,23 +2076,6 @@
       "case": null,
       "manufacturer": null,
       "battery_model": null
-    },
-    {
-      "id": "bdc_000113",
-      "title": "CALCE CS2 Prismatic LCO Cell Aging Dataset",
-      "keywords": "bdc_000113 calce cs2 prismatic lco cell aging dataset unknown unknown prismaticcase lithiumcobaltoxide carbon batterycell lithiumcobaltoxide prismaticcase cells for portable electronic durability",
-      "categories": [
-        "BatteryCell",
-        "LithiumCobaltOxide",
-        "PrismaticCase",
-        "cells for portable electronic",
-        "durability"
-      ],
-      "positive_electrode": "LithiumCobaltOxide",
-      "negative_electrode": "Carbon",
-      "case": "PrismaticCase",
-      "manufacturer": "Unknown",
-      "battery_model": "Unknown"
     },
     {
       "id": "bdc_000115",
@@ -2668,12 +2610,13 @@
     {
       "id": "bdc_000149",
       "title": "LG INR18650-MJ1 Maritime-Transport Cycling Dataset",
-      "keywords": "bdc_000149 lg inr18650-mj1 maritime-transport cycling dataset lg chem inr18650 mj1 r18650 lithiumnickelcobaltaluminiumoxide c+si batterycell lithiumnickelcobaltaluminiumoxide r18650 durability",
+      "keywords": "bdc_000149 lg inr18650-mj1 maritime-transport cycling dataset lg chem inr18650 mj1 r18650 lithiumnickelcobaltaluminiumoxide c+si batterycell lithiumnickelcobaltaluminiumoxide r18650 durability performance",
       "categories": [
         "BatteryCell",
         "LithiumNickelCobaltAluminiumOxide",
         "R18650",
-        "durability"
+        "durability",
+        "performance"
       ],
       "positive_electrode": "LithiumNickelCobaltAluminiumOxide",
       "negative_electrode": "C+Si",
@@ -2975,31 +2918,16 @@
       "battery_model": "SLPB 283452H"
     },
     {
-      "id": "bdc_000174",
-      "title": "CALB L148N58A Characterization and Driving-Cycle Dataset",
-      "keywords": "bdc_000174 calb l148n58a characterization and driving-cycle dataset calb l148n58a prismaticcase lithiumnickelmanganesecobaltoxide c batterycell lithiumnickelmanganesecobaltoxide prismaticcase durability",
-      "categories": [
-        "BatteryCell",
-        "LithiumNickelManganeseCobaltOxide",
-        "PrismaticCase",
-        "durability"
-      ],
-      "positive_electrode": "LithiumNickelManganeseCobaltOxide",
-      "negative_electrode": "C",
-      "case": "PrismaticCase",
-      "manufacturer": "CALB",
-      "battery_model": "L148N58A"
-    },
-    {
       "id": "bdc_000175",
       "title": "Parallel-Connected 21700 Cell Imbalance Dataset",
-      "keywords": "bdc_000175 parallel-connected 21700 cell imbalance dataset samsung, lg chem samsung inr21700-50e, lg-chem inr21700-m50t r21700 lithiumnickelcobaltaluminiumoxide; lithiumnickelmanganesecobaltoxide c+si batterycell, batterymodule lithiumnickelcobaltaluminiumoxide; lithiumnickelmanganesecobaltoxide module testing r21700 durability carbon + silicon carbon + silicon lg chem lg-chem inr21700-m50t lithiumnickelcobaltaluminiumoxide lithiumnickelmanganesecobaltoxide nca nmc r21700 r21700 samsung samsung inr21700-50e",
+      "keywords": "bdc_000175 parallel-connected 21700 cell imbalance dataset samsung, lg chem samsung inr21700-50e, lg-chem inr21700-m50t r21700 lithiumnickelcobaltaluminiumoxide; lithiumnickelmanganesecobaltoxide c+si batterycell, batterymodule lithiumnickelcobaltaluminiumoxide; lithiumnickelmanganesecobaltoxide module testing r21700 durability performance carbon + silicon carbon + silicon lg chem lg-chem inr21700-m50t lithiumnickelcobaltaluminiumoxide lithiumnickelmanganesecobaltoxide nca nmc r21700 r21700 samsung samsung inr21700-50e",
       "categories": [
         "BatteryCell, BatteryModule",
         "LithiumNickelCobaltAluminiumOxide; LithiumNickelManganeseCobaltOxide",
         "Module testing",
         "R21700",
-        "durability"
+        "durability",
+        "performance"
       ],
       "positive_electrode": "LithiumNickelCobaltAluminiumOxide; LithiumNickelManganeseCobaltOxide",
       "negative_electrode": "C+Si",
@@ -5516,22 +5444,6 @@
       "battery_model": null
     },
     {
-      "id": "bdc_000356",
-      "title": "Lithium-Polymer Pouch Cell Impedance, Strain, and Ultrasound Dataset",
-      "keywords": "bdc_000356 lithium-polymer pouch cell impedance, strain, and ultrasound dataset pouchcell batterycell li-ion impedance and deformation pouchcell performance",
-      "categories": [
-        "BatteryCell",
-        "Li-ion impedance and deformation",
-        "PouchCell",
-        "performance"
-      ],
-      "positive_electrode": null,
-      "negative_electrode": null,
-      "case": "PouchCell",
-      "manufacturer": null,
-      "battery_model": null
-    },
-    {
       "id": "bdc_000357",
       "title": "Processed Zinc-Coin and CALB Cycling Dataset",
       "keywords": "bdc_000357 processed zinc-coin and calb cycling dataset calb coincell batterycell coincell processed zn and calb durability",
@@ -5602,16 +5514,17 @@
     {
       "id": "bdc_000361",
       "title": "Samsung INR21700-50E State-of-Health Diagnostic Dataset",
-      "keywords": "bdc_000361 samsung inr21700-50e state-of-health diagnostic dataset samsung inr21700-50e r21700 77 cells batterycell r21700 durability performance",
+      "keywords": "bdc_000361 samsung inr21700-50e state-of-health diagnostic dataset samsung inr21700-50e r21700 lithiumnickelcobaltaluminiumoxide carbon + silicon 77 cells batterycell lithiumnickelcobaltaluminiumoxide r21700 durability performance",
       "categories": [
         "77 cells",
         "BatteryCell",
+        "LithiumNickelCobaltAluminiumOxide",
         "R21700",
         "durability",
         "performance"
       ],
-      "positive_electrode": null,
-      "negative_electrode": null,
+      "positive_electrode": "LithiumNickelCobaltAluminiumOxide",
+      "negative_electrode": "Carbon + Silicon",
       "case": "R21700",
       "manufacturer": "Samsung",
       "battery_model": "INR21700-50E"
@@ -5773,12 +5686,12 @@
     {
       "id": "bdc_000371",
       "title": "Coin Cell Cycling and EIS Dataset",
-      "keywords": "bdc_000371 coin cell cycling and eis dataset coincell batterycell coin cell cycling data coincell field performance",
+      "keywords": "bdc_000371 coin cell cycling and eis dataset coincell batterycell coin cell cycling data coincell durability performance",
       "categories": [
         "BatteryCell",
         "Coin cell cycling data",
         "CoinCell",
-        "field",
+        "durability",
         "performance"
       ],
       "positive_electrode": null,
@@ -6412,6 +6325,223 @@
       "positive_electrode": null,
       "negative_electrode": null,
       "case": null,
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000411",
+      "title": "ReLiB-100k Retired Lithium-Ion Cell Capacity Dataset",
+      "keywords": "bdc_000411 relib-100k retired lithium-ion cell capacity dataset 106,693 retired cells batterycell performance",
+      "categories": [
+        "106,693 retired cells",
+        "BatteryCell",
+        "performance"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": null,
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000412",
+      "title": "Samsung INR21700-50E Aging and Characterization Dataset",
+      "keywords": "bdc_000412 samsung inr21700-50e aging and characterization dataset samsung inr21700-50e r21700 lithiumnickelcobaltaluminiumoxide carbon + silicon 160 aged cells and 6 unaged control cells batterycell lithiumnickelcobaltaluminiumoxide r21700 durability performance",
+      "categories": [
+        "160 aged cells and 6 unaged control cells",
+        "BatteryCell",
+        "LithiumNickelCobaltAluminiumOxide",
+        "R21700",
+        "durability",
+        "performance"
+      ],
+      "positive_electrode": "LithiumNickelCobaltAluminiumOxide",
+      "negative_electrode": "Carbon + Silicon",
+      "case": "R21700",
+      "manufacturer": "Samsung",
+      "battery_model": "INR21700-50E"
+    },
+    {
+      "id": "bdc_000413",
+      "title": "CALB 58 Ah Prismatic NMC532 Characterization, Ageing and Post-Mortem Dataset",
+      "keywords": "bdc_000413 calb 58 ah prismatic nmc532 characterization, ageing and post-mortem dataset calb generation 3b, 58 ah prismaticcase lithiumnickelmanganesecobaltoxide 532 graphite 3 characterisation cells, 41 ageing cells (5 calendar, 36 cyclic) and 2 teardown cells batterycell lithiumnickelmanganesecobaltoxide 532 prismaticcase durability performance",
+      "categories": [
+        "3 characterisation cells, 41 ageing cells (5 calendar, 36 cyclic) and 2 teardown cells",
+        "BatteryCell",
+        "LithiumNickelManganeseCobaltOxide 532",
+        "PrismaticCase",
+        "durability",
+        "performance"
+      ],
+      "positive_electrode": "LithiumNickelManganeseCobaltOxide 532",
+      "negative_electrode": "Graphite",
+      "case": "PrismaticCase",
+      "manufacturer": "CALB",
+      "battery_model": "Generation 3b, 58 Ah"
+    },
+    {
+      "id": "bdc_000414",
+      "title": "NMC622/SiO-Graphite Pouch Cell Silicon Burn-Out Ageing Dataset",
+      "keywords": "bdc_000414 nmc622/sio-graphite pouch cell silicon burn-out ageing dataset pouchcase lithiumnickelmanganesecobaltoxide 622 graphite-silicon oxide 60 pouch cells under 24 operating conditions batterycell lithiumnickelmanganesecobaltoxide 622 pouchcase durability performance",
+      "categories": [
+        "60 pouch cells under 24 operating conditions",
+        "BatteryCell",
+        "LithiumNickelManganeseCobaltOxide 622",
+        "PouchCase",
+        "durability",
+        "performance"
+      ],
+      "positive_electrode": "LithiumNickelManganeseCobaltOxide 622",
+      "negative_electrode": "Graphite-Silicon Oxide",
+      "case": "PouchCase",
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000415",
+      "title": "Real-World Electric Passenger Car and Bus Battery Dataset",
+      "keywords": "bdc_000415 real-world electric passenger car and bus battery dataset lithiumironphosphate, lithiumnickelmanganesecobaltoxide 116 electric passenger cars (nmc) and 17 electric buses (lfp) batterypack lithiumironphosphate, lithiumnickelmanganesecobaltoxide field lfp lfp nmc nmc",
+      "categories": [
+        "116 electric passenger cars (NMC) and 17 electric buses (LFP)",
+        "BatteryPack",
+        "LithiumIronPhosphate, LithiumNickelManganeseCobaltOxide",
+        "field"
+      ],
+      "positive_electrode": "LithiumIronPhosphate, LithiumNickelManganeseCobaltOxide",
+      "negative_electrode": null,
+      "case": null,
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000416",
+      "title": "Lishen LR1865SZ Primary-Use and Second-Life Cycle Ageing Dataset",
+      "keywords": "bdc_000416 lishen lr1865sz primary-use and second-life cycle ageing dataset lishen lr1865sz r18650 lithiumnickelmanganesecobaltoxide 532 graphite 84 cells aged to 80% soh under 16 protocols, then to 50% soh in a second-life phase batterycell lithiumnickelmanganesecobaltoxide 532 r18650 durability",
+      "categories": [
+        "84 cells aged to 80% SoH under 16 protocols, then to 50% SoH in a second-life phase",
+        "BatteryCell",
+        "LithiumNickelManganeseCobaltOxide 532",
+        "R18650",
+        "durability"
+      ],
+      "positive_electrode": "LithiumNickelManganeseCobaltOxide 532",
+      "negative_electrode": "Graphite",
+      "case": "R18650",
+      "manufacturer": "Lishen",
+      "battery_model": "LR1865SZ"
+    },
+    {
+      "id": "bdc_000417",
+      "title": "Second-Life Battery System Field Operation Dataset",
+      "keywords": "bdc_000417 second-life battery system field operation dataset lithiummanganeseoxide graphite batterymodule, batterypack lithiummanganeseoxide second-life battery system of 27 modules and 324 cells field",
+      "categories": [
+        "BatteryModule, BatteryPack",
+        "LithiumManganeseOxide",
+        "Second-life battery system of 27 modules and 324 cells",
+        "field"
+      ],
+      "positive_electrode": "LithiumManganeseOxide",
+      "negative_electrode": "Graphite",
+      "case": null,
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000418",
+      "title": "Samsung INR18650-15M Multisine EIS Time-Series Dataset",
+      "keywords": "bdc_000418 samsung inr18650-15m multisine eis time-series dataset samsung sdi inr18650-15m r18650 lithiumnickelmanganesecobaltoxide graphite batterycell lithiumnickelmanganesecobaltoxide r18650 single cell performance",
+      "categories": [
+        "BatteryCell",
+        "LithiumNickelManganeseCobaltOxide",
+        "R18650",
+        "Single cell",
+        "performance"
+      ],
+      "positive_electrode": "LithiumNickelManganeseCobaltOxide",
+      "negative_electrode": "Graphite",
+      "case": "R18650",
+      "manufacturer": "Samsung SDI",
+      "battery_model": "INR18650-15M"
+    },
+    {
+      "id": "bdc_000419",
+      "title": "Molicel INR21700-P45B Equivalent Circuit Model Parameter and Validation Dataset",
+      "keywords": "bdc_000419 molicel inr21700-p45b equivalent circuit model parameter and validation dataset molicel inr21700-p45b r21700 lithiumnickelmanganesecobaltoxide graphite-silicon oxide batterycell high-power 21700 cell lithiumnickelmanganesecobaltoxide r21700 modelling performance",
+      "categories": [
+        "BatteryCell",
+        "High-power 21700 cell",
+        "LithiumNickelManganeseCobaltOxide",
+        "R21700",
+        "modelling",
+        "performance"
+      ],
+      "positive_electrode": "LithiumNickelManganeseCobaltOxide",
+      "negative_electrode": "Graphite-Silicon Oxide",
+      "case": "R21700",
+      "manufacturer": "Molicel",
+      "battery_model": "INR21700-P45B"
+    },
+    {
+      "id": "bdc_000420",
+      "title": "Commercial 21700 Cell EDDT Cross-Section",
+      "keywords": "bdc_000420 commercial 21700 cell eddt cross-section r21700 batterycell cross-section of a commercial 21700 cell r21700 performance",
+      "categories": [
+        "BatteryCell",
+        "Cross-section of a commercial 21700 cell",
+        "R21700",
+        "performance"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": "R21700",
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000421",
+      "title": "Commercial 21700 Cell 4D EDDT",
+      "keywords": "bdc_000421 commercial 21700 cell 4d eddt r21700 batterycell commercial 21700 cell r21700 performance",
+      "categories": [
+        "BatteryCell",
+        "Commercial 21700 cell",
+        "R21700",
+        "performance"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": "R21700",
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000422",
+      "title": "INL Courier-Fleet Traction Battery Pack Tests",
+      "keywords": "bdc_000422 inl courier-fleet traction battery pack tests multiple batterypack traction battery packs of 21 vehicle models durability performance",
+      "categories": [
+        "BatteryPack",
+        "Traction battery packs of 21 vehicle models",
+        "durability",
+        "performance"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": null,
+      "manufacturer": "Multiple",
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000423",
+      "title": "18650 Module Pulsed Immersion-Cooling CFD",
+      "keywords": "bdc_000423 18650 module pulsed immersion-cooling cfd r18650 batterymodule r18650 six-cell 18650 module with immersion cooling modelling",
+      "categories": [
+        "BatteryModule",
+        "R18650",
+        "Six-cell 18650 module with immersion cooling",
+        "modelling"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": "R18650",
       "manufacturer": null,
       "battery_model": null
     }

@@ -164,14 +164,14 @@
             </div>
             <div class="footer-bottom">
                 <p>© 2026 Battery Data Commons. Licensed under CC-BY-4.0.</p>
-                <span class="version-badge">v13.09.2026</span>
+                <span class="version-badge" data-release-version hidden></span>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
     <script src="js/data.js?v=20260913"></script>
-    <script src="js/ui.js?v=20260913b"></script>
+    <script src="js/ui.js?v=20261030"></script>
     <script>
         // Initialize registry entry page
         document.addEventListener('DOMContentLoaded', async function () {
@@ -180,6 +180,22 @@
 
             const datasetId = BDCUI.getUrlParam('id');
             const dataset = BDC.getDatasetById(datasetId);
+
+            // A withdrawn entry, such as a merged duplicate, forwards to the record that replaced it.
+            if (!dataset && datasetId) {
+                try {
+                    const response = await fetch('./releases/replaced_by.json', { cache: 'no-store' });
+                    const replacement = response.ok ? (await response.json())[datasetId] : null;
+                    if (/^bdc_(\d{6}|sw_\d{3})$/.test(replacement || '')) {
+                        const params = new URLSearchParams(window.location.search);
+                        params.set('id', replacement);
+                        window.location.replace(`dataset.html?${params}`);
+                        return;
+                    }
+                } catch (error) {
+                    console.warn('Replacement lookup failed:', error);
+                }
+            }
 
             // Update page title
             if (dataset) {
@@ -191,7 +207,7 @@
             document.getElementById('dataset-content').innerHTML = BDCUI.renderDatasetDetail(dataset);
         });
     </script>
-  <script src="js/release.js?v=20260917a"></script>
+  <script src="js/release.js?v=20261030"></script>
 </body>
 
 </html>
