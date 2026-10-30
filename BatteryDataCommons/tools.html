@@ -209,13 +209,13 @@
             </div>
             <div class="footer-bottom">
                 <p>© 2026 Battery Data Commons. Licensed under CC-BY-4.0.</p>
-                <span class="version-badge">v13.09.2026</span>
+                <span class="version-badge" data-release-version hidden></span>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="js/ui.js?v=20260913b"></script>
+    <script src="js/ui.js?v=20261030"></script>
     <script>
         let allTools = [];
         let filteredTools = [];
@@ -252,8 +252,8 @@
                 .slice(0, 6)
                 .map(([lang, count]) => `
                     <label class="filter-option">
-                        <input type="checkbox" value="${lang}" onchange="toggleFilter('language', '${lang}')">
-                        <span>${lang}</span>
+                        <input type="checkbox" value="${BDCUI.escapeHtml(lang)}" onchange="toggleFilter('language', ${BDCUI.jsArg(lang)})">
+                        <span>${BDCUI.escapeHtml(lang)}</span>
                         <span class="filter-count">${count}</span>
                     </label>
                 `).join('');
@@ -269,8 +269,8 @@
                 .sort((a, b) => b[1] - a[1])
                 .map(([type, count]) => `
                 <label class="filter-option">
-                    <input type="checkbox" value="${type}" onchange="toggleFilter('type', '${type}')">
-                    <span>${type}</span>
+                    <input type="checkbox" value="${BDCUI.escapeHtml(type)}" onchange="toggleFilter('type', ${BDCUI.jsArg(type)})">
+                    <span>${BDCUI.escapeHtml(type)}</span>
                     <span class="filter-count">${count}</span>
                 </label>
             `).join('');
@@ -362,6 +362,7 @@
                 return;
             }
 
+            const { escapeHtml, safeUrl } = BDCUI;
             grid.innerHTML = filteredTools.map(tool => {
                 const capabilities = tool.capabilities ? Object.entries(tool.capabilities)
                     .filter(([_, v]) => v)
@@ -374,23 +375,23 @@
                     <article class="card dataset-card">
                         <div class="card-header">
                             <div class="card-header-top">
-                                <h3 class="card-title">${tool.name}</h3>
-                                <span class="badge ${badgeClass}">${tool.license_type || 'Unknown'}</span>
+                                <h3 class="card-title">${escapeHtml(tool.name)}</h3>
+                                <span class="badge ${badgeClass}">${escapeHtml(tool.license_type || 'Unknown')}</span>
                             </div>
                             <div class="card-meta">
-                                <span class="badge">${tool.language || 'Unknown'}</span>
+                                <span class="badge">${escapeHtml(tool.language || 'Unknown')}</span>
                                 ${tool.maintained ? '<span class="badge badge-field">Maintained</span>' : ''}
                                 ${tool.documentation ? '<span class="badge badge-modelling">Docs</span>' : ''}
                             </div>
                         </div>
                         <div class="card-body">
                             <div class="card-tags">
-                                ${capabilities.map(c => `<span class="tag">${c}</span>`).join('')}
+                                ${capabilities.map(c => `<span class="tag">${escapeHtml(c)}</span>`).join('')}
                             </div>
                         </div>
                         <div class="card-footer">
-                            ${tool.software_url ? `<a href="${tool.software_url}" class="btn btn-sm tool-link" target="_blank" rel="noopener">View Tool <span class="icon-mask icon-arrow action-arrow" aria-hidden="true"></span></a>` : '<span class="text-muted">No link available</span>'}
-                            ${tool.article_url ? `<a href="${tool.article_url}" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Paper</a>` : ''}
+                            ${tool.software_url ? `<a href="${safeUrl(tool.software_url)}" class="btn btn-sm tool-link" target="_blank" rel="noopener">View Tool <span class="icon-mask icon-arrow action-arrow" aria-hidden="true"></span></a>` : '<span class="text-muted">No link available</span>'}
+                            ${tool.article_url ? `<a href="${safeUrl(tool.article_url)}" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Paper</a>` : ''}
                         </div>
                     </article>
                 `;
@@ -412,7 +413,7 @@
         // Initialize
         document.addEventListener('DOMContentLoaded', loadTools);
     </script>
-  <script src="js/release.js?v=20260917a"></script>
+  <script src="js/release.js?v=20261030"></script>
 </body>
 
 </html>

@@ -196,14 +196,14 @@
             </div>
             <div class="footer-bottom">
                 <p>© 2026 Battery Data Commons. Licensed under CC-BY-4.0.</p>
-                <span class="version-badge">v13.09.2026</span>
+                <span class="version-badge" data-release-version hidden></span>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
     <script src="js/data.js?v=20260913"></script>
-    <script src="js/ui.js?v=20260913b"></script>
+    <script src="js/ui.js?v=20261030"></script>
     <script>
         // Load contributors data
         document.addEventListener('DOMContentLoaded', async function () {
@@ -213,24 +213,25 @@
                 const people = data.people || data.team || [];
 
                 // Render people in the source order.
+                const { escapeHtml, safeUrl } = BDCUI;
                 const peopleGrid = document.getElementById('people-grid');
                 peopleGrid.innerHTML = people.map(person => `
                     <li class="member-entry">
                         <div class="member-heading">
-                            <h3 class="member-name">${person.name}</h3>
+                            <h3 class="member-name">${escapeHtml(person.name)}</h3>
                             <div class="member-links">
-                                ${person.email ? `<a href="mailto:${person.email}" class="member-contact" aria-label="Email ${person.name}" title="Email ${person.name}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg></a>` : ''}
-                                ${person.linkedin ? `<a href="${person.linkedin}" class="member-contact" target="_blank" rel="noopener noreferrer" aria-label="${person.name} on LinkedIn" title="${person.name} on LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10v7m4 0v-7m0 3a2.5 2.5 0 0 1 5 0v4"/><circle cx="8" cy="7" r="1" fill="currentColor" stroke="none"/></svg></a>` : ''}
+                                ${person.email ? `<a href="mailto:${escapeHtml(person.email)}" class="member-contact" aria-label="Email ${escapeHtml(person.name)}" title="Email ${escapeHtml(person.name)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg></a>` : ''}
+                                ${person.linkedin ? `<a href="${safeUrl(person.linkedin)}" class="member-contact" target="_blank" rel="noopener noreferrer" aria-label="${escapeHtml(person.name)} on LinkedIn" title="${escapeHtml(person.name)} on LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10v7m4 0v-7m0 3a2.5 2.5 0 0 1 5 0v4"/><circle cx="8" cy="7" r="1" fill="currentColor" stroke="none"/></svg></a>` : ''}
                             </div>
                         </div>
-                        <p class="member-institution">${person.institution}</p>
+                        <p class="member-institution">${escapeHtml(person.institution)}</p>
                     </li>
                 `).join('');
 
                 // Render acknowledgements
                 const ack = document.getElementById('acknowledgements');
                 ack.innerHTML = data.acknowledgements.map(a =>
-                    `This work was supported by the <strong>${a.organization}</strong>.`
+                    `This work was supported by the <strong>${escapeHtml(a.organization)}</strong>.`
                 ).join('<br>');
 
             } catch (error) {
@@ -238,7 +239,7 @@
             }
         });
     </script>
-  <script src="js/release.js?v=20260917a"></script>
+  <script src="js/release.js?v=20261030"></script>
 </body>
 
 </html>

@@ -1,23 +1,20 @@
 /* One catalogue version and download target for every page. */
 
-/* Release ids are stored as vDDMM.YYYY; readers expect vDD.MM.YYYY. */
-function formatReleaseVersion(version) {
-  return typeof version === 'string'
-    ? version.replace(/^v(\d{2})(\d{2})\.(\d{4})/, 'v$1.$2.$3')
-    : version;
-}
+/* Release ids are vDD.MM.YYYY, with .2, .3 ... for further releases on the same day. */
+const RELEASE_VERSION_PATTERN = /^v\d{2}\.\d{2}\.\d{4}(?:\.\d+)?$/;
 
 document.addEventListener('DOMContentLoaded', async () => {
   try {
     const response = await fetch('./releases/release_manifest.json', { cache: 'no-store' });
     if (!response.ok) throw new Error('Release metadata unavailable');
     const release = await response.json();
-    if (!/^BatteryDataCommons_v\d{4}\.\d{4}(?:\.\d+)?\.xlsx$/.test(release.excel_filename)) {
-      throw new Error('Invalid Excel filename');
+    if (!RELEASE_VERSION_PATTERN.test(release.version)
+        || release.excel_filename !== `BatteryDataCommons_${release.version}.xlsx`) {
+      throw new Error('Invalid release version or Excel filename');
     }
-    const displayVersion = formatReleaseVersion(release.version);
-    document.querySelectorAll('.version-badge:not(#tools-total-badge), [data-release-version]').forEach(element => {
-      element.textContent = displayVersion;
+    document.querySelectorAll('[data-release-version]').forEach(element => {
+      element.textContent = release.version;
+      element.hidden = false;
     });
     document.querySelectorAll('[data-excel-download]').forEach(link => {
       const checksum = release.assets?.[release.excel_filename]?.sha256;
