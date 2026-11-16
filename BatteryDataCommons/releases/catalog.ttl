@@ -5182,17 +5182,17 @@
 <http://batterydata.commons/dataset/bdc_000295> <http://batterydata.commons/resource/positiveElectrode> "Multiple" .
 <http://batterydata.commons/dataset/bdc_000295> <http://purl.org/dc/terms/identifier> "bdc_000295" .
 <http://batterydata.commons/dataset/bdc_000295> <http://purl.org/dc/terms/issued> "2024" .
-<http://batterydata.commons/dataset/bdc_000295> <http://purl.org/dc/terms/title> "NREL Battery Failure Databank"@en .
+<http://batterydata.commons/dataset/bdc_000295> <http://purl.org/dc/terms/title> "NLR Battery Failure Databank"@en .
 <http://batterydata.commons/dataset/bdc_000295> <http://schema.org/manufacturer> "Unknown" .
 <http://batterydata.commons/dataset/bdc_000295> <http://schema.org/model> "Unknown" .
 <http://batterydata.commons/dataset/bdc_000295> <http://schema.org/productID> "CylindricalCase" .
 <http://batterydata.commons/dataset/bdc_000295> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
-<http://batterydata.commons/dataset/bdc_000295> <http://www.w3.org/ns/dcat#distribution> _:cbf0ae562ee171277e3f3d93beb283e6afe68fba7d300d80c964a0b046dee0c40f .
+<http://batterydata.commons/dataset/bdc_000295> <http://www.w3.org/ns/dcat#distribution> _:cb6d58b6b897969364b307cfdb34823719ee33cba0c87ec1dae3a2ed3b40706970 .
 <http://batterydata.commons/dataset/bdc_000295> <http://www.w3.org/ns/dcat#keyword> "BatteryCell" .
 <http://batterydata.commons/dataset/bdc_000295> <http://www.w3.org/ns/dcat#keyword> "CylindricalCase" .
 <http://batterydata.commons/dataset/bdc_000295> <http://www.w3.org/ns/dcat#keyword> "Multiple" .
 <http://batterydata.commons/dataset/bdc_000295> <http://www.w3.org/ns/dcat#keyword> "safety" .
-<http://batterydata.commons/dataset/bdc_000295> <http://www.w3.org/ns/dcat#landingPage> <https://www.nrel.gov/transportation/battery-failure> .
+<http://batterydata.commons/dataset/bdc_000295> <http://www.w3.org/ns/dcat#landingPage> <https://www.nlr.gov/transportation/battery-failure> .
 <http://batterydata.commons/dataset/bdc_000296> <http://batterydata.commons/resource/negativeElectrode> "Carbon" .
 <http://batterydata.commons/dataset/bdc_000296> <http://batterydata.commons/resource/positiveElectrode> "LithiumIronPhosphate" .
 <http://batterydata.commons/dataset/bdc_000296> <http://purl.org/dc/terms/identifier> "bdc_000296" .
@@ -6417,15 +6417,17 @@
 <http://batterydata.commons/dataset/bdc_000352> <http://www.w3.org/ns/dcat#keyword> "modelling" .
 <http://batterydata.commons/dataset/bdc_000352> <http://www.w3.org/ns/dcat#keyword> "performance" .
 <http://batterydata.commons/dataset/bdc_000352> <http://www.w3.org/ns/dcat#landingPage> <https://zenodo.org/records/19163863> .
-<http://batterydata.commons/dataset/bdc_000353> <http://purl.org/dc/terms/description> "4 cells"@en .
+<http://batterydata.commons/dataset/bdc_000353> <http://purl.org/dc/terms/description> "5 cells"@en .
 <http://batterydata.commons/dataset/bdc_000353> <http://purl.org/dc/terms/identifier> "bdc_000353" .
 <http://batterydata.commons/dataset/bdc_000353> <http://purl.org/dc/terms/issued> "2026" .
 <http://batterydata.commons/dataset/bdc_000353> <http://purl.org/dc/terms/title> "Battery Cell Swelling under Mechanical Constraint Dataset"@en .
 <http://batterydata.commons/dataset/bdc_000353> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
 <http://batterydata.commons/dataset/bdc_000353> <http://www.w3.org/ns/dcat#distribution> _:cb73898ff6d24bc235bd70b605dc3687724078113516abcdaea0575c00d8cc022f .
-<http://batterydata.commons/dataset/bdc_000353> <http://www.w3.org/ns/dcat#keyword> "4 cells" .
+<http://batterydata.commons/dataset/bdc_000353> <http://www.w3.org/ns/dcat#distribution> _:cbbe63b96e0bc0649072390eaef0509ddb4fc1352bd5811a1a1ab8974433976ade .
+<http://batterydata.commons/dataset/bdc_000353> <http://www.w3.org/ns/dcat#keyword> "5 cells" .
 <http://batterydata.commons/dataset/bdc_000353> <http://www.w3.org/ns/dcat#keyword> "BatteryCell" .
 <http://batterydata.commons/dataset/bdc_000353> <http://www.w3.org/ns/dcat#keyword> "performance" .
+<http://batterydata.commons/dataset/bdc_000353> <http://www.w3.org/ns/dcat#landingPage> <https://doi.org/10.5281/zenodo.22079386> .
 <http://batterydata.commons/dataset/bdc_000353> <http://www.w3.org/ns/dcat#landingPage> <https://zenodo.org/doi/10.5281/zenodo.18315428> .
 <http://batterydata.commons/dataset/bdc_000354> <http://purl.org/dc/terms/identifier> "bdc_000354" .
 <http://batterydata.commons/dataset/bdc_000354> <http://purl.org/dc/terms/issued> "2026" .
@@ -7854,6 +7856,381 @@
 <http://batterydata.commons/dataset/bdc_000423> <http://www.w3.org/ns/dcat#keyword> "modelling" .
 <http://batterydata.commons/dataset/bdc_000423> <http://www.w3.org/ns/dcat#landingPage> <https://doi.org/10.5281/zenodo.23488229> .
 <http://batterydata.commons/dataset/bdc_000423> <http://www.w3.org/ns/dcat#landingPage> <https://zenodo.org/records/23488229> .
+<http://batterydata.commons/dataset/bdc_000424> <http://purl.org/dc/terms/identifier> "bdc_000424" .
+<http://batterydata.commons/dataset/bdc_000424> <http://purl.org/dc/terms/issued> "2026" .
+<http://batterydata.commons/dataset/bdc_000424> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-nc-nd/4.0/> .
+<http://batterydata.commons/dataset/bdc_000424> <http://purl.org/dc/terms/title> "ZJU-o BESS Operational Data and Reports"@en .
+<http://batterydata.commons/dataset/bdc_000424> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<http://batterydata.commons/dataset/bdc_000424> <http://www.w3.org/ns/dcat#distribution> _:cb10d15eede334ee52fd38c3356da87af27fcb5ed63d2311c8e8cf2f2da4f20d629 .
+<http://batterydata.commons/dataset/bdc_000424> <http://www.w3.org/ns/dcat#distribution> _:cb4d9c815cea70a407e22625327d600b644b98b7d05619110fbbfaffdebfa3c9a2 .
+<http://batterydata.commons/dataset/bdc_000424> <http://www.w3.org/ns/dcat#distribution> _:cb65e9bf68347868dc7f5b1d0964909ce752bd2608a10141e7b4f8f7a0ef96543b .
+<http://batterydata.commons/dataset/bdc_000424> <http://www.w3.org/ns/dcat#distribution> _:cbc1c92ffae2c18f6dae2ccff1e320375bd71e882c371132d1843d2586fa55f983 .
+<http://batterydata.commons/dataset/bdc_000424> <http://www.w3.org/ns/dcat#distribution> _:cbfdea3e3018fc2cd3c7c942264cb78cbd7f1340760756a3643206ab57d22f4d9a .
+<http://batterydata.commons/dataset/bdc_000424> <http://www.w3.org/ns/dcat#keyword> "28 lithium-ion modules of a stationary battery energy storage system" .
+<http://batterydata.commons/dataset/bdc_000424> <http://www.w3.org/ns/dcat#keyword> "BatteryModule" .
+<http://batterydata.commons/dataset/bdc_000424> <http://www.w3.org/ns/dcat#keyword> "field" .
+<http://batterydata.commons/dataset/bdc_000424> <http://www.w3.org/ns/dcat#landingPage> <https://doi.org/10.5281/zenodo.23768097> .
+<http://batterydata.commons/dataset/bdc_000424> <http://www.w3.org/ns/dcat#landingPage> <https://zenodo.org/records/23768097> .
+<http://batterydata.commons/dataset/bdc_000425> <http://batterydata.commons/resource/positiveElectrode> "LFP" .
+<http://batterydata.commons/dataset/bdc_000425> <http://purl.org/dc/terms/identifier> "bdc_000425" .
+<http://batterydata.commons/dataset/bdc_000425> <http://purl.org/dc/terms/issued> "2026" .
+<http://batterydata.commons/dataset/bdc_000425> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://batterydata.commons/dataset/bdc_000425> <http://purl.org/dc/terms/title> "LiFePO4 26650 2S Pack Pulse Tests"@en .
+<http://batterydata.commons/dataset/bdc_000425> <http://schema.org/manufacturer> "Enix Energies" .
+<http://batterydata.commons/dataset/bdc_000425> <http://schema.org/model> "NX ACL9013" .
+<http://batterydata.commons/dataset/bdc_000425> <http://schema.org/productID> "R26650" .
+<http://batterydata.commons/dataset/bdc_000425> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<http://batterydata.commons/dataset/bdc_000425> <http://www.w3.org/ns/dcat#distribution> _:cb10df9d61835a7b54eb66a44f3d2a29c5f0241580eafc6760571751fe1e6978f70 .
+<http://batterydata.commons/dataset/bdc_000425> <http://www.w3.org/ns/dcat#distribution> _:cb14ddcc2f29b3ca3f0006ae63e4df3c54934d1cd5e5dbf39b5fa42e5d691038ba1 .
+<http://batterydata.commons/dataset/bdc_000425> <http://www.w3.org/ns/dcat#distribution> _:cb151aaad87ed966b6724c781a3492d986e063dc79ac13a716a3ff1afc477a88895 .
+<http://batterydata.commons/dataset/bdc_000425> <http://www.w3.org/ns/dcat#distribution> _:cb172410e85391682744672e5127a23276f181fc4fcca944fff636c9e69dcb42c70 .
+<http://batterydata.commons/dataset/bdc_000425> <http://www.w3.org/ns/dcat#distribution> _:cb183bce237039d27793112b05c1c7ce51cdfa0bdf5af2f7c0b6277188a95b7e07f .
+<http://batterydata.commons/dataset/bdc_000425> <http://www.w3.org/ns/dcat#distribution> _:cb1a3bd0a5c60ac5b915480dd02f61293c4b0a364c94391a950283cd984bf06ab31 .
+<http://batterydata.commons/dataset/bdc_000425> <http://www.w3.org/ns/dcat#distribution> _:cb1b0da0b2df24e6dba31fdc409d3b85ea3cb002177e0522ac9617480e08a9f5053 .
+<http://batterydata.commons/dataset/bdc_000425> <http://www.w3.org/ns/dcat#distribution> _:cbeb1914add4300164a45924b0e5344b972a4e828b3a8e1070f0a369fe4fcb3ddc .
+<http://batterydata.commons/dataset/bdc_000425> <http://www.w3.org/ns/dcat#keyword> "BatteryPack" .
+<http://batterydata.commons/dataset/bdc_000425> <http://www.w3.org/ns/dcat#keyword> "Five two-cell series packs of 26650 LiFePO4 cells" .
+<http://batterydata.commons/dataset/bdc_000425> <http://www.w3.org/ns/dcat#keyword> "LFP" .
+<http://batterydata.commons/dataset/bdc_000425> <http://www.w3.org/ns/dcat#keyword> "R26650" .
+<http://batterydata.commons/dataset/bdc_000425> <http://www.w3.org/ns/dcat#keyword> "durability" .
+<http://batterydata.commons/dataset/bdc_000425> <http://www.w3.org/ns/dcat#keyword> "performance" .
+<http://batterydata.commons/dataset/bdc_000425> <http://www.w3.org/ns/dcat#landingPage> <https://doi.org/10.5281/zenodo.23372521> .
+<http://batterydata.commons/dataset/bdc_000425> <http://www.w3.org/ns/dcat#landingPage> <https://zenodo.org/records/23372521> .
+<http://batterydata.commons/dataset/bdc_000426> <http://batterydata.commons/resource/positiveElectrode> "NMC" .
+<http://batterydata.commons/dataset/bdc_000426> <http://purl.org/dc/terms/identifier> "bdc_000426" .
+<http://batterydata.commons/dataset/bdc_000426> <http://purl.org/dc/terms/issued> "2024" .
+<http://batterydata.commons/dataset/bdc_000426> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-nc-sa/3.0/> .
+<http://batterydata.commons/dataset/bdc_000426> <http://purl.org/dc/terms/title> "FEMTO-ST NMC Static and Dynamic Ageing"@en .
+<http://batterydata.commons/dataset/bdc_000426> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<http://batterydata.commons/dataset/bdc_000426> <http://www.w3.org/ns/dcat#distribution> _:cb11d9bfeb425d7bef7409d1177b0cfb89efd1173473a424b353e4ab2f943548d1d .
+<http://batterydata.commons/dataset/bdc_000426> <http://www.w3.org/ns/dcat#distribution> _:cb192a1c113b5de4048d924b8a13a64c0fa807cbf7c5c2eb87a82d3e5a53e1e30ca .
+<http://batterydata.commons/dataset/bdc_000426> <http://www.w3.org/ns/dcat#distribution> _:cb1a034565c72379815d8aad4ac5eb190e40287fcdf7fb7d4a8c13a4e7512074a6c .
+<http://batterydata.commons/dataset/bdc_000426> <http://www.w3.org/ns/dcat#distribution> _:cbe14b07916c1bd34d90b909c2d77faf8e14fcba3538715e2d83d461a1242027ca .
+<http://batterydata.commons/dataset/bdc_000426> <http://www.w3.org/ns/dcat#keyword> "BatteryCell" .
+<http://batterydata.commons/dataset/bdc_000426> <http://www.w3.org/ns/dcat#keyword> "NMC" .
+<http://batterydata.commons/dataset/bdc_000426> <http://www.w3.org/ns/dcat#keyword> "Three NMC cells and a two-cell parallel module" .
+<http://batterydata.commons/dataset/bdc_000426> <http://www.w3.org/ns/dcat#keyword> "durability" .
+<http://batterydata.commons/dataset/bdc_000426> <http://www.w3.org/ns/dcat#keyword> "performance" .
+<http://batterydata.commons/dataset/bdc_000426> <http://www.w3.org/ns/dcat#landingPage> <https://doi.org/10.25666/DATAUBFC-2024-11-05> .
+<http://batterydata.commons/dataset/bdc_000427> <http://batterydata.commons/resource/positiveElectrode> "LFP" .
+<http://batterydata.commons/dataset/bdc_000427> <http://purl.org/dc/terms/identifier> "bdc_000427" .
+<http://batterydata.commons/dataset/bdc_000427> <http://purl.org/dc/terms/issued> "2026" .
+<http://batterydata.commons/dataset/bdc_000427> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://batterydata.commons/dataset/bdc_000427> <http://purl.org/dc/terms/title> "30 Ah LFP Thermoelectric Cooling Tests"@en .
+<http://batterydata.commons/dataset/bdc_000427> <http://schema.org/productID> "PrismaticCell" .
+<http://batterydata.commons/dataset/bdc_000427> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<http://batterydata.commons/dataset/bdc_000427> <http://www.w3.org/ns/dcat#distribution> _:cb10f2a6c9b06469482862ec61190d3c256bafa82565eaba70d441c95de34d612ab .
+<http://batterydata.commons/dataset/bdc_000427> <http://www.w3.org/ns/dcat#distribution> _:cb1abd38f2c0611622988e628f9c3ae3f529eeab530cf476a0d1e97eaa8d1b595ba .
+<http://batterydata.commons/dataset/bdc_000427> <http://www.w3.org/ns/dcat#keyword> "BatteryCell" .
+<http://batterydata.commons/dataset/bdc_000427> <http://www.w3.org/ns/dcat#keyword> "LFP" .
+<http://batterydata.commons/dataset/bdc_000427> <http://www.w3.org/ns/dcat#keyword> "One 30 Ah prismatic LiFePO4 cell" .
+<http://batterydata.commons/dataset/bdc_000427> <http://www.w3.org/ns/dcat#keyword> "PrismaticCell" .
+<http://batterydata.commons/dataset/bdc_000427> <http://www.w3.org/ns/dcat#keyword> "performance" .
+<http://batterydata.commons/dataset/bdc_000427> <http://www.w3.org/ns/dcat#landingPage> <https://doi.org/10.5281/zenodo.23748227> .
+<http://batterydata.commons/dataset/bdc_000427> <http://www.w3.org/ns/dcat#landingPage> <https://zenodo.org/records/23748227> .
+<http://batterydata.commons/dataset/bdc_000428> <http://purl.org/dc/terms/description> "Ternary lithium-ion packs, as stated in community submission #29"@en .
+<http://batterydata.commons/dataset/bdc_000428> <http://purl.org/dc/terms/identifier> "bdc_000428" .
+<http://batterydata.commons/dataset/bdc_000428> <http://purl.org/dc/terms/issued> "2026" .
+<http://batterydata.commons/dataset/bdc_000428> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://batterydata.commons/dataset/bdc_000428> <http://purl.org/dc/terms/title> "In-Service EV Battery Fault Voltage Snapshots"@en .
+<http://batterydata.commons/dataset/bdc_000428> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<http://batterydata.commons/dataset/bdc_000428> <http://www.w3.org/ns/dcat#distribution> _:cbb9a6371b4674e22747ba3a601eabfa0e2cdc181678a390edb8a4c8af6fdafccf .
+<http://batterydata.commons/dataset/bdc_000428> <http://www.w3.org/ns/dcat#keyword> "Battery packs of in-service electric vehicles" .
+<http://batterydata.commons/dataset/bdc_000428> <http://www.w3.org/ns/dcat#keyword> "BatteryPack" .
+<http://batterydata.commons/dataset/bdc_000428> <http://www.w3.org/ns/dcat#keyword> "field" .
+<http://batterydata.commons/dataset/bdc_000428> <http://www.w3.org/ns/dcat#landingPage> <https://doi.org/10.5281/zenodo.23980122> .
+<http://batterydata.commons/dataset/bdc_000428> <http://www.w3.org/ns/dcat#landingPage> <https://zenodo.org/records/23980122> .
+<http://batterydata.commons/dataset/bdc_000429> <http://batterydata.commons/resource/positiveElectrode> "NMC" .
+<http://batterydata.commons/dataset/bdc_000429> <http://purl.org/dc/terms/identifier> "bdc_000429" .
+<http://batterydata.commons/dataset/bdc_000429> <http://purl.org/dc/terms/issued> "2026" .
+<http://batterydata.commons/dataset/bdc_000429> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://batterydata.commons/dataset/bdc_000429> <http://purl.org/dc/terms/title> "BATMAX NMC Pouch Cell Abuse Tests"@en .
+<http://batterydata.commons/dataset/bdc_000429> <http://schema.org/productID> "PouchCell" .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#distribution> _:cb10a173847425af9e93e1e179a368bd433942ee534e8e4934d40ca417c3bc004b6 .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#distribution> _:cb116fdb07fc4b0b0e4a99f031185168f5d134aa1a0a35b3d407edf602c096c315c .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#distribution> _:cb123bde1b442d34ff31f7c0986f44e8e1c7b8de00c9bdfb714706f542c5209a58c .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#distribution> _:cb12b1caf5a9b2a99359e9cb4a12e356d9bdbb3317067b2de96d1ccce7369c3d2af .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#distribution> _:cb12c2b22d0f48d3eec6b7d4b494942a532e0413fe04ecfc4041b53704a041863b4 .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#distribution> _:cb12c8500961d69fc151bea4417aa2cb505da3ee1a4197b3231454e450dfa5319cb .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#distribution> _:cb4bf05193f6eac682ec3ee46da6128e66e43c93265cd3268285464d278bbc4eda .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#distribution> _:cb5bc35b68f9b9d87dd0e399e7347152f25aa59f787a9ded974f570dc8225eecf3 .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#distribution> _:cb6956b224ead26a427fc68e3aac7785fac9b615aeb24f737068d66fecd2b8ff86 .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#distribution> _:cb6b54bfd61510f70c16dc566278814e687319b3df4edbb90841466dbcc9ae275e .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#distribution> _:cb6ca1024f9e4ed01ad6129763391b9c3eefa8b31347cc72f9b9c9000f90737cd8 .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#distribution> _:cb72a0e44bdfd26de934df5a80f336f59ad038234e5be060f102531f66e0e81479 .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#distribution> _:cb87010f87f9f35246e49d984f8797e63a2644c58c2c092076b4b08f1361ca0597 .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#distribution> _:cb87a59f20805d00b3cfdbfad54f1d61e05b4fa41c25eea6d8da7b3697c6dac077 .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#distribution> _:cb880172904c511e5db8d580028c8d8e774e89aac8fc19ba7b9cc7779a8a275604 .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#distribution> _:cba208fba9fd1a0182e4ae9c54ac023f29873805a5e8be2779e69618455e2e6a34 .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#distribution> _:cba6d2c62219bb267550e668550287ca568ada6b174bbc72915d4f40726826cb65 .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#distribution> _:cbaa386273ec8866866706523961d475de9f5ebafaf248bbc1256c30d28d532cd0 .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#distribution> _:cbaa71383b27e983395bbd559d2098dc4b9e2fe424a010a6a872325450ad6f2b3f .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#distribution> _:cbb0fd816a6d7ea923304da289026f91d302faf1a2f57dfc1f6412d62e16d92353 .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#distribution> _:cbb1bafed1dd58a3cb1cf85c6fb596aa563b2e771b4d833e6e5eb74a503072e0a7 .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#distribution> _:cbbaad82bab6312adf32c7dc078b6b9890e19ad567c0f729192640d2a96202643b .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#distribution> _:cbc32b6d912fd6e94edab4c850e5cef5e87b3080d5c6bad5d6726a49f5fcd79bbc .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#distribution> _:cbc38e1a6ac833a576c971e824e1f1b34f0c93e68f3f998764a0b7d08664eede93 .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#distribution> _:cbcb9b8961f50b64bbba5b189fcb87724c5ed3592b980cb9a0692d91991b8a0a26 .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#distribution> _:cbea2bc0eb9b8b75877b8eaec3b879d451874dc06cd6801fb43afd04a4648ee0bd .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#keyword> "BatteryCell" .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#keyword> "NMC" .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#keyword> "Nine NMC pouch cells, 24 abuse tests" .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#keyword> "PouchCell" .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#keyword> "performance" .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#keyword> "safety" .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#landingPage> <https://doi.org/10.5281/zenodo.23263603> .
+<http://batterydata.commons/dataset/bdc_000429> <http://www.w3.org/ns/dcat#landingPage> <https://zenodo.org/records/23263603> .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-1> <http://batterydata.commons/resource/chemistry> "Li-ion" .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-1> <http://batterydata.commons/resource/formFactor> "Multi-layer pouch" .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-1> <http://batterydata.commons/resource/negativeElectrode> "Graphite" .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-1> <http://batterydata.commons/resource/positiveElectrode> "NMC811" .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://batterydata.commons/resource/CellVariant> .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-2> <http://batterydata.commons/resource/chemistry> "Li-ion" .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-2> <http://batterydata.commons/resource/formFactor> "Multi-layer pouch" .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-2> <http://batterydata.commons/resource/negativeElectrode> "LVO" .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-2> <http://batterydata.commons/resource/positiveElectrode> "LCO" .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://batterydata.commons/resource/CellVariant> .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-3> <http://batterydata.commons/resource/chemistry> "Li-ion" .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-3> <http://batterydata.commons/resource/formFactor> "Single-layer pouch" .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-3> <http://batterydata.commons/resource/negativeElectrode> "Silicon-graphite" .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-3> <http://batterydata.commons/resource/positiveElectrode> "DRX" .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://batterydata.commons/resource/CellVariant> .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-4> <http://batterydata.commons/resource/chemistry> "Na-ion" .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-4> <http://batterydata.commons/resource/formFactor> "Single-layer pouch" .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-4> <http://batterydata.commons/resource/negativeElectrode> "Anode-free (Na metal)" .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-4> <http://batterydata.commons/resource/positiveElectrode> "NNFCM" .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://batterydata.commons/resource/CellVariant> .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-5> <http://batterydata.commons/resource/chemistry> "K-ion" .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-5> <http://batterydata.commons/resource/formFactor> "Single-layer pouch" .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-5> <http://batterydata.commons/resource/negativeElectrode> "Graphite" .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-5> <http://batterydata.commons/resource/positiveElectrode> "PBA" .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://batterydata.commons/resource/CellVariant> .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-6> <http://batterydata.commons/resource/chemistry> "Solid-state Li" .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-6> <http://batterydata.commons/resource/formFactor> "Multi-layer pouch" .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-6> <http://batterydata.commons/resource/negativeElectrode> "Silicon (LPSC electrolyte)" .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-6> <http://batterydata.commons/resource/positiveElectrode> "NMC811" .
+<http://batterydata.commons/dataset/bdc_000430#cell-variant-6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://batterydata.commons/resource/CellVariant> .
+<http://batterydata.commons/dataset/bdc_000430> <http://batterydata.commons/resource/hasCellVariant> <http://batterydata.commons/dataset/bdc_000430#cell-variant-1> .
+<http://batterydata.commons/dataset/bdc_000430> <http://batterydata.commons/resource/hasCellVariant> <http://batterydata.commons/dataset/bdc_000430#cell-variant-2> .
+<http://batterydata.commons/dataset/bdc_000430> <http://batterydata.commons/resource/hasCellVariant> <http://batterydata.commons/dataset/bdc_000430#cell-variant-3> .
+<http://batterydata.commons/dataset/bdc_000430> <http://batterydata.commons/resource/hasCellVariant> <http://batterydata.commons/dataset/bdc_000430#cell-variant-4> .
+<http://batterydata.commons/dataset/bdc_000430> <http://batterydata.commons/resource/hasCellVariant> <http://batterydata.commons/dataset/bdc_000430#cell-variant-5> .
+<http://batterydata.commons/dataset/bdc_000430> <http://batterydata.commons/resource/hasCellVariant> <http://batterydata.commons/dataset/bdc_000430#cell-variant-6> .
+<http://batterydata.commons/dataset/bdc_000430> <http://batterydata.commons/resource/negativeElectrode> "Multiple" .
+<http://batterydata.commons/dataset/bdc_000430> <http://batterydata.commons/resource/positiveElectrode> "Multiple" .
+<http://batterydata.commons/dataset/bdc_000430> <http://purl.org/dc/terms/description> "Thermal runaway data of larger cells (above 3 Ah) are in the Battery Failure Databank, bdc_000295."@en .
+<http://batterydata.commons/dataset/bdc_000430> <http://purl.org/dc/terms/identifier> "bdc_000430" .
+<http://batterydata.commons/dataset/bdc_000430> <http://purl.org/dc/terms/issued> "2026" .
+<http://batterydata.commons/dataset/bdc_000430> <http://purl.org/dc/terms/title> "NLR Battery Safety Database"@en .
+<http://batterydata.commons/dataset/bdc_000430> <http://schema.org/productID> "PouchCell" .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cb10259de8a891ab6bbfb7f9e58b4ab45af0c0d9b692f5f618e56db0cd7f0a9cfab .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cb1047bf0f1e151087f7ce109a3859768e5f33da15da6f9196cdc7881ff65604ee4 .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cb104874a80e5d7782186bd4ebf8313891efa03b17a6ed70f92f9569172fccf3092 .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cb10e64032d6c88d1749bfcc99d682e176e301aec5e8532178580c05b5fb98560e1 .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cb117f1970e3dc31b919c3ab68df16f85be8e8b11788a0470c26afe30dce3249059 .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cb12096a1776d9a56c8f1051992b0e858361ed70836b6e594b93fa82bce1a0c6b7f .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cb13058c1810ff647959654924e28d3adcfe3e3a0646fd00a5c08efa9457295cba7 .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cb139d505b9749ba1a1b9c6b61fe84fe1c6de6ee2aba597544eed0d6f6ba7f022ae .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cb13f3c368655cb22c64e5fd18d729d13363b0539609fe0366d2e6744b943dea9f3 .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cb14100958915e45e66a104d95142fb961c10234eaaa3102d2d3ff2e944ee4ef8c1 .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cb14a62af75b25e889a5d0097f0a3c59ad6bcd23453b9cc3a908464b6934d294274 .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cb154524c9930aa05b8bc9a49ab8007b5afad0063caab91130a82bc20c560a12c78 .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cb154ae72b58face0ba493be2accbf980d042b5f0f31566ec84f0553c8b2c8196a1 .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cb15dbdc91820585d7e9ff572d062179af5bde72a63763dfcbf8887001e5c057197 .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cb161ae9e046879bd0aba812fcf12874ed76cbf165fcdb8f2bf8e3fdf20572a5ce2 .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cb17134c579fb03a3fc8a80c5bf7bb6196e9a8d02cf01abf3ed8aeb1936b3ef5134 .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cb171a3f81cd81b469803cb3a9c62ecba4bdb35d20b52f374e7ca05b4c6ee36a481 .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cb1770b8a73112f513201047e9a89f8f8033ee02badb36e9c9e5c530162488b0695 .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cb7d2ee6c5a973e663b8efb6441438bc5db143b9a4ab3cd4340ef4ad62f440fe74 .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cb94d694ca6aca104c7bf81da61e6c9d3e382d37b3cecd7fc94f86d83bfb8476d9 .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cb9575a352c6ba1c288a83b0642e842d572b0d14b199a02ed0b8197c6949f0b754 .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cb95d677d6762f33ec2f90615e3811deb93c13455a4086ce5531c0d5f0013d5e32 .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cb9941c7b1e3e5bf20e43a36413e979550451a9067d819d78962a159d9beeb0f4f .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cb9a194ee92ac439b55c44a527754e5209f691aee712ab9c1167ca582303209871 .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cb9afc3a316b9e7dbde46740c7e0f0f461a391523368d32c52dcbc3c181b4890e1 .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cba3c5b7f4778d06fda2d0d50bd63979f4d8f9fd0fe7478de80eec751550458186 .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cbaa594cd3c1ba06feb20711f56e40ef5c5dcd96bd8d6fb18c97415b8c7584397d .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cbcb8b700271997578a8cc4bfff03e820a0b95b347071efb858245cafc56d7b294 .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cbcf1fbc7994c49666c9ce89f69e6032a0ae2734911b4b0c872cfbe9c8243e3d63 .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cbddf257f56181aa57122bbe71cbb1bba2df51a1ba302b46c09086d80580959a03 .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cbf3aa4cc13aa3c245233ef4fd9fd2046889a124772b4287c72fda4d7d292054bc .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cbf5049a8268bafc2a03151eee697652242113d6abbea450bae0da4350fae9c29b .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cbf5447db3bd2c121da396bbd87c9d97aa2ec0aaaf73f95b4c2950191722e2072f .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#distribution> _:cbf69fbc2d2dff624eb1dcddc5bd41704dbf4b3b87c3bd0387ffff0893424e1d20 .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#keyword> "BatteryCell" .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#keyword> "Multiple" .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#keyword> "Pouch cells of six chemistries" .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#keyword> "PouchCell" .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#keyword> "safety" .
+<http://batterydata.commons/dataset/bdc_000430> <http://www.w3.org/ns/dcat#landingPage> <https://www.nlr.gov/storage/battery-safety-database> .
+<http://batterydata.commons/dataset/bdc_000431> <http://purl.org/dc/terms/identifier> "bdc_000431" .
+<http://batterydata.commons/dataset/bdc_000431> <http://purl.org/dc/terms/issued> "2026" .
+<http://batterydata.commons/dataset/bdc_000431> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://batterydata.commons/dataset/bdc_000431> <http://purl.org/dc/terms/title> "Sodium-Ion 18650 Cycle and Calendar Ageing"@en .
+<http://batterydata.commons/dataset/bdc_000431> <http://schema.org/model> "CY 18650-12P" .
+<http://batterydata.commons/dataset/bdc_000431> <http://schema.org/productID> "R18650" .
+<http://batterydata.commons/dataset/bdc_000431> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<http://batterydata.commons/dataset/bdc_000431> <http://www.w3.org/ns/dcat#distribution> _:cb1434730577070932dc1f63a2538001059946d329f569d1c3ea3a34183b4af80c8 .
+<http://batterydata.commons/dataset/bdc_000431> <http://www.w3.org/ns/dcat#keyword> "BatteryCell" .
+<http://batterydata.commons/dataset/bdc_000431> <http://www.w3.org/ns/dcat#keyword> "Commercial 18650 sodium-ion cells under cycle and calendar ageing" .
+<http://batterydata.commons/dataset/bdc_000431> <http://www.w3.org/ns/dcat#keyword> "R18650" .
+<http://batterydata.commons/dataset/bdc_000431> <http://www.w3.org/ns/dcat#keyword> "durability" .
+<http://batterydata.commons/dataset/bdc_000431> <http://www.w3.org/ns/dcat#landingPage> <https://doi.org/10.14459/2026mp1840745> .
+<http://batterydata.commons/dataset/bdc_000432> <http://batterydata.commons/resource/positiveElectrode> "Multiple" .
+<http://batterydata.commons/dataset/bdc_000432> <http://purl.org/dc/terms/identifier> "bdc_000432" .
+<http://batterydata.commons/dataset/bdc_000432> <http://purl.org/dc/terms/issued> "2025" .
+<http://batterydata.commons/dataset/bdc_000432> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://batterydata.commons/dataset/bdc_000432> <http://purl.org/dc/terms/title> "Sodium-Ion vs LFP Electrical Performance"@en .
+<http://batterydata.commons/dataset/bdc_000432> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<http://batterydata.commons/dataset/bdc_000432> <http://www.w3.org/ns/dcat#distribution> _:cb14aadd40b245510d8227936b1dce33838aa4480666110e1393d49bb818a6c764a .
+<http://batterydata.commons/dataset/bdc_000432> <http://www.w3.org/ns/dcat#keyword> "BatteryCell" .
+<http://batterydata.commons/dataset/bdc_000432> <http://www.w3.org/ns/dcat#keyword> "Multiple" .
+<http://batterydata.commons/dataset/bdc_000432> <http://www.w3.org/ns/dcat#keyword> "Two commercial sodium-ion cells and one LFP cell" .
+<http://batterydata.commons/dataset/bdc_000432> <http://www.w3.org/ns/dcat#keyword> "performance" .
+<http://batterydata.commons/dataset/bdc_000432> <http://www.w3.org/ns/dcat#landingPage> <https://doi.org/10.14459/2024mp1762675> .
+<http://batterydata.commons/dataset/bdc_000433#cell-variant-1> <http://batterydata.commons/resource/positiveElectrode> "NMC" .
+<http://batterydata.commons/dataset/bdc_000433#cell-variant-1> <http://schema.org/model> "NMC 2.1 Ah" .
+<http://batterydata.commons/dataset/bdc_000433#cell-variant-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://batterydata.commons/resource/CellVariant> .
+<http://batterydata.commons/dataset/bdc_000433#cell-variant-2> <http://batterydata.commons/resource/positiveElectrode> "LMO" .
+<http://batterydata.commons/dataset/bdc_000433#cell-variant-2> <http://schema.org/model> "LMO 10 Ah" .
+<http://batterydata.commons/dataset/bdc_000433#cell-variant-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://batterydata.commons/resource/CellVariant> .
+<http://batterydata.commons/dataset/bdc_000433#cell-variant-3> <http://batterydata.commons/resource/positiveElectrode> "LFP" .
+<http://batterydata.commons/dataset/bdc_000433#cell-variant-3> <http://schema.org/model> "LFP 35 Ah" .
+<http://batterydata.commons/dataset/bdc_000433#cell-variant-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://batterydata.commons/resource/CellVariant> .
+<http://batterydata.commons/dataset/bdc_000433#cell-variant-4> <http://batterydata.commons/resource/positiveElectrode> "NMC" .
+<http://batterydata.commons/dataset/bdc_000433#cell-variant-4> <http://schema.org/model> "NMC 21 Ah" .
+<http://batterydata.commons/dataset/bdc_000433#cell-variant-4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://batterydata.commons/resource/CellVariant> .
+<http://batterydata.commons/dataset/bdc_000433#cell-variant-5> <http://batterydata.commons/resource/positiveElectrode> "LMO" .
+<http://batterydata.commons/dataset/bdc_000433#cell-variant-5> <http://schema.org/model> "LMO 24 Ah" .
+<http://batterydata.commons/dataset/bdc_000433#cell-variant-5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://batterydata.commons/resource/CellVariant> .
+<http://batterydata.commons/dataset/bdc_000433#cell-variant-6> <http://batterydata.commons/resource/positiveElectrode> "LFP" .
+<http://batterydata.commons/dataset/bdc_000433#cell-variant-6> <http://schema.org/model> "LFP 20 Ah" .
+<http://batterydata.commons/dataset/bdc_000433#cell-variant-6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://batterydata.commons/resource/CellVariant> .
+<http://batterydata.commons/dataset/bdc_000433> <http://batterydata.commons/resource/hasCellVariant> <http://batterydata.commons/dataset/bdc_000433#cell-variant-1> .
+<http://batterydata.commons/dataset/bdc_000433> <http://batterydata.commons/resource/hasCellVariant> <http://batterydata.commons/dataset/bdc_000433#cell-variant-2> .
+<http://batterydata.commons/dataset/bdc_000433> <http://batterydata.commons/resource/hasCellVariant> <http://batterydata.commons/dataset/bdc_000433#cell-variant-3> .
+<http://batterydata.commons/dataset/bdc_000433> <http://batterydata.commons/resource/hasCellVariant> <http://batterydata.commons/dataset/bdc_000433#cell-variant-4> .
+<http://batterydata.commons/dataset/bdc_000433> <http://batterydata.commons/resource/hasCellVariant> <http://batterydata.commons/dataset/bdc_000433#cell-variant-5> .
+<http://batterydata.commons/dataset/bdc_000433> <http://batterydata.commons/resource/hasCellVariant> <http://batterydata.commons/dataset/bdc_000433#cell-variant-6> .
+<http://batterydata.commons/dataset/bdc_000433> <http://batterydata.commons/resource/positiveElectrode> "Multiple" .
+<http://batterydata.commons/dataset/bdc_000433> <http://purl.org/dc/terms/identifier> "bdc_000433" .
+<http://batterydata.commons/dataset/bdc_000433> <http://purl.org/dc/terms/issued> "2026" .
+<http://batterydata.commons/dataset/bdc_000433> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://batterydata.commons/dataset/bdc_000433> <http://purl.org/dc/terms/title> "NMC, LMO and LFP Pulse Tests"@en .
+<http://batterydata.commons/dataset/bdc_000433> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<http://batterydata.commons/dataset/bdc_000433> <http://www.w3.org/ns/dcat#distribution> _:cb1654b85b15a2214365bf142db576cbec4236785b17bc0f2e690881b2c61720f84 .
+<http://batterydata.commons/dataset/bdc_000433> <http://www.w3.org/ns/dcat#keyword> "436 cells of three cathode chemistries (NMC, LMO, LFP)" .
+<http://batterydata.commons/dataset/bdc_000433> <http://www.w3.org/ns/dcat#keyword> "BatteryCell" .
+<http://batterydata.commons/dataset/bdc_000433> <http://www.w3.org/ns/dcat#keyword> "Multiple" .
+<http://batterydata.commons/dataset/bdc_000433> <http://www.w3.org/ns/dcat#keyword> "durability" .
+<http://batterydata.commons/dataset/bdc_000433> <http://www.w3.org/ns/dcat#keyword> "performance" .
+<http://batterydata.commons/dataset/bdc_000433> <http://www.w3.org/ns/dcat#landingPage> <https://doi.org/10.5281/zenodo.24236435> .
+<http://batterydata.commons/dataset/bdc_000433> <http://www.w3.org/ns/dcat#landingPage> <https://zenodo.org/records/24236435> .
+<http://batterydata.commons/dataset/bdc_000434#cell-variant-1> <http://batterydata.commons/resource/formFactor> "R21700" .
+<http://batterydata.commons/dataset/bdc_000434#cell-variant-1> <http://schema.org/manufacturer> "LG" .
+<http://batterydata.commons/dataset/bdc_000434#cell-variant-1> <http://schema.org/model> "INR21700-M50T" .
+<http://batterydata.commons/dataset/bdc_000434#cell-variant-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://batterydata.commons/resource/CellVariant> .
+<http://batterydata.commons/dataset/bdc_000434#cell-variant-2> <http://batterydata.commons/resource/formFactor> "R21700" .
+<http://batterydata.commons/dataset/bdc_000434#cell-variant-2> <http://schema.org/manufacturer> "LG" .
+<http://batterydata.commons/dataset/bdc_000434#cell-variant-2> <http://schema.org/model> "INR21700-M50LT" .
+<http://batterydata.commons/dataset/bdc_000434#cell-variant-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://batterydata.commons/resource/CellVariant> .
+<http://batterydata.commons/dataset/bdc_000434#cell-variant-3> <http://batterydata.commons/resource/formFactor> "R18650" .
+<http://batterydata.commons/dataset/bdc_000434#cell-variant-3> <http://schema.org/manufacturer> "Lishen" .
+<http://batterydata.commons/dataset/bdc_000434#cell-variant-3> <http://schema.org/model> "LR1865SZ" .
+<http://batterydata.commons/dataset/bdc_000434#cell-variant-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://batterydata.commons/resource/CellVariant> .
+<http://batterydata.commons/dataset/bdc_000434#cell-variant-4> <http://batterydata.commons/resource/formFactor> "R18650" .
+<http://batterydata.commons/dataset/bdc_000434#cell-variant-4> <http://schema.org/manufacturer> "LG" .
+<http://batterydata.commons/dataset/bdc_000434#cell-variant-4> <http://schema.org/model> "INR18650-HG2" .
+<http://batterydata.commons/dataset/bdc_000434#cell-variant-4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://batterydata.commons/resource/CellVariant> .
+<http://batterydata.commons/dataset/bdc_000434> <http://batterydata.commons/resource/hasCellVariant> <http://batterydata.commons/dataset/bdc_000434#cell-variant-1> .
+<http://batterydata.commons/dataset/bdc_000434> <http://batterydata.commons/resource/hasCellVariant> <http://batterydata.commons/dataset/bdc_000434#cell-variant-2> .
+<http://batterydata.commons/dataset/bdc_000434> <http://batterydata.commons/resource/hasCellVariant> <http://batterydata.commons/dataset/bdc_000434#cell-variant-3> .
+<http://batterydata.commons/dataset/bdc_000434> <http://batterydata.commons/resource/hasCellVariant> <http://batterydata.commons/dataset/bdc_000434#cell-variant-4> .
+<http://batterydata.commons/dataset/bdc_000434> <http://purl.org/dc/terms/identifier> "bdc_000434" .
+<http://batterydata.commons/dataset/bdc_000434> <http://purl.org/dc/terms/issued> "2026" .
+<http://batterydata.commons/dataset/bdc_000434> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://batterydata.commons/dataset/bdc_000434> <http://purl.org/dc/terms/title> "Repeated Overcharge Tests, Four Cell Models"@en .
+<http://batterydata.commons/dataset/bdc_000434> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<http://batterydata.commons/dataset/bdc_000434> <http://www.w3.org/ns/dcat#distribution> _:cb1550d3a440b9e7d1f27e3143a35fc41a35e35cd42d46ad75e3c40928169aba3fa .
+<http://batterydata.commons/dataset/bdc_000434> <http://www.w3.org/ns/dcat#distribution> _:cb187ebda3c7e5a590788af8e38e2ddd571974159bf4ccfda2d5460e5eae41cbce2 .
+<http://batterydata.commons/dataset/bdc_000434> <http://www.w3.org/ns/dcat#distribution> _:cb1a7988f8428f85af8de6398887c7571a8aa651cc9d5acf6eb1a4669c5f2cf9927 .
+<http://batterydata.commons/dataset/bdc_000434> <http://www.w3.org/ns/dcat#distribution> _:cb1aa97810bea3ce13833a487b60b4235083a8db4af9c74366fe1ffb7b85d0c417b .
+<http://batterydata.commons/dataset/bdc_000434> <http://www.w3.org/ns/dcat#distribution> _:cb1bcd196126c039297aca196a780f57dc565c5ea0cfdaa685fd574d1b5735bbedf .
+<http://batterydata.commons/dataset/bdc_000434> <http://www.w3.org/ns/dcat#keyword> "87 cylindrical cells of four models" .
+<http://batterydata.commons/dataset/bdc_000434> <http://www.w3.org/ns/dcat#keyword> "BatteryCell" .
+<http://batterydata.commons/dataset/bdc_000434> <http://www.w3.org/ns/dcat#keyword> "safety" .
+<http://batterydata.commons/dataset/bdc_000434> <http://www.w3.org/ns/dcat#landingPage> <https://doi.org/10.5281/zenodo.24076897> .
+<http://batterydata.commons/dataset/bdc_000434> <http://www.w3.org/ns/dcat#landingPage> <https://zenodo.org/records/24076897> .
+<http://batterydata.commons/dataset/bdc_000435> <http://purl.org/dc/terms/identifier> "bdc_000435" .
+<http://batterydata.commons/dataset/bdc_000435> <http://purl.org/dc/terms/issued> "2026" .
+<http://batterydata.commons/dataset/bdc_000435> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://batterydata.commons/dataset/bdc_000435> <http://purl.org/dc/terms/title> "E-Bike 13S4P Pack Real-Road Data"@en .
+<http://batterydata.commons/dataset/bdc_000435> <http://schema.org/manufacturer> "Samsung SDI" .
+<http://batterydata.commons/dataset/bdc_000435> <http://schema.org/model> "INR18650-30Q" .
+<http://batterydata.commons/dataset/bdc_000435> <http://schema.org/productID> "R18650" .
+<http://batterydata.commons/dataset/bdc_000435> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<http://batterydata.commons/dataset/bdc_000435> <http://www.w3.org/ns/dcat#distribution> _:cb122682b6f47edd805d308ae199e89d9f6f59f6f8558272830b80c6909e7507e74 .
+<http://batterydata.commons/dataset/bdc_000435> <http://www.w3.org/ns/dcat#keyword> "BatteryPack" .
+<http://batterydata.commons/dataset/bdc_000435> <http://www.w3.org/ns/dcat#keyword> "One 13S4P e-bike pack of 52 Samsung INR18650-30Q cells" .
+<http://batterydata.commons/dataset/bdc_000435> <http://www.w3.org/ns/dcat#keyword> "R18650" .
+<http://batterydata.commons/dataset/bdc_000435> <http://www.w3.org/ns/dcat#keyword> "field" .
+<http://batterydata.commons/dataset/bdc_000435> <http://www.w3.org/ns/dcat#landingPage> <https://doi.org/10.5281/zenodo.24138446> .
+<http://batterydata.commons/dataset/bdc_000435> <http://www.w3.org/ns/dcat#landingPage> <https://zenodo.org/records/24138446> .
+<http://batterydata.commons/dataset/bdc_000436> <http://batterydata.commons/resource/negativeElectrode> "Vanadium negolyte (V2+/V3+)" .
+<http://batterydata.commons/dataset/bdc_000436> <http://batterydata.commons/resource/positiveElectrode> "Vanadium posolyte (VO2+/VO2+)" .
+<http://batterydata.commons/dataset/bdc_000436> <http://purl.org/dc/terms/identifier> "bdc_000436" .
+<http://batterydata.commons/dataset/bdc_000436> <http://purl.org/dc/terms/issued> "2026" .
+<http://batterydata.commons/dataset/bdc_000436> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-nc-nd/4.0/> .
+<http://batterydata.commons/dataset/bdc_000436> <http://purl.org/dc/terms/title> "Vanadium Redox Flow Battery Stack Tests"@en .
+<http://batterydata.commons/dataset/bdc_000436> <http://schema.org/productID> "Flow stack (5 cells, 240 cm2)" .
+<http://batterydata.commons/dataset/bdc_000436> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<http://batterydata.commons/dataset/bdc_000436> <http://www.w3.org/ns/dcat#distribution> _:cb1a901d87ab4ca6cdb6a10d8eb900860c7405e41c7eadba0050d716a208c016ea2 .
+<http://batterydata.commons/dataset/bdc_000436> <http://www.w3.org/ns/dcat#keyword> "BatteryModule" .
+<http://batterydata.commons/dataset/bdc_000436> <http://www.w3.org/ns/dcat#keyword> "Flow stack (5 cells, 240 cm2)" .
+<http://batterydata.commons/dataset/bdc_000436> <http://www.w3.org/ns/dcat#keyword> "One five-cell all-vanadium redox flow stack" .
+<http://batterydata.commons/dataset/bdc_000436> <http://www.w3.org/ns/dcat#keyword> "Vanadium posolyte (VO2+/VO2+)" .
+<http://batterydata.commons/dataset/bdc_000436> <http://www.w3.org/ns/dcat#keyword> "performance" .
+<http://batterydata.commons/dataset/bdc_000436> <http://www.w3.org/ns/dcat#landingPage> <https://data.mendeley.com/datasets/fgz5md6dzs> .
+<http://batterydata.commons/dataset/bdc_000436> <http://www.w3.org/ns/dcat#landingPage> <https://doi.org/10.17632/fgz5md6dzs.2> .
+<http://batterydata.commons/dataset/bdc_000436> <http://www.w3.org/ns/dcat#landingPage> <https://doi.org/10.17632/fgz5md6dzs> .
+<http://batterydata.commons/dataset/bdc_000437> <http://batterydata.commons/resource/negativeElectrode> "Graphite" .
+<http://batterydata.commons/dataset/bdc_000437> <http://batterydata.commons/resource/positiveElectrode> "LithiumCobaltOxide" .
+<http://batterydata.commons/dataset/bdc_000437> <http://purl.org/dc/terms/identifier> "bdc_000437" .
+<http://batterydata.commons/dataset/bdc_000437> <http://purl.org/dc/terms/issued> "2026" .
+<http://batterydata.commons/dataset/bdc_000437> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://batterydata.commons/dataset/bdc_000437> <http://purl.org/dc/terms/title> "LiCoO2 Cell P2D Model Simulations"@en .
+<http://batterydata.commons/dataset/bdc_000437> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<http://batterydata.commons/dataset/bdc_000437> <http://www.w3.org/ns/dcat#distribution> _:cb123ae91215fff9c1ffc32889acde18662d68a35f9810460abb0a6c78435e7b778 .
+<http://batterydata.commons/dataset/bdc_000437> <http://www.w3.org/ns/dcat#distribution> _:cb13269d83df83af9148f021ca39dff8650b0338ef5db5391ddc2e90d18a687c68c .
+<http://batterydata.commons/dataset/bdc_000437> <http://www.w3.org/ns/dcat#distribution> _:cb13f126fd3f5d7ca5667b22cad4d1ea1e7a9a2dd25cc280e0b5147b429cdf5b1b1 .
+<http://batterydata.commons/dataset/bdc_000437> <http://www.w3.org/ns/dcat#distribution> _:cb14b2c092d4742289357ab9ae8c30096af4902520260dc1356b0490e2e8786631d .
+<http://batterydata.commons/dataset/bdc_000437> <http://www.w3.org/ns/dcat#distribution> _:cb16c55d095eb3d53c803665eb4c44f045609a12326e7315cf1f2b66a6427eb67e4 .
+<http://batterydata.commons/dataset/bdc_000437> <http://www.w3.org/ns/dcat#distribution> _:cb1881be3595400e06ffd9ec6c80c606ef79cc49f57412ccd8c3a5402b740deca7a .
+<http://batterydata.commons/dataset/bdc_000437> <http://www.w3.org/ns/dcat#distribution> _:cb9fbab485f8374cd207a14975c86252bc99dc354e071b0d375fc5100843665e5c .
+<http://batterydata.commons/dataset/bdc_000437> <http://www.w3.org/ns/dcat#distribution> _:cbd5e94548088be8535c4c95ef824d37ea30525eef929869ba5584e1fd77cf2406 .
+<http://batterydata.commons/dataset/bdc_000437> <http://www.w3.org/ns/dcat#keyword> "BatteryCell" .
+<http://batterydata.commons/dataset/bdc_000437> <http://www.w3.org/ns/dcat#keyword> "LithiumCobaltOxide" .
+<http://batterydata.commons/dataset/bdc_000437> <http://www.w3.org/ns/dcat#keyword> "Simulated graphite/LiCoO2 cell, 3,600 parameter sets" .
+<http://batterydata.commons/dataset/bdc_000437> <http://www.w3.org/ns/dcat#keyword> "modelling" .
+<http://batterydata.commons/dataset/bdc_000437> <http://www.w3.org/ns/dcat#landingPage> <https://doi.org/10.5281/zenodo.24174045> .
+<http://batterydata.commons/dataset/bdc_000437> <http://www.w3.org/ns/dcat#landingPage> <https://zenodo.org/records/24174045> .
+<http://batterydata.commons/dataset/bdc_000438> <http://purl.org/dc/terms/identifier> "bdc_000438" .
+<http://batterydata.commons/dataset/bdc_000438> <http://purl.org/dc/terms/issued> "2026" .
+<http://batterydata.commons/dataset/bdc_000438> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://batterydata.commons/dataset/bdc_000438> <http://purl.org/dc/terms/title> "6x6 21700 Module Immersion Cooling CFD"@en .
+<http://batterydata.commons/dataset/bdc_000438> <http://schema.org/productID> "R21700" .
+<http://batterydata.commons/dataset/bdc_000438> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<http://batterydata.commons/dataset/bdc_000438> <http://www.w3.org/ns/dcat#distribution> _:cb12ab4c5f729cc1639fe1943203613f8d7fff422dd7dafb0d4daca7a51d38225f1 .
+<http://batterydata.commons/dataset/bdc_000438> <http://www.w3.org/ns/dcat#distribution> _:cb16546a0dce692f72f9c3549bebc2c6293d7a716c4386dab0b3d27a9729c021af8 .
+<http://batterydata.commons/dataset/bdc_000438> <http://www.w3.org/ns/dcat#distribution> _:cbf555feff58b21ad7e57ba5205fe9f924dfa9bb09ec267985f91479f7f02def68 .
+<http://batterydata.commons/dataset/bdc_000438> <http://www.w3.org/ns/dcat#keyword> "BatteryModule" .
+<http://batterydata.commons/dataset/bdc_000438> <http://www.w3.org/ns/dcat#keyword> "R21700" .
+<http://batterydata.commons/dataset/bdc_000438> <http://www.w3.org/ns/dcat#keyword> "Simulated immersion-cooled module of 36 cylindrical 21700 cells" .
+<http://batterydata.commons/dataset/bdc_000438> <http://www.w3.org/ns/dcat#keyword> "modelling" .
+<http://batterydata.commons/dataset/bdc_000438> <http://www.w3.org/ns/dcat#landingPage> <https://doi.org/10.5281/zenodo.24100753> .
+<http://batterydata.commons/dataset/bdc_000438> <http://www.w3.org/ns/dcat#landingPage> <https://zenodo.org/records/24100753> .
 <http://batterydata.commons/resource/catalog> <http://purl.org/dc/terms/title> "Battery Data Commons Catalog"@en .
 <http://batterydata.commons/resource/catalog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Catalog> .
 <http://batterydata.commons/resource/catalog> <http://www.w3.org/ns/dcat#dataset> <http://batterydata.commons/dataset/bdc_000001> .
@@ -8235,6 +8612,21 @@
 <http://batterydata.commons/resource/catalog> <http://www.w3.org/ns/dcat#dataset> <http://batterydata.commons/dataset/bdc_000421> .
 <http://batterydata.commons/resource/catalog> <http://www.w3.org/ns/dcat#dataset> <http://batterydata.commons/dataset/bdc_000422> .
 <http://batterydata.commons/resource/catalog> <http://www.w3.org/ns/dcat#dataset> <http://batterydata.commons/dataset/bdc_000423> .
+<http://batterydata.commons/resource/catalog> <http://www.w3.org/ns/dcat#dataset> <http://batterydata.commons/dataset/bdc_000424> .
+<http://batterydata.commons/resource/catalog> <http://www.w3.org/ns/dcat#dataset> <http://batterydata.commons/dataset/bdc_000425> .
+<http://batterydata.commons/resource/catalog> <http://www.w3.org/ns/dcat#dataset> <http://batterydata.commons/dataset/bdc_000426> .
+<http://batterydata.commons/resource/catalog> <http://www.w3.org/ns/dcat#dataset> <http://batterydata.commons/dataset/bdc_000427> .
+<http://batterydata.commons/resource/catalog> <http://www.w3.org/ns/dcat#dataset> <http://batterydata.commons/dataset/bdc_000428> .
+<http://batterydata.commons/resource/catalog> <http://www.w3.org/ns/dcat#dataset> <http://batterydata.commons/dataset/bdc_000429> .
+<http://batterydata.commons/resource/catalog> <http://www.w3.org/ns/dcat#dataset> <http://batterydata.commons/dataset/bdc_000430> .
+<http://batterydata.commons/resource/catalog> <http://www.w3.org/ns/dcat#dataset> <http://batterydata.commons/dataset/bdc_000431> .
+<http://batterydata.commons/resource/catalog> <http://www.w3.org/ns/dcat#dataset> <http://batterydata.commons/dataset/bdc_000432> .
+<http://batterydata.commons/resource/catalog> <http://www.w3.org/ns/dcat#dataset> <http://batterydata.commons/dataset/bdc_000433> .
+<http://batterydata.commons/resource/catalog> <http://www.w3.org/ns/dcat#dataset> <http://batterydata.commons/dataset/bdc_000434> .
+<http://batterydata.commons/resource/catalog> <http://www.w3.org/ns/dcat#dataset> <http://batterydata.commons/dataset/bdc_000435> .
+<http://batterydata.commons/resource/catalog> <http://www.w3.org/ns/dcat#dataset> <http://batterydata.commons/dataset/bdc_000436> .
+<http://batterydata.commons/resource/catalog> <http://www.w3.org/ns/dcat#dataset> <http://batterydata.commons/dataset/bdc_000437> .
+<http://batterydata.commons/resource/catalog> <http://www.w3.org/ns/dcat#dataset> <http://batterydata.commons/dataset/bdc_000438> .
 _:cb100778a2bd9fdbaab36f2a083fd4d6f568e1eeb2e6e218e830f4d0226e24b0a51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb100778a2bd9fdbaab36f2a083fd4d6f568e1eeb2e6e218e830f4d0226e24b0a51 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15422339/files/ID16.csv?download=1> .
 _:cb101054279b13ceaa79d8833a20d93a8bad8d0bb02c472460a2ef09d5a56d9579e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -8253,6 +8645,8 @@ _:cb1020fa30ffa0ac4b9527db493c234812ad77513426d1b6609f555c29b5ff2e3a7 <http://ww
 _:cb1020fa30ffa0ac4b9527db493c234812ad77513426d1b6609f555c29b5ff2e3a7 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18925051/files/Cell006_Form_100uA_25T_30RH_Cycle1to10_01_GEIS_CA6.mpr?download=1> .
 _:cb1021cbc482fe9f760a9eb15c7c021ba1d5909c19a45cc509550ce24e9390af642 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1021cbc482fe9f760a9eb15c7c021ba1d5909c19a45cc509550ce24e9390af642 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19608839/files/VZ1_042_021_CVUT_D_0066_v1.csv?download=1> .
+_:cb10259de8a891ab6bbfb7f9e58b4ab45af0c0d9b692f5f618e56db0cd7f0a9cfab <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb10259de8a891ab6bbfb7f9e58b4ab45af0c0d9b692f5f618e56db0cd7f0a9cfab <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/cell-sibs_nnfcm_na_metal.zip?sfvrsn=c33e2093_1> .
 _:cb1026010ca5f896ad1ac9c12fa988fc69d84d2cfbd0f4c78681d2395cb6691da77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1026010ca5f896ad1ac9c12fa988fc69d84d2cfbd0f4c78681d2395cb6691da77 <http://www.w3.org/ns/dcat#downloadURL> <https://seafile.unistra.fr/d/f3d11c3daf20486c97af/> .
 _:cb102b506782589a0c48fda527a45cb20421843de4fe60c6875c6a1bd98e8331662 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -8277,6 +8671,10 @@ _:cb104355325dffc50aa95d287d92cae970647a3726f528c7d37b232effd8c5cc318 <http://ww
 _:cb104355325dffc50aa95d287d92cae970647a3726f528c7d37b232effd8c5cc318 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/13808866/files/HPPC-Test_Cell3.mf4?download=1> .
 _:cb10473f77e74575152db2587499bb5e506768f2b081e8305b3ec0a376cc4e61c62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb10473f77e74575152db2587499bb5e506768f2b081e8305b3ec0a376cc4e61c62 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/7707929/files/NCA_HEI_SOC100_M2.txt?download=1> .
+_:cb1047bf0f1e151087f7ce109a3859768e5f33da15da6f9196cdc7881ff65604ee4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb1047bf0f1e151087f7ce109a3859768e5f33da15da6f9196cdc7881ff65604ee4 <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/chem-libs_drx_grsi.zip?sfvrsn=dca26d35_1> .
+_:cb104874a80e5d7782186bd4ebf8313891efa03b17a6ed70f92f9569172fccf3092 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb104874a80e5d7782186bd4ebf8313891efa03b17a6ed70f92f9569172fccf3092 <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/libs_lco_lvo_fmea.xlsx?sfvrsn=e3244fa7_1> .
 _:cb104a445237874d7c2987f03f50319171178810ab241ed297370005806a97be371 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb104a445237874d7c2987f03f50319171178810ab241ed297370005806a97be371 <http://www.w3.org/ns/dcat#downloadURL> <https://ora.ox.ac.uk/objects/uuid:e41d3d4c-f74e-4d76-81fd-0caa77ec6cec/files/rkw52j8536> .
 _:cb104ad62593a1d4fad04855c2b09621b4185ab4890c2e8811fa1122cef8ad4ef58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -8331,6 +8729,8 @@ _:cb109cb9009cf4345a168181b6f89be1b0af1094b0550cc039dd766bca59f9d8cbc <http://ww
 _:cb109cb9009cf4345a168181b6f89be1b0af1094b0550cc039dd766bca59f9d8cbc <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18772167/files/N21700-BAK-CG50-DLR-cell42-EIS-SOC5-discharge.csv?download=1> .
 _:cb10a1061f68e7c78cf9edf72bfaebb486d108c5787c7d6f48662b5a8388e6a6cca <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb10a1061f68e7c78cf9edf72bfaebb486d108c5787c7d6f48662b5a8388e6a6cca <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19107295/files/sintef__sintef-lfp-R2032-gelon-b26620__20250706__gitt__RT.bdf.parquet?download=1> .
+_:cb10a173847425af9e93e1e179a368bd433942ee534e8e4934d40ca417c3bc004b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb10a173847425af9e93e1e179a368bd433942ee534e8e4934d40ca417c3bc004b6 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23263603/files/merged_data_Test21.csv?download=1> .
 _:cb10a1efdfd0bcd8bc3c2bf1c19d38619c2d63c7e5527c9d048fc2398d38fc4ea4c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb10a1efdfd0bcd8bc3c2bf1c19d38619c2d63c7e5527c9d048fc2398d38fc4ea4c <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/7707929/files/NCA_HEII_SOC30_M2.txt?download=1> .
 _:cb10b34fb13c4331a6add0374c6de33179ba029c7ed461074583efa0ff205e406a4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -8343,6 +8743,8 @@ _:cb10c0534c0b223f48943ba68979232b0f2203e1e740b4c9bd49bebf21a54bb85e6 <http://ww
 _:cb10c0534c0b223f48943ba68979232b0f2203e1e740b4c9bd49bebf21a54bb85e6 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15688067/files/DB.xlsx?download=1> .
 _:cb10c0e48d056965c52d481ea78b9a6a039b139002951864c45fbc9ada92275fefb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb10c0e48d056965c52d481ea78b9a6a039b139002951864c45fbc9ada92275fefb <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/10656500/files/DTI.zip?download=1> .
+_:cb10d15eede334ee52fd38c3356da87af27fcb5ed63d2311c8e8cf2f2da4f20d629 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb10d15eede334ee52fd38c3356da87af27fcb5ed63d2311c8e8cf2f2da4f20d629 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23768097/files/ZJU-o%20dataset%20module%2315-28.zip?download=1> .
 _:cb10d3c1458719341ea1e191d66bef9e2faf7a56c97e9418261e947967334c491ee <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb10d3c1458719341ea1e191d66bef9e2faf7a56c97e9418261e947967334c491ee <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19608839/files/VZ1_042_021_CVUT_D_0006_v1.csv?download=1> .
 _:cb10d8bf1007a766f441619d8e46f57325a9e298bbc7d6c5afe0ec00892d8e163bf <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -8353,8 +8755,12 @@ _:cb10d96e35b0c5797e1f6f89d8d7b359eef4ae084701d6a6906732fdb91652d37f3 <http://ww
 _:cb10d96e35b0c5797e1f6f89d8d7b359eef4ae084701d6a6906732fdb91652d37f3 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/21805277/files/Figure%205%20and%20S10.zip?download=1> .
 _:cb10dea1a35e42c53b37aa6a5ea91c7aeb4d55e8f50a04a7847e2a05bff3f9665eb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb10dea1a35e42c53b37aa6a5ea91c7aeb4d55e8f50a04a7847e2a05bff3f9665eb <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18925051/files/Cell001_Cyc_20uA_25T_30RH_Cycle11to100_01_GEIS_CA1.mpr?download=1> .
+_:cb10df9d61835a7b54eb66a44f3d2a29c5f0241580eafc6760571751fe1e6978f70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb10df9d61835a7b54eb66a44f3d2a29c5f0241580eafc6760571751fe1e6978f70 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23372521/files/code.zip?download=1> .
 _:cb10e3d9f209cb52df402b2553a1b25f9824d7a3ced6cd748f62549721fc00eed58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb10e3d9f209cb52df402b2553a1b25f9824d7a3ced6cd748f62549721fc00eed58 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19608839/files/VZ1_042_021_CVUT_D_0077_v1.csv?download=1> .
+_:cb10e64032d6c88d1749bfcc99d682e176e301aec5e8532178580c05b5fb98560e1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb10e64032d6c88d1749bfcc99d682e176e301aec5e8532178580c05b5fb98560e1 <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/prop-rate_performance_data_bol.zip?sfvrsn=3d351fd6_5> .
 _:cb10e65a5dde28d3d507c58f0ea42335efee921ac9da2cad04ab0444a277a0abd0e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb10e65a5dde28d3d507c58f0ea42335efee921ac9da2cad04ab0444a277a0abd0e <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18925051/files/Cell001_Form_20uA_25T_30RH_Cycle1to10_02_GCPL_CA1.mpr?download=1> .
 _:cb10e6d625ed167a1b81fe0b87cbf52461836ba90b7e1e4613b2b62cfffad1d32f8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -8367,6 +8773,8 @@ _:cb10f248e2e87a6700257e41f9293c53fccc4038a1daabf201472ac0c307ea8d74c <http://ww
 _:cb10f248e2e87a6700257e41f9293c53fccc4038a1daabf201472ac0c307ea8d74c <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19632939/files/35C_hppc.csv?download=1> .
 _:cb10f2761df77fce2424312c4a92ac4d9ddb981a40f92109db448a0054c8493f5f4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb10f2761df77fce2424312c4a92ac4d9ddb981a40f92109db448a0054c8493f5f4 <http://www.w3.org/ns/dcat#downloadURL> <https://ndownloader.figshare.com/files/65283774> .
+_:cb10f2a6c9b06469482862ec61190d3c256bafa82565eaba70d441c95de34d612ab <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb10f2a6c9b06469482862ec61190d3c256bafa82565eaba70d441c95de34d612ab <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23748227/files/Albana2026_TEG-TEC_BTMS_Supplementary_Material.pdf?download=1> .
 _:cb10f53a2b828842397d4397d36e94331c97f13ffbfd6454fad0d85c529ae0ff1f4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb10f53a2b828842397d4397d36e94331c97f13ffbfd6454fad0d85c529ae0ff1f4 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15657829/files/VZ5_008_021_VUT_D_0034_v1.txt?download=1> .
 _:cb10f9576d7a9f8e704ef55bdae396f1fff44ae77f0d12ec6c4308e637e1d3dc705 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -8445,6 +8853,8 @@ _:cb1163a25a844ddb66e807965d2eaca2782230ab337e8fb250e74ff1dbdcb08c089 <http://ww
 _:cb1163a25a844ddb66e807965d2eaca2782230ab337e8fb250e74ff1dbdcb08c089 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15657829/files/VZ5_008_021_VUT_D_0010_v2.txt?download=1> .
 _:cb116b2a24d83e2a152b9b493f668363f667d6f5df668d7b8ca1ec6edabc68d5446 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb116b2a24d83e2a152b9b493f668363f667d6f5df668d7b8ca1ec6edabc68d5446 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18646655/files/HUST.zip?download=1> .
+_:cb116fdb07fc4b0b0e4a99f031185168f5d134aa1a0a35b3d407edf602c096c315c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb116fdb07fc4b0b0e4a99f031185168f5d134aa1a0a35b3d407edf602c096c315c <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23263603/files/merged_data_Test20.csv?download=1> .
 _:cb117102781f5d5678a94b77a2a911cfc997efb5660558295e25952a8eb3ee47bce <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb117102781f5d5678a94b77a2a911cfc997efb5660558295e25952a8eb3ee47bce <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/17459188/files/VZ1_044_021_CVUT_D_0003_v1.xlsx?download=1> .
 _:cb117da1cc79fe6f9b66d298fc78647918c7b4af71461adc7535628868a6040aab7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -8457,6 +8867,8 @@ _:cb117e3367631a57e394de0305f3d07ac3de4229f5d5309e39765be50df636d7a06 <http://ww
 _:cb117e3367631a57e394de0305f3d07ac3de4229f5d5309e39765be50df636d7a06 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/22969739/files/Tiltrotor_results_25pct_DOD.csv?download=1> .
 _:cb117efcdb51f03403bc3feb5695e41e890ecf7f12452202aec38fe1993713e5990 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb117efcdb51f03403bc3feb5695e41e890ecf7f12452202aec38fe1993713e5990 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15422339/files/ID12.csv?download=1> .
+_:cb117f1970e3dc31b919c3ab68df16f85be8e8b11788a0470c26afe30dce3249059 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb117f1970e3dc31b919c3ab68df16f85be8e8b11788a0470c26afe30dce3249059 <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/liquefied_gas_electrolyte_fmea.xlsx?sfvrsn=68ae7a65_1> .
 _:cb118264a4700a6bc43b29a634b0a989197bd94a41ae2101a9097a5c1e6bc116e86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb118264a4700a6bc43b29a634b0a989197bd94a41ae2101a9097a5c1e6bc116e86 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/7707929/files/NMC_SOC0_M2.txt?download=1> .
 _:cb1183537302c27c9609076b775652eb75450719b3419600c07ecea443633e923b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -8521,6 +8933,8 @@ _:cb11d49da2c42eb4e8c58bcf76e2bc9da761e25a9a04d34b852672c70b01619a01f <http://ww
 _:cb11d49da2c42eb4e8c58bcf76e2bc9da761e25a9a04d34b852672c70b01619a01f <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/10207731/files/Cycling_Characterisation.zip?download=1> .
 _:cb11d70c2c88cbb6fc41e95d2a09bdf2ba033de2bdac9685535b67baf24f4ed4b88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb11d70c2c88cbb6fc41e95d2a09bdf2ba033de2bdac9685535b67baf24f4ed4b88 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/17459188/files/VZ1_044_021_CVUT_D_00010_v1.xlsx?download=1> .
+_:cb11d9bfeb425d7bef7409d1177b0cfb89efd1173473a424b353e4ab2f943548d1d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb11d9bfeb425d7bef7409d1177b0cfb89efd1173473a424b353e4ab2f943548d1d <http://www.w3.org/ns/dcat#downloadURL> <https://search-data.ubfc.fr/dl_data.php?file=949> .
 _:cb11e0e97c0e3fb43bdac283f3abce0b9bdab883eb8257b4bdcf7a8e97270b8bda4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb11e0e97c0e3fb43bdac283f3abce0b9bdab883eb8257b4bdcf7a8e97270b8bda4 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19107295/files/sintef__sintef-silicongraphite-R2032-intelligent2-da05ba__20250602__gitthold__RT.bdf.parquet?download=1> .
 _:cb11e3e72d97e10e658de65bdf7e460f478e1eabe91768f338fd81c3d69a4248ff9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -8553,6 +8967,8 @@ _:cb120791e0c25b4b8a91de93944d89d5b8a523090df0b3c8f9712a1cfdae914ed85 <http://ww
 _:cb120791e0c25b4b8a91de93944d89d5b8a523090df0b3c8f9712a1cfdae914ed85 <http://www.w3.org/ns/dcat#downloadURL> <https://github.com/zhangsl2013/eVED/archive/refs/heads/main.zip> .
 _:cb1208b5b18945d09db261b92d77435292fe3a79d927a46f703d6576eff09b3e5b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1208b5b18945d09db261b92d77435292fe3a79d927a46f703d6576eff09b3e5b7 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/6985321/files/Experimental_data_aged_cell.csv?download=1> .
+_:cb12096a1776d9a56c8f1051992b0e858361ed70836b6e594b93fa82bce1a0c6b7f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb12096a1776d9a56c8f1051992b0e858361ed70836b6e594b93fa82bce1a0c6b7f <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/prop-tensile_testing_data.zip?sfvrsn=52899f13_5> .
 _:cb12098d1f6ba5f298bf09995d76018ce9bba6bfaa40d921d19419c12af05dda4da <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb12098d1f6ba5f298bf09995d76018ce9bba6bfaa40d921d19419c12af05dda4da <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19107295/files/sintef__sintef-silicongraphite-R2032-intelligent2-0d30d4__20250528__gitthold__RT.bdf.parquet?download=1> .
 _:cb120a9e8d838d90899d269b885cac461d79e188a626de3db2d036f50313cf06919 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -8583,6 +8999,8 @@ _:cb121e54de3fab939044ee93352a5ab2c632faeeb295be2cb0a858a367d32327969 <http://ww
 _:cb121e54de3fab939044ee93352a5ab2c632faeeb295be2cb0a858a367d32327969 <http://www.w3.org/ns/dcat#downloadURL> <https://ora.ox.ac.uk/objects/uuid:9aae61af-2949-49f1-8ad5-6aea448979e5/files/d7d278t10b> .
 _:cb121ed48508a6ee4c70aa1ea935d30721038a2eb30320d6f67935c8476d2fcd379 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb121ed48508a6ee4c70aa1ea935d30721038a2eb30320d6f67935c8476d2fcd379 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/7707929/files/NMC_SOC100_M2.txt?download=1> .
+_:cb122682b6f47edd805d308ae199e89d9f6f59f6f8558272830b80c6909e7507e74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb122682b6f47edd805d308ae199e89d9f6f59f6f8558272830b80c6909e7507e74 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/24138446/files/ebike-pack-dataset.zip?download=1> .
 _:cb1227a8a935a3c0356361da57bc936aa5edbd0f5b627644c8f7493d7ac845ffb4e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1227a8a935a3c0356361da57bc936aa5edbd0f5b627644c8f7493d7ac845ffb4e <http://www.w3.org/ns/dcat#downloadURL> <https://radar.kit.edu/radar-backend/archives/kww7jv8ajuvchcah/versions/1/content> .
 _:cb122aa9b4cbb010ca9ee448563d0d678ac44f165b40250fa733358af67b8c972e6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -8595,6 +9013,10 @@ _:cb1236bac601b4e90313723d35294457b8ba2c33e4d31db8027a2008fcbce68509a <http://ww
 _:cb1236bac601b4e90313723d35294457b8ba2c33e4d31db8027a2008fcbce68509a <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19608839/files/VZ1_042_021_CVUT_D_0051_v1.csv?download=1> .
 _:cb12381b92b2b540d8dc05bdd1f670968d6ae5a942bcf5729019b9dab11880bf465 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb12381b92b2b540d8dc05bdd1f670968d6ae5a942bcf5729019b9dab11880bf465 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19107295/files/sintef__sintef-lnmo-R2032-intelligent2-fa5db1__20250424__gitt__RT.bdf.parquet?download=1> .
+_:cb123ae91215fff9c1ffc32889acde18662d68a35f9810460abb0a6c78435e7b778 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb123ae91215fff9c1ffc32889acde18662d68a35f9810460abb0a6c78435e7b778 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/24174045/files/README.md?download=1> .
+_:cb123bde1b442d34ff31f7c0986f44e8e1c7b8de00c9bdfb714706f542c5209a58c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb123bde1b442d34ff31f7c0986f44e8e1c7b8de00c9bdfb714706f542c5209a58c <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23263603/files/merged_data_Test3.csv?download=1> .
 _:cb123ce855ed48abeac23174bdfac2ddc504fa513e525d50ce214268cce8b811b8f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb123ce855ed48abeac23174bdfac2ddc504fa513e525d50ce214268cce8b811b8f <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19107295/files/sintef__sintef-lnmo-R2032-intelligent1-59ceaa__20250424__p-ocv__RT.bdf.parquet?download=1> .
 _:cb123d09ea38418d07ec2b920baae90e32952e0119480e3d176c158f0aa45f13d35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -8665,8 +9087,12 @@ _:cb12a7fbb26e0782478c289681fd5d04287ae508fec752cbd5da5f3408416eb1ea1 <http://ww
 _:cb12a7fbb26e0782478c289681fd5d04287ae508fec752cbd5da5f3408416eb1ea1 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19107295/files/sintef__sintef-graphite-R2032-intelligent-063b77__20250514__gitt__RT.bdf.parquet?download=1> .
 _:cb12a8e4b72dbf71925df0a14398a3fd6a2b02e4a52ec2d4f1ca14fc65e946c30de <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb12a8e4b72dbf71925df0a14398a3fd6a2b02e4a52ec2d4f1ca14fc65e946c30de <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/8369275/files/pulse_neg_time.csv?download=1> .
+_:cb12ab4c5f729cc1639fe1943203613f8d7fff422dd7dafb0d4daca7a51d38225f1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb12ab4c5f729cc1639fe1943203613f8d7fff422dd7dafb0d4daca7a51d38225f1 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/24100753/files/README.pdf?download=1> .
 _:cb12afc5a98355fa548b2ff5e5f5cc08a08c533fd2e53292eb873f5a709c2e2945c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb12afc5a98355fa548b2ff5e5f5cc08a08c533fd2e53292eb873f5a709c2e2945c <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18925051/files/Cell007_Form_200uA_25T_30RH_Cycle1to10_02_GCPL_CA7.mpr?download=1> .
+_:cb12b1caf5a9b2a99359e9cb4a12e356d9bdbb3317067b2de96d1ccce7369c3d2af <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb12b1caf5a9b2a99359e9cb4a12e356d9bdbb3317067b2de96d1ccce7369c3d2af <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23263603/files/merged_data_Test23.csv?download=1> .
 _:cb12b647fb6aee9c8734a55447235b8a3936a6c0bad26740b1d93764d2c1c49a1e7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb12b647fb6aee9c8734a55447235b8a3936a6c0bad26740b1d93764d2c1c49a1e7 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/14577286/files/Calendar%20ageing%20dataset.zip?download=1> .
 _:cb12b6d5751a3bb652c619482d51619a88ad9bafcb50ea8e117c5facd7eaf9d05ec <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -8679,10 +9105,14 @@ _:cb12bbd3d8a283593acb418c9698851ca36545d1f8b490628344d14ca1877f1749a <http://ww
 _:cb12bbd3d8a283593acb418c9698851ca36545d1f8b490628344d14ca1877f1749a <http://www.w3.org/ns/dcat#downloadURL> <https://github.com/HVES-Battery-Testing-Consortium/LG-HG2/archive/refs/heads/main.zip> .
 _:cb12c129d1c8f7f048d13743db17c746206e37267afb083f0c8aee6086b5e1bcef1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb12c129d1c8f7f048d13743db17c746206e37267afb083f0c8aee6086b5e1bcef1 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/22969739/files/Cell5_SOC100_Height52.png?download=1> .
+_:cb12c2b22d0f48d3eec6b7d4b494942a532e0413fe04ecfc4041b53704a041863b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb12c2b22d0f48d3eec6b7d4b494942a532e0413fe04ecfc4041b53704a041863b4 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23263603/files/merged_data_Test11.csv?download=1> .
 _:cb12c339177afc08f189a144cf7e0a73740b05c5683c872e0bda2438ad713cc406b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb12c339177afc08f189a144cf7e0a73740b05c5683c872e0bda2438ad713cc406b <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19107295/files/sintef__sintef-silicongraphite-R2032-intelligent1-bdb7bc__20250514__gitthold__RT.bdf.parquet?download=1> .
 _:cb12c5d61b7b84e4a6f685eb42b5d8019d62db1c743ae4915baf950cca78c3d9c25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb12c5d61b7b84e4a6f685eb42b5d8019d62db1c743ae4915baf950cca78c3d9c25 <http://www.w3.org/ns/dcat#downloadURL> <https://ars.els-cdn.com/content/image/1-s2.0-S2352340920300317-mmc2.zip> .
+_:cb12c8500961d69fc151bea4417aa2cb505da3ee1a4197b3231454e450dfa5319cb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb12c8500961d69fc151bea4417aa2cb505da3ee1a4197b3231454e450dfa5319cb <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23263603/files/readme.txt?download=1> .
 _:cb12cc84b3075128750389efc5001bc83108a754a184363fa217065b13e59d8615e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb12cc84b3075128750389efc5001bc83108a754a184363fa217065b13e59d8615e <http://www.w3.org/ns/dcat#downloadURL> <https://data.mendeley.com/public-api/zip/mm9rvfvmrb/download/3> .
 _:cb12cebb2e086d7b7aca7d5ee73ae79b2db7118cabb3cc4092e5bead6267bd76460 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -8727,12 +9157,16 @@ _:cb12fc4d16722aeaca65767b03d3c1a2c6e9f7e0743676b7ef2ee6d570f83a4227e <http://ww
 _:cb12fc4d16722aeaca65767b03d3c1a2c6e9f7e0743676b7ef2ee6d570f83a4227e <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15422339/files/ID04.csv?download=1> .
 _:cb12ff9a7ef09fd74f75111cc523e610f7b9501fc677cf1f19206e4ed2647b1bb5d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb12ff9a7ef09fd74f75111cc523e610f7b9501fc677cf1f19206e4ed2647b1bb5d <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15422339/files/ID47.csv?download=1> .
+_:cb13058c1810ff647959654924e28d3adcfe3e3a0646fd00a5c08efa9457295cba7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb13058c1810ff647959654924e28d3adcfe3e3a0646fd00a5c08efa9457295cba7 <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/sib_nnfmc_anode_free.zip?sfvrsn=7589ea7b_1> .
 _:cb1312ea01cba6a58eb8023588672f395f63eea55804674954962a02bc4aa120217 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1312ea01cba6a58eb8023588672f395f63eea55804674954962a02bc4aa120217 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15657829/files/VZ5_008_021_VUT_D_0038_v1.txt?download=1> .
 _:cb131b9568074166696713bca53806eb3b08527238995a08c95079de57d3b28a829 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb131b9568074166696713bca53806eb3b08527238995a08c95079de57d3b28a829 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18646655/files/ZN-coin.zip?download=1> .
 _:cb131f59f5c82f5c78ff246381be7ecb70fe19d7bb9b03235d77e2598e2479e275f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb131f59f5c82f5c78ff246381be7ecb70fe19d7bb9b03235d77e2598e2479e275f <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/10207731/files/Raw_Data.zip?download=1> .
+_:cb13269d83df83af9148f021ca39dff8650b0338ef5db5391ddc2e90d18a687c68c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb13269d83df83af9148f021ca39dff8650b0338ef5db5391ddc2e90d18a687c68c <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/24174045/files/V_4C.txt?download=1> .
 _:cb1327967f9ec2d0f198027616231fc00adbcfc1aef936352b4e7249d17d39146f5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1327967f9ec2d0f198027616231fc00adbcfc1aef936352b4e7249d17d39146f5 <http://www.w3.org/ns/dcat#downloadURL> <https://data.matr.io/1/api/v1/file/5c86bf13fa2ede00015ddd82/download> .
 _:cb13343c662fc069addc49c53a9bc044258a9dc3ca72e6bce684c1c881bdadae66c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -8807,6 +9241,8 @@ _:cb139b2db33cb15ab60828ff9e4f845e8d5e6c0260942a13191729fe3faf870a1c8 <http://ww
 _:cb139b2db33cb15ab60828ff9e4f845e8d5e6c0260942a13191729fe3faf870a1c8 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/6645536/files/raw-data.zip?download=1> .
 _:cb139c173d7a5be2742fdc2c20d0bfe7d6fdea68d99bdadfbb95b4ac9ced5550ddc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb139c173d7a5be2742fdc2c20d0bfe7d6fdea68d99bdadfbb95b4ac9ced5550ddc <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15688067/files/data_eval_DRT.zip?download=1> .
+_:cb139d505b9749ba1a1b9c6b61fe84fe1c6de6ee2aba597544eed0d6f6ba7f022ae <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb139d505b9749ba1a1b9c6b61fe84fe1c6de6ee2aba597544eed0d6f6ba7f022ae <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/post_thermal_runaway_particulate_analysis.zip?sfvrsn=81e9dcea_1> .
 _:cb13ad899cbcbacc37f6ef4ccd85c664096ec18aef706476328728be48b7f3f7cad <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb13ad899cbcbacc37f6ef4ccd85c664096ec18aef706476328728be48b7f3f7cad <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19107295/files/sintef__sintef-lnmo-R2032-intelligent2-6dce02__20250625__p-ocvhold__RT.bdf.parquet?download=1> .
 _:cb13ae85f0facf2cf84de72d08dc8f18ba37f6e49a8d621fb286c01d61154e0b2a5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -8865,8 +9301,12 @@ _:cb13ef46274dd9ed948d371a2071ca1f466d195fa571e5d8f1b8740f1668ffad1be <http://ww
 _:cb13ef46274dd9ed948d371a2071ca1f466d195fa571e5d8f1b8740f1668ffad1be <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/20490514/files/BATSS_15_UserProfile_Voltstation_results.xlsx?download=1> .
 _:cb13efe3f23b801178df79ada9bda06b497d70134b8fae2d6fd57e4fcb7c8733049 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb13efe3f23b801178df79ada9bda06b497d70134b8fae2d6fd57e4fcb7c8733049 <http://www.w3.org/ns/dcat#downloadURL> <https://dataserv.ub.tum.de/public.php/dav/files/m1639153/?accept=zip> .
+_:cb13f126fd3f5d7ca5667b22cad4d1ea1e7a9a2dd25cc280e0b5147b429cdf5b1b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb13f126fd3f5d7ca5667b22cad4d1ea1e7a9a2dd25cc280e0b5147b429cdf5b1b1 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/24174045/files/SHA256SUMS?download=1> .
 _:cb13f2f48e966f577acb55a544a47123d498649d839a09ff813d3308cbe8b067cdc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb13f2f48e966f577acb55a544a47123d498649d839a09ff813d3308cbe8b067cdc <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18694513/files/Feature_2_ALL.mat?download=1> .
+_:cb13f3c368655cb22c64e5fd18d729d13363b0539609fe0366d2e6744b943dea9f3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb13f3c368655cb22c64e5fd18d729d13363b0539609fe0366d2e6744b943dea9f3 <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/pib_pba_gr.zip?sfvrsn=173d8584_1> .
 _:cb13f54876af89753cc1e8173b843024b5726231d053e246411a86497e1e616b611 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb13f54876af89753cc1e8173b843024b5726231d053e246411a86497e1e616b611 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19608839/files/VZ1_042_021_CVUT_D_0054_v1.csv?download=1> .
 _:cb13f5b5503be3aa85a5e4cc4e04620adab4720d01e8d6c031d5d6c5975b2dfd340 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -8893,6 +9333,8 @@ _:cb140d4a441709f4f4a0506fc18c09e14e9fecddcd30d158e51a96835c5b0204b25 <http://ww
 _:cb140d4a441709f4f4a0506fc18c09e14e9fecddcd30d158e51a96835c5b0204b25 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/22921424/files/reference_tests.csv?download=1> .
 _:cb140ec3ee61ac1b8bef090125f9d043f0972f6f905535b8ccc4964425a4028341b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb140ec3ee61ac1b8bef090125f9d043f0972f6f905535b8ccc4964425a4028341b <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18772167/files/N21700-BAK-CG50-DLR-cell42-EIS-SOC0-discharge.csv?download=1> .
+_:cb14100958915e45e66a104d95142fb961c10234eaaa3102d2d3ff2e944ee4ef8c1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb14100958915e45e66a104d95142fb961c10234eaaa3102d2d3ff2e944ee4ef8c1 <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/prop-specific-heat-capacity-data.zip?sfvrsn=2d3f5041_7> .
 _:cb14153ef12ea9083827a0ed819e2a86e0c378c3dc0cf4e563adbb59d79ef324db4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb14153ef12ea9083827a0ed819e2a86e0c378c3dc0cf4e563adbb59d79ef324db4 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18849418/files/report_BAK_N21700CG-50_60SOC_TS0330.zip?download=1> .
 _:cb141e6c14994a8b404741b06bd4697c029e0cb9aa590671ff1110e5e0f8e402ea8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -8909,6 +9351,8 @@ _:cb14324b72d1d0a07484e950eaecd2339925d1db3e35eeff501f96c56cddac7e41e <http://ww
 _:cb14324b72d1d0a07484e950eaecd2339925d1db3e35eeff501f96c56cddac7e41e <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18772167/files/N21700-BAK-CG50-DLR-cell43-EIS-SOC5-discharge.csv?download=1> .
 _:cb1433db21534620b977fe961d224a9ea8555af8f9f6dc17a32653d98612476b184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1433db21534620b977fe961d224a9ea8555af8f9f6dc17a32653d98612476b184 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18646655/files/RWTH.zip?download=1> .
+_:cb1434730577070932dc1f63a2538001059946d329f569d1c3ea3a34183b4af80c8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb1434730577070932dc1f63a2538001059946d329f569d1c3ea3a34183b4af80c8 <http://www.w3.org/ns/dcat#downloadURL> <https://dataserv.ub.tum.de/public.php/dav/files/m1840745/?accept=zip> .
 _:cb14374f99ad9f1dd5f4d308be9a72930fc069fe5bbd51e0093c8355cc24bcec89c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb14374f99ad9f1dd5f4d308be9a72930fc069fe5bbd51e0093c8355cc24bcec89c <http://www.w3.org/ns/dcat#downloadURL> <https://repository.tugraz.at/api/records/ysgwn-3a318/files-archive> .
 _:cb1439dabeb8d9b8e9782f5251fd43d5461a302c75bc27b63782e9234b4a273befa <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -8967,10 +9411,14 @@ _:cb149fbbec0b15b37fa2cd32668fad1886793475b7c7b87a2e4e244c34317d7d0d3 <http://ww
 _:cb149fbbec0b15b37fa2cd32668fad1886793475b7c7b87a2e4e244c34317d7d0d3 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18772167/files/N21700-BAK-CG50-DLR-anode-01-GITT-delithiation.csv?download=1> .
 _:cb14a0bb5484614c3cc598b6a21a54ad71cf50d765f19f48d01d220e241e988a190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb14a0bb5484614c3cc598b6a21a54ad71cf50d765f19f48d01d220e241e988a190 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19608839/files/VZ1_042_021_CVUT_D_0016_v1.csv?download=1> .
+_:cb14a62af75b25e889a5d0097f0a3c59ad6bcd23453b9cc3a908464b6934d294274 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb14a62af75b25e889a5d0097f0a3c59ad6bcd23453b9cc3a908464b6934d294274 <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/ml-ssbs_nmc811_lpsc_si.zip?sfvrsn=c237db92_1> .
 _:cb14aa2013bb526df69b5fde6bc3602371e47374db5668c00ecc33af9e8f0b21990 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb14aa2013bb526df69b5fde6bc3602371e47374db5668c00ecc33af9e8f0b21990 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18772167/files/OCV_extraction_with_positive_soc.json?download=1> .
 _:cb14aa47e5e2341ca8902f7450be1a35a9ba504ce9b934d9e79108326029e2552ed <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb14aa47e5e2341ca8902f7450be1a35a9ba504ce9b934d9e79108326029e2552ed <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18775496/files/Figure5a.xls?download=1> .
+_:cb14aadd40b245510d8227936b1dce33838aa4480666110e1393d49bb818a6c764a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb14aadd40b245510d8227936b1dce33838aa4480666110e1393d49bb818a6c764a <http://www.w3.org/ns/dcat#downloadURL> <https://dataserv.ub.tum.de/public.php/dav/files/m1762675/?accept=zip> .
 _:cb14ade5f4c505fb73c82dda582a80e24a69cdb22972d309616fafecf466cf760c6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb14ade5f4c505fb73c82dda582a80e24a69cdb22972d309616fafecf466cf760c6 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18772167/files/N21700-BAK-CG50-DLR-cell42-EIS-SOC50-discharge.csv?download=1> .
 _:cb14aff926a2a0bb5b4b3bc4f80d7681493b202fb8f249a506d6845d0f08fd8fe70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -8983,6 +9431,8 @@ _:cb14b179f2abfa9c491c7e3163e59b583e7f3e37ef6039da00f07d0105a13b4b358 <http://ww
 _:cb14b179f2abfa9c491c7e3163e59b583e7f3e37ef6039da00f07d0105a13b4b358 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15657829/files/VZ5_008_021_VUT_D_0048_v1.txt?download=1> .
 _:cb14b1f55cb959c26437bedd592883db66a627cfb1c06da1fd458004b1dbb55c3e9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb14b1f55cb959c26437bedd592883db66a627cfb1c06da1fd458004b1dbb55c3e9 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18772167/files/N21700-BAK-CG50-anode-SEM-2000x.tif?download=1> .
+_:cb14b2c092d4742289357ab9ae8c30096af4902520260dc1356b0490e2e8786631d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb14b2c092d4742289357ab9ae8c30096af4902520260dc1356b0490e2e8786631d <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/24174045/files/4C.txt?download=1> .
 _:cb14b457bca1a632da7c0d4ffdd485b645fdfa7447285ed64f5800388bbfe1a33e1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb14b457bca1a632da7c0d4ffdd485b645fdfa7447285ed64f5800388bbfe1a33e1 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/14576042/files/LISHEN-2C-20%25%20Depth%20of%20Discharge.zip?download=1> .
 _:cb14b6fbf3869aefe04853082d6c35e791fa8e4ac20067b8c7d7a8a49fdd9693880 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -9003,6 +9453,8 @@ _:cb14cc6087dbe42f63d028c0744ac79daf2ad981b32f40525cfdd019706f41719c0 <http://ww
 _:cb14cc6087dbe42f63d028c0744ac79daf2ad981b32f40525cfdd019706f41719c0 <http://www.w3.org/ns/dcat#downloadURL> <https://data.mendeley.com/public-api/zip/n6xg5fzsbv/download/1> .
 _:cb14ce7061acb8a87fc2223edb4275953f5d9d4b83e552ad9d4689382dc780c5e08 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb14ce7061acb8a87fc2223edb4275953f5d9d4b83e552ad9d4689382dc780c5e08 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18772167/files/Plot_temperature_time.png?download=1> .
+_:cb14ddcc2f29b3ca3f0006ae63e4df3c54934d1cd5e5dbf39b5fa42e5d691038ba1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb14ddcc2f29b3ca3f0006ae63e4df3c54934d1cd5e5dbf39b5fa42e5d691038ba1 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23372521/files/metadata.zip?download=1> .
 _:cb14e0e189f826ad4e8436625169dcb37a1fd790452f89e205f5e4023d149409727 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb14e0e189f826ad4e8436625169dcb37a1fd790452f89e205f5e4023d149409727 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18772167/files/N21700-BAK-CG50-DLR-anode-01-GITT-lithiation.parquet?download=1> .
 _:cb14e29e0ca4b1eb4c014702e4d46680226918f1540965ebc9cff7a7895a2531c9c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -9039,6 +9491,8 @@ _:cb1516d15fabad7462748d387437609e983b1d59a077cb083cce701169c6355468e <http://ww
 _:cb1516d15fabad7462748d387437609e983b1d59a077cb083cce701169c6355468e <http://www.w3.org/ns/dcat#downloadURL> <https://publications.rwth-aachen.de/record/1002905/files/Dataset_from_Mobile_Battery_Data_Explorer_2026-04.zip> .
 _:cb1517bd8cfe37ecbf45b49af48975c5e90508bddaabcceead3f64e9440493fadf6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1517bd8cfe37ecbf45b49af48975c5e90508bddaabcceead3f64e9440493fadf6 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19608839/files/VZ1_042_021_CVUT_D_0018_v1.csv?download=1> .
+_:cb151aaad87ed966b6724c781a3492d986e063dc79ac13a716a3ff1afc477a88895 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb151aaad87ed966b6724c781a3492d986e063dc79ac13a716a3ff1afc477a88895 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23372521/files/README.md?download=1> .
 _:cb151c3ac5d0cdc340bec3e2be3866cd68f67e548db54f201aaf6fd4a5958d13367 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb151c3ac5d0cdc340bec3e2be3866cd68f67e548db54f201aaf6fd4a5958d13367 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/13318553/files/INR18650_MJ1_23.parquet?download=1> .
 _:cb151dc6c38c8753f0516326404af90b4c5295fdb66082cfd2142fc354033e930d7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -9063,6 +9517,10 @@ _:cb154088f5c86a6390fb71a9749d374a667d1a43e28b76146f6e6ec18ee7050334f <http://ww
 _:cb154088f5c86a6390fb71a9749d374a667d1a43e28b76146f6e6ec18ee7050334f <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/7707929/files/NCA_HEI_SOC30_M2.txt?download=1> .
 _:cb1541e021556d6739a8ec129660180d521e16515d217b3bb7234a426695cf3e344 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1541e021556d6739a8ec129660180d521e16515d217b3bb7234a426695cf3e344 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/17737411/files/VZ1_027_021_VUT_D_0008_v1.txt?download=1> .
+_:cb154524c9930aa05b8bc9a49ab8007b5afad0063caab91130a82bc20c560a12c78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb154524c9930aa05b8bc9a49ab8007b5afad0063caab91130a82bc20c560a12c78 <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/cell-ssbs_nmc811_lpsc_si.zip?sfvrsn=9ac45197_1> .
+_:cb154ae72b58face0ba493be2accbf980d042b5f0f31566ec84f0553c8b2c8196a1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb154ae72b58face0ba493be2accbf980d042b5f0f31566ec84f0553c8b2c8196a1 <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/chem-libs-nmc811-gr.zip?sfvrsn=1b8e8ede_0> .
 _:cb154c60d7ecdafd85ca416c00c6c11aa621756ca339003fded487d5dd693a7b412 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb154c60d7ecdafd85ca416c00c6c11aa621756ca339003fded487d5dd693a7b412 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15657829/files/VZ5_008_021_VUT_D_0029_v1.txt?download=1> .
 _:cb154cebd47f24190163281b12af891d722bf85f9326136fba94f02bdd8561b1853 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -9071,6 +9529,8 @@ _:cb154f9f46b1335c329b78f5f9948c4c944ab82cebe5263364db9e4910a0baf38ff <http://ww
 _:cb154f9f46b1335c329b78f5f9948c4c944ab82cebe5263364db9e4910a0baf38ff <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19107295/files/sintef__sintef-graphite-R2032-intelligent-677295__20250514__p-ocvhold__RT.bdf.parquet?download=1> .
 _:cb155076e43fbb8192c5b9b8a0ecec4cc39ef1f6f7df014246f72b30c10c4b6ab6c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb155076e43fbb8192c5b9b8a0ecec4cc39ef1f6f7df014246f72b30c10c4b6ab6c <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15657829/files/VZ5_008_021_VUT_D_0033_v1.txt?download=1> .
+_:cb1550d3a440b9e7d1f27e3143a35fc41a35e35cd42d46ad75e3c40928169aba3fa <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb1550d3a440b9e7d1f27e3143a35fc41a35e35cd42d46ad75e3c40928169aba3fa <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/24076897/files/M50T.zip?download=1> .
 _:cb155332d4b7a36020a8ec05408ac8cfaf7c2e2584c10c845f488ab07e2da3cdb6c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb155332d4b7a36020a8ec05408ac8cfaf7c2e2584c10c845f488ab07e2da3cdb6c <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19632939/files/35C_capacity.csv?download=1> .
 _:cb15560968bd9c83c31e4338d285600fc7128aa5d1ca9d50ad31a10070efa134c3b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -9155,6 +9615,8 @@ _:cb15d1d6eb5f2d97f33b0ddc79aefc0bfb9fdc3311cd308647c97e0b0c0c69518d7 <http://ww
 _:cb15d1d6eb5f2d97f33b0ddc79aefc0bfb9fdc3311cd308647c97e0b0c0c69518d7 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19107295/files/sintef__sintef-nmc532-R2032-gelon-f5dd84__20250607__p-ocvhold__RT.bdf.parquet?download=1> .
 _:cb15d582ca8830ec893155926617c0df8697b48751b4173bba04a4da5b8fca430d5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb15d582ca8830ec893155926617c0df8697b48751b4173bba04a4da5b8fca430d5 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/7707929/files/LFP_SOC0_M1.txt?download=1> .
+_:cb15dbdc91820585d7e9ff572d062179af5bde72a63763dfcbf8887001e5c057197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb15dbdc91820585d7e9ff572d062179af5bde72a63763dfcbf8887001e5c057197 <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/cell-libs_nmc811_gr.zip?sfvrsn=89251d92_1> .
 _:cb15dbfbe8b1cad9b9b452e92fdac2041582a981587ed90c196a8e0ec16a6383355 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb15dbfbe8b1cad9b9b452e92fdac2041582a981587ed90c196a8e0ec16a6383355 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/13808866/files/HPPC-Test_Cell2.mf4?download=1> .
 _:cb15dd3613ff231fdc6ea44ad45dd48f0d912663e563fd1dab9e1a4bad40609e449 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -9189,6 +9651,8 @@ _:cb1611eda36093b5b2f9d2a0ff2a8125d89c37eb4d952f7de117b4fb25df416425c <http://ww
 _:cb1611eda36093b5b2f9d2a0ff2a8125d89c37eb4d952f7de117b4fb25df416425c <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/17459188/files/RMF-VZ1_044_021_CVUT_S.txt?download=1> .
 _:cb16197c731a5db4f4f2c401f76479f6094115fd8217f74a7399da20d330a90c60a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb16197c731a5db4f4f2c401f76479f6094115fd8217f74a7399da20d330a90c60a <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/13318553/files/INR18650_MJ1_01.parquet?download=1> .
+_:cb161ae9e046879bd0aba812fcf12874ed76cbf165fcdb8f2bf8e3fdf20572a5ce2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb161ae9e046879bd0aba812fcf12874ed76cbf165fcdb8f2bf8e3fdf20572a5ce2 <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/lib_lco_lvo.zip?sfvrsn=851082d1_1> .
 _:cb161cc480352c138a84621a0611fe41556e7ce23c74ea156e9c4afbd6ee2092765 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb161cc480352c138a84621a0611fe41556e7ce23c74ea156e9c4afbd6ee2092765 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19608839/files/VZ1_042_021_CVUT_D_0070_v1.csv?download=1> .
 _:cb161f260f554009df396593765a240e91a31d83c5c2c2ae84392a190ffef494a03 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -9225,6 +9689,10 @@ _:cb164bc96c5a777586d3582b8f52e50c0633cbe4e65f34ac09427773c40a24b12d6 <http://ww
 _:cb164bc96c5a777586d3582b8f52e50c0633cbe4e65f34ac09427773c40a24b12d6 <http://www.w3.org/ns/dcat#downloadURL> <https://deepblue.lib.umich.edu/data/concern/data_sets/kp78gg60j/zip_download> .
 _:cb165451c622c2cf39b5909ff534cb283d4f1634737f651f1b0fe8137f851749200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb165451c622c2cf39b5909ff534cb283d4f1634737f651f1b0fe8137f851749200 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19468464/files/low_frequency_testing.zip?download=1> .
+_:cb16546a0dce692f72f9c3549bebc2c6293d7a716c4386dab0b3d27a9729c021af8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb16546a0dce692f72f9c3549bebc2c6293d7a716c4386dab0b3d27a9729c021af8 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/24100753/files/Tax%20variation%20data.xlsx?download=1> .
+_:cb1654b85b15a2214365bf142db576cbec4236785b17bc0f2e690881b2c61720f84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb1654b85b15a2214365bf142db576cbec4236785b17bc0f2e690881b2c61720f84 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/24236435/files/RL-Pulse-Battery-Estimation.zip?download=1> .
 _:cb165a2129409fa40d087927c8834e90848bfa13d251a999b39f700882a766839a8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb165a2129409fa40d087927c8834e90848bfa13d251a999b39f700882a766839a8 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15657829/files/VZ5_008_021_VUT_D_0012_v2.txt?download=1> .
 _:cb165a945d19376acbed4898b105316a5dd16121bae4127e2d373ff31023dcdf752 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -9261,6 +9729,8 @@ _:cb16c251ae5c0122ea02efaebec91c05682996a7fd98c94ac1713bf741bb8fdf923 <http://ww
 _:cb16c251ae5c0122ea02efaebec91c05682996a7fd98c94ac1713bf741bb8fdf923 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19107295/files/sintef__sintef-lnmo-R2032-intelligent2-b4f90b__20250625__p-ocv__RT.bdf.parquet?download=1> .
 _:cb16c4e0c0e3b36899e12bff191fea66a231fb150f3a08084ea254a0592709f8c0e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb16c4e0c0e3b36899e12bff191fea66a231fb150f3a08084ea254a0592709f8c0e <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/3959739/files/Brazil_STAR_Microgrid_Monitoring.zip?download=1> .
+_:cb16c55d095eb3d53c803665eb4c44f045609a12326e7315cf1f2b66a6427eb67e4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb16c55d095eb3d53c803665eb4c44f045609a12326e7315cf1f2b66a6427eb67e4 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/24174045/files/V_025C.txt?download=1> .
 _:cb16c787921988b4307a61beb42bca08ba7019b97cc0e2ed05e7bb808a5d44b9bca <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb16c787921988b4307a61beb42bca08ba7019b97cc0e2ed05e7bb808a5d44b9bca <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18775496/files/Figure8-Coating06.xls?download=1> .
 _:cb16cca8ef2e9f911aef255a2d673bad704702154d4c0c8eed1817a2c3ceb16ae84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -9293,16 +9763,22 @@ _:cb1705a1d9ff2ee615609832fcdb9766729f1fa3221a8f180565f999784e65bfd00 <http://ww
 _:cb1705a1d9ff2ee615609832fcdb9766729f1fa3221a8f180565f999784e65bfd00 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15755725/files/F0068.zip?download=1> .
 _:cb170b429511b5590712adf58c629a63b99e0da7d3821861f21490c2c1bf1304dc1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb170b429511b5590712adf58c629a63b99e0da7d3821861f21490c2c1bf1304dc1 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/13318553/files/INR18650_MJ1_05.parquet?download=1> .
+_:cb17134c579fb03a3fc8a80c5bf7bb6196e9a8d02cf01abf3ed8aeb1936b3ef5134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb17134c579fb03a3fc8a80c5bf7bb6196e9a8d02cf01abf3ed8aeb1936b3ef5134 <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/sib_fmea.xlsx?sfvrsn=63b47a2c_1> .
 _:cb171462e2c82f046924b4ec8c9efba4cf48ebdc036906a63c50add5df7685d6294 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb171462e2c82f046924b4ec8c9efba4cf48ebdc036906a63c50add5df7685d6294 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19608839/files/VZ1_042_021_CVUT_D_0040_v1.csv?download=1> .
 _:cb1717b7b185b0471136047683f8820d54535e1c35c52feb2f32a9f066aac7bc2db <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1717b7b185b0471136047683f8820d54535e1c35c52feb2f32a9f066aac7bc2db <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/22301764/files/4_Ageing.7z?download=1> .
+_:cb171a3f81cd81b469803cb3a9c62ecba4bdb35d20b52f374e7ca05b4c6ee36a481 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb171a3f81cd81b469803cb3a9c62ecba4bdb35d20b52f374e7ca05b4c6ee36a481 <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/libs_nmc811_gr_fmea.xlsx?sfvrsn=a6eca161_1> .
 _:cb171c27f0ef7b906a22caa9edad182556b45afe3a72ced44b1ccc6e73f168d25ed <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb171c27f0ef7b906a22caa9edad182556b45afe3a72ced44b1ccc6e73f168d25ed <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15657829/files/VZ5_008_021_VUT_D_0021_v1.txt?download=1> .
 _:cb171e20473778d2295b6cca73052f261d93920b3b26ef84b3632126ae2c5d726a3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb171e20473778d2295b6cca73052f261d93920b3b26ef84b3632126ae2c5d726a3 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19107295/files/sintef__sintef-silicongraphite-R2032-intelligent1-274e5a__20250602__p-ocvhold__RT.bdf.parquet?download=1> .
 _:cb171fc01c95252c4354d8586d750d2dda50dced5abf10a7eeadad0b4ae3ec76f84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb171fc01c95252c4354d8586d750d2dda50dced5abf10a7eeadad0b4ae3ec76f84 <http://www.w3.org/ns/dcat#downloadURL> <https://data.matr.io/8/data_03032025.tgz> .
+_:cb172410e85391682744672e5127a23276f181fc4fcca944fff636c9e69dcb42c70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb172410e85391682744672e5127a23276f181fc4fcca944fff636c9e69dcb42c70 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23372521/files/temperature_50C.zip?download=1> .
 _:cb1726e835a31a832394d84961c75e58ce43a72cf3eb595b41071e7c544d86c9bfe <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1726e835a31a832394d84961c75e58ce43a72cf3eb595b41071e7c544d86c9bfe <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19608839/files/VZ1_042_021_CVUT_D_0003_v1.csv?download=1> .
 _:cb172c174ffebd609dda87579bec5a11e1ed38d8b66ec8127f27453db372e410b8a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -9339,6 +9815,8 @@ _:cb17683e2ad8ce18b5bcb359e14f5f0f90b924d8313e3d4133644db5f861394b65a <http://ww
 _:cb17683e2ad8ce18b5bcb359e14f5f0f90b924d8313e3d4133644db5f861394b65a <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15755725/files/F0152.zip?download=1> .
 _:cb176d849267214d9ce60f2cf32833bd5106afa9d57579d1575d37358b99eb9534e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb176d849267214d9ce60f2cf32833bd5106afa9d57579d1575d37358b99eb9534e <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19608839/files/VZ1_042_021_CVUT_D_0085_v1.csv?download=1> .
+_:cb1770b8a73112f513201047e9a89f8f8033ee02badb36e9c9e5c530162488b0695 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb1770b8a73112f513201047e9a89f8f8033ee02badb36e9c9e5c530162488b0695 <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/lib_nmc811_gr.zip?sfvrsn=816420a2_1> .
 _:cb1775d062b3d441f2f42eab5146aaa305c46d6ffc3b76ef9c64a17060d33705d0c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1775d062b3d441f2f42eab5146aaa305c46d6ffc3b76ef9c64a17060d33705d0c <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19107295/files/sintef__sintef-lfp-R2032-gelon-182031__20250607__gitthold__RT.bdf.parquet?download=1> .
 _:cb178324440f7f8e2bace55451b1cfb628109f22d4f088726b2214356b5a5be4d3d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -9427,6 +9905,8 @@ _:cb1837cc3043cffcd6108ef9648a5c7f170eb67ced87377e98fdc7a1dea28105753 <http://ww
 _:cb1837cc3043cffcd6108ef9648a5c7f170eb67ced87377e98fdc7a1dea28105753 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/7707929/files/NCA_HEII_SOC100_M1.txt?download=1> .
 _:cb183a4400a44b725916f3fa10d383aa4b41f6d23b166694620879170ebea04874e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb183a4400a44b725916f3fa10d383aa4b41f6d23b166694620879170ebea04874e <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15755725/files/F0004.zip?download=1> .
+_:cb183bce237039d27793112b05c1c7ce51cdfa0bdf5af2f7c0b6277188a95b7e07f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb183bce237039d27793112b05c1c7ce51cdfa0bdf5af2f7c0b6277188a95b7e07f <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23372521/files/temperature_0C.zip?download=1> .
 _:cb183c8d2b0d4be94d67c0e85c4fc16e481d802ada0cddaffb4523cec6ad5f36368 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb183c8d2b0d4be94d67c0e85c4fc16e481d802ada0cddaffb4523cec6ad5f36368 <http://www.w3.org/ns/dcat#downloadURL> <https://data.mendeley.com/public-api/zip/zh58byr53c/download/2> .
 _:cb18487189e4bec1f965981e06fce75ac35788a3078425777fc013c39b40223ddc7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -9453,6 +9933,10 @@ _:cb18746c7af88aebcfeb3146cf4dc184b6404a7804d339324ad6b46586ebea28eab <http://ww
 _:cb18746c7af88aebcfeb3146cf4dc184b6404a7804d339324ad6b46586ebea28eab <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/7707929/files/NCA_HEII_SOC80_M2.txt?download=1> .
 _:cb1877169cf902770d0f7358ca6e9433d2b875e3d0677fd6df220706d9983a07313 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1877169cf902770d0f7358ca6e9433d2b875e3d0677fd6df220706d9983a07313 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/20132842/files/PBSL1.zip?download=1> .
+_:cb187ebda3c7e5a590788af8e38e2ddd571974159bf4ccfda2d5460e5eae41cbce2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb187ebda3c7e5a590788af8e38e2ddd571974159bf4ccfda2d5460e5eae41cbce2 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/24076897/files/M50LT.zip?download=1> .
+_:cb1881be3595400e06ffd9ec6c80c606ef79cc49f57412ccd8c3a5402b740deca7a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb1881be3595400e06ffd9ec6c80c606ef79cc49f57412ccd8c3a5402b740deca7a <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/24174045/files/V_1C.txt?download=1> .
 _:cb18852d5d66e48c869fbb8702954eea5d651f15120f5aa6117fb13e6430bf3bd8f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb18852d5d66e48c869fbb8702954eea5d651f15120f5aa6117fb13e6430bf3bd8f <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/8219786/files/anonymous_public_load_power_data.rds?download=1> .
 _:cb188c7468af30d4e9b137089abfdd659c2e232409103ff4264c44ba719f8cc1f88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -9511,6 +9995,8 @@ _:cb19172f66160298c4039bbece11a2d15446b71b371c68129b23a4b9c4e0e682f68 <http://ww
 _:cb19172f66160298c4039bbece11a2d15446b71b371c68129b23a4b9c4e0e682f68 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18925051/files/Cell002_Cyc_20uA_25T_30RH_Cycle11to100_01_GEIS_CA2.mpr?download=1> .
 _:cb191990aa12932339348bd9496caed7b334cbaf11b6af1fb0780b0d328539079a7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb191990aa12932339348bd9496caed7b334cbaf11b6af1fb0780b0d328539079a7 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/7707929/files/NMC_SOC0_M1.txt?download=1> .
+_:cb192a1c113b5de4048d924b8a13a64c0fa807cbf7c5c2eb87a82d3e5a53e1e30ca <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb192a1c113b5de4048d924b8a13a64c0fa807cbf7c5c2eb87a82d3e5a53e1e30ca <http://www.w3.org/ns/dcat#downloadURL> <https://search-data.ubfc.fr/dl_data.php?file=947> .
 _:cb192f914dc61d734db01ae33439e1e19b83206489ec8d95856b52ab768bf90eb81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb192f914dc61d734db01ae33439e1e19b83206489ec8d95856b52ab768bf90eb81 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18925051/files/Cell008_Form_200uA_25T_30RH_Cycle1to10_03_GEIS_CA8.mpr?download=1> .
 _:cb192fae31b2588483590c0dce90e6a781307c00adb9996df0653988bc7d05ae9e7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -9571,6 +10057,8 @@ _:cb19df0989062f4531e282f7a2e27fcae95a96ec941aae193b51b4c83a6c94c21bd <http://ww
 _:cb19df0989062f4531e282f7a2e27fcae95a96ec941aae193b51b4c83a6c94c21bd <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/10207731/files/OCV_Fitting.zip?download=1> .
 _:cb19e38765dcaf6efcd2f17537d5d93d763f99763683aeb448b05eccf11bf92e475 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb19e38765dcaf6efcd2f17537d5d93d763f99763683aeb448b05eccf11bf92e475 <http://www.w3.org/ns/dcat#downloadURL> <https://data.4tu.nl/file/8b516604-1e34-4427-8025-7d7b992a5261/a18ad7e9-0fd2-4660-bd88-dbf602a77a09> .
+_:cb1a034565c72379815d8aad4ac5eb190e40287fcdf7fb7d4a8c13a4e7512074a6c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb1a034565c72379815d8aad4ac5eb190e40287fcdf7fb7d4a8c13a4e7512074a6c <http://www.w3.org/ns/dcat#downloadURL> <https://search-data.ubfc.fr/dl_data.php?file=948> .
 _:cb1a0a63053ba4227d79452ffe05c09586acacfb6b73253e3b73f938bb6775fe65d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1a0a63053ba4227d79452ffe05c09586acacfb6b73253e3b73f938bb6775fe65d <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/7707929/files/NCA_HP_SOC0_M2.txt?download=1> .
 _:cb1a137f5d7fdffc7ce3bd2a1b6da9bdbec9f0f363440e15571716586091f6db420 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -9579,6 +10067,8 @@ _:cb1a1c7374edbe281d038804b20e5a823b856729ce37f7b2b60122765d93695b32b <http://ww
 _:cb1a1c7374edbe281d038804b20e5a823b856729ce37f7b2b60122765d93695b32b <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/20132842/files/Pack_field%2310.zip?download=1> .
 _:cb1a1fae9f1334db51027b1197c60b1bd98427ad72129ef1c06556e5e2186133835 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1a1fae9f1334db51027b1197c60b1bd98427ad72129ef1c06556e5e2186133835 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/20613405/files/METADATA.txt?download=1> .
+_:cb1a3bd0a5c60ac5b915480dd02f61293c4b0a364c94391a950283cd984bf06ab31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb1a3bd0a5c60ac5b915480dd02f61293c4b0a364c94391a950283cd984bf06ab31 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23372521/files/temperature_12C.zip?download=1> .
 _:cb1a3d87317a3faede022b641e39043a18ef9c6b806e18e0fbbb2d8fa40758a9ccb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1a3d87317a3faede022b641e39043a18ef9c6b806e18e0fbbb2d8fa40758a9ccb <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/7707929/files/NCA_HP_SOC30_M1.txt?download=1> .
 _:cb1a3db91d681274fa67fd894e8f30c7c783aa8296a6d046c92e87a7d07153772db <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -9601,6 +10091,8 @@ _:cb1a6f9a9b227139059c4690dbcdce3a3b921b320df77c2f6967851eb9ae2c6fa1e <http://ww
 _:cb1a6f9a9b227139059c4690dbcdce3a3b921b320df77c2f6967851eb9ae2c6fa1e <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15657829/files/VZ5_008_021_VUT_D_0028_v1.txt?download=1> .
 _:cb1a7193c943d9afc76aa3b1beb1811c8605d75685a1418b667ef9b25241b5ce4ed <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1a7193c943d9afc76aa3b1beb1811c8605d75685a1418b667ef9b25241b5ce4ed <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/7707929/files/NMC_SOC30_M1.txt?download=1> .
+_:cb1a7988f8428f85af8de6398887c7571a8aa651cc9d5acf6eb1a4669c5f2cf9927 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb1a7988f8428f85af8de6398887c7571a8aa651cc9d5acf6eb1a4669c5f2cf9927 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/24076897/files/HG2.zip?download=1> .
 _:cb1a7dd8f97e35b2a40cd9b01fd8cd80082c9e7eabde76cbcb171ae63394f5b1f8e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1a7dd8f97e35b2a40cd9b01fd8cd80082c9e7eabde76cbcb171ae63394f5b1f8e <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/7707929/files/LFP_SOC30_M3.txt?download=1> .
 _:cb1a7e8980940af7c874d98aa5b7b1d10b73d336ef6f53c9a9014fc1f5016757768 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -9609,16 +10101,22 @@ _:cb1a88aa140923bc43dd249f5ee1b187bd92178c6f3805a36cbc8bd288904541c66 <http://ww
 _:cb1a88aa140923bc43dd249f5ee1b187bd92178c6f3805a36cbc8bd288904541c66 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15657829/files/VZ5_008_021_VUT_D_0024_v1.txt?download=1> .
 _:cb1a90035cc1ee5dad890f9f2b284c29ccf149140a10a9d32a169b2429cdec599aa <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1a90035cc1ee5dad890f9f2b284c29ccf149140a10a9d32a169b2429cdec599aa <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/20490514/files/BATSS_14_UserProfile_Marine_results.xlsx?download=1> .
+_:cb1a901d87ab4ca6cdb6a10d8eb900860c7405e41c7eadba0050d716a208c016ea2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb1a901d87ab4ca6cdb6a10d8eb900860c7405e41c7eadba0050d716a208c016ea2 <http://www.w3.org/ns/dcat#downloadURL> <https://data.mendeley.com/public-api/zip/fgz5md6dzs/download/2> .
 _:cb1a9110a570f2ea345ad7b61e39bdaa82494dd3b75c111d3567f3a173e4c115b69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1a9110a570f2ea345ad7b61e39bdaa82494dd3b75c111d3567f3a173e4c115b69 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15657829/files/VZ5_008_021_VUT_D_0002_v2.txt?download=1> .
 _:cb1a9952bf499fcffc0c47c913536f12af9367153a77022084f6204a1663acb09dc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1a9952bf499fcffc0c47c913536f12af9367153a77022084f6204a1663acb09dc <http://www.w3.org/ns/dcat#downloadURL> <https://data.mendeley.com/public-api/zip/dbxg33r2fs/download/1> .
 _:cb1aa463c6da11959c021503005b2b024ad6262bb87841cc623e985ee1148d5ccad <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1aa463c6da11959c021503005b2b024ad6262bb87841cc623e985ee1148d5ccad <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18925051/files/Cell001_Cyc_20uA_25T_30RH_Cycle11to100_02_GCPL_CA1.mpr?download=1> .
+_:cb1aa97810bea3ce13833a487b60b4235083a8db4af9c74366fe1ffb7b85d0c417b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb1aa97810bea3ce13833a487b60b4235083a8db4af9c74366fe1ffb7b85d0c417b <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/24076897/files/README.md?download=1> .
 _:cb1aaefb68add40bcceae66189145f24887587ea65a000ebe85f9b4c9dec081ca4f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1aaefb68add40bcceae66189145f24887587ea65a000ebe85f9b4c9dec081ca4f <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18925051/files/Cell005_Cyc_100uA_25T_30RH_Cycle11to100.mps?download=1> .
 _:cb1ab3f494397ab2025ff511946a607b3db5726c478218b2efd5dab820d2e8c72cd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1ab3f494397ab2025ff511946a607b3db5726c478218b2efd5dab820d2e8c72cd <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/20490514/files/BATSS_9_SteadyState_Ta40_Tl25_results.xlsx?download=1> .
+_:cb1abd38f2c0611622988e628f9c3ae3f529eeab530cf476a0d1e97eaa8d1b595ba <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb1abd38f2c0611622988e628f9c3ae3f529eeab530cf476a0d1e97eaa8d1b595ba <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23748227/files/Albana2026_TEG-TEC_BTMS_Data_and_Code_v1.0.zip?download=1> .
 _:cb1acb6e05fe35705f49623356fbbc51f908ef400b36306c589cc4351a859aafefe <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1acb6e05fe35705f49623356fbbc51f908ef400b36306c589cc4351a859aafefe <http://www.w3.org/ns/dcat#downloadURL> <https://deepblue.lib.umich.edu/data/concern/data_sets/b2773w109/globus_download_redirect?locale=en> .
 _:cb1ace15557cc39a91a7154a1e45d69e4e64f8e65ddf4f472ee68a4736e1f83c630 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -9637,6 +10135,8 @@ _:cb1af57cbb25d13f999c0c1368de9014383d751078c431ee2c3ba59d6d510386551 <http://ww
 _:cb1af57cbb25d13f999c0c1368de9014383d751078c431ee2c3ba59d6d510386551 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15657829/files/VZ5_008_021_VUT_D_0041_v1.txt?download=1> .
 _:cb1affd5e182e39912f18dfd2fe359530ea3ef18dc19f1860f3d99360100ba066ba <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1affd5e182e39912f18dfd2fe359530ea3ef18dc19f1860f3d99360100ba066ba <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/7707929/files/LFP_SOC100_M4.txt?download=1> .
+_:cb1b0da0b2df24e6dba31fdc409d3b85ea3cb002177e0522ac9617480e08a9f5053 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb1b0da0b2df24e6dba31fdc409d3b85ea3cb002177e0522ac9617480e08a9f5053 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23372521/files/temperature_38C.zip?download=1> .
 _:cb1b13a06388fbd6e5bd1e9c7ed77bd7b36e17c5e211d4adb6d386707637c7a9015 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1b13a06388fbd6e5bd1e9c7ed77bd7b36e17c5e211d4adb6d386707637c7a9015 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/22648518/files/LIB-Drive-Cycle-data.zip?download=1> .
 _:cb1b2da9e38e31908aebbb54ebe43a6870f92f546170eba0bd7f624fec17ee604ac <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -9673,6 +10173,8 @@ _:cb1bbdee716865fa2e25f79bc60786b51f8461b8ee5341d1d549482124f156aa897 <http://ww
 _:cb1bbdee716865fa2e25f79bc60786b51f8461b8ee5341d1d549482124f156aa897 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23488229/files/raman3366/pulsed-immersion-cooling-equal-pump-energy-v1.0.0.zip?download=1> .
 _:cb1bcb74feb9f23edc280f88914c30c1fe60850cdad05b13e030efa95dabaaeff23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1bcb74feb9f23edc280f88914c30c1fe60850cdad05b13e030efa95dabaaeff23 <http://www.w3.org/ns/dcat#downloadURL> <https://ora.ox.ac.uk/objects/uuid:de62b5d2-6154-426d-bcbb-30253ddb7d1e/files/dpv63g027b> .
+_:cb1bcd196126c039297aca196a780f57dc565c5ea0cfdaa685fd574d1b5735bbedf <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb1bcd196126c039297aca196a780f57dc565c5ea0cfdaa685fd574d1b5735bbedf <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/24076897/files/LR1865SZ.zip?download=1> .
 _:cb1bd28c7d6e52ded1805ffb80980e6e7ec452ddd09893e994313d18cd5b32e697f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb1bd28c7d6e52ded1805ffb80980e6e7ec452ddd09893e994313d18cd5b32e697f <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/7707929/files/NCA_HP_SOC0_M1.txt?download=1> .
 _:cb1c041f43b02937553335a3b46b0ec8d9664dc4517801aebee571ee252e2701ca1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -9777,6 +10279,10 @@ _:cb4aca07b099ffb4f3857563ecc976c63c80cd9019991acf153678be30ab5d98ec <http://www
 _:cb4aca07b099ffb4f3857563ecc976c63c80cd9019991acf153678be30ab5d98ec <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19107066/files/kiye_dataset_csv.zip?download=1> .
 _:cb4b191d88a41687d64c5226d586b53dafabdad4129766e6cf676b196dc7c16e37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb4b191d88a41687d64c5226d586b53dafabdad4129766e6cf676b196dc7c16e37 <http://www.w3.org/ns/dcat#downloadURL> <https://www.repository.cam.ac.uk/bitstreams/74209835-c4ab-4a1f-992d-8ba95bd5f024/download> .
+_:cb4bf05193f6eac682ec3ee46da6128e66e43c93265cd3268285464d278bbc4eda <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb4bf05193f6eac682ec3ee46da6128e66e43c93265cd3268285464d278bbc4eda <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23263603/files/merged_data_Test8.csv?download=1> .
+_:cb4d9c815cea70a407e22625327d600b644b98b7d05619110fbbfaffdebfa3c9a2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb4d9c815cea70a407e22625327d600b644b98b7d05619110fbbfaffdebfa3c9a2 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23768097/files/ZJU-t.pkl?download=1> .
 _:cb4f1d92a5a8bf80a7b0083f1722607cd5d06ec4e8c7185760897a2a4c40f2bca3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb4f1d92a5a8bf80a7b0083f1722607cd5d06ec4e8c7185760897a2a4c40f2bca3 <http://www.w3.org/ns/dcat#downloadURL> <https://data.mendeley.com/public-api/zip/68rs3d99zc/download/2> .
 _:cb50b44813bc19cde3fcf30658af8b03b673bde25b3a1e885aa9cff4dc59461d7d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -9799,6 +10305,8 @@ _:cb5b9de523a7db9ca229bb0b12e44ed4446a86657452915df2a0077563330997fe <http://www
 _:cb5b9de523a7db9ca229bb0b12e44ed4446a86657452915df2a0077563330997fe <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15422339/files/ID17.csv?download=1> .
 _:cb5bb1f4b211a30167ad457424ab83d7c47dc92cfe42d9de622b10a3809eb36f8a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb5bb1f4b211a30167ad457424ab83d7c47dc92cfe42d9de622b10a3809eb36f8a <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15422339/files/ID14.csv?download=1> .
+_:cb5bc35b68f9b9d87dd0e399e7347152f25aa59f787a9ded974f570dc8225eecf3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb5bc35b68f9b9d87dd0e399e7347152f25aa59f787a9ded974f570dc8225eecf3 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23263603/files/merged_data_Test10.csv?download=1> .
 _:cb5bd63b53f3ca8d3b12b328454193528561d5a1df08dd491a94474bd93db6fb5b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb5bd63b53f3ca8d3b12b328454193528561d5a1df08dd491a94474bd93db6fb5b <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/6985321/files/Experimental_data_fresh_cell.csv?download=1> .
 _:cb5cb4977e5894dfd944215649af5b45437c59b73f3abbd0ebabb219d02e58ddf4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -9815,6 +10323,8 @@ _:cb6456dd90ed4075d5334140e47164b00eab301cecd05523a7e1a9dd8ef539dcd1 <http://www
 _:cb6456dd90ed4075d5334140e47164b00eab301cecd05523a7e1a9dd8ef539dcd1 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/10637534/files/Expt%204%20-%20Drive%20Cycle%20Aging%20%28Control%29.zip?download=1> .
 _:cb64774f12cae88df101b4fd10439a21d2d45dccbfc04fd2510a2fb93a90d896d2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb64774f12cae88df101b4fd10439a21d2d45dccbfc04fd2510a2fb93a90d896d2 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/8369275/files/pulse_pos_time.csv?download=1> .
+_:cb65e9bf68347868dc7f5b1d0964909ce752bd2608a10141e7b4f8f7a0ef96543b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb65e9bf68347868dc7f5b1d0964909ce752bd2608a10141e7b4f8f7a0ef96543b <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23768097/files/ZJU-td.pkl?download=1> .
 _:cb66108f99f307401abdeb087158e99a1f5db08c7000c2da1cc4f68d14e28fe7d3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb66108f99f307401abdeb087158e99a1f5db08c7000c2da1cc4f68d14e28fe7d3 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18772167/files/N21700-BAK-CG50-DLR-ratetest-cell00-bmgen.json?download=1> .
 _:cb66447ac38456e06ececf5678e8ae0a1a734d915aa67b0d34d28b8d5a2c8772e7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -9825,10 +10335,18 @@ _:cb66934d06b49d8c9d1775a0d0e8c8c9d22213f13510b778eed550635d95872921 <http://www
 _:cb66934d06b49d8c9d1775a0d0e8c8c9d22213f13510b778eed550635d95872921 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/6405084/files/Dataset_2_NCM_battery.zip?download=1> .
 _:cb693f753c402a98fb12fb1ae37f0003c8e6e56388b47470c2abbd58439ac779a7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb693f753c402a98fb12fb1ae37f0003c8e6e56388b47470c2abbd58439ac779a7 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19387650/files/rc05_reduced.csv?download=1> .
+_:cb6956b224ead26a427fc68e3aac7785fac9b615aeb24f737068d66fecd2b8ff86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb6956b224ead26a427fc68e3aac7785fac9b615aeb24f737068d66fecd2b8ff86 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23263603/files/merged_data_Test14.csv?download=1> .
+_:cb6b54bfd61510f70c16dc566278814e687319b3df4edbb90841466dbcc9ae275e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb6b54bfd61510f70c16dc566278814e687319b3df4edbb90841466dbcc9ae275e <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23263603/files/merged_data_Test17.csv?download=1> .
 _:cb6bcef5f692b611b96d54291eafc9e1539ae974a71e40483f59a0df269849f911 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb6bcef5f692b611b96d54291eafc9e1539ae974a71e40483f59a0df269849f911 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18772167/files/N21700-BAK-CG50-DLR-cell42-EIS-SOC25-discharge.csv?download=1> .
 _:cb6c99d0e665bb7cbdeab8c57490201873256178b48a30e4779dc1c51507554a35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb6c99d0e665bb7cbdeab8c57490201873256178b48a30e4779dc1c51507554a35 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/10637534/files/Expt%203%20-%20Cathode%20Degradation%20and%20Li-Plating.zip?download=1> .
+_:cb6ca1024f9e4ed01ad6129763391b9c3eefa8b31347cc72f9b9c9000f90737cd8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb6ca1024f9e4ed01ad6129763391b9c3eefa8b31347cc72f9b9c9000f90737cd8 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23263603/files/merged_data_Test18.csv?download=1> .
+_:cb6d58b6b897969364b307cfdb34823719ee33cba0c87ec1dae3a2ed3b40706970 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb6d58b6b897969364b307cfdb34823719ee33cba0c87ec1dae3a2ed3b40706970 <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/tsdc/battery-failure-databank-revision2-feb24.xlsx?sfvrsn=7b7f89_1> .
 _:cb6d78483b1a92bf49b1745269887383709c51860b5ee867f682c407e35e96aff6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb6d78483b1a92bf49b1745269887383709c51860b5ee867f682c407e35e96aff6 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/api/records/18753173/files/Data.zip/content> .
 _:cb6e13e1369dd3fa07b3b820c7bfa9d61686346c91668e8d240d487c71c2b8f107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -9847,6 +10365,8 @@ _:cb7238a30da95bdac527a8b453f5b932bedc41dc9dbd12fc7c2cdde33ae3140aef <http://www
 _:cb7238a30da95bdac527a8b453f5b932bedc41dc9dbd12fc7c2cdde33ae3140aef <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15422339/files/ID19.csv?download=1> .
 _:cb726304195acdd04f8fe986f5f4e6b378d73e3a396f2bf6d038035ed15452e20e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb726304195acdd04f8fe986f5f4e6b378d73e3a396f2bf6d038035ed15452e20e <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18772167/files/N21700-BAK-CG50-DLR-052-ThermalDischarge-1C-30min-discharge.csv?download=1> .
+_:cb72a0e44bdfd26de934df5a80f336f59ad038234e5be060f102531f66e0e81479 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb72a0e44bdfd26de934df5a80f336f59ad038234e5be060f102531f66e0e81479 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23263603/files/merged_data_Test12.csv?download=1> .
 _:cb73898ff6d24bc235bd70b605dc3687724078113516abcdaea0575c00d8cc022f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb73898ff6d24bc235bd70b605dc3687724078113516abcdaea0575c00d8cc022f <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18315429/files/Experimental%20data%20for%20battery%20swelling%20prediction%20under%20mechanical%20constraints.zip?download=1> .
 _:cb74cd5f7b6754f6ad867e4e7c6cdb0468b29cbd52fbdcb47414c6e9a2fe074cf8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -9891,6 +10411,8 @@ _:cb7cd91d665cd38c2789417a3b9810349227f2d2e5f8e79223e51a9523af28ddce <http://www
 _:cb7cd91d665cd38c2789417a3b9810349227f2d2e5f8e79223e51a9523af28ddce <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18694513/files/8-Open-Source%20Datasets.zip?download=1> .
 _:cb7d229e716a4c3a1b54a238310276ccd796a6d95f3ebd09e694de653b2af01927 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb7d229e716a4c3a1b54a238310276ccd796a6d95f3ebd09e694de653b2af01927 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/17591942/files/pouch_cells.mat?download=1> .
+_:cb7d2ee6c5a973e663b8efb6441438bc5db143b9a4ab3cd4340ef4ad62f440fe74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb7d2ee6c5a973e663b8efb6441438bc5db143b9a4ab3cd4340ef4ad62f440fe74 <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/pib_fmea.xlsx?sfvrsn=f3fc3c99_1> .
 _:cb7ebcb66654844f7d330e5699a30fd72888cf6157ee4d6b58e2c0d6b6e98301b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb7ebcb66654844f7d330e5699a30fd72888cf6157ee4d6b58e2c0d6b6e98301b0 <http://www.w3.org/ns/dcat#downloadURL> <https://data.mendeley.com/public-api/zip/z95cb7f9mr/download/2> .
 _:cb7ef06b29f522b28071e42ad10d5f2f317137114fa42e128cbf0730037e28d12f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -9945,8 +10467,14 @@ _:cb866ad1261334e3bd5c1a1b0c1e7502a8d0abdc5af4f746490b72292885be2728 <http://www
 _:cb866ad1261334e3bd5c1a1b0c1e7502a8d0abdc5af4f746490b72292885be2728 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/13318553/files/INR18650_MJ1_31.parquet?download=1> .
 _:cb866bafbd14e3ade71e57e3149f4d83aa07f773ed2630d5989fb900e97eef6c50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb866bafbd14e3ade71e57e3149f4d83aa07f773ed2630d5989fb900e97eef6c50 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18646655/files/CALCE.zip?download=1> .
+_:cb87010f87f9f35246e49d984f8797e63a2644c58c2c092076b4b08f1361ca0597 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb87010f87f9f35246e49d984f8797e63a2644c58c2c092076b4b08f1361ca0597 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23263603/files/merged_data_Test16.csv?download=1> .
+_:cb87a59f20805d00b3cfdbfad54f1d61e05b4fa41c25eea6d8da7b3697c6dac077 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb87a59f20805d00b3cfdbfad54f1d61e05b4fa41c25eea6d8da7b3697c6dac077 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23263603/files/merged_data_Test24.csv?download=1> .
 _:cb87b0c2402738ad91ef26e52af9f82ec32c075ffd952782362f8008471306fbd6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb87b0c2402738ad91ef26e52af9f82ec32c075ffd952782362f8008471306fbd6 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/22969739/files/DOD_ITEC_2026_4_Channel_11_Wb_1.CSV?download=1> .
+_:cb880172904c511e5db8d580028c8d8e774e89aac8fc19ba7b9cc7779a8a275604 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb880172904c511e5db8d580028c8d8e774e89aac8fc19ba7b9cc7779a8a275604 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23263603/files/merged_data_Test4.csv?download=1> .
 _:cb880389757013613796bc7f5b18d566c7e9d34e42dd239680dc7c358f4d3b778d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb880389757013613796bc7f5b18d566c7e9d34e42dd239680dc7c358f4d3b778d <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19107295/files/sintef__sintef-lnmo-R2032-intelligent2-f6ce67__20250424__p-ocvhold__RT.bdf.parquet?download=1> .
 _:cb88389fc7d8f5af9ef6a4d5b63db9fa5b5bd4f4db64472af06e00b6501ba9c9db <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -10027,8 +10555,14 @@ _:cb93f013fd5feb26c76b4b3556a03e6b64b27b495a54888b1688866844801b0b6f <http://www
 _:cb93f013fd5feb26c76b4b3556a03e6b64b27b495a54888b1688866844801b0b6f <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18694513/files/OneCycle_1.mat?download=1> .
 _:cb947dd68eec537e918361ba1d9f9ab9c773f7527fbd4bd74107f098cc656da355 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb947dd68eec537e918361ba1d9f9ab9c773f7527fbd4bd74107f098cc656da355 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/22969739/files/Cell12_SOC100_Height52.png?download=1> .
+_:cb94d694ca6aca104c7bf81da61e6c9d3e382d37b3cecd7fc94f86d83bfb8476d9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb94d694ca6aca104c7bf81da61e6c9d3e382d37b3cecd7fc94f86d83bfb8476d9 <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/prop-electronic_conductivity_data.zip?sfvrsn=1f10ffad_5> .
 _:cb9524e69650c5839b7320acbbfadec6e9e6eeef9efaea74869daed50bc17e9c64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb9524e69650c5839b7320acbbfadec6e9e6eeef9efaea74869daed50bc17e9c64 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/8369275/files/pulse.mat?download=1> .
+_:cb9575a352c6ba1c288a83b0642e842d572b0d14b199a02ed0b8197c6949f0b754 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb9575a352c6ba1c288a83b0642e842d572b0d14b199a02ed0b8197c6949f0b754 <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/lib_drx_grsi.zip?sfvrsn=9ec16198_1> .
+_:cb95d677d6762f33ec2f90615e3811deb93c13455a4086ce5531c0d5f0013d5e32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb95d677d6762f33ec2f90615e3811deb93c13455a4086ce5531c0d5f0013d5e32 <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/ssb_lmno_llzo_li_fmea.xlsx?sfvrsn=f09c9a16_1> .
 _:cb96077f178990e759a20d0001482b466d8a34257beb8b23874f7fcd3cb6c33aa4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb96077f178990e759a20d0001482b466d8a34257beb8b23874f7fcd3cb6c33aa4 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19387650/files/rc06_reduced.csv?download=1> .
 _:cb9636ab4ef16018fd4453c7f97278ea60bf18855577d7b537603ce8e80213dd49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -10041,6 +10575,8 @@ _:cb97c59131d1bcb6fa37447e362d183a88652102e254fcbde79762567fa7010d70 <http://www
 _:cb97c59131d1bcb6fa37447e362d183a88652102e254fcbde79762567fa7010d70 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/17459188/files/VZ1_044_021_CVUT_D_00013_v1.xlsx?download=1> .
 _:cb9813cb15a5b2ce3c95b03f4a1952ca299dfb24f596dc39abfd962abbe3b7a430 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb9813cb15a5b2ce3c95b03f4a1952ca299dfb24f596dc39abfd962abbe3b7a430 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18646655/files/Stanford_2.zip?download=1> .
+_:cb9941c7b1e3e5bf20e43a36413e979550451a9067d819d78962a159d9beeb0f4f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb9941c7b1e3e5bf20e43a36413e979550451a9067d819d78962a159d9beeb0f4f <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/cell-libs_lco_lvo.zip?sfvrsn=df35bb98_1> .
 _:cb995b19db0342b22ad8fac9f086b8fa0275568660a6723ff25550dffb220497a5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb995b19db0342b22ad8fac9f086b8fa0275568660a6723ff25550dffb220497a5 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18772167/files/N21700-BAK-CG50-DLR-cell43-EIS-SOC50-discharge.csv?download=1> .
 _:cb9975bbd6c156c43b5c003ebc5cb19624e587a61396584e33fc5a2ce011d8e931 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -10053,6 +10589,8 @@ _:cb99ada7329995f7d97643d333ef49eb20a47a08e7d7105f1a77bb0e7ec2b7b887 <http://www
 _:cb99ada7329995f7d97643d333ef49eb20a47a08e7d7105f1a77bb0e7ec2b7b887 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19608839/files/VZ1_042_021_CVUT_D_0002_v1.csv?download=1> .
 _:cb99c9ccd280357183911dc38f8651b0494b64da74b29391ff4cddc80ffd0382f9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb99c9ccd280357183911dc38f8651b0494b64da74b29391ff4cddc80ffd0382f9 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/17960956/files/overall_CALB_cycling_data.xlsx?download=1> .
+_:cb9a194ee92ac439b55c44a527754e5209f691aee712ab9c1167ca582303209871 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb9a194ee92ac439b55c44a527754e5209f691aee712ab9c1167ca582303209871 <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/chem-ssbs_nmc811_lpsc_si.zip?sfvrsn=5561ea45_1> .
 _:cb9a25c4fdd143139cfe440cbb2d7b0d490a4c1e30bfab1ad51103d5fd796e63ef <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb9a25c4fdd143139cfe440cbb2d7b0d490a4c1e30bfab1ad51103d5fd796e63ef <http://www.w3.org/ns/dcat#downloadURL> <https://ora.ox.ac.uk/objects/uuid:e41d3d4c-f74e-4d76-81fd-0caa77ec6cec/files/d9g54xh85t> .
 _:cb9a60d236a68e6705e223f43c632629cfea4a605224720990cc2a838bc25f3dbb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -10061,6 +10599,8 @@ _:cb9aea35a94b8da54b649b45ecaa92aea1d772b126f8a59cf6a04a4532f1566655 <http://www
 _:cb9aea35a94b8da54b649b45ecaa92aea1d772b126f8a59cf6a04a4532f1566655 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19608839/files/VZ1_042_021_CVUT_D_0014_v1.csv?download=1> .
 _:cb9aee0c80d90f4ada7bdf7732ff99adc25bacbf413e73a20be469deb483384711 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb9aee0c80d90f4ada7bdf7732ff99adc25bacbf413e73a20be469deb483384711 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/10852695/files/pdecm_lr_solver.m?download=1> .
+_:cb9afc3a316b9e7dbde46740c7e0f0f461a391523368d32c52dcbc3c181b4890e1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb9afc3a316b9e7dbde46740c7e0f0f461a391523368d32c52dcbc3c181b4890e1 <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/chem-libs-lco-lvo.zip?sfvrsn=f2abd5b7_0> .
 _:cb9b1cd66769bb6d1639eb2d2ad15727f67c4a75874cdee5fb8caa38ae8e2a71fa <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb9b1cd66769bb6d1639eb2d2ad15727f67c4a75874cdee5fb8caa38ae8e2a71fa <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/4032561/files/LGM50_cell03.csv?download=1> .
 _:cb9bab975058daa3fb3104180843a4ca759c35135cedb8ca16db61f5c1f65e5641 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -10085,6 +10625,8 @@ _:cb9f37ec891bd491fcafcd99a322acea5424fc688e7e68e531e5e66e80dbf2450e <http://www
 _:cb9f37ec891bd491fcafcd99a322acea5424fc688e7e68e531e5e66e80dbf2450e <http://www.w3.org/ns/dcat#downloadURL> <https://web.calce.umd.edu/batteries/data/pl/SOC_40-100_HalfC.zip> .
 _:cb9f8fbae56cf2c40e7734ae7efeb2ca9ee088f02064ec6f4706fe8cfe8cf98f85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb9f8fbae56cf2c40e7734ae7efeb2ca9ee088f02064ec6f4706fe8cfe8cf98f85 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/10891871/files/Batch2.7z?download=1> .
+_:cb9fbab485f8374cd207a14975c86252bc99dc354e071b0d375fc5100843665e5c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cb9fbab485f8374cd207a14975c86252bc99dc354e071b0d375fc5100843665e5c <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/24174045/files/0.25C.txt?download=1> .
 _:cb9fec7f5cba19e1abb75686861bda1eeebcdbdcccb371a6883a4d24bb862c7556 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cb9fec7f5cba19e1abb75686861bda1eeebcdbdcccb371a6883a4d24bb862c7556 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15422339/files/ID46.csv?download=1> .
 _:cb9ff58427cd387731a01055ac35b82a86089fa8ea3d4cd52d77d8443ebc042f3b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -10097,6 +10639,8 @@ _:cba14716ae9eeaaae9ce0c90f11733049f3048cf5c1300bf86b4ad57113d8cc9f0 <http://www
 _:cba14716ae9eeaaae9ce0c90f11733049f3048cf5c1300bf86b4ad57113d8cc9f0 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/14956641/files/LIB_LFP_18650_cell1.EXO?download=1> .
 _:cba15094fc65ec47011b067ee4f0a98dac3d5a000af9be676431a52fdbda2407f6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cba15094fc65ec47011b067ee4f0a98dac3d5a000af9be676431a52fdbda2407f6 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19608839/files/VZ1_042_021_CVUT_D_0068_v1.csv?download=1> .
+_:cba208fba9fd1a0182e4ae9c54ac023f29873805a5e8be2779e69618455e2e6a34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cba208fba9fd1a0182e4ae9c54ac023f29873805a5e8be2779e69618455e2e6a34 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23263603/files/merged_data_Test1.csv?download=1> .
 _:cba2db3389f776e880f91edcc5834abbea0a5bc54cec79b968a4cd0127ae75a8b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cba2db3389f776e880f91edcc5834abbea0a5bc54cec79b968a4cd0127ae75a8b9 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19608839/files/VZ1_042_021_CVUT_D_0035_v1.csv?download=1> .
 _:cba2f7de9bf4a3df618666ae63420e7f24d3255361018ad3d402d73fb9a7586e0c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -10109,6 +10653,8 @@ _:cba3336ee907854cbc5baec807e4cf326d40f9bb7ca031e589851f0b6a306e1fa1 <http://www
 _:cba3336ee907854cbc5baec807e4cf326d40f9bb7ca031e589851f0b6a306e1fa1 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19107295/files/sintef__sintef-lnmo-R2032-intelligent1-b3d963__20250424__gitt__RT.bdf.parquet?download=1> .
 _:cba3380268091641b506218c4499220a0fb80b86612ff53af1fe008ef442da782d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cba3380268091641b506218c4499220a0fb80b86612ff53af1fe008ef442da782d <http://www.w3.org/ns/dcat#downloadURL> <https://ora.ox.ac.uk/objects/uuid:9aae61af-2949-49f1-8ad5-6aea448979e5/files/d7h149q034> .
+_:cba3c5b7f4778d06fda2d0d50bd63979f4d8f9fd0fe7478de80eec751550458186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cba3c5b7f4778d06fda2d0d50bd63979f4d8f9fd0fe7478de80eec751550458186 <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/chem-sibs_nnfcm_anode_free.zip?sfvrsn=36dca044_0> .
 _:cba429e445197fdb537c37757a0437be99848e91cad6c40888364917701258c805 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cba429e445197fdb537c37757a0437be99848e91cad6c40888364917701258c805 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18772167/files/N21700-BAK-CG50-DLR-anode-GITT-01-lithiation-OCV-fit-log.json?download=1> .
 _:cba48b89773b1977b51a2a1e68dfb75fbb041fc0f9814c610f00ed6380e5605383 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -10131,6 +10677,8 @@ _:cba62bc6a42c82508b1a105817ad2cd9440ac430841f275375129bdf87340d77ec <http://www
 _:cba62bc6a42c82508b1a105817ad2cd9440ac430841f275375129bdf87340d77ec <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19608839/files/VZ1_042_021_CVUT_D_0083_v1.csv?download=1> .
 _:cba68cf99d7851d081f51726008e424dd3d0a136ae02190838203d4e2b5ea47dc9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cba68cf99d7851d081f51726008e424dd3d0a136ae02190838203d4e2b5ea47dc9 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/22941976/files/225xe_analysis_v2.csv?download=1> .
+_:cba6d2c62219bb267550e668550287ca568ada6b174bbc72915d4f40726826cb65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cba6d2c62219bb267550e668550287ca568ada6b174bbc72915d4f40726826cb65 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23263603/files/Table%20over%20performed%20tests%20and%20conditions%20cleaned.xlsx?download=1> .
 _:cba6d7d2b833c9761d59d795fe65a51b57449eb7e0e7350728e916fbf39cd74920 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cba6d7d2b833c9761d59d795fe65a51b57449eb7e0e7350728e916fbf39cd74920 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/22969739/files/DOD_ITEC_2026_4_Channel_2_Wb_1.CSV?download=1> .
 _:cba6e886be57e02b058f246b643cb79ad96a183d8e0caf51bdb9edc9ee9edd1fc7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -10159,6 +10707,12 @@ _:cba9d166bfcc9d05c45fdba9cdb3dbf55f47e00ba45aeb8ccb10db777d3f9672e0 <http://www
 _:cba9d166bfcc9d05c45fdba9cdb3dbf55f47e00ba45aeb8ccb10db777d3f9672e0 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/22969739/files/Cell3_SOC100_Height52.png?download=1> .
 _:cbaa03ff7c3c45feff8f820538fd4fe39571e73cf82aa70d6ff6e4d9cfea2028cb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbaa03ff7c3c45feff8f820538fd4fe39571e73cf82aa70d6ff6e4d9cfea2028cb <http://www.w3.org/ns/dcat#downloadURL> <https://figshare.com/ndownloader/articles/23301881/versions/1> .
+_:cbaa386273ec8866866706523961d475de9f5ebafaf248bbc1256c30d28d532cd0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cbaa386273ec8866866706523961d475de9f5ebafaf248bbc1256c30d28d532cd0 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23263603/files/merged_data_Test15.csv?download=1> .
+_:cbaa594cd3c1ba06feb20711f56e40ef5c5dcd96bd8d6fb18c97415b8c7584397d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cbaa594cd3c1ba06feb20711f56e40ef5c5dcd96bd8d6fb18c97415b8c7584397d <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/chem-libs_pba_gr.zip?sfvrsn=ef8ce614_1> .
+_:cbaa71383b27e983395bbd559d2098dc4b9e2fe424a010a6a872325450ad6f2b3f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cbaa71383b27e983395bbd559d2098dc4b9e2fe424a010a6a872325450ad6f2b3f <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23263603/files/merged_data_Test19.csv?download=1> .
 _:cbaad49c19b680c29c18d57384d45e36fc62c27f03688752da0558a5c2fda8d204 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbaad49c19b680c29c18d57384d45e36fc62c27f03688752da0558a5c2fda8d204 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19608839/files/VZ1_042_021_CVUT_D_0009_v1.csv?download=1> .
 _:cbaadd1138bbc218343677881fe89ef8cb8439c5c6278aa8efacb2e09813d58fd3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -10191,6 +10745,8 @@ _:cbaf5c68135e50cf22d9bc98fb5531cc377d61298e58aced8df4a1d427ae29e7a2 <http://www
 _:cbaf5c68135e50cf22d9bc98fb5531cc377d61298e58aced8df4a1d427ae29e7a2 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/17459188/files/VZ1_044_021_CVUT_D_00015_v1.xlsx?download=1> .
 _:cbaffde05f4ee3b25e5be715e0d6c4f6d5f0feda09163db0cee868a59a2908992b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbaffde05f4ee3b25e5be715e0d6c4f6d5f0feda09163db0cee868a59a2908992b <http://www.w3.org/ns/dcat#downloadURL> <https://data.mendeley.com/public-files/datasets/dhr726bk6z/files/62bb73c9-0dca-44bf-acb4-a8937ce88bb0/file_downloaded> .
+_:cbb0fd816a6d7ea923304da289026f91d302faf1a2f57dfc1f6412d62e16d92353 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cbb0fd816a6d7ea923304da289026f91d302faf1a2f57dfc1f6412d62e16d92353 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23263603/files/merged_data_Test2.csv?download=1> .
 _:cbb106a63540a45232733ef962d8152321063372ee52aac1a7367f19aa65524dbd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbb106a63540a45232733ef962d8152321063372ee52aac1a7367f19aa65524dbd <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/12091223/files/Data_ID_06.zip?download=1> .
 _:cbb11490d5607c8d376092b37990343c556c5fa69eeb10d904813a1d7d8db4ee6f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -10201,6 +10757,8 @@ _:cbb12ccb205f76b8477e6c2df72f9f55aa5c3c50bb62e2f065c8372700370b0f8b <http://www
 _:cbb12ccb205f76b8477e6c2df72f9f55aa5c3c50bb62e2f065c8372700370b0f8b <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/22969739/files/DOD_ITEC_2026_4_Channel_7_Wb_1.CSV?download=1> .
 _:cbb154f46b0c1a8f20ee895146374d0df8724667fdf4ae5769c033a0c7bc7b3d61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbb154f46b0c1a8f20ee895146374d0df8724667fdf4ae5769c033a0c7bc7b3d61 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/7244939/files/Conductivtiy_experiment.csv?download=1> .
+_:cbb1bafed1dd58a3cb1cf85c6fb596aa563b2e771b4d833e6e5eb74a503072e0a7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cbb1bafed1dd58a3cb1cf85c6fb596aa563b2e771b4d833e6e5eb74a503072e0a7 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23263603/files/merged_data_Test7.csv?download=1> .
 _:cbb1edf6cd790c842455a7922e564841383bfea1a13ef487be24ad4cbeed58c3af <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbb1edf6cd790c842455a7922e564841383bfea1a13ef487be24ad4cbeed58c3af <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/12091223/files/Data_ID_20.zip?download=1> .
 _:cbb25a54b2012f3b13df8d948286a0ca5506697a00e4b7d52fa699a2c2900064bc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -10245,6 +10803,8 @@ _:cbb93d9cba747c4759145c427d76a8392b874fd5edd502c9b92184f9b6e46ed853 <http://www
 _:cbb93d9cba747c4759145c427d76a8392b874fd5edd502c9b92184f9b6e46ed853 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/13318553/files/metadata.csv?download=1> .
 _:cbb95cfd280d506558b73c9dc01326248570bc0fe6c3760c7465c19b98d21b72d4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbb95cfd280d506558b73c9dc01326248570bc0fe6c3760c7465c19b98d21b72d4 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/22731857/files/Accident_AGV_Battery_Raw_Dataset.csv?download=1> .
+_:cbb9a6371b4674e22747ba3a601eabfa0e2cdc181678a390edb8a4c8af6fdafccf <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cbb9a6371b4674e22747ba3a601eabfa0e2cdc181678a390edb8a4c8af6fdafccf <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23980122/files/Data%20%26%20Code.rar?download=1> .
 _:cbb9a6fdd6b1215dcb6e8032e504b8d1aa50f60a2f15c4aa19b8450e97d6ab4915 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbb9a6fdd6b1215dcb6e8032e504b8d1aa50f60a2f15c4aa19b8450e97d6ab4915 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19107295/files/sintef__sintef-silicongraphite-R2032-intelligent2-7202c5__20250528__gitt__RT.bdf.parquet?download=1> .
 _:cbb9a6fe9430fd694fb45e347fc0c3ecccabbf56435ccc5049bb82702ebb851334 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -10261,6 +10821,8 @@ _:cbba32f1fbfb60f06252d990bc507fd402570af201c9f73e414a40c2cfe9189afc <http://www
 _:cbba32f1fbfb60f06252d990bc507fd402570af201c9f73e414a40c2cfe9189afc <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15422339/files/ID06.csv?download=1> .
 _:cbba68965d88f9fffee06974342ffc6704184ae169f05946bf421e592907d59e26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbba68965d88f9fffee06974342ffc6704184ae169f05946bf421e592907d59e26 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15422339/files/ID07.csv?download=1> .
+_:cbbaad82bab6312adf32c7dc078b6b9890e19ad567c0f729192640d2a96202643b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cbbaad82bab6312adf32c7dc078b6b9890e19ad567c0f729192640d2a96202643b <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23263603/files/merged_data_Test13.csv?download=1> .
 _:cbbaf61aad4d339b4b8bb4cd31d1d7c79b5cb725e5dfe2c13dff827a79fffcd503 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbbaf61aad4d339b4b8bb4cd31d1d7c79b5cb725e5dfe2c13dff827a79fffcd503 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/13808866/files/HPPC-Test_Cell4.mf4?download=1> .
 _:cbbb0551d1ea1c4d860baa41537f40cfa549f63f64981f0e87f5b5762752c62787 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -10283,6 +10845,8 @@ _:cbbda8a49dd6660f439e94896765390964e78b5068a1fa89fef6a938e83100d4c6 <http://www
 _:cbbda8a49dd6660f439e94896765390964e78b5068a1fa89fef6a938e83100d4c6 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19107295/files/sintef__sintef-silicongraphite-R2032-intelligent2-084a1b__20250528__p-ocvhold__RT.bdf.parquet?download=1> .
 _:cbbdd5007bdefa4d0edfd86b41b362100ac8810fc45bab7f1ffdd00dcdd23da831 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbbdd5007bdefa4d0edfd86b41b362100ac8810fc45bab7f1ffdd00dcdd23da831 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/21805277/files/Figure%20S11.zip?download=1> .
+_:cbbe63b96e0bc0649072390eaef0509ddb4fc1352bd5811a1a1ab8974433976ade <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cbbe63b96e0bc0649072390eaef0509ddb4fc1352bd5811a1a1ab8974433976ade <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/22079387/files/Experimental%20data%20for%20battery%20compression%20force%20prediction%20under%20mechanical%20constraints.zip?download=1> .
 _:cbbf4e6d080f27a8872e497bc1e9144af9b9910a81bdadfc426f6a71b74d11bc32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbbf4e6d080f27a8872e497bc1e9144af9b9910a81bdadfc426f6a71b74d11bc32 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19107295/files/sintef__sintef-graphite-R2032-intelligent-4ccc47__20250514__p-ocv__RT.bdf.parquet?download=1> .
 _:cbbf96f4ebbf12456bf9d7be8f8d06e58eddbf9ca2c5778bd8acf49644668a6b72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -10311,6 +10875,8 @@ _:cbc142996f7de0126e6de9ff08004b507504d2398b4c5e16f5d9e6c7bd361df248 <http://www
 _:cbc142996f7de0126e6de9ff08004b507504d2398b4c5e16f5d9e6c7bd361df248 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/21805277/files/Figure%20S4.zip?download=1> .
 _:cbc16b2df6fc0c22b39e5e73c30a4a43305c7635e1bfcebfa887606ea525b54462 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbc16b2df6fc0c22b39e5e73c30a4a43305c7635e1bfcebfa887606ea525b54462 <http://www.w3.org/ns/dcat#downloadURL> <https://www.repository.cam.ac.uk/bitstreams/a0cb5762-512d-4197-b420-3f4aa8c2e9b8/download> .
+_:cbc1c92ffae2c18f6dae2ccff1e320375bd71e882c371132d1843d2586fa55f983 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cbc1c92ffae2c18f6dae2ccff1e320375bd71e882c371132d1843d2586fa55f983 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23768097/files/ZJU-o%20dataset%20module%231-14.zip?download=1> .
 _:cbc21e21e26934926edaee8032414e4d376b18156989414ef4304155061c79fd4c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbc21e21e26934926edaee8032414e4d376b18156989414ef4304155061c79fd4c <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18772167/files/N21700-BAK-CG50-DLR-cell44-ratetest.bdf.csv?download=1> .
 _:cbc23d085fd417eafb001abbe33c5d9fe9b8c51d91c6ce559a9768a5edf9b11a3b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -10321,12 +10887,16 @@ _:cbc2cf23b6517c786f34aebc4cf2ecc0dc1f8d91d7a38aa1f36c68a9ffd55b558a <http://www
 _:cbc2cf23b6517c786f34aebc4cf2ecc0dc1f8d91d7a38aa1f36c68a9ffd55b558a <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18772167/files/N21700-BAK-CG50-DLR-cell43-EIS-SOC95-discharge.csv?download=1> .
 _:cbc32705c9a9090b5e6f6b2775fdea0615d5b0e67b221a7733c811a7eab4330fc6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbc32705c9a9090b5e6f6b2775fdea0615d5b0e67b221a7733c811a7eab4330fc6 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/12091223/files/Data_ID_13.zip?download=1> .
+_:cbc32b6d912fd6e94edab4c850e5cef5e87b3080d5c6bad5d6726a49f5fcd79bbc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cbc32b6d912fd6e94edab4c850e5cef5e87b3080d5c6bad5d6726a49f5fcd79bbc <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23263603/files/merged_data_Test9.csv?download=1> .
 _:cbc35267cb8b0d764a3c49aaa69da17bf984ef5316c6b5f02bbdbffdbc2a2c54d7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbc35267cb8b0d764a3c49aaa69da17bf984ef5316c6b5f02bbdbffdbc2a2c54d7 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15422339/files/ID45.csv?download=1> .
 _:cbc360c57277c6a8dff91660f0323b5fe92f7a1a973f322801f8a6297c0489ac4c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbc360c57277c6a8dff91660f0323b5fe92f7a1a973f322801f8a6297c0489ac4c <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/6405084/files/Dataset_3_NCM_NCA_battery.zip?download=1> .
 _:cbc377c061f1166106fc2fca4be07ac15fe3e27dc1f4aadc57fa789347d79ad51d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbc377c061f1166106fc2fca4be07ac15fe3e27dc1f4aadc57fa789347d79ad51d <http://www.w3.org/ns/dcat#downloadURL> <https://publications.rwth-aachen.de/record/818642/files/Rawdata.zip?version=1> .
+_:cbc38e1a6ac833a576c971e824e1f1b34f0c93e68f3f998764a0b7d08664eede93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cbc38e1a6ac833a576c971e824e1f1b34f0c93e68f3f998764a0b7d08664eede93 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23263603/files/merged_data_Test22.csv?download=1> .
 _:cbc41efb506086469c6539387a03382b0e0d201f5def8cd8a868092a9a7c4e1170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbc41efb506086469c6539387a03382b0e0d201f5def8cd8a868092a9a7c4e1170 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19608839/files/VZ1_042_021_CVUT_D_0056_v1.csv?download=1> .
 _:cbc48b05ae767d27faa9ca130b1610caa45f71aab3898b988d4b2f0698c0f63d60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -10371,6 +10941,10 @@ _:cbcb55a4ba43314bd72315ee9fc2d199cc3da523c66b03dc2153058281f978b5ba <http://www
 _:cbcb55a4ba43314bd72315ee9fc2d199cc3da523c66b03dc2153058281f978b5ba <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18925051/files/Cell002_Form_20uA_25T_30RH_Cycle1to10_04_GCPL_CA2.mpr?download=1> .
 _:cbcb825a1586f26cacf7ab9455b35c2dd54ee5d7057acec031b494b12b5db3012a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbcb825a1586f26cacf7ab9455b35c2dd54ee5d7057acec031b494b12b5db3012a <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/10891871/files/Batch8.7z?download=1> .
+_:cbcb8b700271997578a8cc4bfff03e820a0b95b347071efb858245cafc56d7b294 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cbcb8b700271997578a8cc4bfff03e820a0b95b347071efb858245cafc56d7b294 <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/libs_lfp_lto_si_fmea.xlsx?sfvrsn=c0d13a7a_1> .
+_:cbcb9b8961f50b64bbba5b189fcb87724c5ed3592b980cb9a0692d91991b8a0a26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cbcb9b8961f50b64bbba5b189fcb87724c5ed3592b980cb9a0692d91991b8a0a26 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23263603/files/merged_data_Test6.csv?download=1> .
 _:cbcbe1a9cb93dd61dcd2362090130e5a4b276f33dcf9a39b7d8ca6732aa01672b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbcbe1a9cb93dd61dcd2362090130e5a4b276f33dcf9a39b7d8ca6732aa01672b1 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/20532539/files/Discovery-benchmark.xlsx?download=1> .
 _:cbcbf46e5e79db25109b51192c9ec2c23e14c9c48ba890288a465de27ee8b52670 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -10401,6 +10975,8 @@ _:cbcecf08c7a717d5267d86728c1dc1c1ddd16ed901f87b37eec505ff947c9ab150 <http://www
 _:cbcecf08c7a717d5267d86728c1dc1c1ddd16ed901f87b37eec505ff947c9ab150 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19052626/files/Molicel_INR-21700-P45B_ECM-charge.csv?download=1> .
 _:cbcf16073f8f800af08700deee0dfba83258348b179c6491af2ef3e6010dc22bf9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbcf16073f8f800af08700deee0dfba83258348b179c6491af2ef3e6010dc22bf9 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19107295/files/sintef__sintef-nmc111-R2032-customcells-9d3ce5__20250625__p-ocv__RT.bdf.parquet?download=1> .
+_:cbcf1fbc7994c49666c9ce89f69e6032a0ae2734911b4b0c872cfbe9c8243e3d63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cbcf1fbc7994c49666c9ce89f69e6032a0ae2734911b4b0c872cfbe9c8243e3d63 <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/ssb_nmc811_lpsc_li_fmea.xlsx?sfvrsn=db2734c0_1> .
 _:cbcf46e847fa881deec8238e623c512a789197e29bebe3453a7bc78c407de35a0b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbcf46e847fa881deec8238e623c512a789197e29bebe3453a7bc78c407de35a0b <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/22273467/files/TR_Experimental_Data_Description.pdf?download=1> .
 _:cbcfc64161445e38473cdb7d4423e4694fa40e97112299104b49a8c5636ffe5417 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -10445,6 +11021,8 @@ _:cbd4dbf9852d6f340309c144352da22490b3b028b52d29d9b7d11bda25ab042617 <http://www
 _:cbd4dbf9852d6f340309c144352da22490b3b028b52d29d9b7d11bda25ab042617 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18772167/files/N21700-BAK-CG50-DLR-cell43-EIS-SOC25-discharge.csv?download=1> .
 _:cbd4df4a1cb40dc226a461d43e951fd8fd9f9632adf6aee8fc27db5d787ec2da9e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbd4df4a1cb40dc226a461d43e951fd8fd9f9632adf6aee8fc27db5d787ec2da9e <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/14214784/files/battery_performance_characterization_data.zip?download=1> .
+_:cbd5e94548088be8535c4c95ef824d37ea30525eef929869ba5584e1fd77cf2406 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cbd5e94548088be8535c4c95ef824d37ea30525eef929869ba5584e1fd77cf2406 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/24174045/files/1C.txt?download=1> .
 _:cbd6032bca588b9d9403583d7d836cc99ac65e677435768635d8577966a68f848a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbd6032bca588b9d9403583d7d836cc99ac65e677435768635d8577966a68f848a <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19107295/files/sintef__sintef-lnmo-R2032-intelligent1-a39225__20250625__gitt__RT.bdf.parquet?download=1> .
 _:cbd617a2cca496114cd670ec5201ee409d9829b4eeb395b2b0a091a8cd3212093b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -10497,6 +11075,8 @@ _:cbddae2d707a8cb67f94dfe5e45035e5e146c8683f67ce4c8382e392d759bb70e1 <http://www
 _:cbddae2d707a8cb67f94dfe5e45035e5e146c8683f67ce4c8382e392d759bb70e1 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/6645536/files/chemistry2-35C.zip?download=1> .
 _:cbddb78709335bb3e10e04353fd7d6176db7fa4347fd7b430e65df08640fa7cc04 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbddb78709335bb3e10e04353fd7d6176db7fa4347fd7b430e65df08640fa7cc04 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19608839/files/VZ1_042_021_CVUT_D_0081_v1.csv?download=1> .
+_:cbddf257f56181aa57122bbe71cbb1bba2df51a1ba302b46c09086d80580959a03 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cbddf257f56181aa57122bbe71cbb1bba2df51a1ba302b46c09086d80580959a03 <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/ml-libs_nmc811_gr.zip?sfvrsn=f4554ef2_1> .
 _:cbde0e6f0fb59098df8e1774a1988acbcb8e594b9af309b845333216f50840ef38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbde0e6f0fb59098df8e1774a1988acbcb8e594b9af309b845333216f50840ef38 <http://www.w3.org/ns/dcat#downloadURL> <https://publications.rwth-aachen.de/record/987579/files/Data_Failure_Mode_and_Degradation_Analysis_of_a_Commercial_Sodium-Ion_Battery_With_Severe_Gassing_Issue.zip> .
 _:cbde924eb2be0d7bfadd0c0d18b2135987f45ed7f466f1da13f8ea76ceb9aac89a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -10539,6 +11119,8 @@ _:cbe1388c633a3b41c35e5c0219a57d491e381b52331bd22581276325c6b95fab1e <http://www
 _:cbe1388c633a3b41c35e5c0219a57d491e381b52331bd22581276325c6b95fab1e <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15422339/files/keysight_eis_csvw_schema_0.1.0.json?download=1> .
 _:cbe14764e5e973432d885be2aeb437cd2af448dcbb31eef375a80e84eaa9799950 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbe14764e5e973432d885be2aeb437cd2af448dcbb31eef375a80e84eaa9799950 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15755725/files/F0139.zip?download=1> .
+_:cbe14b07916c1bd34d90b909c2d77faf8e14fcba3538715e2d83d461a1242027ca <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cbe14b07916c1bd34d90b909c2d77faf8e14fcba3538715e2d83d461a1242027ca <http://www.w3.org/ns/dcat#downloadURL> <https://search-data.ubfc.fr/dl_data.php?file=201> .
 _:cbe19c1b9cbdfb1a4defc8f7c7b348c86f42733c684471850ca01e5a8d2640f3fa <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbe19c1b9cbdfb1a4defc8f7c7b348c86f42733c684471850ca01e5a8d2640f3fa <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/20132842/files/Pack_field%2311.zip?download=1> .
 _:cbe1ccbb8f49289711e3d74e2844f1bbfb9d839722701058c7ad011ac5bd973338 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -10603,6 +11185,8 @@ _:cbe9275d612aca52643a8c7626766a7529f190118e15c0b1c337aac7759eb2f090 <http://www
 _:cbe9275d612aca52643a8c7626766a7529f190118e15c0b1c337aac7759eb2f090 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/7244850/files/ulfsri%2Ffsri-lib-ess-demo-2020-v1.1.zip?download=1> .
 _:cbe94e0bd52d1b65f0f54580ac37d7a85cf86bb2f8ea9f493847e4ef643d807ae1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbe94e0bd52d1b65f0f54580ac37d7a85cf86bb2f8ea9f493847e4ef643d807ae1 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/13836819/files/Data%20for%2010Ah%20sodium-ion%20batteries.zip?download=1> .
+_:cbea2bc0eb9b8b75877b8eaec3b879d451874dc06cd6801fb43afd04a4648ee0bd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cbea2bc0eb9b8b75877b8eaec3b879d451874dc06cd6801fb43afd04a4648ee0bd <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23263603/files/merged_data_Test5.csv?download=1> .
 _:cbead95cac16cd59fc62829da81be98c3c815ad1a634538703b74bf9d85744a96f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbead95cac16cd59fc62829da81be98c3c815ad1a634538703b74bf9d85744a96f <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/12091223/files/Data_ID_21.zip?download=1> .
 _:cbeaec85b54e9b7ac1e13005bf9149e36d6a63898774b068d991ff780832a7da66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -10611,6 +11195,8 @@ _:cbeaedb46d5f8f412fe44696ea6c04fd90a38ffddfc914176755da6930d72c4052 <http://www
 _:cbeaedb46d5f8f412fe44696ea6c04fd90a38ffddfc914176755da6930d72c4052 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19107295/files/sintef__sintef-lfp-R2032-gelon-d07eb6__20250602__p-ocv__RT.bdf.parquet?download=1> .
 _:cbeb098693e84d6a09fa82016860a2724a8295e4c883105fd34e243dda1525a380 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbeb098693e84d6a09fa82016860a2724a8295e4c883105fd34e243dda1525a380 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18772167/files/N21700-BAK-CG50-DLR-anode-01-qOCV-DLR%20delithiation.bdf.csv?download=1> .
+_:cbeb1914add4300164a45924b0e5344b972a4e828b3a8e1070f0a369fe4fcb3ddc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cbeb1914add4300164a45924b0e5344b972a4e828b3a8e1070f0a369fe4fcb3ddc <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23372521/files/temperature_25C.zip?download=1> .
 _:cbeb1f6829a282e813005185555e7ae7ddc7acdf010dd6880195afb51a5965d559 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbeb1f6829a282e813005185555e7ae7ddc7acdf010dd6880195afb51a5965d559 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15553919/files/SLPBA842124HV.image.png?download=1> .
 _:cbeb45fa77645ba1a0f3c449467eb52653b48f54ecc7762a408ce5b65db4b2f06e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -10683,8 +11269,6 @@ _:cbf003af275d2f8f6d719ed3ba43bc410d5a5829f1b8af273e64b7fe651d827189 <http://www
 _:cbf003af275d2f8f6d719ed3ba43bc410d5a5829f1b8af273e64b7fe651d827189 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/10656500/files/QAS_2.zip?download=1> .
 _:cbf05b3e1e7c9634e07ca268a10baef1d5f2cd3055a42776ff470b7ce0489c67c0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbf05b3e1e7c9634e07ca268a10baef1d5f2cd3055a42776ff470b7ce0489c67c0 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/22941976/files/Fig3.pdf?download=1> .
-_:cbf0ae562ee171277e3f3d93beb283e6afe68fba7d300d80c964a0b046dee0c40f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
-_:cbf0ae562ee171277e3f3d93beb283e6afe68fba7d300d80c964a0b046dee0c40f <http://www.w3.org/ns/dcat#downloadURL> <https://www.nrel.gov/media/docs/libraries/tsdc/battery-failure-databank-revision2-feb24.xlsx?sfvrsn=7b7f89_1> .
 _:cbf0b3281dee0fb15798ed13b2c12c8de8d61952f7e3b9a40be8da3278b9ccbd84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbf0b3281dee0fb15798ed13b2c12c8de8d61952f7e3b9a40be8da3278b9ccbd84 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15657829/files/VZ5_008_021_VUT_D_0039_v1.txt?download=1> .
 _:cbf0cc64fb388dcea8c95f979a964f110d3b9234bbe568be0464f63ffe23d96d57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -10709,6 +11293,8 @@ _:cbf3649bfd83a2cabc4c974fbd767acbe536b616bd508f029980db55995248e11f <http://www
 _:cbf3649bfd83a2cabc4c974fbd767acbe536b616bd508f029980db55995248e11f <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/13836819/files/Data%20for%203.2Ah%20sodium-ion%20batteries.zip?download=1> .
 _:cbf36b30b60642067ec5b0ec4e64aa9f9b11300ca16e28f661c5366c1236b17a76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbf36b30b60642067ec5b0ec4e64aa9f9b11300ca16e28f661c5366c1236b17a76 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19107295/files/sintef__sintef-nmc111-R2032-customcells-6852ff__20250720__gitthold__RT.bdf.parquet?download=1> .
+_:cbf3aa4cc13aa3c245233ef4fd9fd2046889a124772b4287c72fda4d7d292054bc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cbf3aa4cc13aa3c245233ef4fd9fd2046889a124772b4287c72fda4d7d292054bc <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/prop-compression_testing_data.zip?sfvrsn=839b72c6_5> .
 _:cbf3abee71af76709c0d7eebcd326dfd8414c6bbf02d02f7926c889de187170656 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbf3abee71af76709c0d7eebcd326dfd8414c6bbf02d02f7926c889de187170656 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/10891871/files/Batch_List.xlsx?download=1> .
 _:cbf3bd5547dbdc34ed230644a8c3bc4728d08abfb9053224ae6e36bb75a5a1fccb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -10727,18 +11313,26 @@ _:cbf462fc610f2dd693730b8278bb03b34000a09982d07364f582be6a879e78113b <http://www
 _:cbf462fc610f2dd693730b8278bb03b34000a09982d07364f582be6a879e78113b <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19608839/files/VZ1_042_021_CVUT_D_0042_v1.csv?download=1> .
 _:cbf4e49a931d4975242ae6b7d94a40cc4551936e599bbaa1118eede781d10b481b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbf4e49a931d4975242ae6b7d94a40cc4551936e599bbaa1118eede781d10b481b <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18694513/files/7-Multiple-Estimators.zip?download=1> .
+_:cbf5049a8268bafc2a03151eee697652242113d6abbea450bae0da4350fae9c29b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cbf5049a8268bafc2a03151eee697652242113d6abbea450bae0da4350fae9c29b <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/prop-low_current_hppc_testing_data.zip?sfvrsn=5151d116_5> .
 _:cbf519a543e986967a56e56c0026f5cab471f4af50ef5b2063e7078679092df884 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbf519a543e986967a56e56c0026f5cab471f4af50ef5b2063e7078679092df884 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18772167/files/N21700-BAK-CG50-DLR-cell42-EIS-SOC10-discharge.csv?download=1> .
 _:cbf5227d209246cfb5305913f82d87161cd72865287321defc4088ee0874fd59df <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbf5227d209246cfb5305913f82d87161cd72865287321defc4088ee0874fd59df <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/20490514/files/BATSS_2_Calibration_results.xlsx?download=1> .
 _:cbf52f626b0cf2bda15d447a62cfaabb356869b41b2ef9b4347c918e105eaf4045 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbf52f626b0cf2bda15d447a62cfaabb356869b41b2ef9b4347c918e105eaf4045 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18925051/files/Cell007_Form_200uA_25T_30RH_Cycle1to10_03_GEIS_CA7.mpr?download=1> .
+_:cbf5447db3bd2c121da396bbd87c9d97aa2ec0aaaf73f95b4c2950191722e2072f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cbf5447db3bd2c121da396bbd87c9d97aa2ec0aaaf73f95b4c2950191722e2072f <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/mib_fmea.xlsx?sfvrsn=4653bc62_1> .
+_:cbf555feff58b21ad7e57ba5205fe9f924dfa9bb09ec267985f91479f7f02def68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cbf555feff58b21ad7e57ba5205fe9f924dfa9bb09ec267985f91479f7f02def68 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/24100753/files/Tmax%20Delta%20Tmax%20Data.xlsx?download=1> .
 _:cbf65f8b2f27ec1f06ba74bf8c601fbb16600de8a6d27082c9fe083ac8ff405d06 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbf65f8b2f27ec1f06ba74bf8c601fbb16600de8a6d27082c9fe083ac8ff405d06 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/17227538/files/OCV_vs_SOC_curve_CellA.csv?download=1> .
 _:cbf66a781d57da32ce2b5767d87f05a91cca7ff9c937dbfd06b344a48b498fa479 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbf66a781d57da32ce2b5767d87f05a91cca7ff9c937dbfd06b344a48b498fa479 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/21819954/files/MSTT_RUL_RESS_HUST_v3_final_results_20260805.tar.gz?download=1> .
 _:cbf6802d1577cf64b80a20aa80b450ac418c31459ff10c164b33b0e344055bd2ab <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbf6802d1577cf64b80a20aa80b450ac418c31459ff10c164b33b0e344055bd2ab <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18646655/files/UL_PUR.zip?download=1> .
+_:cbf69fbc2d2dff624eb1dcddc5bd41704dbf4b3b87c3bd0387ffff0893424e1d20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cbf69fbc2d2dff624eb1dcddc5bd41704dbf4b3b87c3bd0387ffff0893424e1d20 <http://www.w3.org/ns/dcat#downloadURL> <https://www.nlr.gov/media/docs/libraries/energy-storage-research/ml-libs_lco_lvo.zip?sfvrsn=690e1ffc_1> .
 _:cbf6adb2c3a04bfa61c69e0b608bc24b128ec9e04fa49559175440b1b6d2d9bebd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbf6adb2c3a04bfa61c69e0b608bc24b128ec9e04fa49559175440b1b6d2d9bebd <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/13903526/files/ThermalCalibration.zip?download=1> .
 _:cbf6c31c154884fa8e5b2ff4d8afc097c9afb9868e603e21374af3eb517b358b41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
@@ -10797,6 +11391,8 @@ _:cbfdabfe10e634e68955f4e1f7bd976f9294f5b8342e1bfff63980cbbf79564de7 <http://www
 _:cbfdabfe10e634e68955f4e1f7bd976f9294f5b8342e1bfff63980cbbf79564de7 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/19107295/files/metadata.csv?download=1> .
 _:cbfdcddd1a8f668f8f694fdb5c78a9b8e92ee49392671ec9c94bec17da96dcdfc0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbfdcddd1a8f668f8f694fdb5c78a9b8e92ee49392671ec9c94bec17da96dcdfc0 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/15657829/files/VZ5_008_021_VUT_D_0040_v1.txt?download=1> .
+_:cbfdea3e3018fc2cd3c7c942264cb78cbd7f1340760756a3643206ab57d22f4d9a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+_:cbfdea3e3018fc2cd3c7c942264cb78cbd7f1340760756a3643206ab57d22f4d9a <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/23768097/files/ZJU-ta.pkl?download=1> .
 _:cbfe116e855e58812fc622f1b7c733c4c55e84fc64ba1253a87610c5b4a32d91e2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
 _:cbfe116e855e58812fc622f1b7c733c4c55e84fc64ba1253a87610c5b4a32d91e2 <http://www.w3.org/ns/dcat#downloadURL> <https://zenodo.org/records/18772167/files/N21700-BAK-CG50-DLR-anode-01-qOCV-GITT-delithiation.bdf.csv?download=1> .
 _:cbfe43b119df2eb837ac5876f44b6810821da2ade9c26352d1256fbea3ab28389d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .

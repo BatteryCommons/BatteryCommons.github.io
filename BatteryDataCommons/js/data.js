@@ -266,6 +266,93 @@ function getCellVariantSearchValues(dataset) {
   });
 }
 
+// Search matches words, not one exact phrase. Record text and query are folded
+// the same way: lower case, accents removed (München → munchen), apostrophes
+// dropped (Hawai'i → hawaii) and other punctuation turned into spaces. Every
+// query word must appear somewhere in the record, in any order, so "University
+// of Oxford" also finds "Oxford University". Short words with a letter (MIT,
+// TUM, LFP) must match a whole word, so "MIT" does not match "limit"; longer
+// words may match inside a word, so "cobalt" still finds LithiumCobaltOxide.
+const SEARCH_STOP_WORDS = new Set([
+  'a', 'an', 'and', 'at', 'de', 'der', 'des', 'di', 'du', 'et', 'for', 'in',
+  'la', 'le', 'of', 'on', 'the', 'und', 'von'
+]);
+const searchTextCache = new WeakMap();
+
+function foldSearchText(value) {
+  if (value === null || value === undefined) return '';
+  return String(value)
+    .normalize('NFKD')
+    .replace(/[̀-ͯ]/g, '')
+    .toLowerCase()
+    .replace(/ß/g, 'ss').replace(/ø/g, 'o').replace(/æ/g, 'ae').replace(/œ/g, 'oe').replace(/ł/g, 'l')
+    .replace(/['`´‘’ʻʼ]/g, '')
+    .replace(/[^\p{L}\p{N}]+/gu, ' ')
+    .trim();
+}
+
+// Text in double quotes is kept as one phrase: "University of Oxford" leaves
+// out Oxford Brookes University, which the three separate words would match.
+function getSearchTerms(query) {
+  const terms = [];
+  String(query || '').replace(/"([^"]*)"|[^"]+/g, (match, phrase) => {
+    if (phrase !== undefined) {
+      const folded = foldSearchText(phrase);
+      if (folded) terms.push({ phrase: folded });
+    } else {
+      foldSearchText(match).split(' ')
+        .filter(word => word && !SEARCH_STOP_WORDS.has(word))
+        .forEach(word => terms.push(word));
+    }
+    return '';
+  });
+  return terms;
+}
+
+function asTextList(value) {
+  if (Array.isArray(value)) return value.filter(item => typeof item === 'string');
+  return typeof value === 'string' ? [value] : [];
+}
+
+function getSearchText(dataset) {
+  const cached = searchTextCache.get(dataset);
+  if (cached !== undefined) return cached;
+  const meta = dataset.source_metadata || {};
+  const publications = Array.isArray(dataset.publications) ? dataset.publications : [];
+  const parts = [
+    // Release search index: id, title, device, electrodes, categories and the
+    // other names of the owner institution (schemas/institution_aliases.json).
+    dataset.keywords,
+    dataset.title,
+    dataset.description,
+    dataset.comment,
+    dataset.data_group,
+    dataset.electrodes?.positive,
+    dataset.electrodes?.negative,
+    ...getPositiveElectrodeTypes(dataset),
+    ...getCellVariantSearchValues(dataset),
+    dataset.ultracapacitor?.manufacturer,
+    dataset.ultracapacitor?.model,
+    meta.owner,
+    ...asTextList(meta.authors),
+    dataset.bib_citation_data,
+    ...publications.flatMap(pub => (pub && typeof pub === 'object')
+      ? [pub.title, pub.bib_citation, ...asTextList(pub.authors)]
+      : []),
+    ...(dataset.categories || [])
+  ];
+  const text = ` ${foldSearchText(parts.filter(part => typeof part === 'string' && part).join(' '))} `;
+  searchTextCache.set(dataset, text);
+  return text;
+}
+
+function matchesSearchTerms(text, terms) {
+  return terms.every(term => {
+    if (typeof term === 'object') return text.includes(` ${term.phrase} `);
+    return (term.length <= 3 && /[a-z]/.test(term)) ? text.includes(` ${term} `) : text.includes(term);
+  });
+}
+
 function countChemistryFamilies(arr) {
   return arr.reduce((acc, dataset) => {
     getChemistryFamilies(dataset).forEach(family => {
@@ -279,30 +366,12 @@ function countChemistryFamilies(arr) {
 function applyFilters() {
   if (!datasets.length) return [];
 
+  const searchTerms = getSearchTerms(searchQuery);
+
   filteredDatasets = datasets.filter(dataset => {
-    // Search filter
-    if (searchQuery) {
-      const query = searchQuery.toLowerCase();
-
-      // Use pre-computed keywords from RDF index AND fallback fields
-      const searchContent = [
-        dataset.keywords,
-        dataset.comment,
-        dataset.data_group,
-        dataset.electrodes?.positive,
-        dataset.electrodes?.negative,
-        ...getPositiveElectrodeTypes(dataset),
-        ...getCellVariantSearchValues(dataset),
-        dataset.ultracapacitor?.manufacturer,
-        dataset.ultracapacitor?.model,
-        dataset.source_metadata?.owner,
-        dataset.bib_citation_data,
-        ...(dataset.categories || [])
-      ].filter(Boolean).join(' ');
-
-      if (!searchContent.toLowerCase().includes(query)) {
-        return false;
-      }
+    // Search filter: every query word must match (see getSearchText)
+    if (searchTerms.length && !matchesSearchTerms(getSearchText(dataset), searchTerms)) {
+      return false;
     }
 
     // Category filter (array field)

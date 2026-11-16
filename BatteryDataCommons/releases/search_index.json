@@ -1,28 +1,28 @@
 {
-  "total": 379,
+  "total": 394,
   "categories": {
     "20,000 EIS spectra": 1,
-    "BatteryCell": 275,
+    "BatteryCell": 284,
     "CoinCase": 13,
-    "LithiumCobaltOxide": 21,
-    "durability": 174,
-    "performance": 177,
+    "LithiumCobaltOxide": 22,
+    "durability": 178,
+    "performance": 184,
     "PrismaticCase": 15,
     "cells for portable electronic": 1,
     "CALCE CX2 cell lot": 1,
     "16 PL cells across 8 partial-SOC test groups": 1,
     "PouchCase": 49,
-    "R18650": 88,
+    "R18650": 90,
     "LithiumNickelManganeseCobaltOxide": 70,
     "LithiumIronPhosphate": 37,
-    "R26650": 7,
+    "R26650": 8,
     "R32113": 2,
     "R40138": 1,
     "retired cell": 3,
     "Unknown": 36,
     "LithiumNickelCobaltAluminiumOxide": 24,
-    "modelling": 71,
-    "R21700": 40,
+    "modelling": 73,
+    "R21700": 41,
     "BatteryCell + BatteryPack": 3,
     "Pack test": 1,
     "LithiumNickelManganeseCobaltOxide 111": 1,
@@ -35,7 +35,7 @@
     "18650/21700": 1,
     "92 cells": 1,
     "232 cells": 1,
-    "Multiple": 15,
+    "Multiple": 18,
     "PrismaticCase + PouchCase + CylindricalCase": 1,
     "363 cells": 1,
     "Three cells and one 3S1P pack; mean cell capacities 9.557, 9.594, and 9.537 Ah": 1,
@@ -99,10 +99,10 @@
     "LithiumIronPhosphate, LithiumNickelCobaltAluminiumOxide": 1,
     "R18650, R26650": 2,
     "Two cells deeply aged for 630 cycles, with characterization every 30 cycles down to 15.52% and 12.40% SOH": 1,
-    "BatteryModule": 12,
+    "BatteryModule": 15,
     "End-of-life prediction from 400–760 days of off-grid solar field operation": 1,
     "Lead Acid": 1,
-    "field": 41,
+    "field": 44,
     "Variety of cyclers": 1,
     "Use different dataset, share code": 1,
     "NFM": 1,
@@ -118,7 +118,7 @@
     "Four independently tested 1S4P assemblies using four 18650 cell models, each cycled for 1,223–1,943 cycles": 1,
     "NCA (Joy NCR18650A300A); Unknown for other variants": 1,
     "High- and low-temperature calendar and cycle accelerated aging": 1,
-    "BatteryPack": 31,
+    "BatteryPack": 34,
     "Comparison of DC fast charging and AC fast charging under drive-cycle discharge": 1,
     "LMO": 1,
     "NMC532": 1,
@@ -137,11 +137,11 @@
     "Lead-acid, Lead-acid Gel, LMO, LFP, LTO": 1,
     "LMO, NMC, LFP": 1,
     "LithiumManganeseOxide, LithiumNickelOxide": 1,
-    "PouchCell": 7,
+    "PouchCell": 9,
     "Second-life Nissan Leaf battery microgrid": 1,
     "LFP, NMC, LMO, LCO, LP": 1,
     "NiMH": 1,
-    "NMC": 8,
+    "NMC": 10,
     "Real-world operation of seven battery-electric vehicles": 1,
     "Real-time EV charging measurements with thermal-risk probabilities and event classifications": 1,
     "Lead-acid": 1,
@@ -161,10 +161,10 @@
     "LFP/LMO, NMC/LMO, NCM/NCA": 1,
     "NMC-811": 1,
     "Vehicle": 1,
-    "LFP": 13,
+    "LFP": 15,
     "NCA": 4,
     "Thermal-runaway and fire propagation in 6×6 and 10×10 battery assemblies": 1,
-    "safety": 28,
+    "safety": 31,
     "BatteryCell, BatterySystem": 1,
     "One cell-level and three installation-level thermal-runaway tests": 1,
     "LithiumNickelManganeseCobaltOxide + LithiumIronPhosphate": 1,
@@ -209,13 +209,13 @@
     "Hybrid Supercapacitor EIS Measurements": 1,
     "78 three-cell modules assembled from 70 aged cells": 1,
     "Battery OCV Curve Diagnosis Data": 1,
-    "PrismaticCell": 5,
+    "PrismaticCell": 6,
     "Battery In-situ Sensing Data": 1,
     "CoinCell": 6,
     "Zinc-Air Battery Impedance Measurements": 1,
     "TEMPEST LIC Cell Characterisation": 1,
     "Bipolar perturbation Li-ion diagnostics": 1,
-    "4 cells": 1,
+    "5 cells": 1,
     "27 cells": 1,
     "Processed ZN and CALB": 1,
     "LG Chem E71A ageing": 1,
@@ -287,17 +287,34 @@
     "Cross-section of a commercial 21700 cell": 1,
     "Commercial 21700 cell": 1,
     "Traction battery packs of 21 vehicle models": 1,
-    "Six-cell 18650 module with immersion cooling": 1
+    "Six-cell 18650 module with immersion cooling": 1,
+    "28 lithium-ion modules of a stationary battery energy storage system": 1,
+    "Five two-cell series packs of 26650 LiFePO4 cells": 1,
+    "Three NMC cells and a two-cell parallel module": 1,
+    "One 30 Ah prismatic LiFePO4 cell": 1,
+    "Battery packs of in-service electric vehicles": 1,
+    "Nine NMC pouch cells, 24 abuse tests": 1,
+    "Pouch cells of six chemistries": 1,
+    "Commercial 18650 sodium-ion cells under cycle and calendar ageing": 1,
+    "Two commercial sodium-ion cells and one LFP cell": 1,
+    "436 cells of three cathode chemistries (NMC, LMO, LFP)": 1,
+    "87 cylindrical cells of four models": 1,
+    "One 13S4P e-bike pack of 52 Samsung INR18650-30Q cells": 1,
+    "Flow stack (5 cells, 240 cm2)": 1,
+    "One five-cell all-vanadium redox flow stack": 1,
+    "Vanadium posolyte (VO2+/VO2+)": 1,
+    "Simulated graphite/LiCoO2 cell, 3,600 parameter sets": 1,
+    "Simulated immersion-cooled module of 36 cylindrical 21700 cells": 1
   },
   "chemistries": {
-    "LithiumCobaltOxide": 21,
+    "LithiumCobaltOxide": 22,
     "LithiumNickelManganeseCobaltOxide": 70,
     "LithiumIronPhosphate": 37,
     "LithiumNickelCobaltAluminiumOxide": 24,
     "LithiumNickelManganeseCobaltOxide 111": 1,
     "LithiumNickelManganeseCobaltOxide 622": 2,
     "LithiumNickelManganeseCobaltOxide 811": 3,
-    "Multiple": 11,
+    "Multiple": 14,
     "Unknown": 25,
     "LithiumManganeseOxide": 2,
     "LithiumNickelManganeseCobaltOxide + LithiumCobaltOxide": 2,
@@ -335,12 +352,12 @@
     "LithiumManganeseOxide, LithiumNickelOxide": 1,
     "LFP, NMC, LMO, LCO, LP": 1,
     "NiMH": 1,
-    "NMC": 8,
+    "NMC": 10,
     "Lead-acid": 1,
     "ZAFB": 2,
     "LFP/LMO, NMC/LMO, NCM/NCA": 1,
     "NMC-811": 1,
-    "LFP": 13,
+    "LFP": 15,
     "NCA": 4,
     "LithiumNickelManganeseCobaltOxide + LithiumIronPhosphate": 1,
     "NCA / Graphite–SiOx": 1,
@@ -356,18 +373,19 @@
     "NFM; NCM": 1,
     "NMC811; NMC622; LFP; LCO; LMFP": 1,
     "K4Fe(CN)6 posolyte (aqueous)": 1,
-    "LithiumNickelManganeseCobaltOxide 532": 2
+    "LithiumNickelManganeseCobaltOxide 532": 2,
+    "Vanadium posolyte (VO2+/VO2+)": 1
   },
   "formats": {
     "CoinCase": 13,
     "PrismaticCase": 15,
     "PouchCase": 49,
-    "R18650": 88,
-    "R26650": 7,
+    "R18650": 90,
+    "R26650": 8,
     "R32113": 2,
     "R40138": 1,
     "Unknown": 16,
-    "R21700": 40,
+    "R21700": 41,
     "18650/21700": 1,
     "PrismaticCase + PouchCase + CylindricalCase": 1,
     "R32135": 1,
@@ -385,7 +403,7 @@
     "R26650, R18650, R21700": 1,
     "PouchCase, PrismaticCase": 2,
     "PrismaticCase, PouchCase": 1,
-    "PouchCell": 7,
+    "PouchCell": 9,
     "Pouch": 2,
     "18650": 3,
     "Coin": 1,
@@ -395,17 +413,18 @@
     "PrismaticCase, PouchCase, R26650": 1,
     "R18650, R18650, R18650, R18650, R18650, R18650, R21700, R21700": 1,
     "Multiple formats": 1,
-    "PrismaticCell": 5,
+    "PrismaticCell": 6,
     "CoinCell": 6,
     "R18650, R21700": 1,
     "4695": 1,
-    "zero-gap flow cell": 1
+    "zero-gap flow cell": 1,
+    "Flow stack (5 cells, 240 cm2)": 1
   },
   "datasets": [
     {
       "id": "bdc_000001",
       "title": "Lithium-Ion Battery Degradation EIS Dataset",
-      "keywords": "bdc_000001 lithium-ion battery degradation eis dataset eunicell lr2032 coincase lithiumcobaltoxide carbon 20,000 eis spectra batterycell coincase lithiumcobaltoxide durability performance",
+      "keywords": "bdc_000001 lithium-ion battery degradation eis dataset eunicell lr2032 coincase lithiumcobaltoxide carbon 20,000 eis spectra batterycell coincase lithiumcobaltoxide durability performance university of cambridge cambridge university univ. of cambridge",
       "categories": [
         "20,000 EIS spectra",
         "BatteryCell",
@@ -508,7 +527,7 @@
     {
       "id": "bdc_000007",
       "title": "Characterisation tests on Samsung 18650 26J cells",
-      "keywords": "bdc_000007 characterisation tests on samsung 18650 26j cells samsung icr18650-26j r18650 lithiumnickelmanganesecobaltoxide carbon batterycell lithiumnickelmanganesecobaltoxide r18650 performance",
+      "keywords": "bdc_000007 characterisation tests on samsung 18650 26j cells samsung icr18650-26j r18650 lithiumnickelmanganesecobaltoxide carbon batterycell lithiumnickelmanganesecobaltoxide r18650 performance université gustave eiffel university gustave eiffel gustave eiffel university",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide",
@@ -556,7 +575,7 @@
     {
       "id": "bdc_000011",
       "title": "Characterisation tests of A123 4.4Ah cell",
-      "keywords": "bdc_000011 characterisation tests of a123 4.4ah cell a123 ahr32113 r32113 lithiumironphosphate carbon batterycell lithiumironphosphate r32113 performance",
+      "keywords": "bdc_000011 characterisation tests of a123 4.4ah cell a123 ahr32113 r32113 lithiumironphosphate carbon batterycell lithiumironphosphate r32113 performance université gustave eiffel university gustave eiffel gustave eiffel university",
       "categories": [
         "BatteryCell",
         "LithiumIronPhosphate",
@@ -572,7 +591,7 @@
     {
       "id": "bdc_000012",
       "title": "Efficiency tests on A123 4.4Ah cells",
-      "keywords": "bdc_000012 efficiency tests on a123 4.4ah cells a123 ahr32113 r32113 lithiumironphosphate carbon batterycell lithiumironphosphate r32113 performance",
+      "keywords": "bdc_000012 efficiency tests on a123 4.4ah cells a123 ahr32113 r32113 lithiumironphosphate carbon batterycell lithiumironphosphate r32113 performance université gustave eiffel university gustave eiffel gustave eiffel university",
       "categories": [
         "BatteryCell",
         "LithiumIronPhosphate",
@@ -620,7 +639,7 @@
     {
       "id": "bdc_000015",
       "title": "Commercial Lithium-Ion Cell Teardown and Characterization",
-      "keywords": "bdc_000015 commercial lithium-ion cell teardown and characterization sony us18650vtc5 a r18650 lithiumnickelcobaltaluminiumoxide carbon + silicon batterycell lithiumnickelcobaltaluminiumoxide r18650 performance",
+      "keywords": "bdc_000015 commercial lithium-ion cell teardown and characterization sony us18650vtc5 a r18650 lithiumnickelcobaltaluminiumoxide carbon + silicon batterycell lithiumnickelcobaltaluminiumoxide r18650 performance technical university of munich technische universität münchen tum tu munich tu münchen",
       "categories": [
         "BatteryCell",
         "LithiumNickelCobaltAluminiumOxide",
@@ -670,7 +689,7 @@
     {
       "id": "bdc_000020",
       "title": "Volkswagen ID.3 Battery and Powertrain Characterization Dataset",
-      "keywords": "bdc_000020 volkswagen id.3 battery and powertrain characterization dataset lg chem inr18650-mj1 pouchcase lithiumnickelmanganesecobaltoxide carbon batterycell + batterypack lithiumnickelmanganesecobaltoxide pack test pouchcase performance",
+      "keywords": "bdc_000020 volkswagen id.3 battery and powertrain characterization dataset lg chem inr18650-mj1 pouchcase lithiumnickelmanganesecobaltoxide carbon batterycell + batterypack lithiumnickelmanganesecobaltoxide pack test pouchcase performance technical university of munich technische universität münchen tum tu munich tu münchen",
       "categories": [
         "BatteryCell + BatteryPack",
         "LithiumNickelManganeseCobaltOxide",
@@ -687,7 +706,7 @@
     {
       "id": "bdc_000021",
       "title": "Characterization test over second life high capacity lithium-ion cells",
-      "keywords": "bdc_000021 characterization test over second life high capacity lithium-ion cells samsung sdi 94ah prismaticcase lithiumnickelmanganesecobaltoxide 111 carbon batterycell lithiumnickelmanganesecobaltoxide 111 prismaticcase performance retired cell",
+      "keywords": "bdc_000021 characterization test over second life high capacity lithium-ion cells samsung sdi 94ah prismaticcase lithiumnickelmanganesecobaltoxide 111 carbon batterycell lithiumnickelmanganesecobaltoxide 111 prismaticcase performance retired cell université gustave eiffel university gustave eiffel gustave eiffel university",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide 111",
@@ -704,7 +723,7 @@
     {
       "id": "bdc_000022",
       "title": "Coin Cell Production Defect Characterization",
-      "keywords": "bdc_000022 coin cell production defect characterization lab made coincase lithiumnickelmanganesecobaltoxide 622 carbon batterycell + batterymodule coincase lithiumnickelmanganesecobaltoxide 622 module test performance",
+      "keywords": "bdc_000022 coin cell production defect characterization lab made coincase lithiumnickelmanganesecobaltoxide 622 carbon batterycell + batterymodule coincase lithiumnickelmanganesecobaltoxide 622 module test performance technical university of munich technische universität münchen tum tu munich tu münchen",
       "categories": [
         "BatteryCell + BatteryModule",
         "CoinCase",
@@ -721,7 +740,7 @@
     {
       "id": "bdc_000023",
       "title": "Characterization data of 250 cylindrical lithium-ion cells",
-      "keywords": "bdc_000023 characterization data of 250 cylindrical lithium-ion cells bak n18650ck r18650 lithiumnickelmanganesecobaltoxide 811 carbon 250 cells batterycell lithiumnickelmanganesecobaltoxide 811 r18650 performance",
+      "keywords": "bdc_000023 characterization data of 250 cylindrical lithium-ion cells bak n18650ck r18650 lithiumnickelmanganesecobaltoxide 811 carbon 250 cells batterycell lithiumnickelmanganesecobaltoxide 811 r18650 performance technical university of munich technische universität münchen tum tu munich tu münchen",
       "categories": [
         "250 cells",
         "BatteryCell",
@@ -754,7 +773,7 @@
     {
       "id": "bdc_000025",
       "title": "LG M50 Battery Aging and EIS Dataset",
-      "keywords": "bdc_000025 lg m50 battery aging and eis dataset lg chem inr21700-m50 r21700 lithiumnickelmanganesecobaltoxide 811 carbon + silicon batterycell lithiumnickelmanganesecobaltoxide 811 r21700 durability performance",
+      "keywords": "bdc_000025 lg m50 battery aging and eis dataset lg chem inr21700-m50 r21700 lithiumnickelmanganesecobaltoxide 811 carbon + silicon batterycell lithiumnickelmanganesecobaltoxide 811 r21700 durability performance university of warwick warwick university wmg warwick manufacturing group",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide 811",
@@ -771,7 +790,7 @@
     {
       "id": "bdc_000026",
       "title": "Battery Formation and Electrode Utilization Dataset",
-      "keywords": "bdc_000026 battery formation and electrode utilization dataset li-fun technology sc-nmc532 pouchcase lithiumnickelmanganesecobaltoxide graphite 186 cells batterycell lithiumnickelmanganesecobaltoxide pouchcase durability performance",
+      "keywords": "bdc_000026 battery formation and electrode utilization dataset li-fun technology sc-nmc532 pouchcase lithiumnickelmanganesecobaltoxide graphite 186 cells batterycell lithiumnickelmanganesecobaltoxide pouchcase durability performance stanford university stanford",
       "categories": [
         "186 cells",
         "BatteryCell",
@@ -789,7 +808,7 @@
     {
       "id": "bdc_000027",
       "title": "Dynamic Cycling Battery Lifetime Dataset",
-      "keywords": "bdc_000027 dynamic cycling battery lifetime dataset 18650/21700 lithiumnickelcobaltaluminiumoxide carbon + silicon 18650/21700 92 cells batterycell lithiumnickelcobaltaluminiumoxide durability performance",
+      "keywords": "bdc_000027 dynamic cycling battery lifetime dataset 18650/21700 lithiumnickelcobaltaluminiumoxide carbon + silicon 18650/21700 92 cells batterycell lithiumnickelcobaltaluminiumoxide durability performance stanford university stanford",
       "categories": [
         "18650/21700",
         "92 cells",
@@ -807,7 +826,7 @@
     {
       "id": "bdc_000028",
       "title": "Stanford Long Term Calendar Aging Dataset",
-      "keywords": "bdc_000028 stanford long term calendar aging dataset k2 energy, panasonic, sony-murata, tenergy, ultralife k2 energy lfp18650e, k2 energy lfp18650p, panasonic ncr18650b, panasonic ncr18650ga, sony-murata us18650vtc6, tenergy 302030, ultralife 502030, ultralife ubp001 prismaticcase + pouchcase + cylindricalcase multiple 232 cells batterycell multiple prismaticcase + pouchcase + cylindricalcase durability k2 energy k2 energy k2 energy lfp18650e k2 energy lfp18650p panasonic panasonic panasonic ncr18650b panasonic ncr18650ga r18650 r18650 r18650 r18650 r18650 sony-murata sony-murata us18650vtc6 tenergy tenergy 302030 ultralife ultralife ultralife 502030 ultralife ubp001",
+      "keywords": "bdc_000028 stanford long term calendar aging dataset k2 energy, panasonic, sony-murata, tenergy, ultralife k2 energy lfp18650e, k2 energy lfp18650p, panasonic ncr18650b, panasonic ncr18650ga, sony-murata us18650vtc6, tenergy 302030, ultralife 502030, ultralife ubp001 prismaticcase + pouchcase + cylindricalcase multiple 232 cells batterycell multiple prismaticcase + pouchcase + cylindricalcase durability k2 energy k2 energy k2 energy lfp18650e k2 energy lfp18650p panasonic panasonic panasonic ncr18650b panasonic ncr18650ga r18650 r18650 r18650 r18650 r18650 sony-murata sony-murata us18650vtc6 tenergy tenergy 302030 ultralife ultralife ultralife 502030 ultralife ubp001 stanford university stanford",
       "categories": [
         "232 cells",
         "BatteryCell",
@@ -824,7 +843,7 @@
     {
       "id": "bdc_000029",
       "title": "Battery Aging Matrix Dataset",
-      "keywords": "bdc_000029 battery aging matrix dataset li-fun technology sc-nmc532 r21700 lithiumnickelcobaltaluminiumoxide graphite 363 cells batterycell lithiumnickelcobaltaluminiumoxide r21700 performance",
+      "keywords": "bdc_000029 battery aging matrix dataset li-fun technology sc-nmc532 r21700 lithiumnickelcobaltaluminiumoxide graphite 363 cells batterycell lithiumnickelcobaltaluminiumoxide r21700 performance stanford university stanford",
       "categories": [
         "363 cells",
         "BatteryCell",
@@ -841,7 +860,7 @@
     {
       "id": "bdc_000030",
       "title": "LiFePO4 Cell and Battery Pack SOC Estimation Dataset",
-      "keywords": "bdc_000030 lifepo4 cell and battery pack soc estimation dataset hefei guoxuan high-tech power energy co. ltd ifp1865140 prismaticcase lithiumironphosphate batterycell + batterypack lithiumironphosphate prismaticcase three cells and one 3s1p pack; mean cell capacities 9.557, 9.594, and 9.537 ah modelling performance",
+      "keywords": "bdc_000030 lifepo4 cell and battery pack soc estimation dataset hefei guoxuan high-tech power energy co. ltd ifp1865140 prismaticcase lithiumironphosphate batterycell + batterypack lithiumironphosphate prismaticcase three cells and one 3s1p pack; mean cell capacities 9.557, 9.594, and 9.537 ah modelling performance university of science and technology of china ustc",
       "categories": [
         "BatteryCell + BatteryPack",
         "LithiumIronPhosphate",
@@ -875,7 +894,7 @@
     {
       "id": "bdc_000032",
       "title": "Battery Capacity Prediction from Impedance Measurements",
-      "keywords": "bdc_000032 battery capacity prediction from impedance measurements unknown unknown prismaticcase lithiumnickelmanganesecobaltoxide graphite batterycell capacity prediction from impedance measured across varying temperature and state of charge lithiumnickelmanganesecobaltoxide prismaticcase performance",
+      "keywords": "bdc_000032 battery capacity prediction from impedance measurements unknown unknown prismaticcase lithiumnickelmanganesecobaltoxide graphite batterycell capacity prediction from impedance measured across varying temperature and state of charge lithiumnickelmanganesecobaltoxide prismaticcase performance national laboratory of the rockies nlr national renewable energy laboratory national renewable energy lab nrel",
       "categories": [
         "BatteryCell",
         "Capacity prediction from impedance measured across varying temperature and state of charge",
@@ -892,7 +911,7 @@
     {
       "id": "bdc_000033",
       "title": "Pulse-Resistance-Based Battery Temperature Estimation Dataset",
-      "keywords": "bdc_000033 pulse-resistance-based battery temperature estimation dataset lg chem inr18650-mj1 r18650 lithiumnickelmanganesecobaltoxide carbon + silicon batterycell + batterymodule lithiumnickelmanganesecobaltoxide module test r18650 performance",
+      "keywords": "bdc_000033 pulse-resistance-based battery temperature estimation dataset lg chem inr18650-mj1 r18650 lithiumnickelmanganesecobaltoxide carbon + silicon batterycell + batterymodule lithiumnickelmanganesecobaltoxide module test r18650 performance technical university of munich technische universität münchen tum tu munich tu münchen",
       "categories": [
         "BatteryCell + BatteryModule",
         "LithiumNickelManganeseCobaltOxide",
@@ -959,7 +978,7 @@
     {
       "id": "bdc_000038",
       "title": "LFP Battery SOC Estimation Dataset",
-      "keywords": "bdc_000038 lfp battery soc estimation dataset a123 anr26650m1b r26650 lithiumironphosphate unknown batterycell lithiumironphosphate r26650 performance",
+      "keywords": "bdc_000038 lfp battery soc estimation dataset a123 anr26650m1b r26650 lithiumironphosphate unknown batterycell lithiumironphosphate r26650 performance stanford university stanford",
       "categories": [
         "BatteryCell",
         "LithiumIronPhosphate",
@@ -1006,7 +1025,7 @@
     {
       "id": "bdc_000041",
       "title": "Commercial 1.2 Ah Sodium-Ion Cell Characterization Dataset",
-      "keywords": "bdc_000041 commercial 1.2 ah sodium-ion cell characterization dataset shenzhen mushang electronics co., ltd unknown r18650 hard carbon batterycell r18650 sodium-ion performance",
+      "keywords": "bdc_000041 commercial 1.2 ah sodium-ion cell characterization dataset shenzhen mushang electronics co., ltd unknown r18650 hard carbon batterycell r18650 sodium-ion performance rwth aachen university aachen university rwth rwth aachen",
       "categories": [
         "BatteryCell",
         "R18650",
@@ -1037,7 +1056,7 @@
     {
       "id": "bdc_000043",
       "title": "LINKE Dataset 1.0: Retired Lithium-Ion Battery Capacity Data",
-      "keywords": "bdc_000043 linke dataset 1.0: retired lithium-ion battery capacity data gotion hi-tech ifp2265146-23ah, ifr32135-15.5ah multiple multiple unknown 4630 retired cells batterycell multiple performance gotion hi-tech gotion hi-tech ifp2265146-23ah ifr32135-15.5ah r32135",
+      "keywords": "bdc_000043 linke dataset 1.0: retired lithium-ion battery capacity data gotion hi-tech ifp2265146-23ah, ifr32135-15.5ah multiple multiple unknown 4630 retired cells batterycell multiple performance gotion hi-tech gotion hi-tech ifp2265146-23ah ifr32135-15.5ah r32135 university of science and technology of china ustc",
       "categories": [
         "4630 retired cells",
         "BatteryCell",
@@ -1069,7 +1088,7 @@
     {
       "id": "bdc_000045",
       "title": "Fast-Degradation Lithium-Ion Battery Cycling Dataset",
-      "keywords": "bdc_000045 fast-degradation lithium-ion battery cycling dataset unknown unknown unknown unknown unknown batterycell unknown modelling performance",
+      "keywords": "bdc_000045 fast-degradation lithium-ion battery cycling dataset unknown unknown unknown unknown unknown batterycell unknown modelling performance xi'an jiaotong university xjtu",
       "categories": [
         "BatteryCell",
         "Unknown",
@@ -1168,7 +1187,7 @@
     {
       "id": "bdc_000051",
       "title": "49 Ah LFP/Graphite Pouch Cell CC, Drive-Cycle, and GITT Dataset",
-      "keywords": "bdc_000051 49 ah lfp/graphite pouch cell cc, drive-cycle, and gitt dataset lg chem unknown pouchcase lithiumironphosphate carbon batterycell lithiumironphosphate pouchcase performance",
+      "keywords": "bdc_000051 49 ah lfp/graphite pouch cell cc, drive-cycle, and gitt dataset lg chem unknown pouchcase lithiumironphosphate carbon batterycell lithiumironphosphate pouchcase performance stanford university stanford",
       "categories": [
         "BatteryCell",
         "LithiumIronPhosphate",
@@ -1232,7 +1251,7 @@
     {
       "id": "bdc_000055",
       "title": "Retired Bus LFP Cell State-of-Health Dataset",
-      "keywords": "bdc_000055 retired bus lfp cell state-of-health dataset a123 anr26650m1-a, anr26650m1-b r26650 lithiumironphosphate carbon batterycell + batterymodule + batterypack lithiumironphosphate r26650 performance retired pack a123 a123 anr26650m1-a anr26650m1-b carbon carbon lithiumironphosphate lithiumironphosphate r26650 r26650",
+      "keywords": "bdc_000055 retired bus lfp cell state-of-health dataset a123 anr26650m1-a, anr26650m1-b r26650 lithiumironphosphate carbon batterycell + batterymodule + batterypack lithiumironphosphate r26650 performance retired pack a123 a123 anr26650m1-a anr26650m1-b carbon carbon lithiumironphosphate lithiumironphosphate r26650 r26650 carnegie mellon university cmu",
       "categories": [
         "BatteryCell + BatteryModule + BatteryPack",
         "LithiumIronPhosphate",
@@ -1297,7 +1316,7 @@
     {
       "id": "bdc_000059",
       "title": "Commercial Sodium-Ion Cell Ragone Characterization Dataset",
-      "keywords": "bdc_000059 commercial sodium-ion cell ragone characterization dataset shenzhen mushang electronics na18650-1250 r18650 hard carbon batterycell r18650 performance",
+      "keywords": "bdc_000059 commercial sodium-ion cell ragone characterization dataset shenzhen mushang electronics na18650-1250 r18650 hard carbon batterycell r18650 performance stanford university stanford",
       "categories": [
         "BatteryCell",
         "R18650",
@@ -1360,7 +1379,7 @@
     {
       "id": "bdc_000063",
       "title": "LFP Battery Pack and Ultracapacitor DST/UDDS Dataset",
-      "keywords": "bdc_000063 lfp battery pack and ultracapacitor dst/udds dataset fujian brother electric co., ltd ifp-1665130-10 ah prismaticcase lithiumironphosphate batterycell + batterypack four-cell series battery pack and maxwell ultracapacitor tested under dst and udds profiles lithiumironphosphate prismaticcase modelling performance",
+      "keywords": "bdc_000063 lfp battery pack and ultracapacitor dst/udds dataset fujian brother electric co., ltd ifp-1665130-10 ah prismaticcase lithiumironphosphate batterycell + batterypack four-cell series battery pack and maxwell ultracapacitor tested under dst and udds profiles lithiumironphosphate prismaticcase modelling performance university of science and technology of china ustc",
       "categories": [
         "BatteryCell + BatteryPack",
         "Four-cell series battery pack and Maxwell ultracapacitor tested under DST and UDDS profiles",
@@ -1395,7 +1414,7 @@
     {
       "id": "bdc_000066",
       "title": "Electrical and Optical Lithium-Plating Identification Dataset",
-      "keywords": "bdc_000066 electrical and optical lithium-plating identification dataset kokam slpb75106100 pouchcase lithiumnickelmanganesecobaltoxide unknown batterycell lithiumnickelmanganesecobaltoxide optical method pouchcase performance",
+      "keywords": "bdc_000066 electrical and optical lithium-plating identification dataset kokam slpb75106100 pouchcase lithiumnickelmanganesecobaltoxide unknown batterycell lithiumnickelmanganesecobaltoxide optical method pouchcase performance rwth aachen university aachen university rwth rwth aachen",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide",
@@ -1429,7 +1448,7 @@
     {
       "id": "bdc_000068",
       "title": "18650 Jelly-Roll Deformation Cycling and CT Dataset",
-      "keywords": "bdc_000068 18650 jelly-roll deformation cycling and ct dataset samsung inr18650-35e r18650 lithiumnickelcobaltaluminiumoxide carbon + silicon batterycell lithiumnickelcobaltaluminiumoxide r18650 tomography durability performance",
+      "keywords": "bdc_000068 18650 jelly-roll deformation cycling and ct dataset samsung inr18650-35e r18650 lithiumnickelcobaltaluminiumoxide carbon + silicon batterycell lithiumnickelcobaltaluminiumoxide r18650 tomography durability performance rwth aachen university aachen university rwth rwth aachen",
       "categories": [
         "BatteryCell",
         "LithiumNickelCobaltAluminiumOxide",
@@ -1480,7 +1499,7 @@
     {
       "id": "bdc_000071",
       "title": "Ultrasonic Signal Dataset for Battery Electrode Thickness Prediction",
-      "keywords": "bdc_000071 ultrasonic signal dataset for battery electrode thickness prediction labmade labmade not relevant not relevant electrodes not relevant performance",
+      "keywords": "bdc_000071 ultrasonic signal dataset for battery electrode thickness prediction labmade labmade not relevant not relevant electrodes not relevant performance university of warwick warwick university wmg warwick manufacturing group",
       "categories": [
         "Electrodes",
         "Not relevant",
@@ -1495,7 +1514,7 @@
     {
       "id": "bdc_000072",
       "title": "Battery Imaging Library",
-      "keywords": "bdc_000072 battery imaging library unknown unknown multiple multiple unknown large project multiple performance",
+      "keywords": "bdc_000072 battery imaging library unknown unknown multiple multiple unknown large project multiple performance imperial college london imperial college icl",
       "categories": [
         "Large project",
         "Multiple",
@@ -1526,7 +1545,7 @@
     {
       "id": "bdc_000074",
       "title": "Commercial Sodium-Ion and Lithium-Ion Cell Characterization Dataset",
-      "keywords": "bdc_000074 commercial sodium-ion and lithium-ion cell characterization dataset shenzhen zhonghuajia technology co.,ltd.;  wuxi city\nmingyang battery co., ltd. unknown r18650 lithiumnickelmanganesecobaltoxide, lithiumironphosphate, lithiumcobaltoxide, nfm carbon, titanate, hard carbon batterycell lithiumnickelmanganesecobaltoxide, lithiumironphosphate, lithiumcobaltoxide, nfm r18650 performance lithiumcobaltoxide lithiumironphosphate lithiumnickelmanganesecobaltoxide nfm r18650 r18650 r18650 r18650 shenzhen zhonghuajia technology co. ltd.;  wuxi city\nmingyang battery co. ltd. shenzhen zhonghuajia technology co. ltd.;  wuxi city\nmingyang battery co. ltd. shenzhen zhonghuajia technology co. ltd.;  wuxi city\nmingyang battery co. ltd. shenzhen zhonghuajia technology co. ltd.;  wuxi city\nmingyang battery co. ltd.",
+      "keywords": "bdc_000074 commercial sodium-ion and lithium-ion cell characterization dataset shenzhen zhonghuajia technology co.,ltd.;  wuxi city\nmingyang battery co., ltd. unknown r18650 lithiumnickelmanganesecobaltoxide, lithiumironphosphate, lithiumcobaltoxide, nfm carbon, titanate, hard carbon batterycell lithiumnickelmanganesecobaltoxide, lithiumironphosphate, lithiumcobaltoxide, nfm r18650 performance lithiumcobaltoxide lithiumironphosphate lithiumnickelmanganesecobaltoxide nfm r18650 r18650 r18650 r18650 shenzhen zhonghuajia technology co. ltd.;  wuxi city\nmingyang battery co. ltd. shenzhen zhonghuajia technology co. ltd.;  wuxi city\nmingyang battery co. ltd. shenzhen zhonghuajia technology co. ltd.;  wuxi city\nmingyang battery co. ltd. shenzhen zhonghuajia technology co. ltd.;  wuxi city\nmingyang battery co. ltd. technische universität berlin technical university of berlin tu berlin",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide, LithiumIronPhosphate, LithiumCobaltOxide, NFM",
@@ -1542,7 +1561,7 @@
     {
       "id": "bdc_000075",
       "title": "High-Power Lithium-Ion Cell Characterization Dataset",
-      "keywords": "bdc_000075 high-power lithium-ion cell characterization dataset molicel inr-21700-p42a r21700 lithiumnickelmanganesecobaltoxide carbon batterycell lithiumnickelmanganesecobaltoxide r21700 performance",
+      "keywords": "bdc_000075 high-power lithium-ion cell characterization dataset molicel inr-21700-p42a r21700 lithiumnickelmanganesecobaltoxide carbon batterycell lithiumnickelmanganesecobaltoxide r21700 performance stanford university stanford",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide",
@@ -1590,7 +1609,7 @@
     {
       "id": "bdc_000078",
       "title": "Active-Cooling Effects in CALB L173F125A Cell Testing Dataset",
-      "keywords": "bdc_000078 active-cooling effects in calb l173f125a cell testing dataset calb l173f125a prismatic lithiumironphosphate carbon batterycell lithiumironphosphate prismatic performance",
+      "keywords": "bdc_000078 active-cooling effects in calb l173f125a cell testing dataset calb l173f125a prismatic lithiumironphosphate carbon batterycell lithiumironphosphate prismatic performance university of bayreuth universität bayreuth",
       "categories": [
         "BatteryCell",
         "LithiumIronPhosphate",
@@ -1606,7 +1625,7 @@
     {
       "id": "bdc_000079",
       "title": "Panasonic NCR18650B Cell-to-Cell Variation Dataset",
-      "keywords": "bdc_000079 panasonic ncr18650b cell-to-cell variation dataset panasonic ncr-18650b r18650 unknown unknown batterycell r18650 unknown performance",
+      "keywords": "bdc_000079 panasonic ncr18650b cell-to-cell variation dataset panasonic ncr-18650b r18650 unknown unknown batterycell r18650 unknown performance university of bayreuth universität bayreuth",
       "categories": [
         "BatteryCell",
         "R18650",
@@ -1622,7 +1641,7 @@
     {
       "id": "bdc_000080",
       "title": "Short-Term Aging and Degradation Indicators Dataset for Varta CP1654 Cells",
-      "keywords": "bdc_000080 short-term aging and degradation indicators dataset for varta cp1654 cells varta cp1654 unknown lithiumnickelmanganesecobaltoxide carbon batterycell lithiumnickelmanganesecobaltoxide unknown performance",
+      "keywords": "bdc_000080 short-term aging and degradation indicators dataset for varta cp1654 cells varta cp1654 unknown lithiumnickelmanganesecobaltoxide carbon batterycell lithiumnickelmanganesecobaltoxide unknown performance university of bayreuth universität bayreuth",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide",
@@ -1655,7 +1674,7 @@
     {
       "id": "bdc_000082",
       "title": "Variable-Current Cycling and EIS Dataset for LiR2032 Coin Cells",
-      "keywords": "bdc_000082 variable-current cycling and eis dataset for lir2032 coin cells powerstream; rs pro lir2032 coincase batterycell coincase durability performance coincase coincase lir2032 lir2032 powerstream rs pro",
+      "keywords": "bdc_000082 variable-current cycling and eis dataset for lir2032 coin cells powerstream; rs pro lir2032 coincase batterycell coincase durability performance coincase coincase lir2032 lir2032 powerstream rs pro university of cambridge cambridge university univ. of cambridge",
       "categories": [
         "BatteryCell",
         "CoinCase",
@@ -1686,7 +1705,7 @@
     {
       "id": "bdc_000084",
       "title": "BatteryLife Raw Cycling Dataset",
-      "keywords": "bdc_000084 batterylife raw cycling dataset labmade, zhuhai punashidai new energy, calb unknown, unknown, unknown coincase, r18650, prismaticcase mno2; lithiumnickelmanganesecobaltoxide zinc metal, unknown, carbon batterycell coincase, r18650, prismaticcase mno2; lithiumnickelmanganesecobaltoxide performance lithiumnickelmanganesecobaltoxide mno2 sodium-ion",
+      "keywords": "bdc_000084 batterylife raw cycling dataset labmade, zhuhai punashidai new energy, calb unknown, unknown, unknown coincase, r18650, prismaticcase mno2; lithiumnickelmanganesecobaltoxide zinc metal, unknown, carbon batterycell coincase, r18650, prismaticcase mno2; lithiumnickelmanganesecobaltoxide performance lithiumnickelmanganesecobaltoxide mno2 sodium-ion hong kong university of science and technology hkust",
       "categories": [
         "BatteryCell",
         "CoinCase, R18650, PrismaticCase",
@@ -1734,7 +1753,7 @@
     {
       "id": "bdc_000087",
       "title": "X-Ray CT Projection Datasets for 18650 Battery Reconstruction",
-      "keywords": "bdc_000087 x-ray ct projection datasets for 18650 battery reconstruction unknown unknown r18650 unknown unknown batterycell r18650 tomography unknown performance",
+      "keywords": "bdc_000087 x-ray ct projection datasets for 18650 battery reconstruction unknown unknown r18650 unknown unknown batterycell r18650 tomography unknown performance university of warwick warwick university wmg warwick manufacturing group",
       "categories": [
         "BatteryCell",
         "R18650",
@@ -1780,7 +1799,7 @@
     {
       "id": "bdc_000092",
       "title": "High-Throughput Sodium-Ion Cell Formation and Cycling Dataset",
-      "keywords": "bdc_000092 high-throughput sodium-ion cell formation and cycling dataset labmade labmade unknown na0.9[cu0.22fe0.30mn0.48]o2 hard carbon batterycell na0.9[cu0.22fe0.30mn0.48]o2 unknown performance",
+      "keywords": "bdc_000092 high-throughput sodium-ion cell formation and cycling dataset labmade labmade unknown na0.9[cu0.22fe0.30mn0.48]o2 hard carbon batterycell na0.9[cu0.22fe0.30mn0.48]o2 unknown performance karlsruhe institute of technology karlsruher institut für technologie kit",
       "categories": [
         "BatteryCell",
         "Na0.9[Cu0.22Fe0.30Mn0.48]O2",
@@ -1811,7 +1830,7 @@
     {
       "id": "bdc_000095",
       "title": "Panasonic NCR18650B Formation, RPT, and Half-Cell Dataset",
-      "keywords": "bdc_000095 panasonic ncr18650b formation, rpt, and half-cell dataset panasonic ncr 18650b r18650 lithiumnickelcobaltaluminiumoxide carbon batterycell lithiumnickelcobaltaluminiumoxide r18650 performance",
+      "keywords": "bdc_000095 panasonic ncr18650b formation, rpt, and half-cell dataset panasonic ncr 18650b r18650 lithiumnickelcobaltaluminiumoxide carbon batterycell lithiumnickelcobaltaluminiumoxide r18650 performance university of hawaii university of hawaii at manoa hawaii natural energy institute hnei",
       "categories": [
         "BatteryCell",
         "LithiumNickelCobaltAluminiumOxide",
@@ -1827,7 +1846,7 @@
     {
       "id": "bdc_000096",
       "title": "IFR32135 and NCR18650 Battery Cycling Dataset",
-      "keywords": "bdc_000096 ifr32135 and ncr18650 battery cycling dataset unknown ifr32135, ncr18650 unknown lithiumironphosphate, ncr unknown batterycell lithiumironphosphate, ncr unknown performance ifr32135 ncr18650 r18650 r32135",
+      "keywords": "bdc_000096 ifr32135 and ncr18650 battery cycling dataset unknown ifr32135, ncr18650 unknown lithiumironphosphate, ncr unknown batterycell lithiumironphosphate, ncr unknown performance ifr32135 ncr18650 r18650 r32135 shanghai jiao tong university shanghai jiaotong university sjtu",
       "categories": [
         "BatteryCell",
         "LithiumIronPhosphate, NCR",
@@ -1891,7 +1910,7 @@
     {
       "id": "bdc_000100",
       "title": "Base-Cooled LG M50T and Samsung 30Q Thermal Characterization Dataset",
-      "keywords": "bdc_000100 base-cooled lg m50t and samsung 30q thermal characterization dataset lg chem, samsung inr21700 m50t, inr18650 30q r21700, r18650 lithiumnickelmanganesecobaltoxide, lithiumnickelcobaltaluminiumoxide carbon, carbon batterycell lithiumnickelmanganesecobaltoxide, lithiumnickelcobaltaluminiumoxide r21700, r18650 performance inr18650 30q inr21700 m50t r18650 r21700",
+      "keywords": "bdc_000100 base-cooled lg m50t and samsung 30q thermal characterization dataset lg chem, samsung inr21700 m50t, inr18650 30q r21700, r18650 lithiumnickelmanganesecobaltoxide, lithiumnickelcobaltaluminiumoxide carbon, carbon batterycell lithiumnickelmanganesecobaltoxide, lithiumnickelcobaltaluminiumoxide r21700, r18650 performance inr18650 30q inr21700 m50t r18650 r21700 imperial college london imperial college icl",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide, LithiumNickelCobaltAluminiumOxide",
@@ -1907,7 +1926,7 @@
     {
       "id": "bdc_000101",
       "title": "Tesla 4680 Cell Teardown and Electrochemical Characterization Dataset",
-      "keywords": "bdc_000101 tesla 4680 cell teardown and electrochemical characterization dataset unknown unknown r4680 lithiumnickelmanganesecobaltoxide carbon batterycell lithiumnickelmanganesecobaltoxide r4680 performance",
+      "keywords": "bdc_000101 tesla 4680 cell teardown and electrochemical characterization dataset unknown unknown r4680 lithiumnickelmanganesecobaltoxide carbon batterycell lithiumnickelmanganesecobaltoxide r4680 performance technical university of munich technische universität münchen tum tu munich tu münchen",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide",
@@ -1923,7 +1942,7 @@
     {
       "id": "bdc_000102",
       "title": "Rapid DC-Pulse Battery Diagnostics Dataset",
-      "keywords": "bdc_000102 rapid dc-pulse battery diagnostics dataset unknown, nissan, unknown, a123 unknown pouchcase, pouchcase, prismaticcase, cylindricalcase unknown unknown batterycell, batterymodule pouchcase, pouchcase, prismaticcase, cylindricalcase unknown performance cylindricalcase pouchcase prismaticcase",
+      "keywords": "bdc_000102 rapid dc-pulse battery diagnostics dataset unknown, nissan, unknown, a123 unknown pouchcase, pouchcase, prismaticcase, cylindricalcase unknown unknown batterycell, batterymodule pouchcase, pouchcase, prismaticcase, cylindricalcase unknown performance cylindricalcase pouchcase prismaticcase national laboratory of the rockies nlr national renewable energy laboratory national renewable energy lab nrel",
       "categories": [
         "BatteryCell, BatteryModule",
         "PouchCase, PouchCase, PrismaticCase, CylindricalCase",
@@ -1971,7 +1990,7 @@
     {
       "id": "bdc_000105",
       "title": "Commercial 21700 Cell Performance Benchmark Dataset",
-      "keywords": "bdc_000105 commercial 21700 cell performance benchmark dataset lg chem, samsung, tesla, murata, murata, molicel m50t, 48x, t48p, vtc6a-am, vtc6a, p42a r21700 lithiumnickelmanganesecobaltoxide, lithiumnickelcobaltaluminiumoxide, unknown, unknown, lithiumnickelcobaltaluminiumoxide, lithiumnickelcobaltaluminiumoxide carbon, carbon, carbon, carbon, carbon, carbon batterycell lithiumnickelmanganesecobaltoxide, lithiumnickelcobaltaluminiumoxide, unknown, unknown, lithiumnickelcobaltaluminiumoxide, lithiumnickelcobaltaluminiumoxide r21700 performance 48x m50t p42a r21700 r21700 r21700 r21700 r21700 r21700 t48p vtc6a vtc6a-am",
+      "keywords": "bdc_000105 commercial 21700 cell performance benchmark dataset lg chem, samsung, tesla, murata, murata, molicel m50t, 48x, t48p, vtc6a-am, vtc6a, p42a r21700 lithiumnickelmanganesecobaltoxide, lithiumnickelcobaltaluminiumoxide, unknown, unknown, lithiumnickelcobaltaluminiumoxide, lithiumnickelcobaltaluminiumoxide carbon, carbon, carbon, carbon, carbon, carbon batterycell lithiumnickelmanganesecobaltoxide, lithiumnickelcobaltaluminiumoxide, unknown, unknown, lithiumnickelcobaltaluminiumoxide, lithiumnickelcobaltaluminiumoxide r21700 performance 48x m50t p42a r21700 r21700 r21700 r21700 r21700 r21700 t48p vtc6a vtc6a-am imperial college london imperial college icl",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide, LithiumNickelCobaltAluminiumOxide, Unknown, Unknown, LithiumNickelCobaltAluminiumOxide, LithiumNickelCobaltAluminiumOxide",
@@ -1987,7 +2006,7 @@
     {
       "id": "bdc_000106",
       "title": "LFP Cell EIS and Sine-Wave Pulse SOC Dataset",
-      "keywords": "bdc_000106 lfp cell eis and sine-wave pulse soc dataset unknown unknown r26650 lithiumironphosphate carbon batterycell lithiumironphosphate r26650 performance",
+      "keywords": "bdc_000106 lfp cell eis and sine-wave pulse soc dataset unknown unknown r26650 lithiumironphosphate carbon batterycell lithiumironphosphate r26650 performance stanford university stanford",
       "categories": [
         "BatteryCell",
         "LithiumIronPhosphate",
@@ -2020,7 +2039,7 @@
     {
       "id": "bdc_000108",
       "title": "Joint-Domain Impedance Spectroscopy Dataset for Solid-State Batteries",
-      "keywords": "bdc_000108 joint-domain impedance spectroscopy dataset for solid-state batteries performance",
+      "keywords": "bdc_000108 joint-domain impedance spectroscopy dataset for solid-state batteries performance university of münster universität münster wwu münster",
       "categories": [
         "performance"
       ],
@@ -2033,7 +2052,7 @@
     {
       "id": "bdc_000109",
       "title": "Samsung INR18650-35E Drive-Cycle Aging Dataset",
-      "keywords": "bdc_000109 samsung inr18650-35e drive-cycle aging dataset samsung inr18650-35e r18650 lithiumnickelcobaltaluminiumoxide c+si batterycell lithiumnickelcobaltaluminiumoxide r18650 durability",
+      "keywords": "bdc_000109 samsung inr18650-35e drive-cycle aging dataset samsung inr18650-35e r18650 lithiumnickelcobaltaluminiumoxide c+si batterycell lithiumnickelcobaltaluminiumoxide r18650 durability rwth aachen university aachen university rwth rwth aachen",
       "categories": [
         "BatteryCell",
         "LithiumNickelCobaltAluminiumOxide",
@@ -2080,7 +2099,7 @@
     {
       "id": "bdc_000115",
       "title": "Sony-Murata VTC6 eVTOL Duty-Cycle Aging Dataset",
-      "keywords": "bdc_000115 sony-murata vtc6 evtol duty-cycle aging dataset sony-murata 18650 vtc-6 r18650 lithiumnickelcobaltaluminiumoxide batterycell lithiumnickelcobaltaluminiumoxide r18650 durability performance",
+      "keywords": "bdc_000115 sony-murata vtc6 evtol duty-cycle aging dataset sony-murata 18650 vtc-6 r18650 lithiumnickelcobaltaluminiumoxide batterycell lithiumnickelcobaltaluminiumoxide r18650 durability performance carnegie mellon university cmu",
       "categories": [
         "BatteryCell",
         "LithiumNickelCobaltAluminiumOxide",
@@ -2145,7 +2164,7 @@
     {
       "id": "bdc_000119",
       "title": "LG ICR18650 C2 1,000-Cycle Degradation Variability Dataset",
-      "keywords": "bdc_000119 lg icr18650 c2 1,000-cycle degradation variability dataset lg chemical limited icr18650 c2 r18650 nmc+lco graphite batterycell intrinsic cell-to-cell degradation variability during 1,000-cycle aging nmc+lco r18650 durability",
+      "keywords": "bdc_000119 lg icr18650 c2 1,000-cycle degradation variability dataset lg chemical limited icr18650 c2 r18650 nmc+lco graphite batterycell intrinsic cell-to-cell degradation variability during 1,000-cycle aging nmc+lco r18650 durability university of hawaii university of hawaii at manoa hawaii natural energy institute hnei",
       "categories": [
         "BatteryCell",
         "Intrinsic cell-to-cell degradation variability during 1,000-cycle aging",
@@ -2162,7 +2181,7 @@
     {
       "id": "bdc_000120",
       "title": "LG M50T Silicon-Graphite Electrode Degradation Dataset",
-      "keywords": "bdc_000120 lg m50t silicon-graphite electrode degradation dataset lg chem m50t,  gbm50t2170 r21700 nmc811 c+si batterycell nmc811 r21700 durability gbm50t2170 lg chem lg chem m50t nmc811 nmc811 r21700 r21700",
+      "keywords": "bdc_000120 lg m50t silicon-graphite electrode degradation dataset lg chem m50t,  gbm50t2170 r21700 nmc811 c+si batterycell nmc811 r21700 durability gbm50t2170 lg chem lg chem m50t nmc811 nmc811 r21700 r21700 imperial college london imperial college icl",
       "categories": [
         "BatteryCell",
         "NMC811",
@@ -2178,7 +2197,7 @@
     {
       "id": "bdc_000121",
       "title": "FOBSS Modular Battery System Monitoring Dataset",
-      "keywords": "bdc_000121 fobss modular battery system monitoring dataset unknown unknown pouchcase nmc111 carbon batterycell, batterypack nmc111 pack testing pouchcase durability",
+      "keywords": "bdc_000121 fobss modular battery system monitoring dataset unknown unknown pouchcase nmc111 carbon batterycell, batterypack nmc111 pack testing pouchcase durability karlsruhe institute of technology karlsruher institut für technologie kit",
       "categories": [
         "BatteryCell, BatteryPack",
         "NMC111",
@@ -2246,7 +2265,7 @@
     {
       "id": "bdc_000126",
       "title": "NASA Randomized Battery Usage Dataset",
-      "keywords": "bdc_000126 nasa randomized battery usage dataset unknown unknown r18650 lithiumcobaltoxide carbon batterycell lithiumcobaltoxide r18650 durability",
+      "keywords": "bdc_000126 nasa randomized battery usage dataset unknown unknown r18650 lithiumcobaltoxide carbon batterycell lithiumcobaltoxide r18650 durability nasa national aeronautics and space administration",
       "categories": [
         "BatteryCell",
         "LithiumCobaltOxide",
@@ -2262,7 +2281,7 @@
     {
       "id": "bdc_000127",
       "title": "Oxford Long-Term Lithium-Ion Battery Degradation Dataset 1",
-      "keywords": "bdc_000127 oxford long-term lithium-ion battery degradation dataset 1 kokam slpb533459h4 pouchcase carbon batterycell pouchcase durability",
+      "keywords": "bdc_000127 oxford long-term lithium-ion battery degradation dataset 1 kokam slpb533459h4 pouchcase carbon batterycell pouchcase durability university of oxford oxford university",
       "categories": [
         "BatteryCell",
         "PouchCase",
@@ -2277,7 +2296,7 @@
     {
       "id": "bdc_000128",
       "title": "Path-Dependent Battery Degradation Dataset",
-      "keywords": "bdc_000128 path-dependent battery degradation dataset panasonic ncr18650bd r18650 lithiumnickelcobaltaluminiumoxide graphite batterycell lithiumnickelcobaltaluminiumoxide path-dependent combinations of calendar and cyclic aging applied to four groups of three cells r18650 durability",
+      "keywords": "bdc_000128 path-dependent battery degradation dataset panasonic ncr18650bd r18650 lithiumnickelcobaltaluminiumoxide graphite batterycell lithiumnickelcobaltaluminiumoxide path-dependent combinations of calendar and cyclic aging applied to four groups of three cells r18650 durability university of oxford oxford university",
       "categories": [
         "BatteryCell",
         "LithiumNickelCobaltAluminiumOxide",
@@ -2294,7 +2313,7 @@
     {
       "id": "bdc_000129",
       "title": "Oxford Energy-Trading Battery Degradation Dataset",
-      "keywords": "bdc_000129 oxford energy-trading battery degradation dataset kokam slpb78205130h pouchcase lithiumnickelmanganesecobaltoxide carbon batterycell lithiumnickelmanganesecobaltoxide pouchcase year-long degradation under current profiles for day-ahead wholesale energy trading durability",
+      "keywords": "bdc_000129 oxford energy-trading battery degradation dataset kokam slpb78205130h pouchcase lithiumnickelmanganesecobaltoxide carbon batterycell lithiumnickelmanganesecobaltoxide pouchcase year-long degradation under current profiles for day-ahead wholesale energy trading durability university of oxford oxford university",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide",
@@ -2327,7 +2346,7 @@
     {
       "id": "bdc_000131",
       "title": "A123 APR18650M1A Long-Term Cycling Dataset",
-      "keywords": "bdc_000131 a123 apr18650m1a long-term cycling dataset a123 systems apr18650m1a r18650 lithiumironphosphate graphite batterycell lithiumironphosphate long-term cycling across temperature, soc-window, and discharge-rate conditions r18650 durability",
+      "keywords": "bdc_000131 a123 apr18650m1a long-term cycling dataset a123 systems apr18650m1a r18650 lithiumironphosphate graphite batterycell lithiumironphosphate long-term cycling across temperature, soc-window, and discharge-rate conditions r18650 durability sandia national laboratories sandia snl",
       "categories": [
         "BatteryCell",
         "LithiumIronPhosphate",
@@ -2344,7 +2363,7 @@
     {
       "id": "bdc_000132",
       "title": "Panasonic NCR18650B Long-Term Cycling Dataset",
-      "keywords": "bdc_000132 panasonic ncr18650b long-term cycling dataset panasonic ncr18650b r18650 lithiumnickelcobaltaluminiumoxide graphite batterycell lithiumnickelcobaltaluminiumoxide long-term cycling across temperature, soc-window, and discharge-rate conditions r18650 durability",
+      "keywords": "bdc_000132 panasonic ncr18650b long-term cycling dataset panasonic ncr18650b r18650 lithiumnickelcobaltaluminiumoxide graphite batterycell lithiumnickelcobaltaluminiumoxide long-term cycling across temperature, soc-window, and discharge-rate conditions r18650 durability sandia national laboratories sandia snl",
       "categories": [
         "BatteryCell",
         "LithiumNickelCobaltAluminiumOxide",
@@ -2361,7 +2380,7 @@
     {
       "id": "bdc_000133",
       "title": "LG 18650HG2 Long-Term Cycling Dataset",
-      "keywords": "bdc_000133 lg 18650hg2 long-term cycling dataset lg chem 18650hg2 r18650 lithiumnickelmanganesecobaltoxide graphite batterycell lithiumnickelmanganesecobaltoxide long-term cycling across temperature, soc-window, and discharge-rate conditions r18650 durability",
+      "keywords": "bdc_000133 lg 18650hg2 long-term cycling dataset lg chem 18650hg2 r18650 lithiumnickelmanganesecobaltoxide graphite batterycell lithiumnickelmanganesecobaltoxide long-term cycling across temperature, soc-window, and discharge-rate conditions r18650 durability sandia national laboratories sandia snl",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide",
@@ -2378,7 +2397,7 @@
     {
       "id": "bdc_000134",
       "title": "Lithium-ion battery aging dataset based on electric vehicle real-driving profiles",
-      "keywords": "bdc_000134 lithium-ion battery aging dataset based on electric vehicle real-driving profiles lg chem inr21700-m50t r21700 lithiumnickelmanganesecobaltoxide graphite+silicon batterycell ev real-driving udds aging with capacity, hppc, and eis diagnostics lithiumnickelmanganesecobaltoxide r21700 durability performance",
+      "keywords": "bdc_000134 lithium-ion battery aging dataset based on electric vehicle real-driving profiles lg chem inr21700-m50t r21700 lithiumnickelmanganesecobaltoxide graphite+silicon batterycell ev real-driving udds aging with capacity, hppc, and eis diagnostics lithiumnickelmanganesecobaltoxide r21700 durability performance stanford university stanford",
       "categories": [
         "BatteryCell",
         "EV real-driving UDDS aging with capacity, HPPC, and EIS diagnostics",
@@ -2413,7 +2432,7 @@
     {
       "id": "bdc_000136",
       "title": "A123 APR18650M1A Fast-Charging Cycle-Life Dataset",
-      "keywords": "bdc_000136 a123 apr18650m1a fast-charging cycle-life dataset a123 systems apr18650m1a r18650 lithiumironphosphate graphite 124 cells aged to failure under 72 one- or two-step fast-charging policies batterycell lithiumironphosphate r18650 durability",
+      "keywords": "bdc_000136 a123 apr18650m1a fast-charging cycle-life dataset a123 systems apr18650m1a r18650 lithiumironphosphate graphite 124 cells aged to failure under 72 one- or two-step fast-charging policies batterycell lithiumironphosphate r18650 durability stanford university stanford",
       "categories": [
         "124 cells aged to failure under 72 one- or two-step fast-charging policies",
         "BatteryCell",
@@ -2430,7 +2449,7 @@
     {
       "id": "bdc_000137",
       "title": "A123 APR18650M1A Extreme Fast-Charging Dataset",
-      "keywords": "bdc_000137 a123 apr18650m1a extreme fast-charging dataset a123 systems apr18650m1a r18650 lithiumironphosphate graphite 236 published cell records across four closed-loop optimization rounds and one validation batch batterycell lithiumironphosphate r18650 durability",
+      "keywords": "bdc_000137 a123 apr18650m1a extreme fast-charging dataset a123 systems apr18650m1a r18650 lithiumironphosphate graphite 236 published cell records across four closed-loop optimization rounds and one validation batch batterycell lithiumironphosphate r18650 durability stanford university stanford",
       "categories": [
         "236 published cell records across four closed-loop optimization rounds and one validation batch",
         "BatteryCell",
@@ -2447,7 +2466,7 @@
     {
       "id": "bdc_000138",
       "title": "LG MJ1 Aging, Charging-Curve, and BEV Profile Dataset",
-      "keywords": "bdc_000138 lg mj1 aging, charging-curve, and bev profile dataset lg chem inr18650 mj1 r18650 nmc811 c+si batterycell nmc811 r18650 durability",
+      "keywords": "bdc_000138 lg mj1 aging, charging-curve, and bev profile dataset lg chem inr18650 mj1 r18650 nmc811 c+si batterycell nmc811 r18650 durability technical university of munich technische universität münchen tum tu munich tu münchen",
       "categories": [
         "BatteryCell",
         "NMC811",
@@ -2463,7 +2482,7 @@
     {
       "id": "bdc_000139",
       "title": "LG INR18650-MJ1 400-Cycle Dataset",
-      "keywords": "bdc_000139 lg inr18650-mj1 400-cycle dataset lg chem inr18650 mj1 r18650 nmc811 c+si batterycell nmc811 r18650 durability",
+      "keywords": "bdc_000139 lg inr18650-mj1 400-cycle dataset lg chem inr18650 mj1 r18650 nmc811 c+si batterycell nmc811 r18650 durability university college london ucl",
       "categories": [
         "BatteryCell",
         "NMC811",
@@ -2479,7 +2498,7 @@
     {
       "id": "bdc_000140",
       "title": "Kokam Pouch Cell and Module Aging and Safety Dataset",
-      "keywords": "bdc_000140 kokam pouch cell and module aging and safety dataset kokam slpb526495 pouchcase lithiumnickelcobaltaluminiumoxide c batterycell, batterymodule cell and module lithiumnickelcobaltaluminiumoxide pouchcase durability",
+      "keywords": "bdc_000140 kokam pouch cell and module aging and safety dataset kokam slpb526495 pouchcase lithiumnickelcobaltaluminiumoxide c batterycell, batterymodule cell and module lithiumnickelcobaltaluminiumoxide pouchcase durability ul research institutes underwriters laboratories ul",
       "categories": [
         "BatteryCell, BatteryModule",
         "Cell and module",
@@ -2496,7 +2515,7 @@
     {
       "id": "bdc_000141",
       "title": "Panasonic NCR18650B Cell and Module Aging and Safety Dataset",
-      "keywords": "bdc_000141 panasonic ncr18650b cell and module aging and safety dataset panasonic ncr18650b r18650 lithiumnickelcobaltaluminiumoxide c batterycell, batterymodule cell and module lithiumnickelcobaltaluminiumoxide r18650 durability",
+      "keywords": "bdc_000141 panasonic ncr18650b cell and module aging and safety dataset panasonic ncr18650b r18650 lithiumnickelcobaltaluminiumoxide c batterycell, batterymodule cell and module lithiumnickelcobaltaluminiumoxide r18650 durability ul research institutes underwriters laboratories ul",
       "categories": [
         "BatteryCell, BatteryModule",
         "Cell and module",
@@ -2513,7 +2532,7 @@
     {
       "id": "bdc_000143",
       "title": "LG M50 Internal-Temperature Aging Dataset",
-      "keywords": "bdc_000143 lg m50 internal-temperature aging dataset lg chem inr21700-m50 r21700 nmc811 c+si batterycell nmc811 r21700 durability",
+      "keywords": "bdc_000143 lg m50 internal-temperature aging dataset lg chem inr21700-m50 r21700 nmc811 c+si batterycell nmc811 r21700 durability university of warwick warwick university wmg warwick manufacturing group",
       "categories": [
         "BatteryCell",
         "NMC811",
@@ -2529,7 +2548,7 @@
     {
       "id": "bdc_000144",
       "title": "LG M50 Internal Gas-Pressure and Temperature Aging Dataset",
-      "keywords": "bdc_000144 lg m50 internal gas-pressure and temperature aging dataset lg chem inr21700-m50 r21700 nmc811 c+si batterycell measure of accumulated internal gas pressure and temperature of lithium-ion battery nmc811 r21700 durability",
+      "keywords": "bdc_000144 lg m50 internal gas-pressure and temperature aging dataset lg chem inr21700-m50 r21700 nmc811 c+si batterycell measure of accumulated internal gas pressure and temperature of lithium-ion battery nmc811 r21700 durability university of warwick warwick university wmg warwick manufacturing group",
       "categories": [
         "BatteryCell",
         "Measure of accumulated internal gas pressure and temperature of lithium-ion battery",
@@ -2594,7 +2613,7 @@
     {
       "id": "bdc_000148",
       "title": "Sony-Murata US26650FTC1 Cycle-Aging Dataset",
-      "keywords": "bdc_000148 sony-murata us26650ftc1 cycle-aging dataset sony-murata us26650ftc1 r26650 lithiumironphosphate c batterycell lithiumironphosphate r26650 durability",
+      "keywords": "bdc_000148 sony-murata us26650ftc1 cycle-aging dataset sony-murata us26650ftc1 r26650 lithiumironphosphate c batterycell lithiumironphosphate r26650 durability technical university of munich technische universität münchen tum tu munich tu münchen",
       "categories": [
         "BatteryCell",
         "LithiumIronPhosphate",
@@ -2676,7 +2695,7 @@
     {
       "id": "bdc_000153",
       "title": "LG M50T Calendar-Aging Dataset Under 39 Storage Conditions",
-      "keywords": "bdc_000153 lg m50t calendar-aging dataset under 39 storage conditions lg chem inr21700-m50t nmc811 c+si batterycell nmc811 durability modelling",
+      "keywords": "bdc_000153 lg m50t calendar-aging dataset under 39 storage conditions lg chem inr21700-m50t nmc811 c+si batterycell nmc811 durability modelling university of warwick warwick university wmg warwick manufacturing group",
       "categories": [
         "BatteryCell",
         "NMC811",
@@ -2692,7 +2711,7 @@
     {
       "id": "bdc_000154",
       "title": "LithiumWerks APR18650M1B and LG MJ1 Temperature-Rate Dataset",
-      "keywords": "bdc_000154 lithiumwerks apr18650m1b and lg mj1 temperature-rate dataset lithium werks, lg chem lithiumwerks apr18650m1b, lg chem inr18650mj1 r18650 multiple carbon, carbon + silicon batterycell multiple r18650 durability lg chem lg chem inr18650mj1 lithiumwerks apr18650m1b r18650 r18650",
+      "keywords": "bdc_000154 lithiumwerks apr18650m1b and lg mj1 temperature-rate dataset lithium werks, lg chem lithiumwerks apr18650m1b, lg chem inr18650mj1 r18650 multiple carbon, carbon + silicon batterycell multiple r18650 durability lg chem lg chem inr18650mj1 lithiumwerks apr18650m1b r18650 r18650 university of hawaii university of hawaii at manoa hawaii natural energy institute hnei",
       "categories": [
         "BatteryCell",
         "Multiple",
@@ -2708,7 +2727,7 @@
     {
       "id": "bdc_000155",
       "title": "Autonomous Electric Vehicle Synthetic Duty-Cycle Dataset",
-      "keywords": "bdc_000155 autonomous electric vehicle synthetic duty-cycle dataset unknown unknown unknown unknown unknown batterycell unknown durability",
+      "keywords": "bdc_000155 autonomous electric vehicle synthetic duty-cycle dataset unknown unknown unknown unknown unknown batterycell unknown durability stanford university stanford",
       "categories": [
         "BatteryCell",
         "Unknown",
@@ -2723,7 +2742,7 @@
     {
       "id": "bdc_000157",
       "title": "LG ICR18650-HE4 Multi-Stress Degradation Dataset",
-      "keywords": "bdc_000157 lg icr18650-he4 multi-stress degradation dataset lg chem icr18650-he4 r18650 unknown unknown batterycell r18650 unknown durability",
+      "keywords": "bdc_000157 lg icr18650-he4 multi-stress degradation dataset lg chem icr18650-he4 r18650 unknown unknown batterycell r18650 unknown durability technische universität berlin technical university of berlin tu berlin",
       "categories": [
         "BatteryCell",
         "R18650",
@@ -2739,7 +2758,7 @@
     {
       "id": "bdc_000158",
       "title": "LG M50T and GBM50T2170 Multi-Condition Cycle-Aging Dataset",
-      "keywords": "bdc_000158 lg m50t and gbm50t2170 multi-condition cycle-aging dataset lg chem m50t, gbm50t2170 r21700 nmc811 c+si batterycell nmc811 r21700 durability gbm50t2170 lg chem lg chem m50t nmc811 nmc811 r21700 r21700",
+      "keywords": "bdc_000158 lg m50t and gbm50t2170 multi-condition cycle-aging dataset lg chem m50t, gbm50t2170 r21700 nmc811 c+si batterycell nmc811 r21700 durability gbm50t2170 lg chem lg chem m50t nmc811 nmc811 r21700 r21700 imperial college london imperial college icl",
       "categories": [
         "BatteryCell",
         "NMC811",
@@ -2755,7 +2774,7 @@
     {
       "id": "bdc_000160",
       "title": "BBOXX Off-Grid Solar Battery Field Dataset",
-      "keywords": "bdc_000160 bboxx off-grid solar battery field dataset bboxx ltd. unknown unknown lead acid unknown batterymodule end-of-life prediction from 400–760 days of off-grid solar field operation lead acid unknown durability field modelling",
+      "keywords": "bdc_000160 bboxx off-grid solar battery field dataset bboxx ltd. unknown unknown lead acid unknown batterymodule end-of-life prediction from 400–760 days of off-grid solar field operation lead acid unknown durability field modelling university of oxford oxford university",
       "categories": [
         "BatteryModule",
         "End-of-life prediction from 400–760 days of off-grid solar field operation",
@@ -2823,7 +2842,7 @@
     {
       "id": "bdc_000165",
       "title": "LG INR18650-HG2 Capacity and Impedance Aging Log Dataset",
-      "keywords": "bdc_000165 lg inr18650-hg2 capacity and impedance aging log dataset lg chem inr18650hg2 lithiumnickelmanganesecobaltoxide c+si batterycell lithiumnickelmanganesecobaltoxide durability",
+      "keywords": "bdc_000165 lg inr18650-hg2 capacity and impedance aging log dataset lg chem inr18650hg2 lithiumnickelmanganesecobaltoxide c+si batterycell lithiumnickelmanganesecobaltoxide durability karlsruhe institute of technology karlsruher institut für technologie kit",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide",
@@ -2838,7 +2857,7 @@
     {
       "id": "bdc_000166",
       "title": "LG M50T Second-Life Grid-Storage Aging Dataset",
-      "keywords": "bdc_000166 lg m50t second-life grid-storage aging dataset lg chem inr21700-m50t r21700 lithiumnickelmanganesecobaltoxide c+si batterycell lithiumnickelmanganesecobaltoxide r21700 durability retired cells",
+      "keywords": "bdc_000166 lg m50t second-life grid-storage aging dataset lg chem inr21700-m50t r21700 lithiumnickelmanganesecobaltoxide c+si batterycell lithiumnickelmanganesecobaltoxide r21700 durability retired cells stanford university stanford",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide",
@@ -2855,7 +2874,7 @@
     {
       "id": "bdc_000167",
       "title": "Lishen LR1865LA Multi-Strategy Degradation Dataset",
-      "keywords": "bdc_000167 lishen lr1865la multi-strategy degradation dataset lishen lr1865la r18650 lithiumnickelmanganesecobaltoxide c batterycell lithiumnickelmanganesecobaltoxide r18650 use different dataset, share code durability modelling",
+      "keywords": "bdc_000167 lishen lr1865la multi-strategy degradation dataset lishen lr1865la r18650 lithiumnickelmanganesecobaltoxide c batterycell lithiumnickelmanganesecobaltoxide r18650 use different dataset, share code durability modelling xi'an jiaotong university xjtu",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide",
@@ -2873,7 +2892,7 @@
     {
       "id": "bdc_000170",
       "title": "SEI Formation Gas and Electrochemical Dataset",
-      "keywords": "bdc_000170 sei formation gas and electrochemical dataset li-fun technology unknown unknown lithiumnickelmanganesecobaltoxide c batterycell lithiumnickelmanganesecobaltoxide unknown durability",
+      "keywords": "bdc_000170 sei formation gas and electrochemical dataset li-fun technology unknown unknown lithiumnickelmanganesecobaltoxide c batterycell lithiumnickelmanganesecobaltoxide unknown durability rwth aachen university aachen university rwth rwth aachen",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide",
@@ -2889,7 +2908,7 @@
     {
       "id": "bdc_000171",
       "title": "Commercial Sodium-Ion Cell Aging and Gassing Dataset",
-      "keywords": "bdc_000171 commercial sodium-ion cell aging and gassing dataset shenzhen mushang electronics co., ltd unknown r18650 nfm hard carbon batterycell nfm r18650 durability",
+      "keywords": "bdc_000171 commercial sodium-ion cell aging and gassing dataset shenzhen mushang electronics co., ltd unknown r18650 nfm hard carbon batterycell nfm r18650 durability rwth aachen university aachen university rwth rwth aachen",
       "categories": [
         "BatteryCell",
         "NFM",
@@ -2905,7 +2924,7 @@
     {
       "id": "bdc_000173",
       "title": "Kokam SLPB 283452H Cycle- and Calendar-Aging Dataset",
-      "keywords": "bdc_000173 kokam slpb 283452h cycle- and calendar-aging dataset kokam slpb 283452h pouchcase unknown batterycell pouchcase durability",
+      "keywords": "bdc_000173 kokam slpb 283452h cycle- and calendar-aging dataset kokam slpb 283452h pouchcase unknown batterycell pouchcase durability université gustave eiffel university gustave eiffel gustave eiffel university",
       "categories": [
         "BatteryCell",
         "PouchCase",
@@ -2920,7 +2939,7 @@
     {
       "id": "bdc_000175",
       "title": "Parallel-Connected 21700 Cell Imbalance Dataset",
-      "keywords": "bdc_000175 parallel-connected 21700 cell imbalance dataset samsung, lg chem samsung inr21700-50e, lg-chem inr21700-m50t r21700 lithiumnickelcobaltaluminiumoxide; lithiumnickelmanganesecobaltoxide c+si batterycell, batterymodule lithiumnickelcobaltaluminiumoxide; lithiumnickelmanganesecobaltoxide module testing r21700 durability performance carbon + silicon carbon + silicon lg chem lg-chem inr21700-m50t lithiumnickelcobaltaluminiumoxide lithiumnickelmanganesecobaltoxide nca nmc r21700 r21700 samsung samsung inr21700-50e",
+      "keywords": "bdc_000175 parallel-connected 21700 cell imbalance dataset samsung, lg chem samsung inr21700-50e, lg-chem inr21700-m50t r21700 lithiumnickelcobaltaluminiumoxide; lithiumnickelmanganesecobaltoxide c+si batterycell, batterymodule lithiumnickelcobaltaluminiumoxide; lithiumnickelmanganesecobaltoxide module testing r21700 durability performance carbon + silicon carbon + silicon lg chem lg-chem inr21700-m50t lithiumnickelcobaltaluminiumoxide lithiumnickelmanganesecobaltoxide nca nmc r21700 r21700 samsung samsung inr21700-50e university of warwick warwick university wmg warwick manufacturing group",
       "categories": [
         "BatteryCell, BatteryModule",
         "LithiumNickelCobaltAluminiumOxide; LithiumNickelManganeseCobaltOxide",
@@ -2938,7 +2957,7 @@
     {
       "id": "bdc_000176",
       "title": "Three-Chemistry Galvanostatic Discharge Dataset",
-      "keywords": "bdc_000176 three-chemistry galvanostatic discharge dataset panasonic, lg chem, a123 panasonic ncr-18650b, lg chem inr21700-m50, a123 systems anr26650m1-b r26650, r18650, r21700 lithiumironphosphate, lithiumnickelmanganesecobaltoxide, lithiumnickelcobaltaluminiumoxide carbon batterycell lithiumironphosphate, lithiumnickelmanganesecobaltoxide, lithiumnickelcobaltaluminiumoxide r26650, r18650, r21700 performance a123 systems anr26650m1b graphite graphite graphite inr21700-m50 lfp/graphite lg chem lithiumironphosphate lithiumnickelcobaltaluminiumoxide lithiumnickelmanganesecobaltoxide nca/graphite ncr18650b nmc/graphite panasonic r18650 r21700 r26650",
+      "keywords": "bdc_000176 three-chemistry galvanostatic discharge dataset panasonic, lg chem, a123 panasonic ncr-18650b, lg chem inr21700-m50, a123 systems anr26650m1-b r26650, r18650, r21700 lithiumironphosphate, lithiumnickelmanganesecobaltoxide, lithiumnickelcobaltaluminiumoxide carbon batterycell lithiumironphosphate, lithiumnickelmanganesecobaltoxide, lithiumnickelcobaltaluminiumoxide r26650, r18650, r21700 performance a123 systems anr26650m1b graphite graphite graphite inr21700-m50 lfp/graphite lg chem lithiumironphosphate lithiumnickelcobaltaluminiumoxide lithiumnickelmanganesecobaltoxide nca/graphite ncr18650b nmc/graphite panasonic r18650 r21700 r26650 stanford university stanford",
       "categories": [
         "BatteryCell",
         "LithiumIronPhosphate, LithiumNickelManganeseCobaltOxide, LithiumNickelCobaltAluminiumOxide",
@@ -2970,7 +2989,7 @@
     {
       "id": "bdc_000178",
       "title": "Sony-Murata US18650VTC5A Degradation Dataset",
-      "keywords": "bdc_000178 sony-murata us18650vtc5a degradation dataset sony-murata us18650vtc5a r18650 lithiumnickelcobaltaluminiumoxide c+si batterycell lithiumnickelcobaltaluminiumoxide r18650 durability",
+      "keywords": "bdc_000178 sony-murata us18650vtc5a degradation dataset sony-murata us18650vtc5a r18650 lithiumnickelcobaltaluminiumoxide c+si batterycell lithiumnickelcobaltaluminiumoxide r18650 durability technical university of munich technische universität münchen tum tu munich tu münchen",
       "categories": [
         "BatteryCell",
         "LithiumNickelCobaltAluminiumOxide",
@@ -2986,7 +3005,7 @@
     {
       "id": "bdc_000179",
       "title": "Parallel-Connected Pouch Cell Thermal-Gradient Aging Dataset",
-      "keywords": "bdc_000179 parallel-connected pouch cell thermal-gradient aging dataset kokam slpb11543140h5 pouchcase lithiumnickelmanganesecobaltoxide + lithiumcobaltoxide c batterycell lithiumnickelmanganesecobaltoxide + lithiumcobaltoxide pouchcase thermal cycling durability",
+      "keywords": "bdc_000179 parallel-connected pouch cell thermal-gradient aging dataset kokam slpb11543140h5 pouchcase lithiumnickelmanganesecobaltoxide + lithiumcobaltoxide c batterycell lithiumnickelmanganesecobaltoxide + lithiumcobaltoxide pouchcase thermal cycling durability imperial college london imperial college icl",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide + LithiumCobaltOxide",
@@ -3003,7 +3022,7 @@
     {
       "id": "bdc_000181",
       "title": "A123 APR18650M1 Multi-Stage Discharge Aging Dataset",
-      "keywords": "bdc_000181 a123 apr18650m1 multi-stage discharge aging dataset a123 apr18650m1 r18650 lithiumironphosphate c batterycell lithiumironphosphate r18650 durability",
+      "keywords": "bdc_000181 a123 apr18650m1 multi-stage discharge aging dataset a123 apr18650m1 r18650 lithiumironphosphate c batterycell lithiumironphosphate r18650 durability huazhong university of science and technology hust",
       "categories": [
         "BatteryCell",
         "LithiumIronPhosphate",
@@ -3019,7 +3038,7 @@
     {
       "id": "bdc_000182",
       "title": "NMC/Graphite Pouch Cell Aging-Mode Dataset",
-      "keywords": "bdc_000182 nmc/graphite pouch cell aging-mode dataset labmade labmade pouchcase lithiumnickelmanganesecobaltoxide c batterycell lithiumnickelmanganesecobaltoxide pouchcase durability",
+      "keywords": "bdc_000182 nmc/graphite pouch cell aging-mode dataset labmade labmade pouchcase lithiumnickelmanganesecobaltoxide c batterycell lithiumnickelmanganesecobaltoxide pouchcase durability idaho national laboratory inl",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide",
@@ -3051,7 +3070,7 @@
     {
       "id": "bdc_000184",
       "title": "LG INR18650-HG2 Capacity and Impedance Aging Dataset",
-      "keywords": "bdc_000184 lg inr18650-hg2 capacity and impedance aging dataset lg chem inr18650hg2 r18650 lithiumnickelmanganesecobaltoxide c+si batterycell lithiumnickelmanganesecobaltoxide r18650 durability",
+      "keywords": "bdc_000184 lg inr18650-hg2 capacity and impedance aging dataset lg chem inr18650hg2 r18650 lithiumnickelmanganesecobaltoxide c+si batterycell lithiumnickelmanganesecobaltoxide r18650 durability karlsruhe institute of technology karlsruher institut für technologie kit",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide",
@@ -3067,7 +3086,7 @@
     {
       "id": "bdc_000185",
       "title": "LG E78 Automotive Pouch Cell Cycle-Aging Dataset",
-      "keywords": "bdc_000185 lg e78 automotive pouch cell cycle-aging dataset lg chem e78 pouchcase lithiumnickelmanganesecobaltoxide c batterycell lithiumnickelmanganesecobaltoxide pouchcase durability",
+      "keywords": "bdc_000185 lg e78 automotive pouch cell cycle-aging dataset lg chem e78 pouchcase lithiumnickelmanganesecobaltoxide c batterycell lithiumnickelmanganesecobaltoxide pouchcase durability technical university of munich technische universität münchen tum tu munich tu münchen",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide",
@@ -3115,7 +3134,7 @@
     {
       "id": "bdc_000189",
       "title": "Automated NMC and LFP Coin Cell Cycling Dataset",
-      "keywords": "bdc_000189 automated nmc and lfp coin cell cycling dataset labmade labmade coincase lithiumironphosphate, lithiumnickelmanganesecobaltoxide c batterycell coincase lithiumironphosphate, lithiumnickelmanganesecobaltoxide durability c c coincase coincase labmade labmade lithiumironphosphate lithiumnickelmanganesecobaltoxide",
+      "keywords": "bdc_000189 automated nmc and lfp coin cell cycling dataset labmade labmade coincase lithiumironphosphate, lithiumnickelmanganesecobaltoxide c batterycell coincase lithiumironphosphate, lithiumnickelmanganesecobaltoxide durability c c coincase coincase labmade labmade lithiumironphosphate lithiumnickelmanganesecobaltoxide empa swiss federal laboratories for materials science and technology",
       "categories": [
         "BatteryCell",
         "CoinCase",
@@ -3131,7 +3150,7 @@
     {
       "id": "bdc_000190",
       "title": "Melasta SLPBB042126 Cooling-Method Aging Dataset",
-      "keywords": "bdc_000190 melasta slpbb042126 cooling-method aging dataset shenzhen melasta battery co. ltd. slpbb042126 pouchcase lithiumcobaltoxide c batterycell lithiumcobaltoxide pouchcase durability",
+      "keywords": "bdc_000190 melasta slpbb042126 cooling-method aging dataset shenzhen melasta battery co. ltd. slpbb042126 pouchcase lithiumcobaltoxide c batterycell lithiumcobaltoxide pouchcase durability norwegian university of science and technology ntnu",
       "categories": [
         "BatteryCell",
         "LithiumCobaltOxide",
@@ -3194,7 +3213,7 @@
     {
       "id": "bdc_000195",
       "title": "Lithium-Ion Battery Accelerated-Aging Dataset for RUL Estimation",
-      "keywords": "bdc_000195 lithium-ion battery accelerated-aging dataset for rul estimation unknown unknown unknown unknown unknown batterycell unknown durability",
+      "keywords": "bdc_000195 lithium-ion battery accelerated-aging dataset for rul estimation unknown unknown unknown unknown unknown batterycell unknown durability xi'an jiaotong university xjtu",
       "categories": [
         "BatteryCell",
         "Unknown",
@@ -3209,7 +3228,7 @@
     {
       "id": "bdc_000196",
       "title": "LG 18650HE4 Cycling Dataset",
-      "keywords": "bdc_000196 lg 18650he4 cycling dataset lg chem 18650he4 r18650 lithiumnickelmanganesecobaltoxide unknown batterycell lithiumnickelmanganesecobaltoxide r18650 durability",
+      "keywords": "bdc_000196 lg 18650he4 cycling dataset lg chem 18650he4 r18650 lithiumnickelmanganesecobaltoxide unknown batterycell lithiumnickelmanganesecobaltoxide r18650 durability technische universität berlin technical university of berlin tu berlin",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide",
@@ -3241,7 +3260,7 @@
     {
       "id": "bdc_000198",
       "title": "LG M50 First- and Second-Life Degradation-Mode Dataset",
-      "keywords": "bdc_000198 lg m50 first- and second-life degradation-mode dataset lg chem m50 r21700 unknown unknown batterycell r21700 unknown durability",
+      "keywords": "bdc_000198 lg m50 first- and second-life degradation-mode dataset lg chem m50 r21700 unknown unknown batterycell r21700 unknown durability university of warwick warwick university wmg warwick manufacturing group",
       "categories": [
         "BatteryCell",
         "R21700",
@@ -3257,7 +3276,7 @@
     {
       "id": "bdc_000199",
       "title": "SiCWell High-Frequency Ripple-Current Aging Dataset",
-      "keywords": "bdc_000199 sicwell high-frequency ripple-current aging dataset unknown unknown pouchcase lithiumnickelmanganesecobaltoxide c batterycell lithiumnickelmanganesecobaltoxide pouchcase durability modelling",
+      "keywords": "bdc_000199 sicwell high-frequency ripple-current aging dataset unknown unknown pouchcase lithiumnickelmanganesecobaltoxide c batterycell lithiumnickelmanganesecobaltoxide pouchcase durability modelling technische universität berlin technical university of berlin tu berlin",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide",
@@ -3290,7 +3309,7 @@
     {
       "id": "bdc_000201",
       "title": "Five-Manufacturer 18650 Lithium-Ion Battery Cycling Dataset",
-      "keywords": "bdc_000201 five-manufacturer 18650 lithium-ion battery cycling dataset eve, cham, lishen, molicel, samsung unknown r18650 lithiumnickelmanganesecobaltoxide c batterycell lithiumnickelmanganesecobaltoxide r18650 durability c c c c c cham eve lishen lithiumnickelmanganesecobaltoxide lithiumnickelmanganesecobaltoxide lithiumnickelmanganesecobaltoxide lithiumnickelmanganesecobaltoxide lithiumnickelmanganesecobaltoxide molicel r18650 r18650 r18650 r18650 r18650 samsung",
+      "keywords": "bdc_000201 five-manufacturer 18650 lithium-ion battery cycling dataset eve, cham, lishen, molicel, samsung unknown r18650 lithiumnickelmanganesecobaltoxide c batterycell lithiumnickelmanganesecobaltoxide r18650 durability c c c c c cham eve lishen lithiumnickelmanganesecobaltoxide lithiumnickelmanganesecobaltoxide lithiumnickelmanganesecobaltoxide lithiumnickelmanganesecobaltoxide lithiumnickelmanganesecobaltoxide molicel r18650 r18650 r18650 r18650 r18650 samsung hong kong university of science and technology hkust",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide",
@@ -3321,7 +3340,7 @@
     {
       "id": "bdc_000204",
       "title": "Lithium-Metal Battery Cycling Degradation Dataset",
-      "keywords": "bdc_000204 lithium-metal battery cycling degradation dataset unknown unknown unknown lithiumnickelmanganesecobaltoxide lithiumtitanateoxyde batterycell lithiumnickelmanganesecobaltoxide unknown durability",
+      "keywords": "bdc_000204 lithium-metal battery cycling degradation dataset unknown unknown unknown lithiumnickelmanganesecobaltoxide lithiumtitanateoxyde batterycell lithiumnickelmanganesecobaltoxide unknown durability stanford university stanford",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide",
@@ -3405,7 +3424,7 @@
     {
       "id": "bdc_000209",
       "title": "NMC/Graphite Cell Calendar- and Cycle-Aging EIS Dataset",
-      "keywords": "bdc_000209 nmc/graphite cell calendar- and cycle-aging eis dataset nuvoton unknown prismaticcase lithiumnickelmanganesecobaltoxide graphite batterycell calendar and cycle aging with periodic capacity and multi-soc eis reference performance tests lithiumnickelmanganesecobaltoxide prismaticcase durability",
+      "keywords": "bdc_000209 nmc/graphite cell calendar- and cycle-aging eis dataset nuvoton unknown prismaticcase lithiumnickelmanganesecobaltoxide graphite batterycell calendar and cycle aging with periodic capacity and multi-soc eis reference performance tests lithiumnickelmanganesecobaltoxide prismaticcase durability stanford university stanford",
       "categories": [
         "BatteryCell",
         "Calendar and cycle aging with periodic capacity and multi-SOC EIS reference performance tests",
@@ -3439,7 +3458,7 @@
     {
       "id": "bdc_000211",
       "title": "High-Power LFP Pouch Cell Electrothermal Characterization Dataset",
-      "keywords": "bdc_000211 high-power lfp pouch cell electrothermal characterization dataset a123 systems lfp/gr 9 ah pouchcase lithiumironphosphate c batterycell lithiumironphosphate pouchcase thermography, thermal imaging durability",
+      "keywords": "bdc_000211 high-power lfp pouch cell electrothermal characterization dataset a123 systems lfp/gr 9 ah pouchcase lithiumironphosphate c batterycell lithiumironphosphate pouchcase thermography, thermal imaging durability university of oxford oxford university",
       "categories": [
         "BatteryCell",
         "LithiumIronPhosphate",
@@ -3456,7 +3475,7 @@
     {
       "id": "bdc_000212",
       "title": "Lithium-Ion Battery Pack WLTP Cycling Dataset",
-      "keywords": "bdc_000212 lithium-ion battery pack wltp cycling dataset panasonic ncr18650b r18650 lithiumnickelcobaltaluminiumoxide c batterycell lithiumnickelcobaltaluminiumoxide r18650 durability",
+      "keywords": "bdc_000212 lithium-ion battery pack wltp cycling dataset panasonic ncr18650b r18650 lithiumnickelcobaltaluminiumoxide c batterycell lithiumnickelcobaltaluminiumoxide r18650 durability universitat politècnica de catalunya polytechnic university of catalonia upc",
       "categories": [
         "BatteryCell",
         "LithiumNickelCobaltAluminiumOxide",
@@ -3472,7 +3491,7 @@
     {
       "id": "bdc_000213",
       "title": "Prismatic and Pouch Cell Full-Life State-Monitoring Dataset",
-      "keywords": "bdc_000213 prismatic and pouch cell full-life state-monitoring dataset pouch, prismatic spim08hp (pouch); l148n50b (prismatic) pouchcase, prismaticcase nca (pouch); nmc (prismatic) c batterycell nca (pouch); nmc (prismatic) pouchcase, prismaticcase soc & soh monitoring throughout life durability c c nca (pouch); nmc (prismatic) nca (pouch); nmc (prismatic) pouchcase prismaticcase",
+      "keywords": "bdc_000213 prismatic and pouch cell full-life state-monitoring dataset pouch, prismatic spim08hp (pouch); l148n50b (prismatic) pouchcase, prismaticcase nca (pouch); nmc (prismatic) c batterycell nca (pouch); nmc (prismatic) pouchcase, prismaticcase soc & soh monitoring throughout life durability c c nca (pouch); nmc (prismatic) nca (pouch); nmc (prismatic) pouchcase prismaticcase massachusetts institute of technology mit",
       "categories": [
         "BatteryCell",
         "NCA (pouch); NMC (prismatic)",
@@ -3489,7 +3508,7 @@
     {
       "id": "bdc_000214",
       "title": "AutoBASS Robotic Coin Cell Cycling Dataset",
-      "keywords": "bdc_000214 autobass robotic coin cell cycling dataset labmade labmade coincase lithiumnickeloxyde carbon + silicon batterycell coincase lithiumnickeloxyde durability",
+      "keywords": "bdc_000214 autobass robotic coin cell cycling dataset labmade labmade coincase lithiumnickeloxyde carbon + silicon batterycell coincase lithiumnickeloxyde durability karlsruhe institute of technology karlsruher institut für technologie kit helmholtz institute ulm hiu",
       "categories": [
         "BatteryCell",
         "CoinCase",
@@ -3522,7 +3541,7 @@
     {
       "id": "bdc_000216",
       "title": "Samsung INR18650-35E Five-Year Calendar-Aging Dataset",
-      "keywords": "bdc_000216 samsung inr18650-35e five-year calendar-aging dataset samsung inr18650-35e r18650 lithiumnickelcobaltaluminiumoxide c batterycell lithiumnickelcobaltaluminiumoxide r18650 durability",
+      "keywords": "bdc_000216 samsung inr18650-35e five-year calendar-aging dataset samsung inr18650-35e r18650 lithiumnickelcobaltaluminiumoxide c batterycell lithiumnickelcobaltaluminiumoxide r18650 durability rwth aachen university aachen university rwth rwth aachen",
       "categories": [
         "BatteryCell",
         "LithiumNickelCobaltAluminiumOxide",
@@ -3554,7 +3573,7 @@
     {
       "id": "bdc_000219",
       "title": "Sanyo/Panasonic UR18650E Cyclic-Aging Dataset",
-      "keywords": "bdc_000219 sanyo/panasonic ur18650e cyclic-aging dataset sanyo/panasonic ur18650e r18650 lithiumnickelmanganesecobaltoxide c batterycell lithiumnickelmanganesecobaltoxide r18650 durability",
+      "keywords": "bdc_000219 sanyo/panasonic ur18650e cyclic-aging dataset sanyo/panasonic ur18650e r18650 lithiumnickelmanganesecobaltoxide c batterycell lithiumnickelmanganesecobaltoxide r18650 durability rwth aachen university aachen university rwth rwth aachen",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide",
@@ -3615,7 +3634,7 @@
     {
       "id": "bdc_000224",
       "title": "BMW i3 Battery and Heating Data from Real Driving Cycles",
-      "keywords": "bdc_000224 bmw i3 battery and heating data from real driving cycles samsung sdi 60ah lithiumnickelmanganesecobaltoxide c batterypack lithiumnickelmanganesecobaltoxide field",
+      "keywords": "bdc_000224 bmw i3 battery and heating data from real driving cycles samsung sdi 60ah lithiumnickelmanganesecobaltoxide c batterypack lithiumnickelmanganesecobaltoxide field technical university of munich technische universität münchen tum tu munich tu münchen",
       "categories": [
         "BatteryPack",
         "LithiumNickelManganeseCobaltOxide",
@@ -3630,7 +3649,7 @@
     {
       "id": "bdc_000225",
       "title": "Volkswagen ID.3 Real-World Electric Powertrain Dataset",
-      "keywords": "bdc_000225 volkswagen id.3 real-world electric powertrain dataset lg chem vw id.3 lithiumnickelmanganesecobaltoxide c batterypack lithiumnickelmanganesecobaltoxide field",
+      "keywords": "bdc_000225 volkswagen id.3 real-world electric powertrain dataset lg chem vw id.3 lithiumnickelmanganesecobaltoxide c batterypack lithiumnickelmanganesecobaltoxide field technical university of munich technische universität münchen tum tu munich tu münchen",
       "categories": [
         "BatteryPack",
         "LithiumNickelManganeseCobaltOxide",
@@ -3705,7 +3724,7 @@
     {
       "id": "bdc_000232",
       "title": "M5BAT Multi-Megawatt Grid Storage Dataset",
-      "keywords": "bdc_000232 m5bat multi-megawatt grid storage dataset variety variety lead-acid, lead-acid gel, lmo, lfp, lto variety batterypack lead-acid, lead-acid gel, lmo, lfp, lto field lfp lmo lto lead-acid lead-acid gel variety variety variety variety variety variety variety variety variety variety",
+      "keywords": "bdc_000232 m5bat multi-megawatt grid storage dataset variety variety lead-acid, lead-acid gel, lmo, lfp, lto variety batterypack lead-acid, lead-acid gel, lmo, lfp, lto field lfp lmo lto lead-acid lead-acid gel variety variety variety variety variety variety variety variety variety variety rwth aachen university aachen university rwth rwth aachen",
       "categories": [
         "BatteryPack",
         "Lead-acid, Lead-acid Gel, LMO, LFP, LTO",
@@ -3720,7 +3739,7 @@
     {
       "id": "bdc_000233",
       "title": "Residential Battery Storage Multi-Year Field Dataset",
-      "keywords": "bdc_000233 residential battery storage multi-year field dataset unknown unknown lmo, nmc, lfp unknown batterypack lmo, nmc, lfp field lfp lmo nmc",
+      "keywords": "bdc_000233 residential battery storage multi-year field dataset unknown unknown lmo, nmc, lfp unknown batterypack lmo, nmc, lfp field lfp lmo nmc rwth aachen university aachen university rwth rwth aachen",
       "categories": [
         "BatteryPack",
         "LMO, NMC, LFP",
@@ -3735,7 +3754,7 @@
     {
       "id": "bdc_000234",
       "title": "Long-Term Field Dataset from 28 LFP Battery Systems",
-      "keywords": "bdc_000234 long-term field dataset from 28 lfp battery systems unknown unknown lithiumironphosphate c batterymodule lithiumironphosphate durability field",
+      "keywords": "bdc_000234 long-term field dataset from 28 lfp battery systems unknown unknown lithiumironphosphate c batterymodule lithiumironphosphate durability field technical university of darmstadt technische universität darmstadt tu darmstadt",
       "categories": [
         "BatteryModule",
         "LithiumIronPhosphate",
@@ -3858,7 +3877,7 @@
     {
       "id": "bdc_000243",
       "title": "Volkswagen ID.3 and CUPRA Born Real-World Battery Dataset",
-      "keywords": "bdc_000243 volkswagen id.3 and cupra born real-world battery dataset volkswagen, cupra id.3 pro performance, born nmc unknown batterypack nmc real-world operation of seven battery-electric vehicles field batterypack batterypack born cupra id.3 pro performance nmc nmc volkswagen",
+      "keywords": "bdc_000243 volkswagen id.3 and cupra born real-world battery dataset volkswagen, cupra id.3 pro performance, born nmc unknown batterypack nmc real-world operation of seven battery-electric vehicles field batterypack batterypack born cupra id.3 pro performance nmc nmc volkswagen technical university of munich technische universität münchen tum tu munich tu münchen",
       "categories": [
         "BatteryPack",
         "NMC",
@@ -3982,7 +4001,7 @@
     {
       "id": "bdc_000252",
       "title": "Kokam SLPB 75106100 Electrochemical State-Estimation Dataset",
-      "keywords": "bdc_000252 kokam slpb 75106100 electrochemical state-estimation dataset kokam co. ltd slpb 75106100 pouch lithiumnickelmanganesecobaltoxide unknown lithiumnickelmanganesecobaltoxide pouch modelling",
+      "keywords": "bdc_000252 kokam slpb 75106100 electrochemical state-estimation dataset kokam co. ltd slpb 75106100 pouch lithiumnickelmanganesecobaltoxide unknown lithiumnickelmanganesecobaltoxide pouch modelling rwth aachen university aachen university rwth rwth aachen",
       "categories": [
         "LithiumNickelManganeseCobaltOxide",
         "Pouch",
@@ -4025,7 +4044,7 @@
     {
       "id": "bdc_000258",
       "title": "LFP/Graphite Probability-Distributed Equivalent-Circuit Dataset and Code",
-      "keywords": "bdc_000258 lfp/graphite probability-distributed equivalent-circuit dataset and code a123 18650m1a 18650 lithiumironphosphate 18650 lithiumironphosphate modelling",
+      "keywords": "bdc_000258 lfp/graphite probability-distributed equivalent-circuit dataset and code a123 18650m1a 18650 lithiumironphosphate 18650 lithiumironphosphate modelling university of bayreuth universität bayreuth",
       "categories": [
         "18650",
         "LithiumIronPhosphate",
@@ -4040,7 +4059,7 @@
     {
       "id": "bdc_000259",
       "title": "Equivalent-Circuit and Single-Particle Battery Model Comparison Dataset",
-      "keywords": "bdc_000259 equivalent-circuit and single-particle battery model comparison dataset unknown unknown lithiumnickelmanganesecobaltoxide unknown lithiumnickelmanganesecobaltoxide modelling",
+      "keywords": "bdc_000259 equivalent-circuit and single-particle battery model comparison dataset unknown unknown lithiumnickelmanganesecobaltoxide unknown lithiumnickelmanganesecobaltoxide modelling university of warwick warwick university wmg warwick manufacturing group",
       "categories": [
         "LithiumNickelManganeseCobaltOxide",
         "modelling"
@@ -4054,7 +4073,7 @@
     {
       "id": "bdc_000260",
       "title": "Lithium and Sodium Plating Degradation-Mode Dataset",
-      "keywords": "bdc_000260 lithium and sodium plating degradation-mode dataset labmade labmade coin multiple unknown coin multiple modelling coincell coincell li-ion na-ion",
+      "keywords": "bdc_000260 lithium and sodium plating degradation-mode dataset labmade labmade coin multiple unknown coin multiple modelling coincell coincell li-ion na-ion university of hawaii university of hawaii at manoa hawaii natural energy institute hnei",
       "categories": [
         "Coin",
         "Multiple",
@@ -4114,7 +4133,7 @@
     {
       "id": "bdc_000266",
       "title": "NMC811/Graphite Pouch Cell Electrothermal GITT Dataset",
-      "keywords": "bdc_000266 nmc811/graphite pouch cell electrothermal gitt dataset unknown unknown pouch lithiumnickelmanganesecobaltoxide carbon lithiumnickelmanganesecobaltoxide pouch modelling",
+      "keywords": "bdc_000266 nmc811/graphite pouch cell electrothermal gitt dataset unknown unknown pouch lithiumnickelmanganesecobaltoxide carbon lithiumnickelmanganesecobaltoxide pouch modelling korea advanced institute of science and technology kaist",
       "categories": [
         "LithiumNickelManganeseCobaltOxide",
         "Pouch",
@@ -4144,7 +4163,7 @@
     {
       "id": "bdc_000269",
       "title": "A123 APR18650M1A Early Degradation-Trajectory Dataset",
-      "keywords": "bdc_000269 a123 apr18650m1a early degradation-trajectory dataset a123 systems apr18650m1a r18650 lithiumironphosphate graphite batterycell lithiumironphosphate path-signature/xgboost modeling of capacity-fade and internal-resistance trajectories for a selected 158-cell subset r18650 modelling",
+      "keywords": "bdc_000269 a123 apr18650m1a early degradation-trajectory dataset a123 systems apr18650m1a r18650 lithiumironphosphate graphite batterycell lithiumironphosphate path-signature/xgboost modeling of capacity-fade and internal-resistance trajectories for a selected 158-cell subset r18650 modelling university of oxford oxford university stanford university stanford",
       "categories": [
         "BatteryCell",
         "LithiumIronPhosphate",
@@ -4161,7 +4180,7 @@
     {
       "id": "bdc_000272",
       "title": "Commercial NMC811 and LFP Cell Relaxation Dataset",
-      "keywords": "bdc_000272 commercial nmc811 and lfp cell relaxation dataset lithiumwerks,lg chem apr18650m1b, inr18650mj1 r18650 lithiumironphosphate, lithiumnickelmanganesecobaltoxide carbon, carbon + silicon batterycell lithiumironphosphate, lithiumnickelmanganesecobaltoxide r18650 voltage relaxation modelling apr18650m1b inr18650mj1 r18650 r18650",
+      "keywords": "bdc_000272 commercial nmc811 and lfp cell relaxation dataset lithiumwerks,lg chem apr18650m1b, inr18650mj1 r18650 lithiumironphosphate, lithiumnickelmanganesecobaltoxide carbon, carbon + silicon batterycell lithiumironphosphate, lithiumnickelmanganesecobaltoxide r18650 voltage relaxation modelling apr18650m1b inr18650mj1 r18650 r18650 university of hawaii university of hawaii at manoa hawaii natural energy institute hnei",
       "categories": [
         "BatteryCell",
         "LithiumIronPhosphate, LithiumNickelManganeseCobaltOxide",
@@ -4178,7 +4197,7 @@
     {
       "id": "bdc_000274",
       "title": "Synthetic Solar-Battery Degradation Dataset for Clear and Cloudy Irradiance",
-      "keywords": "bdc_000274 synthetic solar-battery degradation dataset for clear and cloudy irradiance panasonic, samsung sdi, a123 ncr 18650b b, inr18650-35e, anr26650m cylindricalcase cylindricalcase modelling anr26650m inr18650-35e ncr 18650b b r18650 r18650 r26650",
+      "keywords": "bdc_000274 synthetic solar-battery degradation dataset for clear and cloudy irradiance panasonic, samsung sdi, a123 ncr 18650b b, inr18650-35e, anr26650m cylindricalcase cylindricalcase modelling anr26650m inr18650-35e ncr 18650b b r18650 r18650 r26650 university of hawaii university of hawaii at manoa hawaii natural energy institute hnei",
       "categories": [
         "CylindricalCase",
         "modelling"
@@ -4192,7 +4211,7 @@
     {
       "id": "bdc_000275",
       "title": "Synthetic NMC/Graphite Degradation-Mode Dataset",
-      "keywords": "bdc_000275 synthetic nmc/graphite degradation-mode dataset unknown unknown synthetic cycles nmc graphite nmc synthetic cycles modelling",
+      "keywords": "bdc_000275 synthetic nmc/graphite degradation-mode dataset unknown unknown synthetic cycles nmc graphite nmc synthetic cycles modelling imperial college london imperial college icl",
       "categories": [
         "NMC",
         "Synthetic cycles",
@@ -4207,7 +4226,7 @@
     {
       "id": "bdc_000276",
       "title": "Synthetic Blended-Electrode Battery Degradation Dataset",
-      "keywords": "bdc_000276 synthetic blended-electrode battery degradation dataset unknown unknown synthetic cycles lfp/lmo, nmc/lmo, ncm/nca graphite lfp/lmo, nmc/lmo, ncm/nca synthetic cycles modelling lfp/lmo ncm/nca nmc/lmo",
+      "keywords": "bdc_000276 synthetic blended-electrode battery degradation dataset unknown unknown synthetic cycles lfp/lmo, nmc/lmo, ncm/nca graphite lfp/lmo, nmc/lmo, ncm/nca synthetic cycles modelling lfp/lmo ncm/nca nmc/lmo university of hawaii university of hawaii at manoa hawaii natural energy institute hnei",
       "categories": [
         "LFP/LMO, NMC/LMO, NCM/NCA",
         "Synthetic cycles",
@@ -4222,7 +4241,7 @@
     {
       "id": "bdc_000277",
       "title": "Synthetic LG M50 Multi-Mechanism Degradation Dataset",
-      "keywords": "bdc_000277 synthetic lg m50 multi-mechanism degradation dataset lg chem inr21700 m50 synthetic cycles nmc811 graphite-siox nmc811 synthetic cycles modelling",
+      "keywords": "bdc_000277 synthetic lg m50 multi-mechanism degradation dataset lg chem inr21700 m50 synthetic cycles nmc811 graphite-siox nmc811 synthetic cycles modelling chalmers university of technology chalmers tekniska högskola chalmers",
       "categories": [
         "NMC811",
         "Synthetic cycles",
@@ -4266,7 +4285,7 @@
     {
       "id": "bdc_000280",
       "title": "Synthetic Solar-Battery Degradation Dataset Under Clear-Sky Irradiance",
-      "keywords": "bdc_000280 synthetic solar-battery degradation dataset under clear-sky irradiance nmc graphite nmc modelling",
+      "keywords": "bdc_000280 synthetic solar-battery degradation dataset under clear-sky irradiance nmc graphite nmc modelling university of hawaii university of hawaii at manoa hawaii natural energy institute hnei",
       "categories": [
         "NMC",
         "modelling"
@@ -4280,7 +4299,7 @@
     {
       "id": "bdc_000281",
       "title": "Synthetic Graphite/LFP Duty-Cycle Degradation Dataset",
-      "keywords": "bdc_000281 synthetic graphite/lfp duty-cycle degradation dataset unknown unknown synthetic cycles lfp graphite lfp synthetic cycles modelling",
+      "keywords": "bdc_000281 synthetic graphite/lfp duty-cycle degradation dataset unknown unknown synthetic cycles lfp graphite lfp synthetic cycles modelling university of hawaii university of hawaii at manoa hawaii natural energy institute hnei",
       "categories": [
         "LFP",
         "Synthetic cycles",
@@ -4295,7 +4314,7 @@
     {
       "id": "bdc_000282",
       "title": "Synthetic Graphite/LFP Voltage-Capacity Degradation Dataset",
-      "keywords": "bdc_000282 synthetic graphite/lfp voltage-capacity degradation dataset unknown unknown synthetic cycles lfp graphite lfp synthetic cycles modelling",
+      "keywords": "bdc_000282 synthetic graphite/lfp voltage-capacity degradation dataset unknown unknown synthetic cycles lfp graphite lfp synthetic cycles modelling university of hawaii university of hawaii at manoa hawaii natural energy institute hnei",
       "categories": [
         "LFP",
         "Synthetic cycles",
@@ -4310,7 +4329,7 @@
     {
       "id": "bdc_000283",
       "title": "Synthetic Graphite/NMC Voltage-Capacity and Duty-Cycle Dataset",
-      "keywords": "bdc_000283 synthetic graphite/nmc voltage-capacity and duty-cycle dataset unknown unknown synthetic cycles nmc graphite nmc synthetic cycles modelling",
+      "keywords": "bdc_000283 synthetic graphite/nmc voltage-capacity and duty-cycle dataset unknown unknown synthetic cycles nmc graphite nmc synthetic cycles modelling university of hawaii university of hawaii at manoa hawaii natural energy institute hnei",
       "categories": [
         "NMC",
         "Synthetic cycles",
@@ -4325,7 +4344,7 @@
     {
       "id": "bdc_000284",
       "title": "Synthetic Graphite/NCA Voltage-Capacity and Duty-Cycle Dataset",
-      "keywords": "bdc_000284 synthetic graphite/nca voltage-capacity and duty-cycle dataset unknown unknown synthetic cycles nca graphite nca synthetic cycles modelling",
+      "keywords": "bdc_000284 synthetic graphite/nca voltage-capacity and duty-cycle dataset unknown unknown synthetic cycles nca graphite nca synthetic cycles modelling university of hawaii university of hawaii at manoa hawaii natural energy institute hnei",
       "categories": [
         "NCA",
         "Synthetic cycles",
@@ -4340,7 +4359,7 @@
     {
       "id": "bdc_000286",
       "title": "Lithium-Ion Battery Module Thermal and Fire Propagation Dataset",
-      "keywords": "bdc_000286 lithium-ion battery module thermal and fire propagation dataset samsung unknown r18650 lithiumcobaltoxide carbon batterymodule lithiumcobaltoxide r18650 thermal-runaway and fire propagation in 6×6 and 10×10 battery assemblies safety",
+      "keywords": "bdc_000286 lithium-ion battery module thermal and fire propagation dataset samsung unknown r18650 lithiumcobaltoxide carbon batterymodule lithiumcobaltoxide r18650 thermal-runaway and fire propagation in 6×6 and 10×10 battery assemblies safety university of science and technology of china ustc",
       "categories": [
         "BatteryModule",
         "LithiumCobaltOxide",
@@ -4357,7 +4376,7 @@
     {
       "id": "bdc_000287",
       "title": "UL 9540A Cell- and Installation-Level Thermal Runaway Dataset",
-      "keywords": "bdc_000287 ul 9540a cell- and installation-level thermal runaway dataset unknown unknown r18650 batterycell, batterysystem one cell-level and three installation-level thermal-runaway tests r18650 safety",
+      "keywords": "bdc_000287 ul 9540a cell- and installation-level thermal runaway dataset unknown unknown r18650 batterycell, batterysystem one cell-level and three installation-level thermal-runaway tests r18650 safety ul research institutes underwriters laboratories ul",
       "categories": [
         "BatteryCell, BatterySystem",
         "One cell-level and three installation-level thermal-runaway tests",
@@ -4389,7 +4408,7 @@
     {
       "id": "bdc_000289",
       "title": "Kokam 46 Ah Pouch Cell Local and Uniform Heating Dataset",
-      "keywords": "bdc_000289 kokam 46 ah pouch cell local and uniform heating dataset kokam co. ltd slpb120216216hr2 pouchcase lithiumnickelmanganesecobaltoxide + lithiumironphosphate lithiumtitanateoxyde batterycell lithiumnickelmanganesecobaltoxide + lithiumironphosphate pouchcase safety",
+      "keywords": "bdc_000289 kokam 46 ah pouch cell local and uniform heating dataset kokam co. ltd slpb120216216hr2 pouchcase lithiumnickelmanganesecobaltoxide + lithiumironphosphate lithiumtitanateoxyde batterycell lithiumnickelmanganesecobaltoxide + lithiumironphosphate pouchcase safety clausthal university of technology technische universität clausthal tu clausthal",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide + LithiumIronPhosphate",
@@ -4405,7 +4424,7 @@
     {
       "id": "bdc_000290",
       "title": "Mechanically Induced Lithium-Ion Battery Thermal Runaway Dataset",
-      "keywords": "bdc_000290 mechanically induced lithium-ion battery thermal runaway dataset unknown unknown pouchcase multiple carbon batterycell multiple pouchcase safety",
+      "keywords": "bdc_000290 mechanically induced lithium-ion battery thermal runaway dataset unknown unknown pouchcase multiple carbon batterycell multiple pouchcase safety oak ridge national laboratory ornl",
       "categories": [
         "BatteryCell",
         "Multiple",
@@ -4421,7 +4440,7 @@
     {
       "id": "bdc_000291",
       "title": "Inductive-Heating Thermal Runaway Dataset",
-      "keywords": "bdc_000291 inductive-heating thermal runaway dataset multiple batterycell initiation of cell thermal runaway by inductive heating multiple safety pouchcase prismaticcase r18650",
+      "keywords": "bdc_000291 inductive-heating thermal runaway dataset multiple batterycell initiation of cell thermal runaway by inductive heating multiple safety pouchcase prismaticcase r18650 european commission joint research centre joint research centre jrc",
       "categories": [
         "BatteryCell",
         "Initiation of cell thermal runaway by inductive heating",
@@ -4437,7 +4456,7 @@
     {
       "id": "bdc_000293",
       "title": "BRAFA Electric Vehicle Tunnel Fire Dataset",
-      "keywords": "bdc_000293 brafa electric vehicle tunnel fire dataset unknown unknown unknown unknown unknown batterypack unknown safety",
+      "keywords": "bdc_000293 brafa electric vehicle tunnel fire dataset unknown unknown unknown unknown unknown batterypack unknown safety graz university of technology technische universität graz tu graz",
       "categories": [
         "BatteryPack",
         "Unknown",
@@ -4452,7 +4471,7 @@
     {
       "id": "bdc_000294",
       "title": "Cylindrical Cell Internal Temperature and Pressure During Thermal Runaway",
-      "keywords": "bdc_000294 cylindrical cell internal temperature and pressure during thermal runaway sony vtc6a r21700 lithiumnickelcobaltaluminiumoxide carbon + silicon batterycell lithiumnickelcobaltaluminiumoxide r21700 safety",
+      "keywords": "bdc_000294 cylindrical cell internal temperature and pressure during thermal runaway sony vtc6a r21700 lithiumnickelcobaltaluminiumoxide carbon + silicon batterycell lithiumnickelcobaltaluminiumoxide r21700 safety university of warwick warwick university wmg warwick manufacturing group",
       "categories": [
         "BatteryCell",
         "LithiumNickelCobaltAluminiumOxide",
@@ -4467,8 +4486,8 @@
     },
     {
       "id": "bdc_000295",
-      "title": "NREL Battery Failure Databank",
-      "keywords": "bdc_000295 nrel battery failure databank unknown unknown cylindricalcase multiple unknown batterycell cylindricalcase multiple safety coulometrics coulometrics coulometrics coulometrics coulometrics coulometrics coulometrics d-cell kulr kulr kulr 18650-k330 kulr 21700-k500 lg lg lg lg lg lg lg lg lg 18650-hg2 lg 18650-m36 lg 18650-mj1 lg 18650-test cell (bv-220) lg 18650-test cell (bv-250) lg 18650-test cell (nbv-220) lg 18650-test cell (nbv-250) lg 21700-m50 (bv) molicel molicel molicel molicel molicel molicel molicel 18650-j molicel 18650-m35a molicel 18650-p28a molicel 18650-test cell molicel 18650-test cell (dw-gold) molicel 18650-test cell (dw-silver) r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r21700 r21700 saft saft d-cell-ves16 samsung samsung samsung 18650-26j samsung 18650-30q sanyo sanyo 18650-a sony sony sony 18650-vc7 sony 18650-vtc6 soteria 18650 (al) soteria 18650 (alcu) soteria 18650 (alcudw) soteria 18650 (aldw) soteria 18650 (cu) soteria 18650 (control) soteria 18650 (dw)",
+      "title": "NLR Battery Failure Databank",
+      "keywords": "bdc_000295 nlr battery failure databank unknown unknown cylindricalcase multiple unknown batterycell cylindricalcase multiple safety coulometrics coulometrics coulometrics coulometrics coulometrics coulometrics coulometrics d-cell kulr kulr kulr 18650-k330 kulr 21700-k500 lg lg lg lg lg lg lg lg lg 18650-hg2 lg 18650-m36 lg 18650-mj1 lg 18650-test cell (bv-220) lg 18650-test cell (bv-250) lg 18650-test cell (nbv-220) lg 18650-test cell (nbv-250) lg 21700-m50 (bv) molicel molicel molicel molicel molicel molicel molicel 18650-j molicel 18650-m35a molicel 18650-p28a molicel 18650-test cell molicel 18650-test cell (dw-gold) molicel 18650-test cell (dw-silver) r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r18650 r21700 r21700 saft saft d-cell-ves16 samsung samsung samsung 18650-26j samsung 18650-30q sanyo sanyo 18650-a sony sony sony 18650-vc7 sony 18650-vtc6 soteria 18650 (al) soteria 18650 (alcu) soteria 18650 (alcudw) soteria 18650 (aldw) soteria 18650 (cu) soteria 18650 (control) soteria 18650 (dw) national laboratory of the rockies nlr national renewable energy laboratory national renewable energy lab nrel",
       "categories": [
         "BatteryCell",
         "CylindricalCase",
@@ -4517,7 +4536,7 @@
     {
       "id": "bdc_000298",
       "title": "Samsung INR21700-50S Cycling-to-Failure Strain Dataset",
-      "keywords": "bdc_000298 samsung inr21700-50s cycling-to-failure strain dataset samsung inr21700-50s r21700 nca / graphite–siox carbon + silicon batterycell nca / graphite–siox passive failure r21700 safety",
+      "keywords": "bdc_000298 samsung inr21700-50s cycling-to-failure strain dataset samsung inr21700-50s r21700 nca / graphite–siox carbon + silicon batterycell nca / graphite–siox passive failure r21700 safety imperial college london imperial college icl",
       "categories": [
         "BatteryCell",
         "NCA / Graphite–SiOx",
@@ -4534,7 +4553,7 @@
     {
       "id": "bdc_000299",
       "title": "18650 Lithium-Ion and Sodium-Ion Cell ARC Dataset",
-      "keywords": "bdc_000299 18650 lithium-ion and sodium-ion cell arc dataset unknown unknown r18650 lithiumnickelmanganesecobaltoxide, lithiumironphosphate, sodiumionbattery carbon, carbon batterycell lithiumnickelmanganesecobaltoxide, lithiumironphosphate, sodiumionbattery r18650 safety lithiumironphosphate lithiumnickelmanganesecobaltoxide r18650 r18650 r18650 sodiumionbattery",
+      "keywords": "bdc_000299 18650 lithium-ion and sodium-ion cell arc dataset unknown unknown r18650 lithiumnickelmanganesecobaltoxide, lithiumironphosphate, sodiumionbattery carbon, carbon batterycell lithiumnickelmanganesecobaltoxide, lithiumironphosphate, sodiumionbattery r18650 safety lithiumironphosphate lithiumnickelmanganesecobaltoxide r18650 r18650 r18650 sodiumionbattery karlsruhe institute of technology karlsruher institut für technologie kit",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide, LithiumIronPhosphate, SodiumIonBattery",
@@ -4550,7 +4569,7 @@
     {
       "id": "bdc_000300",
       "title": "21700 Lithium-Ion Cell ARC Dataset",
-      "keywords": "bdc_000300 21700 lithium-ion cell arc dataset unknown unknown r21700 lithiumnickelmanganesecobaltoxide, lithiumnickelcobaltaluminiumoxide, lithiumironphosphate unknown batterycell lithiumnickelmanganesecobaltoxide, lithiumnickelcobaltaluminiumoxide, lithiumironphosphate r21700 safety lithiumironphosphate lithiumnickelcobaltaluminiumoxide lithiumnickelmanganesecobaltoxide r21700 r21700 r21700",
+      "keywords": "bdc_000300 21700 lithium-ion cell arc dataset unknown unknown r21700 lithiumnickelmanganesecobaltoxide, lithiumnickelcobaltaluminiumoxide, lithiumironphosphate unknown batterycell lithiumnickelmanganesecobaltoxide, lithiumnickelcobaltaluminiumoxide, lithiumironphosphate r21700 safety lithiumironphosphate lithiumnickelcobaltaluminiumoxide lithiumnickelmanganesecobaltoxide r21700 r21700 r21700 karlsruhe institute of technology karlsruher institut für technologie kit",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide, LithiumNickelCobaltAluminiumOxide, LithiumIronPhosphate",
@@ -4566,7 +4585,7 @@
     {
       "id": "bdc_000301",
       "title": "4680 Lithium-Ion Cell ARC Thermal Abuse Dataset",
-      "keywords": "bdc_000301 4680 lithium-ion cell arc thermal abuse dataset unknown unknown r4680 lithiumnickelmanganesecobaltoxide, lithiumironphosphate unknown batterycell lithiumnickelmanganesecobaltoxide, lithiumironphosphate r4680 safety lithiumironphosphate lithiumnickelmanganesecobaltoxide r4680 r4680",
+      "keywords": "bdc_000301 4680 lithium-ion cell arc thermal abuse dataset unknown unknown r4680 lithiumnickelmanganesecobaltoxide, lithiumironphosphate unknown batterycell lithiumnickelmanganesecobaltoxide, lithiumironphosphate r4680 safety lithiumironphosphate lithiumnickelmanganesecobaltoxide r4680 r4680 karlsruhe institute of technology karlsruher institut für technologie kit",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide, LithiumIronPhosphate",
@@ -4582,7 +4601,7 @@
     {
       "id": "bdc_000303",
       "title": "Multi-Cell Restricted-Range Power and OCV Characterization Dataset",
-      "keywords": "bdc_000303 multi-cell restricted-range power and ocv characterization dataset toshiba, shenzen melasta battery, lithiumwerks scib™ 23 ah, slpb8644143, anr26650m1b prismaticcase, pouchcase, r26650 lithiumnickelmanganesecobaltoxide + lithiummanganeseoxide, lithiumcobaltoxide, lithiumironphosphate carbon batterycell lithiumnickelmanganesecobaltoxide + lithiummanganeseoxide, lithiumcobaltoxide, lithiumironphosphate prismaticcase, pouchcase, r26650 performance anr26650m1b carbon carbon carbon r26650 scib™ 23 ah slpb8644143",
+      "keywords": "bdc_000303 multi-cell restricted-range power and ocv characterization dataset toshiba, shenzen melasta battery, lithiumwerks scib™ 23 ah, slpb8644143, anr26650m1b prismaticcase, pouchcase, r26650 lithiumnickelmanganesecobaltoxide + lithiummanganeseoxide, lithiumcobaltoxide, lithiumironphosphate carbon batterycell lithiumnickelmanganesecobaltoxide + lithiummanganeseoxide, lithiumcobaltoxide, lithiumironphosphate prismaticcase, pouchcase, r26650 performance anr26650m1b carbon carbon carbon r26650 scib™ 23 ah slpb8644143 leibniz university hannover leibniz universität hannover",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide + LithiumManganeseOxide, LithiumCobaltOxide, LithiumIronPhosphate",
@@ -4615,7 +4634,7 @@
     {
       "id": "bdc_000305",
       "title": "LG M50 Multi-Rate Electrothermal Characterization Dataset",
-      "keywords": "bdc_000305 lg m50 multi-rate electrothermal characterization dataset lg chem m50 r21700 lithiumnickelmanganesecobaltoxide graphite-silicon oxide batterycell lithiumnickelmanganesecobaltoxide r21700 performance",
+      "keywords": "bdc_000305 lg m50 multi-rate electrothermal characterization dataset lg chem m50 r21700 lithiumnickelmanganesecobaltoxide graphite-silicon oxide batterycell lithiumnickelmanganesecobaltoxide r21700 performance university of warwick warwick university wmg warwick manufacturing group",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide",
@@ -4666,7 +4685,7 @@
     {
       "id": "bdc_000308",
       "title": "Disordered-Rocksalt Cathode Discharge-Voltage Dataset",
-      "keywords": "bdc_000308 disordered-rocksalt cathode discharge-voltage dataset labmade labmade coincase disorderedrocksaltcathode lithiummetal batterycell coincase disorderedrocksaltcathode durability",
+      "keywords": "bdc_000308 disordered-rocksalt cathode discharge-voltage dataset labmade labmade coincase disorderedrocksaltcathode lithiummetal batterycell coincase disorderedrocksaltcathode durability lawrence berkeley national laboratory berkeley lab lbnl",
       "categories": [
         "BatteryCell",
         "CoinCase",
@@ -4762,7 +4781,7 @@
     {
       "id": "bdc_000314",
       "title": "A123 ANR26650M1-B Cell Aging under HEV Drive Cycles",
-      "keywords": "bdc_000314 a123 anr26650m1-b cell aging under hev drive cycles a123 anr26650m1-b r26650 lithiumironphosphate unknown batterycell lithiumironphosphate r26650 durability",
+      "keywords": "bdc_000314 a123 anr26650m1-b cell aging under hev drive cycles a123 anr26650m1-b r26650 lithiumironphosphate unknown batterycell lithiumironphosphate r26650 durability politecnico di torino polytechnic university of turin polito",
       "categories": [
         "BatteryCell",
         "LithiumIronPhosphate",
@@ -4794,7 +4813,7 @@
     {
       "id": "bdc_000316",
       "title": "Commercial 18650 Sodium-Ion Cell Characterization and Aging Dataset",
-      "keywords": "bdc_000316 commercial 18650 sodium-ion cell characterization and aging dataset shenzen mushang electronics,  swagelok t-cells cy18650-1250mah, nare, twre r18650 sodiumion hard carbon aging on sodium-ion cells batterycell r18650 sodiumion durability cy18650-1250mah hard carbon hard carbon hard carbon nare r18650 r18650 r18650 sodiumion sodiumion sodiumion twre",
+      "keywords": "bdc_000316 commercial 18650 sodium-ion cell characterization and aging dataset shenzen mushang electronics,  swagelok t-cells cy18650-1250mah, nare, twre r18650 sodiumion hard carbon aging on sodium-ion cells batterycell r18650 sodiumion durability cy18650-1250mah hard carbon hard carbon hard carbon nare r18650 r18650 r18650 sodiumion sodiumion sodiumion twre technical university of munich technische universität münchen tum tu munich tu münchen",
       "categories": [
         "Aging on Sodium-Ion cells",
         "BatteryCell",
@@ -4828,7 +4847,7 @@
     {
       "id": "bdc_000318",
       "title": "Enertech SPB655060 Pouch Cell Aging and Laser-Scanning Dataset",
-      "keywords": "bdc_000318 enertech spb655060 pouch cell aging and laser-scanning dataset enertech spb655060 pouchcase lithiumcobaltoxide carbon batterycell lithiumcobaltoxide pouchcase use maser scanning method to measure cell volume expansion during cycling durability",
+      "keywords": "bdc_000318 enertech spb655060 pouch cell aging and laser-scanning dataset enertech spb655060 pouchcase lithiumcobaltoxide carbon batterycell lithiumcobaltoxide pouchcase use maser scanning method to measure cell volume expansion during cycling durability technical university of munich technische universität münchen tum tu munich tu münchen",
       "categories": [
         "BatteryCell",
         "LithiumCobaltOxide",
@@ -4862,7 +4881,7 @@
     {
       "id": "bdc_000320",
       "title": "Melasta 22 Ah LCO Pouch Cell Aging and Deformation Dataset",
-      "keywords": "bdc_000320 melasta 22 ah lco pouch cell aging and deformation dataset melasta unknown pouchcase lithiumcobaltoxide carbon aging diagnostics in lithium-ion batteries with differential mechanical measurements batterycell lithiumcobaltoxide pouchcase durability",
+      "keywords": "bdc_000320 melasta 22 ah lco pouch cell aging and deformation dataset melasta unknown pouchcase lithiumcobaltoxide carbon aging diagnostics in lithium-ion batteries with differential mechanical measurements batterycell lithiumcobaltoxide pouchcase durability politecnico di torino polytechnic university of turin polito",
       "categories": [
         "Aging diagnostics in lithium-ion batteries with differential mechanical measurements",
         "BatteryCell",
@@ -5018,7 +5037,7 @@
     {
       "id": "bdc_000330",
       "title": "Lithium-Ion Battery Electrolyte Conductivity Dataset",
-      "keywords": "bdc_000330 lithium-ion battery electrolyte conductivity dataset unknown unknown modelling",
+      "keywords": "bdc_000330 lithium-ion battery electrolyte conductivity dataset unknown unknown modelling karlsruhe institute of technology karlsruher institut für technologie kit",
       "categories": [
         "modelling"
       ],
@@ -5031,7 +5050,7 @@
     {
       "id": "bdc_000331",
       "title": "BatteryLife Processed Multi-Chemistry Cycling Dataset",
-      "keywords": "bdc_000331 batterylife processed multi-chemistry cycling dataset multiple formats 990 batteries batterycell multiple formats durability performance",
+      "keywords": "bdc_000331 batterylife processed multi-chemistry cycling dataset multiple formats 990 batteries batterycell multiple formats durability performance hong kong university of science and technology hkust",
       "categories": [
         "990 batteries",
         "BatteryCell",
@@ -5094,7 +5113,7 @@
     {
       "id": "bdc_000335",
       "title": "Cycling and EIS test data of commercial solid state batteries (TDK Ceracharge) - 2026 - Technische Universität Braunschweig",
-      "keywords": "bdc_000335 cycling and eis test data of commercial solid state batteries (tdk ceracharge) - 2026 - technische universität braunschweig tdk electronics tdk ceracharge batterycell cycling performance and eis of commercial tdk ceracharge solid-state cells durability",
+      "keywords": "bdc_000335 cycling and eis test data of commercial solid state batteries (tdk ceracharge) - 2026 - technische universität braunschweig tdk electronics tdk ceracharge batterycell cycling performance and eis of commercial tdk ceracharge solid-state cells durability technische universität braunschweig technical university of braunschweig tu braunschweig",
       "categories": [
         "BatteryCell",
         "Cycling performance and EIS of commercial TDK Ceracharge solid-state cells",
@@ -5126,7 +5145,7 @@
     {
       "id": "bdc_000337",
       "title": "BAK CG50 Full-Cell and Electrode Characterization Dataset",
-      "keywords": "bdc_000337 bak cg50 full-cell and electrode characterization dataset bak battery co., ltd. n21700-bak-cg50 r21700 nca graphite-silicon oxide 50 cells batterycell nca r21700 modelling performance",
+      "keywords": "bdc_000337 bak cg50 full-cell and electrode characterization dataset bak battery co., ltd. n21700-bak-cg50 r21700 nca graphite-silicon oxide 50 cells batterycell nca r21700 modelling performance deutsches zentrum für luft- und raumfahrt german aerospace center dlr",
       "categories": [
         "50 cells",
         "BatteryCell",
@@ -5144,7 +5163,7 @@
     {
       "id": "bdc_000338",
       "title": "Passenger EV Battery-Management-System Field Dataset",
-      "keywords": "bdc_000338 passenger ev battery-management-system field dataset batterypack stanford ev bms field data durability field performance",
+      "keywords": "bdc_000338 passenger ev battery-management-system field dataset batterypack stanford ev bms field data durability field performance stanford university stanford",
       "categories": [
         "BatteryPack",
         "Stanford EV BMS Field Data",
@@ -5176,7 +5195,7 @@
     {
       "id": "bdc_000340",
       "title": "Pouch Cell Internal Short-Circuit Needle-Penetration Dataset",
-      "keywords": "bdc_000340 pouch cell internal short-circuit needle-penetration dataset pouchcell batterycell isc needle penetration pouch cells pouchcell performance safety",
+      "keywords": "bdc_000340 pouch cell internal short-circuit needle-penetration dataset pouchcell batterycell isc needle penetration pouch cells pouchcell performance safety clausthal university of technology technische universität clausthal tu clausthal",
       "categories": [
         "BatteryCell",
         "ISC Needle Penetration Pouch Cells",
@@ -5193,7 +5212,7 @@
     {
       "id": "bdc_000341",
       "title": "LG INR21700 M50LT Drive Cycles",
-      "keywords": "bdc_000341 lg inr21700 m50lt drive cycles lg inr 21700 m50lt r21700 3 cells batterycell r21700 durability field modelling performance",
+      "keywords": "bdc_000341 lg inr21700 m50lt drive cycles lg inr 21700 m50lt r21700 3 cells batterycell r21700 durability field modelling performance technische universität berlin technical university of berlin tu berlin",
       "categories": [
         "3 cells",
         "BatteryCell",
@@ -5212,7 +5231,7 @@
     {
       "id": "bdc_000342",
       "title": "NFM Sodium-Ion and NCM Lithium-Ion Cell Degradation Dataset",
-      "keywords": "bdc_000342 nfm sodium-ion and ncm lithium-ion cell degradation dataset nfm; ncm batterycell nfm/ncm battery degradation nfm; ncm durability performance ncm ncm lithium-ion ncm lithium-ion battery nfm nfm sodium-ion nfm sodium-ion battery",
+      "keywords": "bdc_000342 nfm sodium-ion and ncm lithium-ion cell degradation dataset nfm; ncm batterycell nfm/ncm battery degradation nfm; ncm durability performance ncm ncm lithium-ion ncm lithium-ion battery nfm nfm sodium-ion nfm sodium-ion battery shanghai jiao tong university shanghai jiaotong university sjtu",
       "categories": [
         "BatteryCell",
         "NFM/NCM Battery Degradation",
@@ -5328,7 +5347,7 @@
     {
       "id": "bdc_000349",
       "title": "Zinc-Air Battery Impedance Measurements",
-      "keywords": "bdc_000349 zinc-air battery impedance measurements pr48 coincell zinc batterycell coincell zinc-air battery impedance measurements performance",
+      "keywords": "bdc_000349 zinc-air battery impedance measurements pr48 coincell zinc batterycell coincell zinc-air battery impedance measurements performance technische universität berlin technical university of berlin tu berlin",
       "categories": [
         "BatteryCell",
         "CoinCell",
@@ -5397,9 +5416,9 @@
     {
       "id": "bdc_000353",
       "title": "Battery Cell Swelling under Mechanical Constraint Dataset",
-      "keywords": "bdc_000353 battery cell swelling under mechanical constraint dataset 4 cells batterycell performance",
+      "keywords": "bdc_000353 battery cell swelling under mechanical constraint dataset 5 cells batterycell performance graz university of technology technische universität graz tu graz",
       "categories": [
-        "4 cells",
+        "5 cells",
         "BatteryCell",
         "performance"
       ],
@@ -5498,7 +5517,7 @@
     {
       "id": "bdc_000360",
       "title": "LG MJ1 Cell Pulsed-Charging Aging Dataset",
-      "keywords": "bdc_000360 lg mj1 cell pulsed-charging aging dataset lg mj1 56 cells batterycell durability performance",
+      "keywords": "bdc_000360 lg mj1 cell pulsed-charging aging dataset lg mj1 56 cells batterycell durability performance chalmers university of technology chalmers tekniska högskola chalmers",
       "categories": [
         "56 cells",
         "BatteryCell",
@@ -5532,7 +5551,7 @@
     {
       "id": "bdc_000362",
       "title": "Lithium-Ion Pouch Cell Stack-Pressure and Degradation Dataset",
-      "keywords": "bdc_000362 lithium-ion pouch cell stack-pressure and degradation dataset pouchcase graphite batterycell interplay between stack pressure, mechanical expansion, and battery degradation pathways pouchcase durability performance",
+      "keywords": "bdc_000362 lithium-ion pouch cell stack-pressure and degradation dataset pouchcase graphite batterycell interplay between stack pressure, mechanical expansion, and battery degradation pathways pouchcase durability performance university of cambridge cambridge university univ. of cambridge",
       "categories": [
         "BatteryCell",
         "Interplay between stack pressure, mechanical expansion, and battery degradation pathways",
@@ -5566,7 +5585,7 @@
     {
       "id": "bdc_000364",
       "title": "LFP 18650 Cell Cyclic-Aging Design-of-Experiments Dataset",
-      "keywords": "bdc_000364 lfp 18650 cell cyclic-aging design-of-experiments dataset r18650 lfp 15 cells batterycell lfp r18650 durability performance",
+      "keywords": "bdc_000364 lfp 18650 cell cyclic-aging design-of-experiments dataset r18650 lfp 15 cells batterycell lfp r18650 durability performance technische universität berlin technical university of berlin tu berlin",
       "categories": [
         "15 cells",
         "BatteryCell",
@@ -5652,7 +5671,7 @@
     {
       "id": "bdc_000369",
       "title": "LG M50LT Internal and Surface Temperature Drive-Cycle Dataset",
-      "keywords": "bdc_000369 lg m50lt internal and surface temperature drive-cycle dataset lg inr 21700 m50lt r21700 3 cells batterycell r21700 durability performance",
+      "keywords": "bdc_000369 lg m50lt internal and surface temperature drive-cycle dataset lg inr 21700 m50lt r21700 3 cells batterycell r21700 durability performance technische universität berlin technical university of berlin tu berlin",
       "categories": [
         "3 cells",
         "BatteryCell",
@@ -5686,7 +5705,7 @@
     {
       "id": "bdc_000371",
       "title": "Coin Cell Cycling and EIS Dataset",
-      "keywords": "bdc_000371 coin cell cycling and eis dataset coincell batterycell coin cell cycling data coincell durability performance",
+      "keywords": "bdc_000371 coin cell cycling and eis dataset coincell batterycell coin cell cycling data coincell durability performance empa swiss federal laboratories for materials science and technology",
       "categories": [
         "BatteryCell",
         "Coin cell cycling data",
@@ -5769,7 +5788,7 @@
     {
       "id": "bdc_000376",
       "title": "Lithium and Sodium Metal Battery SEI EIS Dataset",
-      "keywords": "bdc_000376 lithium and sodium metal battery sei eis dataset eis characterization of the sei in lithium-metal and sodium-metal batteries performance lithium metal lithium-metal battery sodium metal sodium-metal battery",
+      "keywords": "bdc_000376 lithium and sodium metal battery sei eis dataset eis characterization of the sei in lithium-metal and sodium-metal batteries performance lithium metal lithium-metal battery sodium metal sodium-metal battery university of cambridge cambridge university univ. of cambridge",
       "categories": [
         "EIS characterization of the SEI in lithium-metal and sodium-metal batteries",
         "performance"
@@ -5783,7 +5802,7 @@
     {
       "id": "bdc_000377",
       "title": "18650 and 21700 Cell External-Heating Intervention-Window Dataset",
-      "keywords": "bdc_000377 18650 and 21700 cell external-heating intervention-window dataset r18650, r21700 77 experiments batterycell r18650, r21700 safety 18650 lithium-ion cell 21700 lithium-ion cell graphite graphite lithiumnickelcobaltaluminiumoxide lithiumnickelmanganesecobaltoxide nca/graphite nmc/graphite r18650 r21700",
+      "keywords": "bdc_000377 18650 and 21700 cell external-heating intervention-window dataset r18650, r21700 77 experiments batterycell r18650, r21700 safety 18650 lithium-ion cell 21700 lithium-ion cell graphite graphite lithiumnickelcobaltaluminiumoxide lithiumnickelmanganesecobaltoxide nca/graphite nmc/graphite r18650 r21700 national institute of standards and technology nist",
       "categories": [
         "77 experiments",
         "BatteryCell",
@@ -5799,7 +5818,7 @@
     {
       "id": "bdc_000378",
       "title": "Li-O2 Battery Discharge-Product Mapping Dataset",
-      "keywords": "bdc_000378 li-o2 battery discharge-product mapping dataset batterycell high-resolution mapping of li–o2 battery discharge products modelling performance",
+      "keywords": "bdc_000378 li-o2 battery discharge-product mapping dataset batterycell high-resolution mapping of li–o2 battery discharge products modelling performance university of cambridge cambridge university univ. of cambridge",
       "categories": [
         "BatteryCell",
         "High-resolution mapping of Li–O2 battery discharge products",
@@ -5815,7 +5834,7 @@
     {
       "id": "bdc_000379",
       "title": "Android Smartphone Field Battery Dataset",
-      "keywords": "bdc_000379 android smartphone field battery dataset 33 cells batterycell durability field performance",
+      "keywords": "bdc_000379 android smartphone field battery dataset 33 cells batterycell durability field performance rwth aachen university aachen university rwth rwth aachen",
       "categories": [
         "33 cells",
         "BatteryCell",
@@ -5832,7 +5851,7 @@
     {
       "id": "bdc_000380",
       "title": "Electric-Vehicle Battery Pack AC-Charging Diagnostic Dataset",
-      "keywords": "bdc_000380 electric-vehicle battery pack ac-charging diagnostic dataset batterypack electric-vehicle battery pack diagnostics durability field performance",
+      "keywords": "bdc_000380 electric-vehicle battery pack ac-charging diagnostic dataset batterypack electric-vehicle battery pack diagnostics durability field performance technical university of munich technische universität münchen tum tu munich tu münchen",
       "categories": [
         "BatteryPack",
         "Electric-vehicle battery pack diagnostics",
@@ -5960,7 +5979,7 @@
     {
       "id": "bdc_000388",
       "title": "ELERIX 50 Ah LFP Electrothermal Characterisation",
-      "keywords": "bdc_000388 elerix 50 ah lfp electrothermal characterisation elerix ex-l50 prismaticcell lfp batterycell electrothermal behaviour and entropic coefficient of a 50 ah lfp cell lfp prismaticcell modelling performance",
+      "keywords": "bdc_000388 elerix 50 ah lfp electrothermal characterisation elerix ex-l50 prismaticcell lfp batterycell electrothermal behaviour and entropic coefficient of a 50 ah lfp cell lfp prismaticcell modelling performance université gustave eiffel university gustave eiffel gustave eiffel university",
       "categories": [
         "BatteryCell",
         "Electrothermal behaviour and entropic coefficient of a 50 Ah LFP cell",
@@ -5995,7 +6014,7 @@
     {
       "id": "bdc_000390",
       "title": "DIGIBAT Automated Coin Cell Benchmark",
-      "keywords": "bdc_000390 digibat automated coin cell benchmark coincell nmc811; nmc622; lfp; lco; lmfp graphite batterycell coincell effect of cathode, electrolyte, separator and assembly route on coin-cell rate performance nmc811; nmc622; lfp; lco; lmfp performance coincell coincell coincell coincell coincell graphite graphite graphite graphite graphite lco lco/graphite lfp lfp/graphite lmfp lmfp/graphite nmc622 nmc622/graphite nmc811 nmc811/graphite",
+      "keywords": "bdc_000390 digibat automated coin cell benchmark coincell nmc811; nmc622; lfp; lco; lmfp graphite batterycell coincell effect of cathode, electrolyte, separator and assembly route on coin-cell rate performance nmc811; nmc622; lfp; lco; lmfp performance coincell coincell coincell coincell coincell graphite graphite graphite graphite graphite lco lco/graphite lfp lfp/graphite lmfp lmfp/graphite nmc622 nmc622/graphite nmc811 nmc811/graphite imperial college london imperial college icl",
       "categories": [
         "BatteryCell",
         "CoinCell",
@@ -6062,7 +6081,7 @@
     {
       "id": "bdc_000394",
       "title": "KCrPDTA Aqueous Redox Flow Battery Cycling",
-      "keywords": "bdc_000394 kcrpdta aqueous redox flow battery cycling zero-gap flow cell k4fe(cn)6 posolyte (aqueous) kcrpdta negolyte (aqueous) batterycell k4fe(cn)6 posolyte (aqueous) kcrpdta | k4fe(cn)6 redox flow cell cycling performance zero-gap flow cell",
+      "keywords": "bdc_000394 kcrpdta aqueous redox flow battery cycling zero-gap flow cell k4fe(cn)6 posolyte (aqueous) kcrpdta negolyte (aqueous) batterycell k4fe(cn)6 posolyte (aqueous) kcrpdta | k4fe(cn)6 redox flow cell cycling performance zero-gap flow cell empa swiss federal laboratories for materials science and technology",
       "categories": [
         "BatteryCell",
         "K4Fe(CN)6 posolyte (aqueous)",
@@ -6079,7 +6098,7 @@
     {
       "id": "bdc_000395",
       "title": "Molicel P45B eVTOL Mission Ageing",
-      "keywords": "bdc_000395 molicel p45b evtol mission ageing molicel inr-21700-p45b r21700 batterycell effect of evtol mission duration (depth of discharge) on capacity, power and structural degradation r21700 durability performance",
+      "keywords": "bdc_000395 molicel p45b evtol mission ageing molicel inr-21700-p45b r21700 batterycell effect of evtol mission duration (depth of discharge) on capacity, power and structural degradation r21700 durability performance university of illinois urbana-champaign uiuc",
       "categories": [
         "BatteryCell",
         "Effect of eVTOL mission duration (depth of discharge) on capacity, power and structural degradation",
@@ -6112,7 +6131,7 @@
     {
       "id": "bdc_000397",
       "title": "Semi-Solid-State NMC Overcharge Thermal Runaway",
-      "keywords": "bdc_000397 semi-solid-state nmc overcharge thermal runaway pouchcell nmc batterymodule nmc overcharge-induced thermal runaway and cell-to-cell propagation with and without active liquid cooling pouchcell safety",
+      "keywords": "bdc_000397 semi-solid-state nmc overcharge thermal runaway pouchcell nmc batterymodule nmc overcharge-induced thermal runaway and cell-to-cell propagation with and without active liquid cooling pouchcell safety universitat politècnica de valència polytechnic university of valencia upv",
       "categories": [
         "BatteryModule",
         "NMC",
@@ -6147,7 +6166,7 @@
     {
       "id": "bdc_000399",
       "title": "LG MJ1 UDDS Cycling with RPTs",
-      "keywords": "bdc_000399 lg mj1 udds cycling with rpts lg inr18650-mj1 r18650 nmc batterycell nmc r18650 soh and capacity estimation under dynamic udds-derived operation durability performance",
+      "keywords": "bdc_000399 lg mj1 udds cycling with rpts lg inr18650-mj1 r18650 nmc batterycell nmc r18650 soh and capacity estimation under dynamic udds-derived operation durability performance politecnico di torino polytechnic university of turin polito",
       "categories": [
         "BatteryCell",
         "NMC",
@@ -6183,7 +6202,7 @@
     {
       "id": "bdc_000401",
       "title": "20-68 Ah LFP Pulse-Excitation Capacity Diagnosis",
-      "keywords": "bdc_000401 20-68 ah lfp pulse-excitation capacity diagnosis lfp batterycell effect of pulse current, pulse width and soc on capacity diagnosis error lfp durability performance",
+      "keywords": "bdc_000401 20-68 ah lfp pulse-excitation capacity diagnosis lfp batterycell effect of pulse current, pulse width and soc on capacity diagnosis error lfp durability performance chalmers university of technology chalmers tekniska högskola chalmers",
       "categories": [
         "BatteryCell",
         "Effect of pulse current, pulse width and SOC on capacity diagnosis error",
@@ -6315,7 +6334,7 @@
     {
       "id": "bdc_000410",
       "title": "Grid-Scale BESS Operational Field Datasets",
-      "keywords": "bdc_000410 grid-scale bess operational field datasets batterysystem field behaviour of grid-scale bess under grid-service duty cycles field modelling lfp lfp nmc nmc vanadium redox flow",
+      "keywords": "bdc_000410 grid-scale bess operational field datasets batterysystem field behaviour of grid-scale bess under grid-service duty cycles field modelling lfp lfp nmc nmc vanadium redox flow electric power research institute epri",
       "categories": [
         "BatterySystem",
         "Field behaviour of grid-scale BESS under grid-service duty cycles",
@@ -6346,7 +6365,7 @@
     {
       "id": "bdc_000412",
       "title": "Samsung INR21700-50E Aging and Characterization Dataset",
-      "keywords": "bdc_000412 samsung inr21700-50e aging and characterization dataset samsung inr21700-50e r21700 lithiumnickelcobaltaluminiumoxide carbon + silicon 160 aged cells and 6 unaged control cells batterycell lithiumnickelcobaltaluminiumoxide r21700 durability performance",
+      "keywords": "bdc_000412 samsung inr21700-50e aging and characterization dataset samsung inr21700-50e r21700 lithiumnickelcobaltaluminiumoxide carbon + silicon 160 aged cells and 6 unaged control cells batterycell lithiumnickelcobaltaluminiumoxide r21700 durability performance universitat politècnica de valència polytechnic university of valencia upv",
       "categories": [
         "160 aged cells and 6 unaged control cells",
         "BatteryCell",
@@ -6433,7 +6452,7 @@
     {
       "id": "bdc_000417",
       "title": "Second-Life Battery System Field Operation Dataset",
-      "keywords": "bdc_000417 second-life battery system field operation dataset lithiummanganeseoxide graphite batterymodule, batterypack lithiummanganeseoxide second-life battery system of 27 modules and 324 cells field",
+      "keywords": "bdc_000417 second-life battery system field operation dataset lithiummanganeseoxide graphite batterymodule, batterypack lithiummanganeseoxide second-life battery system of 27 modules and 324 cells field technical university of munich technische universität münchen tum tu munich tu münchen",
       "categories": [
         "BatteryModule, BatteryPack",
         "LithiumManganeseOxide",
@@ -6449,7 +6468,7 @@
     {
       "id": "bdc_000418",
       "title": "Samsung INR18650-15M Multisine EIS Time-Series Dataset",
-      "keywords": "bdc_000418 samsung inr18650-15m multisine eis time-series dataset samsung sdi inr18650-15m r18650 lithiumnickelmanganesecobaltoxide graphite batterycell lithiumnickelmanganesecobaltoxide r18650 single cell performance",
+      "keywords": "bdc_000418 samsung inr18650-15m multisine eis time-series dataset samsung sdi inr18650-15m r18650 lithiumnickelmanganesecobaltoxide graphite batterycell lithiumnickelmanganesecobaltoxide r18650 single cell performance university of oxford oxford university",
       "categories": [
         "BatteryCell",
         "LithiumNickelManganeseCobaltOxide",
@@ -6484,7 +6503,7 @@
     {
       "id": "bdc_000420",
       "title": "Commercial 21700 Cell EDDT Cross-Section",
-      "keywords": "bdc_000420 commercial 21700 cell eddt cross-section r21700 batterycell cross-section of a commercial 21700 cell r21700 performance",
+      "keywords": "bdc_000420 commercial 21700 cell eddt cross-section r21700 batterycell cross-section of a commercial 21700 cell r21700 performance brookhaven national laboratory bnl",
       "categories": [
         "BatteryCell",
         "Cross-section of a commercial 21700 cell",
@@ -6500,7 +6519,7 @@
     {
       "id": "bdc_000421",
       "title": "Commercial 21700 Cell 4D EDDT",
-      "keywords": "bdc_000421 commercial 21700 cell 4d eddt r21700 batterycell commercial 21700 cell r21700 performance",
+      "keywords": "bdc_000421 commercial 21700 cell 4d eddt r21700 batterycell commercial 21700 cell r21700 performance brookhaven national laboratory bnl",
       "categories": [
         "BatteryCell",
         "Commercial 21700 cell",
@@ -6516,7 +6535,7 @@
     {
       "id": "bdc_000422",
       "title": "INL Courier-Fleet Traction Battery Pack Tests",
-      "keywords": "bdc_000422 inl courier-fleet traction battery pack tests multiple batterypack traction battery packs of 21 vehicle models durability performance",
+      "keywords": "bdc_000422 inl courier-fleet traction battery pack tests multiple batterypack traction battery packs of 21 vehicle models durability performance idaho national laboratory inl",
       "categories": [
         "BatteryPack",
         "Traction battery packs of 21 vehicle models",
@@ -6542,6 +6561,252 @@
       "positive_electrode": null,
       "negative_electrode": null,
       "case": "R18650",
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000424",
+      "title": "ZJU-o BESS Operational Data and Reports",
+      "keywords": "bdc_000424 zju-o bess operational data and reports 28 lithium-ion modules of a stationary battery energy storage system batterymodule field",
+      "categories": [
+        "28 lithium-ion modules of a stationary battery energy storage system",
+        "BatteryModule",
+        "field"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": null,
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000425",
+      "title": "LiFePO4 26650 2S Pack Pulse Tests",
+      "keywords": "bdc_000425 lifepo4 26650 2s pack pulse tests enix energies nx acl9013 r26650 lfp batterypack five two-cell series packs of 26650 lifepo4 cells lfp r26650 durability performance",
+      "categories": [
+        "BatteryPack",
+        "Five two-cell series packs of 26650 LiFePO4 cells",
+        "LFP",
+        "R26650",
+        "durability",
+        "performance"
+      ],
+      "positive_electrode": "LFP",
+      "negative_electrode": null,
+      "case": "R26650",
+      "manufacturer": "Enix Energies",
+      "battery_model": "NX ACL9013"
+    },
+    {
+      "id": "bdc_000426",
+      "title": "FEMTO-ST NMC Static and Dynamic Ageing",
+      "keywords": "bdc_000426 femto-st nmc static and dynamic ageing nmc batterycell nmc three nmc cells and a two-cell parallel module durability performance",
+      "categories": [
+        "BatteryCell",
+        "NMC",
+        "Three NMC cells and a two-cell parallel module",
+        "durability",
+        "performance"
+      ],
+      "positive_electrode": "NMC",
+      "negative_electrode": null,
+      "case": null,
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000427",
+      "title": "30 Ah LFP Thermoelectric Cooling Tests",
+      "keywords": "bdc_000427 30 ah lfp thermoelectric cooling tests prismaticcell lfp batterycell lfp one 30 ah prismatic lifepo4 cell prismaticcell performance",
+      "categories": [
+        "BatteryCell",
+        "LFP",
+        "One 30 Ah prismatic LiFePO4 cell",
+        "PrismaticCell",
+        "performance"
+      ],
+      "positive_electrode": "LFP",
+      "negative_electrode": null,
+      "case": "PrismaticCell",
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000428",
+      "title": "In-Service EV Battery Fault Voltage Snapshots",
+      "keywords": "bdc_000428 in-service ev battery fault voltage snapshots battery packs of in-service electric vehicles batterypack field",
+      "categories": [
+        "Battery packs of in-service electric vehicles",
+        "BatteryPack",
+        "field"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": null,
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000429",
+      "title": "BATMAX NMC Pouch Cell Abuse Tests",
+      "keywords": "bdc_000429 batmax nmc pouch cell abuse tests pouchcell nmc batterycell nmc nine nmc pouch cells, 24 abuse tests pouchcell performance safety",
+      "categories": [
+        "BatteryCell",
+        "NMC",
+        "Nine NMC pouch cells, 24 abuse tests",
+        "PouchCell",
+        "performance",
+        "safety"
+      ],
+      "positive_electrode": "NMC",
+      "negative_electrode": null,
+      "case": "PouchCell",
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000430",
+      "title": "NLR Battery Safety Database",
+      "keywords": "bdc_000430 nlr battery safety database pouchcell multiple multiple batterycell multiple pouch cells of six chemistries pouchcell safety anode-free (na metal) drx graphite graphite k-ion lco lvo li-ion li-ion li-ion multi-layer pouch multi-layer pouch multi-layer pouch nmc811 nmc811 nnfcm na-ion pba silicon (lpsc electrolyte) silicon-graphite single-layer pouch single-layer pouch single-layer pouch solid-state li national laboratory of the rockies nlr national renewable energy laboratory national renewable energy lab nrel",
+      "categories": [
+        "BatteryCell",
+        "Multiple",
+        "Pouch cells of six chemistries",
+        "PouchCell",
+        "safety"
+      ],
+      "positive_electrode": "Multiple",
+      "negative_electrode": "Multiple",
+      "case": "PouchCell",
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000431",
+      "title": "Sodium-Ion 18650 Cycle and Calendar Ageing",
+      "keywords": "bdc_000431 sodium-ion 18650 cycle and calendar ageing cy 18650-12p r18650 batterycell commercial 18650 sodium-ion cells under cycle and calendar ageing r18650 durability technical university of munich technische universität münchen tum tu munich tu münchen",
+      "categories": [
+        "BatteryCell",
+        "Commercial 18650 sodium-ion cells under cycle and calendar ageing",
+        "R18650",
+        "durability"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": "R18650",
+      "manufacturer": null,
+      "battery_model": "CY 18650-12P"
+    },
+    {
+      "id": "bdc_000432",
+      "title": "Sodium-Ion vs LFP Electrical Performance",
+      "keywords": "bdc_000432 sodium-ion vs lfp electrical performance multiple batterycell multiple two commercial sodium-ion cells and one lfp cell performance technical university of munich technische universität münchen tum tu munich tu münchen",
+      "categories": [
+        "BatteryCell",
+        "Multiple",
+        "Two commercial sodium-ion cells and one LFP cell",
+        "performance"
+      ],
+      "positive_electrode": "Multiple",
+      "negative_electrode": null,
+      "case": null,
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000433",
+      "title": "NMC, LMO and LFP Pulse Tests",
+      "keywords": "bdc_000433 nmc, lmo and lfp pulse tests multiple 436 cells of three cathode chemistries (nmc, lmo, lfp) batterycell multiple durability performance lfp lfp lfp 20 ah lfp 35 ah lmo lmo lmo 10 ah lmo 24 ah nmc nmc nmc 2.1 ah nmc 21 ah",
+      "categories": [
+        "436 cells of three cathode chemistries (NMC, LMO, LFP)",
+        "BatteryCell",
+        "Multiple",
+        "durability",
+        "performance"
+      ],
+      "positive_electrode": "Multiple",
+      "negative_electrode": null,
+      "case": null,
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000434",
+      "title": "Repeated Overcharge Tests, Four Cell Models",
+      "keywords": "bdc_000434 repeated overcharge tests, four cell models 87 cylindrical cells of four models batterycell safety inr18650-hg2 inr21700-m50lt inr21700-m50t lg lg lg lr1865sz lishen r18650 r18650 r21700 r21700",
+      "categories": [
+        "87 cylindrical cells of four models",
+        "BatteryCell",
+        "safety"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": null,
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000435",
+      "title": "E-Bike 13S4P Pack Real-Road Data",
+      "keywords": "bdc_000435 e-bike 13s4p pack real-road data samsung sdi inr18650-30q r18650 batterypack one 13s4p e-bike pack of 52 samsung inr18650-30q cells r18650 field",
+      "categories": [
+        "BatteryPack",
+        "One 13S4P e-bike pack of 52 Samsung INR18650-30Q cells",
+        "R18650",
+        "field"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": "R18650",
+      "manufacturer": "Samsung SDI",
+      "battery_model": "INR18650-30Q"
+    },
+    {
+      "id": "bdc_000436",
+      "title": "Vanadium Redox Flow Battery Stack Tests",
+      "keywords": "bdc_000436 vanadium redox flow battery stack tests flow stack (5 cells, 240 cm2) vanadium posolyte (vo2+/vo2+) vanadium negolyte (v2+/v3+) batterymodule flow stack (5 cells, 240 cm2) one five-cell all-vanadium redox flow stack vanadium posolyte (vo2+/vo2+) performance",
+      "categories": [
+        "BatteryModule",
+        "Flow stack (5 cells, 240 cm2)",
+        "One five-cell all-vanadium redox flow stack",
+        "Vanadium posolyte (VO2+/VO2+)",
+        "performance"
+      ],
+      "positive_electrode": "Vanadium posolyte (VO2+/VO2+)",
+      "negative_electrode": "Vanadium negolyte (V2+/V3+)",
+      "case": "Flow stack (5 cells, 240 cm2)",
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000437",
+      "title": "LiCoO2 Cell P2D Model Simulations",
+      "keywords": "bdc_000437 licoo2 cell p2d model simulations lithiumcobaltoxide graphite batterycell lithiumcobaltoxide simulated graphite/licoo2 cell, 3,600 parameter sets modelling",
+      "categories": [
+        "BatteryCell",
+        "LithiumCobaltOxide",
+        "Simulated graphite/LiCoO2 cell, 3,600 parameter sets",
+        "modelling"
+      ],
+      "positive_electrode": "LithiumCobaltOxide",
+      "negative_electrode": "Graphite",
+      "case": null,
+      "manufacturer": null,
+      "battery_model": null
+    },
+    {
+      "id": "bdc_000438",
+      "title": "6x6 21700 Module Immersion Cooling CFD",
+      "keywords": "bdc_000438 6x6 21700 module immersion cooling cfd r21700 batterymodule r21700 simulated immersion-cooled module of 36 cylindrical 21700 cells modelling",
+      "categories": [
+        "BatteryModule",
+        "R21700",
+        "Simulated immersion-cooled module of 36 cylindrical 21700 cells",
+        "modelling"
+      ],
+      "positive_electrode": null,
+      "negative_electrode": null,
+      "case": "R21700",
       "manufacturer": null,
       "battery_model": null
     }

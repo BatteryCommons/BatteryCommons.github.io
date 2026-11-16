@@ -1,0 +1,63 @@
+{
+  "version": "v16.11.2026",
+  "released_at_utc": "2026-11-16T00:15:33+00:00",
+  "released_at_london": "2026-11-16T00:15:33+00:00",
+  "timezone": "Europe/London",
+  "release_date": "2026-11-16",
+  "source_repository": "BatteryCommons/BatteryDataCommons",
+  "source_commit": "10a7f755716673e2cf266af7513117b411e38a1f",
+  "content_sha256": "b7e80e119fb87a21a2853c4242ac78e6fd0af984b6eede3894e43f23df984f73",
+  "dataset_count": 394,
+  "tool_count": 63,
+  "excel_filename": "BatteryDataCommons_v16.11.2026.xlsx",
+  "excel_url": "releases/BatteryDataCommons_v16.11.2026.xlsx",
+  "sheets": [
+    "README",
+    "All_Datasets",
+    "Performance",
+    "Durability",
+    "Modelling",
+    "Field",
+    "Safety",
+    "Tools"
+  ],
+  "json_archive_url": "releases/BatteryDataCommons_v16.11.2026_json.zip",
+  "assets": {
+    "BatteryDataCommons_v16.11.2026.xlsx": {
+      "sha256": "4307267bbfa098d849d8576cd601644d1ff63d6e071cf7d0eafcdf2db2e32e33",
+      "bytes": 1234887
+    },
+    "BatteryDataCommons_v16.11.2026_json.zip": {
+      "sha256": "a0f8b8b8cf3fbc55085acd25379522f24fa0aa423faceb4ed8b3517d74e074c2",
+      "bytes": 741805
+    },
+    "CHANGELOG.md": {
+      "sha256": "b24d42020d2f7e889a459679f36842e4de7212ae2cd4315bfe07a22fbeb3b262",
+      "bytes": 353
+    },
+    "catalog.ttl": {
+      "sha256": "33580faaa23772d2be30cb11d558242d67de5f49293826e1ce96ebbd7c111121",
+      "bytes": 1589241
+    },
+    "datasets.jsonl": {
+      "sha256": "f3fad62eedb296d837ef69a4c6761a6defb305205d33dd2a9411dad8d50d9e2d",
+      "bytes": 1530599
+    },
+    "replaced_by.json": {
+      "sha256": "d4fb78682aeebc25e05d9cb29a4f1b0e5b0d72a76a062255f6ac6c456514633e",
+      "bytes": 213
+    },
+    "search_index.json": {
+      "sha256": "3d47f023168112afc6e49e8525be0cce6cacce9f0447d4bfd83a7aa507739d47",
+      "bytes": 297889
+    },
+    "site_stats.json": {
+      "sha256": "9b9560922bde1a1caa9167c41ffb3f16ddf3684eed2257202279bf40d8d96313",
+      "bytes": 351
+    },
+    "tools.json": {
+      "sha256": "e1ab643aeadc5ac797bc63f66978f20493f3c586809419b124a78b6fc196b5e4",
+      "bytes": 35377
+    }
+  }
+}

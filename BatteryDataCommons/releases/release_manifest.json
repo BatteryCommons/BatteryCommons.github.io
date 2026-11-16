@@ -1,16 +1,16 @@
 {
-  "version": "v30.10.2026",
-  "released_at_utc": "2026-10-30T16:51:16+00:00",
-  "released_at_london": "2026-10-30T16:51:16+00:00",
+  "version": "v16.11.2026",
+  "released_at_utc": "2026-11-16T00:15:33+00:00",
+  "released_at_london": "2026-11-16T00:15:33+00:00",
   "timezone": "Europe/London",
-  "release_date": "2026-10-30",
+  "release_date": "2026-11-16",
   "source_repository": "BatteryCommons/BatteryDataCommons",
-  "source_commit": "ecfa301951a9cdb8128165f3f27f2be86287450e",
-  "content_sha256": "5db4db8e47b77e73af4f563806ef0fb85043ac71a60c36d4d713f233c514da79",
-  "dataset_count": 379,
+  "source_commit": "10a7f755716673e2cf266af7513117b411e38a1f",
+  "content_sha256": "b7e80e119fb87a21a2853c4242ac78e6fd0af984b6eede3894e43f23df984f73",
+  "dataset_count": 394,
   "tool_count": 63,
-  "excel_filename": "BatteryDataCommons_v30.10.2026.xlsx",
-  "excel_url": "releases/BatteryDataCommons_v30.10.2026.xlsx",
+  "excel_filename": "BatteryDataCommons_v16.11.2026.xlsx",
+  "excel_url": "releases/BatteryDataCommons_v16.11.2026.xlsx",
   "sheets": [
     "README",
     "All_Datasets",
@@ -21,38 +21,38 @@
     "Safety",
     "Tools"
   ],
-  "json_archive_url": "releases/BatteryDataCommons_v30.10.2026_json.zip",
+  "json_archive_url": "releases/BatteryDataCommons_v16.11.2026_json.zip",
   "assets": {
-    "BatteryDataCommons_v30.10.2026.xlsx": {
-      "sha256": "af13478b70fac1768fc9c3227060d89e2e298f5cd8ff0c4a340b24ca44a71c87",
-      "bytes": 1112711
+    "BatteryDataCommons_v16.11.2026.xlsx": {
+      "sha256": "4307267bbfa098d849d8576cd601644d1ff63d6e071cf7d0eafcdf2db2e32e33",
+      "bytes": 1234887
     },
-    "BatteryDataCommons_v30.10.2026_json.zip": {
-      "sha256": "563f34882f8446195eb627626b64b21aa1783c3b6e5563c7a202349e44482681",
-      "bytes": 660072
+    "BatteryDataCommons_v16.11.2026_json.zip": {
+      "sha256": "a0f8b8b8cf3fbc55085acd25379522f24fa0aa423faceb4ed8b3517d74e074c2",
+      "bytes": 741805
     },
     "CHANGELOG.md": {
-      "sha256": "ae1342ce03ebd4cfce92c6cebdf807dee52f709b8064a2efcb96ce9f29551ed2",
+      "sha256": "b24d42020d2f7e889a459679f36842e4de7212ae2cd4315bfe07a22fbeb3b262",
       "bytes": 353
     },
     "catalog.ttl": {
-      "sha256": "eece123c87a796efb5a774ef539bf24209b399d375fdd43ecd4c6ca7ba23a355",
-      "bytes": 1500468
+      "sha256": "33580faaa23772d2be30cb11d558242d67de5f49293826e1ce96ebbd7c111121",
+      "bytes": 1589241
     },
     "datasets.jsonl": {
-      "sha256": "ec67cb6f820822f046d49091b9f6bdf167242de4378aa0a3044482c7daf3d39d",
-      "bytes": 1310859
+      "sha256": "f3fad62eedb296d837ef69a4c6761a6defb305205d33dd2a9411dad8d50d9e2d",
+      "bytes": 1530599
     },
     "replaced_by.json": {
       "sha256": "d4fb78682aeebc25e05d9cb29a4f1b0e5b0d72a76a062255f6ac6c456514633e",
       "bytes": 213
     },
     "search_index.json": {
-      "sha256": "37f8d9497862d854cf751b5dd626a705344a5018411dbb4ad952f35fa71e124c",
-      "bytes": 276180
+      "sha256": "3d47f023168112afc6e49e8525be0cce6cacce9f0447d4bfd83a7aa507739d47",
+      "bytes": 297889
     },
     "site_stats.json": {
-      "sha256": "aa39e60d1997143717a213dd675731e94ccbc0d18aaa479eadfe67441530a9cb",
+      "sha256": "9b9560922bde1a1caa9167c41ffb3f16ddf3684eed2257202279bf40d8d96313",
       "bytes": 351
     },
     "tools.json": {

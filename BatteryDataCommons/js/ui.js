@@ -100,6 +100,13 @@ function formatPublicationLabel(pub) {
   return 'Associated Publication';
 }
 
+// Author names come from the DOI registration of the deposit or publication.
+function formatAuthorList(authors) {
+  if (!Array.isArray(authors)) return null;
+  const names = authors.filter(name => typeof name === 'string' && name.trim());
+  return names.length ? names.join(', ') : null;
+}
+
 function getDownloadLabel(dataset, url, index, total) {
   const explicitLabel = Array.isArray(dataset.download_labels)
     ? dataset.download_labels[index]
@@ -1378,6 +1385,7 @@ function renderDatasetDetail(dataset) {
       renderSpecRow('Categories', displayCategories.map(item => BDC.formatCategory(item)).join(', ')),
       renderSpecRow('Data group', dataset.data_group),
       renderSpecRow('Owner', dataset.source_metadata?.owner),
+      renderSpecRow('Authors', formatAuthorList(dataset.source_metadata?.authors)),
       renderSpecRow('Data modality', dataset.source_metadata?.data_modality)
     ]),
     renderSpecGroup('Provenance', [
@@ -1392,11 +1400,18 @@ function renderDatasetDetail(dataset) {
   ], 'detail-provenance-section');
 
   const publications = dataset.publications && dataset.publications.length > 0
-    ? dataset.publications.map(pub => `
-        <a class="detail-publication" href="${safeUrl(pub.url)}" target="_blank" rel="noopener">
-          <span>${escapeHtml(formatPublicationLabel(pub))}</span>
+    ? dataset.publications.map(pub => {
+        // Shown when they differ from the deposit's authors listed above.
+        const authors = formatAuthorList(pub?.authors);
+        const authorLine = authors && authors !== formatAuthorList(dataset.source_metadata?.authors)
+          ? `<span class="detail-publication-authors">${escapeHtml(authors)}</span>`
+          : '';
+        return `
+        <a class="detail-publication" href="${safeUrl(pub?.url)}" target="_blank" rel="noopener">
+          <span>${escapeHtml(formatPublicationLabel(pub))}${authorLine}</span>
           <span aria-hidden="true">↗</span>
-        </a>`).join('')
+        </a>`;
+      }).join('')
     : '<p class="detail-empty-note">No associated publications.</p>';
 
   const publicationsSection = `

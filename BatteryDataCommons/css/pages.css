@@ -629,6 +629,13 @@ main {
     color: var(--color-accent-primary);
 }
 
+.detail-publication-authors {
+    display: block;
+    margin-top: 0.2rem;
+    color: var(--color-text-tertiary);
+    font-size: var(--text-xs);
+}
+
 .detail-empty-note {
     margin: 0;
     padding: 0.8rem 0;
